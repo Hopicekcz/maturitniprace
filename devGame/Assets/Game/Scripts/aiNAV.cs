@@ -1,13 +1,19 @@
-using UnityEngine; 
-using UnityEngine.AI; 
+using UnityEngine;
+using UnityEngine.AI;
 
-public class aiNAV : MonoBehaviour 
+public class aiNAV : MonoBehaviour
 {
-    void Start() 
+    public Transform playerTransform;
+    NavMeshAgent enemy;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
+        enemy = GetComponent<NavMeshAgent>();
     }
 
-    void Update() 
+    // Update is called once per frame
+    void Update()
     {
+        enemy.destination = playerTransform.position;
     }
 }

@@ -57,6 +57,7 @@ public class RevolverScript : MonoBehaviour
         animator = GetComponent<Animator>(); 
         audioSource = GetComponent<AudioSource>(); 
         mainCamera = Camera.main; 
+        
     }
 
     void Update() 
@@ -96,7 +97,7 @@ public class RevolverScript : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             Instantiate(impactEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal)); 
-            //change effect depending on hit object tag!
+            //change effect depending on hit object tag in the future
         }
 
         //Shot delay calculation
