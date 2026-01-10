@@ -1,0 +1,2205 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.3f1 (ef04196de0d6) revision 15664153'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ARKbTifLlQE2JTixqdoki" at "2026-01-10T15:32:25.9394045Z"
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16004 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2026-01-10T15:32:25Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 26568, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.17.4'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-ARKbTifLlQE2JTixqdoki"
+[Licensing::IpcConnector] LicenseClient-ARKbTifLlQE2JTixqdoki channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-01-10T15:32:26.0177949Z"
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/Games/unity/1/game/devGame/devGame
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+61434
+-licensingIpc
+LicenseClient-ARKbTifLlQE2JTixqdoki
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: D:/Games/unity/1/game/devGame/devGame
+D:/Games/unity/1/game/devGame/devGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [25840]  Target information:
+
+Player connection [25840]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3784111578 [EditorId] 3784111578 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [25840]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 3784111578 [EditorId] 3784111578 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [25840]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 3784111578 [EditorId] 3784111578 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [25840] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25840] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 7.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.3f1 (ef04196de0d6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Games/unity/1/game/devGame/devGame/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     5994 MB
+    Driver:   32.0.15.9174
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              0fed82f7791f4d2c8c7fdf472f1de311
+  Correlation Id:          db9128868f34229d08792bcf2e07c9ab
+  External correlation Id: 4281850894525062831
+  Machine Id:              4VB2xDT1CV9zqVbIIZWsGa/FyKA=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.01s, validation: 0.00s, handshake: 1.39s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-01-10T15:32:27.417329Z"
+[Licensing::Module] Licensing Background thread has ended after 1.48s
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003091 seconds.
+- Loaded All Assemblies, in  0.617 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.626 seconds
+Domain Reload Profiling: 1237ms
+	BeginReloadAssembly (255ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (218ms)
+		LoadAssemblies (249ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (214ms)
+			TypeCache.Refresh (213ms)
+				TypeCache.ScanAssembly (196ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (626ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (566ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (69ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (123ms)
+			ProcessInitializeOnLoadAttributes (248ms)
+			ProcessInitializeOnLoadMethodAttributes (122ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in 15.706 seconds
+Refreshing native plugins compatible for Editor in 6.02 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 6.45 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.935 seconds
+Domain Reload Profiling: 20301ms
+	BeginReloadAssembly (242ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (15006ms)
+		LoadAssemblies (14490ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (657ms)
+			TypeCache.Refresh (232ms)
+				TypeCache.ScanAssembly (212ms)
+			BuildScriptInfoCaches (408ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (4936ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1578ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (190ms)
+			ProcessInitializeOnLoadAttributes (1073ms)
+			ProcessInitializeOnLoadMethodAttributes (294ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 6.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6088 unused Assets / (4.2 MB). Loaded Objects now: 6869.
+Memory consumption went from 154.0 MB to 149.7 MB.
+Total: 14.943400 ms (FindLiveObjects: 0.866100 ms CreateObjectMapping: 0.479400 ms MarkObjects: 11.588500 ms  DeleteObjects: 2.007700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 264188.501020 seconds.
+  path: Assets/World/Effects/Environment/Materials/Furniture/3SeatDirt_BaseColor.mat
+  artifactKey: Guid(efc342f7b2a0699478373355bfc9d9fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Furniture/3SeatDirt_BaseColor.mat using Guid(efc342f7b2a0699478373355bfc9d9fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e9cc265a3e40bfb5cc390d6fcc3cb9f6') in 1.5921535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Materials/Furniture/Cabinets00matV1.mat
+  artifactKey: Guid(d2baf2fc045db4b4997b9871933227f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Furniture/Cabinets00matV1.mat using Guid(d2baf2fc045db4b4997b9871933227f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'faea3659f584fef191c4cf98e2fff0a8') in 0.2738263 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/Environment/Materials/Furniture/closet3_BaseColor.mat
+  artifactKey: Guid(3028c5f4db726d04c9cf801f6a720670) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Furniture/closet3_BaseColor.mat using Guid(3028c5f4db726d04c9cf801f6a720670) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ce55c4a38588ed4151e4a096d8a7d16') in 1.1932989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Shaders/GlassStainedBumpDistort.shader
+  artifactKey: Guid(963484209d11fd7f110076aa44295342) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Shaders/GlassStainedBumpDistort.shader using Guid(963484209d11fd7f110076aa44295342) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b014a0e3762d84962c94359e008caaf8') in 0.2708228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Materials/Furniture/Fireplace_02_stone.mat
+  artifactKey: Guid(7e91e8346e8449544b8aaf17bd477f74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Furniture/Fireplace_02_stone.mat using Guid(7e91e8346e8449544b8aaf17bd477f74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7824f2ac541182a28fc1872ac0187ec1') in 0.7114938 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Sounds/FX/door/doorOpen.wav
+  artifactKey: Guid(4eedd74010df15b4da8205fb923f604e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/FX/door/doorOpen.wav using Guid(4eedd74010df15b4da8205fb923f604e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aebfa25e9c9d114ba5a993f77c9d5763') in 0.1454162 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Sounds/FX/scary/radioScare.mp3
+  artifactKey: Guid(6fc963d788b04b14f807961c93d036d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/FX/scary/radioScare.mp3 using Guid(6fc963d788b04b14f807961c93d036d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b450f372823524054aaaddbc24b9f43f') in 1.1356153 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Materials/Furniture/MetalTable_BaseColor.mat
+  artifactKey: Guid(30478f606bb42724abb4b3a08f9279d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Furniture/MetalTable_BaseColor.mat using Guid(30478f606bb42724abb4b3a08f9279d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2982d34610ffd62004e4578e4df75dbd') in 0.4816135 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Effects/Environment/Materials/Furniture/metal - Copy.mat
+  artifactKey: Guid(061f2319c0d3a7b488bb27dbea22fab5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Furniture/metal - Copy.mat using Guid(061f2319c0d3a7b488bb27dbea22fab5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c547202f2e62326a01a03196bb1ff03e') in 0.0103442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Materials/Furniture/M_Basket.mat
+  artifactKey: Guid(00d4173eb8bbc46f6a941a0655b00f89) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Furniture/M_Basket.mat using Guid(00d4173eb8bbc46f6a941a0655b00f89) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f87933a7424d8e6740beec46eb01a5b5') in 1.3749655 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/Environment/Materials/Furniture/M_cabinet.mat
+  artifactKey: Guid(98012d1931461924d848b05c6f03d1d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Furniture/M_cabinet.mat using Guid(98012d1931461924d848b05c6f03d1d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '66fb640fc0016d89db34326943e51c25') in 1.3791724 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Effects/Environment/Materials/Furniture/metal.mat
+  artifactKey: Guid(03db3db6f68dc514e8f1ee0c95468740) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Furniture/metal.mat using Guid(03db3db6f68dc514e8f1ee0c95468740) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2f00c848931bd14ad0ea8923e481d4ee') in 0.0058377 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/World/Effects/Environment/Materials/Furniture/Glass_01.mat
+  artifactKey: Guid(f14aa19fcd2754c4ebbee1e6ff20818f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Furniture/Glass_01.mat using Guid(f14aa19fcd2754c4ebbee1e6ff20818f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7d0caf7fecb3a99e8c4266deb9225280') in 0.2785385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/AI/Human Animations/Animations/Masked Poses/Human@ObjectGripHands01.fbx
+  artifactKey: Guid(a92ad04671c1e2c42ab2feb0e9ac684c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Resources/AI/Human Animations/Animations/Masked Poses/Human@ObjectGripHands01.fbx using Guid(a92ad04671c1e2c42ab2feb0e9ac684c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a541922a9fcedcf69204d2ab794ab929') in 0.5128604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/Environment/Materials/Furniture/M_Toilet_Poop.mat
+  artifactKey: Guid(527e0285f9b2e6d41aaedb42a5200f15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Furniture/M_Toilet_Poop.mat using Guid(527e0285f9b2e6d41aaedb42a5200f15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '802d6fb9a151b60f5409bffd5b50cab4') in 0.686805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Sounds/FX/scary/jumpscare.mp3
+  artifactKey: Guid(7a2840659115b0a439dbc0d66a55f980) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/FX/scary/jumpscare.mp3 using Guid(7a2840659115b0a439dbc0d66a55f980) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e0a51410cda0d5cde9d4d0d08fb45483') in 0.0911287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Scripts/Player/Base/BasicRigidBodyPush.cs
+  artifactKey: Guid(909d917d73a63f940ac158d02e936645) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Scripts/Player/Base/BasicRigidBodyPush.cs using Guid(909d917d73a63f940ac158d02e936645) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '254f540e7d882e79ac129578d053af57') in 0.0097728 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/AI/Human Animations/Animations/Masked Poses/HumanF@ObjectGripShoulder01_R.fbx
+  artifactKey: Guid(855d2ef280d7b2143bae774a3fe45259) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Resources/AI/Human Animations/Animations/Masked Poses/HumanF@ObjectGripShoulder01_R.fbx using Guid(855d2ef280d7b2143bae774a3fe45259) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2db66dc4e23556f215cae788633ca03f') in 0.1076953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/AI/Human Animations/Animations/Masked Poses/HumanM@ObjectGripShoulder02_L.fbx
+  artifactKey: Guid(c8320a17fc9a23d4799e01e61b428394) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Resources/AI/Human Animations/Animations/Masked Poses/HumanM@ObjectGripShoulder02_L.fbx using Guid(c8320a17fc9a23d4799e01e61b428394) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '638e9b681921dbd38b0535dd9c82acf7') in 0.0427148 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/WarFX/Demo/WarFX Demo NewSettings.lighting
+  artifactKey: Guid(a352ddcb10b77b44798b79a9e3f2ef0b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Demo/WarFX Demo NewSettings.lighting using Guid(a352ddcb10b77b44798b79a9e3f2ef0b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd6b4f68ed48d123478995bdfe993ce7e') in 0.3146104 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/Environment/Materials/Lanterns/lamp post.mat
+  artifactKey: Guid(e88cc3b41a43da64493fd04f91ae6c68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Lanterns/lamp post.mat using Guid(e88cc3b41a43da64493fd04f91ae6c68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c3f91d50e8147f6bf9d0a9489ad34cc') in 0.3972543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Effects/Environment/Materials/Lanterns/Candle3_BlueEmission.mat
+  artifactKey: Guid(5ef5c719608100e479fe390189d3173d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Lanterns/Candle3_BlueEmission.mat using Guid(5ef5c719608100e479fe390189d3173d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a6a46457b13e17b9221a1406b459ce7b') in 0.2868422 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Materials/Lanterns/Candle2_blueEmission.mat
+  artifactKey: Guid(3d575510381c2ec4e901a80b63d9698b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Lanterns/Candle2_blueEmission.mat using Guid(3d575510381c2ec4e901a80b63d9698b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd52f935faf874417acb0c350df6a390') in 0.0497895 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Materials/Lanterns/Candle1.001.mat
+  artifactKey: Guid(c745ae086db21a54c94bcc79107eb40d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Lanterns/Candle1.001.mat using Guid(c745ae086db21a54c94bcc79107eb40d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5f7863e5f00bd33aa147e6f9b6e668b5') in 0.0049666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/World/Effects/Environment/Materials/Lanterns/CarvedLampPost2.mat
+  artifactKey: Guid(01417397b4060a84dabece89e51fb467) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Lanterns/CarvedLampPost2.mat using Guid(01417397b4060a84dabece89e51fb467) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '07c6b07bf69c3eec41b0fb483a2618ad') in 0.5524618 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Effects/Environment/Materials/Lanterns/LampPost_wall.mat
+  artifactKey: Guid(b48090b67b3c8b84b81fcc983fc98878) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Lanterns/LampPost_wall.mat using Guid(b48090b67b3c8b84b81fcc983fc98878) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c1282be66a99776d55c914bff1d0ebeb') in 0.3033949 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/Environment/Materials/SnowyRoad/SnowierRoad.mat
+  artifactKey: Guid(656a41f4615521a4c8fe982967a2c38e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/SnowyRoad/SnowierRoad.mat using Guid(656a41f4615521a4c8fe982967a2c38e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5c3e074c9822e7ed8e4951d8b785dc9f') in 1.1693629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Materials/Lanterns/lustre.mat
+  artifactKey: Guid(727eea6fd83da374cb05d321c4d90207) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Lanterns/lustre.mat using Guid(727eea6fd83da374cb05d321c4d90207) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '40875b0ce7ba3a4007375b280a656f70') in 0.5920295 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/Environment/Materials/Trees/New Material.mat
+  artifactKey: Guid(37a84e82616d4f24b9db2a38cbbcfdb3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Trees/New Material.mat using Guid(37a84e82616d4f24b9db2a38cbbcfdb3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c359a46ba431a9ff39d1368443d72652') in 0.2683613 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Materials/Trees/Concrete1.mat
+  artifactKey: Guid(fbdcfbcd08a6fe44cb04df8dd96de976) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Trees/Concrete1.mat using Guid(fbdcfbcd08a6fe44cb04df8dd96de976) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '21cd88aa87262bb5614b3ed84400f792') in 0.06842 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/Environment/MeshTerrains/MeshTerrain_1/meshTerrain_1_16k_prefab.prefab
+  artifactKey: Guid(bc5f523ba424a46468220b6c4fc95860) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/MeshTerrains/MeshTerrain_1/meshTerrain_1_16k_prefab.prefab using Guid(bc5f523ba424a46468220b6c4fc95860) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e5c710589bc77a459fe20ef96aa04771') in 0.3832153 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/MeshTerrains/MeshTerrain_2/meshTerrain_2_16k.fbx
+  artifactKey: Guid(82a50449757db7b479e46dfeb3c60dff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/MeshTerrains/MeshTerrain_2/meshTerrain_2_16k.fbx using Guid(82a50449757db7b479e46dfeb3c60dff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2d803c36cd9457d06459022ba86789ff') in 0.7926678 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Books_01.fbx
+  artifactKey: Guid(7306063e424057f428fea084cd6321cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Books_01.fbx using Guid(7306063e424057f428fea084cd6321cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '86fd3cc4086ab2eb334f5d8c4c9e1c1a') in 0.0958818 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/BookOpen_03.fbx
+  artifactKey: Guid(d9a0c4b7e3414bd44a3146ee38167559) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/BookOpen_03.fbx using Guid(d9a0c4b7e3414bd44a3146ee38167559) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e3561467ac53099938d09257c5ea758f') in 0.1310194 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/MeshTerrains/MeshTerrain_2/meshTerrain_2_4k.fbx
+  artifactKey: Guid(bedf1143aef24194bb601b3f9e1289f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/MeshTerrains/MeshTerrain_2/meshTerrain_2_4k.fbx using Guid(bedf1143aef24194bb601b3f9e1289f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a4f05f1430863ed5a0dbb71f356e982f') in 0.0157349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Books_02.fbx
+  artifactKey: Guid(61793f897ef2d874696e5e2f4591dd38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Books_02.fbx using Guid(61793f897ef2d874696e5e2f4591dd38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eaf29970d57d86ded1fd72ceea6ce7e2') in 0.2618453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Sounds/FX/Toilet/SFX_Toilet_Idle.wav
+  artifactKey: Guid(f17c5a9bc82a7d142b37176a4542fac3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/FX/Toilet/SFX_Toilet_Idle.wav using Guid(f17c5a9bc82a7d142b37176a4542fac3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6f54df317b1914c00e7dfae9a9abce35') in 0.7192606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Books_08.fbx
+  artifactKey: Guid(bad878b7f95bcd642940b373f175cd48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Books_08.fbx using Guid(bad878b7f95bcd642940b373f175cd48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f083a18037d2bbb240715f1e70874503') in 0.1468737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Books_14.fbx
+  artifactKey: Guid(5442419abc214b546aebbfce7cf66439) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Books_14.fbx using Guid(5442419abc214b546aebbfce7cf66439) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '64e11db6c691f9fe0e9a0c4fc44b0169') in 0.0116288 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Books_30.fbx
+  artifactKey: Guid(f0f2148b9e2303a4592e5161fa1e6532) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Books_30.fbx using Guid(f0f2148b9e2303a4592e5161fa1e6532) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '782644ba9e6061cbe685e15e24a5af56') in 0.0692193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Books_24.fbx
+  artifactKey: Guid(28248b07a4d9570409371ebb6d5a2a3b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Books_24.fbx using Guid(28248b07a4d9570409371ebb6d5a2a3b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1f87758e94ba47db2cdb89554c8db317') in 0.0188893 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Books_26.fbx
+  artifactKey: Guid(9a1ee1ca6496f9340b74c75092e0c53e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Books_26.fbx using Guid(9a1ee1ca6496f9340b74c75092e0c53e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '97dc15c95b6fd14dd18ddf87027fb798') in 0.0120707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Books_20.fbx
+  artifactKey: Guid(2a2c082fbedac4c47a308fea4c936bb8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Books_20.fbx using Guid(2a2c082fbedac4c47a308fea4c936bb8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd813585c677c24c0ff4e5cb32f2579a3') in 0.0475039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Sounds/FX/BlizzardFX/Blizzard_medium.wav
+  artifactKey: Guid(02bfcc2d69fc71a49ae920c9c0f5f3c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/FX/BlizzardFX/Blizzard_medium.wav using Guid(02bfcc2d69fc71a49ae920c9c0f5f3c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '13db9a36b88d839378bf7885768b81a0') in 0.4500444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Effects/Environment/Skybox/UnderTheSea4k.mat
+  artifactKey: Guid(119ec07f1c7ed204db46bd8465fd5a50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Skybox/UnderTheSea4k.mat using Guid(119ec07f1c7ed204db46bd8465fd5a50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e652bc15d6d75ebafeba98a3a40c08df') in 0.4854632 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Materials/SnowyRoad/Ice.mat
+  artifactKey: Guid(29328931d6f88964ca9d28fb3f276298) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/SnowyRoad/Ice.mat using Guid(29328931d6f88964ca9d28fb3f276298) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'da4c607b2bf20924d8569b077ce28a05') in 0.6099397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_08.fbx
+  artifactKey: Guid(7cccc9dc81c3d5546a4e0d45165260be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_08.fbx using Guid(7cccc9dc81c3d5546a4e0d45165260be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '845c77e50c92ee4fdf600902fe472fb3') in 0.1576575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_26.fbx
+  artifactKey: Guid(6c8e9bc87c0ecf34baf87df07a6a0dba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_26.fbx using Guid(6c8e9bc87c0ecf34baf87df07a6a0dba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '16be8b65a83496e0b9d6412fd8d05c9f') in 0.0115989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_07.fbx
+  artifactKey: Guid(5dd4e38f8cf3a48469397fecb106d376) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_07.fbx using Guid(5dd4e38f8cf3a48469397fecb106d376) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd854608d8e82983ae4ad7182570571a3') in 0.0158114 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_13.fbx
+  artifactKey: Guid(e73c1809ab21176409db5421e29791c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_13.fbx using Guid(e73c1809ab21176409db5421e29791c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '796a8f65decef939d4262525793f7821') in 0.0988156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_14.fbx
+  artifactKey: Guid(ad6e918a638ed2f4fa3403b6e28e0e27) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_14.fbx using Guid(ad6e918a638ed2f4fa3403b6e28e0e27) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fe874c9ed9aab9cfcc95b0a0ab2f8421') in 0.0107811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_02.fbx
+  artifactKey: Guid(1d8a5677c1af86845aaf8b37ef7358d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_02.fbx using Guid(1d8a5677c1af86845aaf8b37ef7358d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4ba41b0c92899f29ee423ab229faa37d') in 0.0289161 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_01.fbx
+  artifactKey: Guid(eaf1b3e89a9fb804d935d4886918f2b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_01.fbx using Guid(eaf1b3e89a9fb804d935d4886918f2b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9d7c458dcbe360f3e94820c9688690b1') in 0.0559518 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_20.fbx
+  artifactKey: Guid(3b890e30c6659e546b070ecd5f7d6a30) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_20.fbx using Guid(3b890e30c6659e546b070ecd5f7d6a30) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '40bdab4cf3be78ad68bd2b067560cd69') in 0.0446681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_23.fbx
+  artifactKey: Guid(d70511e7272f13343b756e560307a41b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_23.fbx using Guid(d70511e7272f13343b756e560307a41b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a9d36a8e1842d34ba57de6fd2ef69860') in 0.0105239 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Game/UniversalRenderPipelineAsset_Renderer.asset
+  artifactKey: Guid(635ecd48c25793d459ce38c1c0495493) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/UniversalRenderPipelineAsset_Renderer.asset using Guid(635ecd48c25793d459ce38c1c0495493) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4993dd140ccc29b68964662325c55ef4') in 0.0491561 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_47.fbx
+  artifactKey: Guid(82445202768b6d144be88d36c9ebf587) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_47.fbx using Guid(82445202768b6d144be88d36c9ebf587) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '918053c99112b5349fba507df95ac1a8') in 0.0116942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_36.fbx
+  artifactKey: Guid(319567a8d927eb64cb78f37cfdba8e68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_36.fbx using Guid(319567a8d927eb64cb78f37cfdba8e68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9eb1eb139549852c8d71631b044c1705') in 0.1214171 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_39.fbx
+  artifactKey: Guid(7e51bff4adb919c458acf7b065475d5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_39.fbx using Guid(7e51bff4adb919c458acf7b065475d5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9fc80d0d205be1c1998adcf5780977cc') in 0.0119912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_42.fbx
+  artifactKey: Guid(2c3ae5eea0a49084aa1d9df6c088c676) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_42.fbx using Guid(2c3ae5eea0a49084aa1d9df6c088c676) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '007d76733c869957678c2e7f116ca863') in 0.0657241 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_52.fbx
+  artifactKey: Guid(0f7a1cb66547a6a479b868b91a0334c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_52.fbx using Guid(0f7a1cb66547a6a479b868b91a0334c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '15ebae4aa533f8bb5522ee7b3b318220') in 0.0110508 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_61.fbx
+  artifactKey: Guid(74558a81b38d73243be55cbee8583582) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_61.fbx using Guid(74558a81b38d73243be55cbee8583582) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4fe976049e4a0700cfbe5542bfd35300') in 0.0116904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_60.fbx
+  artifactKey: Guid(8c42656a6d8a2444dae8837aa801df62) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_60.fbx using Guid(8c42656a6d8a2444dae8837aa801df62) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b737710cea56be1af5f6e2c8ccc53c81') in 0.0104452 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_58.fbx
+  artifactKey: Guid(461b2e2a41e8ca342b0cc1248c93b1d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_58.fbx using Guid(461b2e2a41e8ca342b0cc1248c93b1d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eebea933d5dd111e484fb97992b170e7') in 0.0108385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_44.fbx
+  artifactKey: Guid(cde32b7d0996f40409304777612ea43b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_44.fbx using Guid(cde32b7d0996f40409304777612ea43b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd2e1e847d3f7d0e7ce9fc1def15a8485') in 0.0167815 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_56.fbx
+  artifactKey: Guid(ef53951cac035224789ca96276aec623) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_56.fbx using Guid(ef53951cac035224789ca96276aec623) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f50929bc321b15f4ad9eca92e6d7b69e') in 0.025742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_50.fbx
+  artifactKey: Guid(c1a7263b91804a447a2cffecc6d91bde) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_50.fbx using Guid(c1a7263b91804a447a2cffecc6d91bde) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '224aadf231c9a45a309c490059ab6a90') in 0.0321938 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game/TextMesh Pro/Shaders/TMP_Sprite.shader
+  artifactKey: Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/TextMesh Pro/Shaders/TMP_Sprite.shader using Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b631d2b9d53dbc7ce187e4ddd8cf472') in 0.0638334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Materials/Furniture/Plate_01.mat
+  artifactKey: Guid(8efe1e182a7097b4fa1337bce81fa518) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Materials/Furniture/Plate_01.mat using Guid(8efe1e182a7097b4fa1337bce81fa518) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6d293ae228ddeb9d2c9b7123124be5f8') in 0.2534808 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_27.fbx
+  artifactKey: Guid(885f3d18491ece74b8fb00fa9b6a13c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_27.fbx using Guid(885f3d18491ece74b8fb00fa9b6a13c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aae72f07ca952d4ce2f81563740429cf') in 0.0305637 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Game/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+  artifactKey: Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/TextMesh Pro/Shaders/TMP_SDF SSD.shader using Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f0060534cf0008935d13144f0b93ee64') in 0.0207195 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Models/Building1/Box_350x250x200_Mesh.fbx
+  artifactKey: Guid(c6a55ba99e9e99d41b7eef123e311a43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Building1/Box_350x250x200_Mesh.fbx using Guid(c6a55ba99e9e99d41b7eef123e311a43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3a20615ec76eb2f26ecb9113a310febd') in 0.04136 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/chair 1.FBX
+  artifactKey: Guid(83a8ea92913740449a4ad6c6c19c7d92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/chair 1.FBX using Guid(83a8ea92913740449a4ad6c6c19c7d92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c1cb20942bbf90cb20142feaf3717ee8') in 0.0410899 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/3Seat.fbx
+  artifactKey: Guid(1a946898d5a375744bd71b5d04072493) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/3Seat.fbx using Guid(1a946898d5a375744bd71b5d04072493) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bfc5a6fd3f26bd829630aa1b46289188') in 0.0178918 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/desk.FBX
+  artifactKey: Guid(ecdfe9f0b8508af4d92737c656e36132) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/desk.FBX using Guid(ecdfe9f0b8508af4d92737c656e36132) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5e213145cb7f49ba728e1232f6e9f786') in 0.0683354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/BigCloset.fbx
+  artifactKey: Guid(a20abce8e4655294886742eb9bb5c382) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/BigCloset.fbx using Guid(a20abce8e4655294886742eb9bb5c382) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f90cf45a86eb80385e4142a9cfe6104') in 0.0528805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/Cabinet04.fbx
+  artifactKey: Guid(86f5484b88f6e4b40b3111ccff232762) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/Cabinet04.fbx using Guid(86f5484b88f6e4b40b3111ccff232762) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '294eb6a54b5d830f7f3f725a32061b40') in 0.0378916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/Broom.fbx
+  artifactKey: Guid(3a36612dd60a7914b85340d77b5e40ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/Broom.fbx using Guid(3a36612dd60a7914b85340d77b5e40ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0e9e37ec16eff00c3133c104e14ca7a8') in 0.0430201 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/3Seat2.fbx
+  artifactKey: Guid(fd8712e1a3b95bf408cf1bf15fb9a131) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/3Seat2.fbx using Guid(fd8712e1a3b95bf408cf1bf15fb9a131) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '05bb6adb77a3e7f6d947b5cef0b6aecd') in 0.2742222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/Environment/Models/Building1/Stairs_650_400_300_Mesh.fbx
+  artifactKey: Guid(7e0223e1d3e1733499accfa5ebffb67e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Building1/Stairs_650_400_300_Mesh.fbx using Guid(7e0223e1d3e1733499accfa5ebffb67e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95853463fe2e75f0c9d470b42272a154') in 0.0752888 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MobileDependencyResolver/Editor/1.2.185/Google.JarResolver.dll
+  artifactKey: Guid(459f2b4255ec498caed1c0aeb1bf03a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/MobileDependencyResolver/Editor/1.2.185/Google.JarResolver.dll using Guid(459f2b4255ec498caed1c0aeb1bf03a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a12bec2d087f44c085c1929cff310ee1') in 0.0057631 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/World/Sounds/FX/Toilet/SFX_Insects.wav
+  artifactKey: Guid(df9470d7725258a4a9079404520f7018) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/FX/Toilet/SFX_Insects.wav using Guid(df9470d7725258a4a9079404520f7018) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4fc333717f0c384da575cee7e61a3793') in 0.5266963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Models/Books/Book_10.fbx
+  artifactKey: Guid(f94f0fa6e6617f146a465ae2b0cf4519) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Books/Book_10.fbx using Guid(f94f0fa6e6617f146a465ae2b0cf4519) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f12b6f69afb10489d53da2fff6a95c9a') in 0.1356781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/MirrorComode2.fbx
+  artifactKey: Guid(50c1a10f09bac3e4fa83b73c174ce7ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/MirrorComode2.fbx using Guid(50c1a10f09bac3e4fa83b73c174ce7ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bb70817b5265c2aaca87a8c1eb9569e4') in 0.1157249 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/Environment/Models/Lanterns/LampPost.fbx
+  artifactKey: Guid(1ed05b93464bb6242b1d0cf9e388ed67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Lanterns/LampPost.fbx using Guid(1ed05b93464bb6242b1d0cf9e388ed67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c2b8dad4c41eb07c9c2a57b48a696fdd') in 0.0727065 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/Environment/Models/Lanterns/Latern1.fbx
+  artifactKey: Guid(d78538bd679f6fe4b9bd7c6c1e9c8485) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Lanterns/Latern1.fbx using Guid(d78538bd679f6fe4b9bd7c6c1e9c8485) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a4b785ba5253e852343dfb274486af18') in 0.1490526 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Effects/Environment/Models/Lanterns/Candle3.fbx
+  artifactKey: Guid(21c30a3c7192a0649813ca3fe2cdb009) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Lanterns/Candle3.fbx using Guid(21c30a3c7192a0649813ca3fe2cdb009) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '66762ea5ef38e0e4f4e286928033b682') in 0.0139378 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/Fireplace_01.FBX
+  artifactKey: Guid(eca2fcac997383d46a335444395759a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/Fireplace_01.FBX using Guid(eca2fcac997383d46a335444395759a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1cb1b4358c9f918d32eb85d85d717893') in 0.4124211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/Toilet.FBX
+  artifactKey: Guid(aab1be574d67cb842b6d896f1866773c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/Toilet.FBX using Guid(aab1be574d67cb842b6d896f1866773c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bf9be14ac4a94a758e55f228c1100a1a') in 1.9425296 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Books_09.prefab
+  artifactKey: Guid(dfa2e9979d6f35b4bb9735076d626b40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Books_09.prefab using Guid(dfa2e9979d6f35b4bb9735076d626b40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1d4b2659532af189a974370e1d80efbd') in 1.4737058 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/BookOpen_03.prefab
+  artifactKey: Guid(f3e273b40aec9094ba1905b2361ac36d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/BookOpen_03.prefab using Guid(f3e273b40aec9094ba1905b2361ac36d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7664d52205120be20fcbe78d62149bfd') in 0.7831909 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Models/Lanterns/Lustre.fbx
+  artifactKey: Guid(c501a8a7118966c4bb715d3a9efaa62f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Lanterns/Lustre.fbx using Guid(c501a8a7118966c4bb715d3a9efaa62f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '372bf8b62255be255e80a927bb9ca838') in 2.6938496 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 339
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Books_08.prefab
+  artifactKey: Guid(ec8b339dbc2febd4ca45f0051b5f431f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Books_08.prefab using Guid(ec8b339dbc2febd4ca45f0051b5f431f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e67e638998c7e5a645c1f18b9d9330d1') in 0.2043535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/Environment/Models/Lanterns/CarvedPost.fbx
+  artifactKey: Guid(1d7d476448a20da4e94fa3441f50757c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Lanterns/CarvedPost.fbx using Guid(1d7d476448a20da4e94fa3441f50757c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '43e30318aab279aa1e9493a1f667aa50') in 0.0743933 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/plate_01.FBX
+  artifactKey: Guid(77dd54bd10946ac48800c3e4287f8be0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/plate_01.FBX using Guid(77dd54bd10946ac48800c3e4287f8be0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5f434ef0bf893560b2f0da61fd1ed0b4') in 0.1259832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Books_31.prefab
+  artifactKey: Guid(cd9ee0d725941cb43924fc8ace46aff6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Books_31.prefab using Guid(cd9ee0d725941cb43924fc8ace46aff6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '32f5ef6e728f55e4895b93f4b3ccc86f') in 0.0885748 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Books_33.prefab
+  artifactKey: Guid(3d9fffef1180d41478a945cf0d8948e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Books_33.prefab using Guid(3d9fffef1180d41478a945cf0d8948e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5891cb6d7458e7c50434ef3c53aad8da') in 0.2661679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/MetalTable.fbx
+  artifactKey: Guid(1c77c68a06728d143a0320dfcc126c48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/MetalTable.fbx using Guid(1c77c68a06728d143a0320dfcc126c48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7b572e289ec91fd78603c4e508cbb3c5') in 0.1001857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Books_15.prefab
+  artifactKey: Guid(7171862ec87b07b47addc4d6c1e3686d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Books_15.prefab using Guid(7171862ec87b07b47addc4d6c1e3686d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '59b66bfd0687aef7b6f560408a2d86a9') in 0.114634 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/MirrorComode.fbx
+  artifactKey: Guid(bbf5add6f97674e4f9d710d2027584f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/MirrorComode.fbx using Guid(bbf5add6f97674e4f9d710d2027584f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6e2d6ba08027d5dda5a59bf763bd7b1a') in 0.0406023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Books_29.prefab
+  artifactKey: Guid(784cd8e77087af3488f478770e91b684) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Books_29.prefab using Guid(784cd8e77087af3488f478770e91b684) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'af11638f4d70e85bbea0c0843bbdba66') in 0.1183625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/Table02.fbx
+  artifactKey: Guid(2de980d7f46661440b1596ea7802274c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/Table02.fbx using Guid(2de980d7f46661440b1596ea7802274c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7ee4a1265d2aac9716f5ffe42cac0995') in 0.0544641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Models/Furniture/Horn_Hanger.fbx
+  artifactKey: Guid(f791c6f618a03594ba9f84c9e39057f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Furniture/Horn_Hanger.fbx using Guid(f791c6f618a03594ba9f84c9e39057f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0eef6fd386b49dbcb86678af5a03d9b0') in 0.0107141 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/Environment/Models/Trees/Pine1.fbx
+  artifactKey: Guid(a7d7b03fddcbfc7498794af8405467d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Trees/Pine1.fbx using Guid(a7d7b03fddcbfc7498794af8405467d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd611a8972049e27909f15602d2632097') in 0.0140501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Books_01.prefab
+  artifactKey: Guid(e25671d0d7ace2c45b234d1ea8c51c8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Books_01.prefab using Guid(e25671d0d7ace2c45b234d1ea8c51c8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4422030705764ad74af78ec22c326738') in 0.0647628 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_35.prefab
+  artifactKey: Guid(0a49c3d3842ff4a4e804005553b3b62d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_35.prefab using Guid(0a49c3d3842ff4a4e804005553b3b62d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7de59cf91a0f56576896250e659ef49b') in 0.2470814 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_11.prefab
+  artifactKey: Guid(c33441093f64d17408edb5fff22c8b3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_11.prefab using Guid(c33441093f64d17408edb5fff22c8b3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ae73a418827fddab3dbf483760e6c32') in 0.0247687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_33.prefab
+  artifactKey: Guid(f0fbe3a45c915cd479daa188875b76e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_33.prefab using Guid(f0fbe3a45c915cd479daa188875b76e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0a8f907e2d969fb480f6b1cce70ee08f') in 0.0529444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_21.prefab
+  artifactKey: Guid(eb229865cb9c5ff4ba795c601340c1d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_21.prefab using Guid(eb229865cb9c5ff4ba795c601340c1d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bea3a90593974783a5a13f65bc00d444') in 0.1356431 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_40.prefab
+  artifactKey: Guid(bf3d1b965adae8a458c3e89db971211a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_40.prefab using Guid(bf3d1b965adae8a458c3e89db971211a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '67c6fa32c9a54d94f1828b1e6e41ff48') in 0.0698905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_41.prefab
+  artifactKey: Guid(5cc3acbf92ca1414f9e5202c88903015) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_41.prefab using Guid(5cc3acbf92ca1414f9e5202c88903015) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'af137366da7068af4cf0aae3cf891e4d') in 0.0245657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_22.prefab
+  artifactKey: Guid(a0364dc92de710744b46e7c19fca3d7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_22.prefab using Guid(a0364dc92de710744b46e7c19fca3d7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f73b8f2b44b053efb89ecb122b7bb9c5') in 0.1243721 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_27.prefab
+  artifactKey: Guid(c5dc42355e9922149ba62e416f86b2a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_27.prefab using Guid(c5dc42355e9922149ba62e416f86b2a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6264f03f75db7bd3bd5eed89aa781fee') in 0.0381999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_17.prefab
+  artifactKey: Guid(114f2b09cbdeb8d42b7a7f4ab0c2ceb4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_17.prefab using Guid(114f2b09cbdeb8d42b7a7f4ab0c2ceb4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c8a105beaf34a80ebd8c227c84c033ec') in 0.092255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/Environment/Models/Lanterns/LampPost_double.fbx
+  artifactKey: Guid(e501831ad59a85f4bb7629bf22c658c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Models/Lanterns/LampPost_double.fbx using Guid(e501831ad59a85f4bb7629bf22c658c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a66bc2f437ac8aa2f9273396e7a9fa24') in 0.1144917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Books_21.prefab
+  artifactKey: Guid(6b3d603977aef2b4d9facc565bc15ee7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Books_21.prefab using Guid(6b3d603977aef2b4d9facc565bc15ee7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c8ee0b283c7a785f68956b5aed4c221b') in 0.1231961 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_52.prefab
+  artifactKey: Guid(5c50068b0aa4ea9469f5b39c43f09cbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_52.prefab using Guid(5c50068b0aa4ea9469f5b39c43f09cbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8fee73f6651cafe6d8c38b067328bc08') in 0.0817756 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building1/Box_350x250x200_Prefab.prefab
+  artifactKey: Guid(7b846d8f536f007498c941069487ce81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building1/Box_350x250x200_Prefab.prefab using Guid(7b846d8f536f007498c941069487ce81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8a86b064e7a496bd507c9f478e6cd735') in 0.0903753 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_44.prefab
+  artifactKey: Guid(31a995afe3fc9f54ca95ab3cc78b6800) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_44.prefab using Guid(31a995afe3fc9f54ca95ab3cc78b6800) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '56756f7aa89038b45730499453e69b24') in 0.1442232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_66.prefab
+  artifactKey: Guid(5b4d8e485560e0e4d8a64438e42258dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_66.prefab using Guid(5b4d8e485560e0e4d8a64438e42258dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8efdfa9eecf52976589e6d65e33f94ab') in 0.0090559 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building1/Stairs_650_400_300_Prefab.prefab
+  artifactKey: Guid(50a0925b0c22af146a2d15615f815a1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building1/Stairs_650_400_300_Prefab.prefab using Guid(50a0925b0c22af146a2d15615f815a1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'be77b09476d517bf5726cc6eff68169e') in 0.1219687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_62.prefab
+  artifactKey: Guid(c0bfcc8ab58c98d48bbe71e3091f0b14) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_62.prefab using Guid(c0bfcc8ab58c98d48bbe71e3091f0b14) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '16f24e9e61671045f2e4fa250bd049c8') in 0.0287829 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_53.prefab
+  artifactKey: Guid(254a6646a889c714bb948279451aaf33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_53.prefab using Guid(254a6646a889c714bb948279451aaf33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2cdaf6da9829bf8bf990a80b7c068cce') in 0.0788515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_43.prefab
+  artifactKey: Guid(4a659989bfe2e50459a178b9cb924616) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_43.prefab using Guid(4a659989bfe2e50459a178b9cb924616) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '324faae48840b27a1a3463a470d78da8') in 0.1153976 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_46.prefab
+  artifactKey: Guid(45db99617d415c84c9c1967342b84c18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_46.prefab using Guid(45db99617d415c84c9c1967342b84c18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b6e4ffd3f147d25270cebbd65f52c0d0') in 0.0265588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_51.prefab
+  artifactKey: Guid(ef961ef73dbbcc948b123a983b8e1aae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_51.prefab using Guid(ef961ef73dbbcc948b123a983b8e1aae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c7d3052d87259c4b4f6ee65e74690f3') in 0.0278589 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Brick_Corner_2.prefab
+  artifactKey: Guid(eeb795e89cd0c134d81741635b437e72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Brick_Corner_2.prefab using Guid(eeb795e89cd0c134d81741635b437e72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2a36971bd4baac926c2ef77b8874191b') in 0.009666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Brick_Corner_1.prefab
+  artifactKey: Guid(f959af1234cb0d04288888cf10e52363) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Brick_Corner_1.prefab using Guid(f959af1234cb0d04288888cf10e52363) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd460f7d519b57bc64d612d92db47860f') in 0.107179 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Books_13.prefab
+  artifactKey: Guid(00e2fda8feb9b4349a0f704095edb0ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Books_13.prefab using Guid(00e2fda8feb9b4349a0f704095edb0ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '75d07bd851b24bc2ae59b2afc1cd6696') in 0.1714028 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Chimney_Stack_Narrowing.prefab
+  artifactKey: Guid(a67029cc656c2b34a9635a1940022eae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Chimney_Stack_Narrowing.prefab using Guid(a67029cc656c2b34a9635a1940022eae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '857b6c733426192632b74684c9697da7') in 0.0710951 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Floor_Panel_2x1.prefab
+  artifactKey: Guid(786f627f7a9c29a45a445c09c4aa8203) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Floor_Panel_2x1.prefab using Guid(786f627f7a9c29a45a445c09c4aa8203) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9b485a0afe3965f6e703fb4568cd9840') in 0.07439 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Floor_Panel_Corner.prefab
+  artifactKey: Guid(3c6526e829238d449b5095e2fa495ae0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Floor_Panel_Corner.prefab using Guid(3c6526e829238d449b5095e2fa495ae0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8bfc5774ba1bc04fb4c0bdc8079c7314') in 0.0669875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Chimney_Slope_Med.prefab
+  artifactKey: Guid(8352d4d5c9d328c4db1b95311b8d2a18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Chimney_Slope_Med.prefab using Guid(8352d4d5c9d328c4db1b95311b8d2a18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8d7b0085806eb4c48cd5c096044845ab') in 0.0646619 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Door 3.prefab
+  artifactKey: Guid(fdad9d94a3da306499f0549fb49c137e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Door 3.prefab using Guid(fdad9d94a3da306499f0549fb49c137e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5e5ce75f0ec7d75d06fcab8e357e2228') in 0.1126213 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Railing_Short.prefab
+  artifactKey: Guid(3fafe9155aea69247bd508a32b0b5d02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Railing_Short.prefab using Guid(3fafe9155aea69247bd508a32b0b5d02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a5ad64c4e3e3d292074cb9feda56aec7') in 0.0738523 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Chimney_Top.prefab
+  artifactKey: Guid(4ec28f116c4216549ac7f0a2278e5bd8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Chimney_Top.prefab using Guid(4ec28f116c4216549ac7f0a2278e5bd8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b739bf01ad3f6a154a5d9a7e24a12fd7') in 0.1185673 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Chimney_Top_Narrow.prefab
+  artifactKey: Guid(49001463fbf97ab45b406a21e9e2aa1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Chimney_Top_Narrow.prefab using Guid(49001463fbf97ab45b406a21e9e2aa1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1168fecfb2ca6bfbb09d7483f21a02b4') in 0.3392416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Door_3.prefab
+  artifactKey: Guid(3efad8ab4a9acbe409eb2b7c9b9acc93) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Door_3.prefab using Guid(3efad8ab4a9acbe409eb2b7c9b9acc93) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ca553191de05113b11b69a51fc5c8532') in 0.0698444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Railing_Short_End.prefab
+  artifactKey: Guid(95006087bffc67b4f991d2ee21f60f58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Railing_Short_End.prefab using Guid(95006087bffc67b4f991d2ee21f60f58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '96db81b9eaff58587ba8285326a3f172') in 0.1165633 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Thatch_Short_Top_Slope.prefab
+  artifactKey: Guid(5a0b6feb8374e694eaedca95aacb7853) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Thatch_Short_Top_Slope.prefab using Guid(5a0b6feb8374e694eaedca95aacb7853) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '061260483b051e15a2f41185470e2895') in 0.1103043 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Railing_Tall_Sloped_Steep.prefab
+  artifactKey: Guid(29d383abce85b674490a48a5f12d69f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Railing_Tall_Sloped_Steep.prefab using Guid(29d383abce85b674490a48a5f12d69f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '076ff2711bafcf716855b00199cb6a30') in 0.0301533 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Railing_Short_Sloped_Steep.prefab
+  artifactKey: Guid(c51fd447e1d3837498e5b420db47e53d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Railing_Short_Sloped_Steep.prefab using Guid(c51fd447e1d3837498e5b420db47e53d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ed2ac186846e6c3357b0af5d59169fd7') in 0.1986553 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Railing_Tall_End.prefab
+  artifactKey: Guid(f2213957109b78140ae0edc8a4d7f1da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Railing_Tall_End.prefab using Guid(f2213957109b78140ae0edc8a4d7f1da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b5e8974beb7cbeb03fdd4b72de56b3dd') in 0.0240658 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Thatch_Med_1.prefab
+  artifactKey: Guid(d7f3caf113eb9c84298fe4135d19ab21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Thatch_Med_1.prefab using Guid(d7f3caf113eb9c84298fe4135d19ab21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5c591067f7bffee8cbac40e3c3bbdae0') in 0.0301656 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Thatch_Short_1x1.prefab
+  artifactKey: Guid(1a3697a16fac3684e98a1e7e57ffdd68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Thatch_Short_1x1.prefab using Guid(1a3697a16fac3684e98a1e7e57ffdd68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f9a36534a3241c9c5889193303f498b2') in 0.0682033 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Door.prefab
+  artifactKey: Guid(5be888b431de1a94183f42338970c54e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Door.prefab using Guid(5be888b431de1a94183f42338970c54e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b981cc6ee3ccbd010e25f54fc4d4193') in 0.1183246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 33
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Rafters_Med_Bot.prefab
+  artifactKey: Guid(92b606edaa7ac37469ba517aaa8a896b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Rafters_Med_Bot.prefab using Guid(92b606edaa7ac37469ba517aaa8a896b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '234bcf5b4c836944bf02c3eed7fbfb83') in 0.2062214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Books/Book_04.prefab
+  artifactKey: Guid(273dfcdaa60d0b540b1012e22b97d74f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Books/Book_04.prefab using Guid(273dfcdaa60d0b540b1012e22b97d74f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '97b3c31fb68c3465cb7c3698b05b6379') in 0.1073289 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Med_2x1.prefab
+  artifactKey: Guid(d863851f94381cc4391bae37b666e611) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Med_2x1.prefab using Guid(d863851f94381cc4391bae37b666e611) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0e4f9d62f3b44adb5e1a1575702f277b') in 0.1127316 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_End_Cap_Corner_L.prefab
+  artifactKey: Guid(8a9733808d0a7e84b96f90f3dbdf2a10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_End_Cap_Corner_L.prefab using Guid(8a9733808d0a7e84b96f90f3dbdf2a10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '708f0d72ab8314781b68d6c91eed9e2b') in 0.0102193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Med_End_L.prefab
+  artifactKey: Guid(2a16f42d7697e8b46857204cc007085c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Med_End_L.prefab using Guid(2a16f42d7697e8b46857204cc007085c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7c122b1b671c3909e55e08486fd8ff9e') in 0.0541556 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Med_Corner.prefab
+  artifactKey: Guid(8446e2b108a1ee94c89a8ceddc130bd2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Med_Corner.prefab using Guid(8446e2b108a1ee94c89a8ceddc130bd2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '71cc6f21012a83eb22001c856135eaaf') in 0.076548 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Tile_Corner_Inv_Cap.prefab
+  artifactKey: Guid(cb5dcb50bb904d7489ef79adc7557b14) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Tile_Corner_Inv_Cap.prefab using Guid(cb5dcb50bb904d7489ef79adc7557b14) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b2df6123b218154385ef753546456af7') in 0.0503054 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Tile_Corner_Cap_L.prefab
+  artifactKey: Guid(98faf2d94c0b0ea4a9a4d73d6e26ff43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Tile_Corner_Cap_L.prefab using Guid(98faf2d94c0b0ea4a9a4d73d6e26ff43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '90e47768690637ef3b1851bccd27c4f4') in 0.1290785 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Tile_Short_Inv_Corner.prefab
+  artifactKey: Guid(cd3a99f54fbf6df48a96b6ccec7c3441) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Tile_Short_Inv_Corner.prefab using Guid(cd3a99f54fbf6df48a96b6ccec7c3441) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '839378708adf3c260a177a57ac5f4ace') in 0.0123214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Tile_Corner_Cap.prefab
+  artifactKey: Guid(63be03cb7a8d30b41b961ad43fbe423c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Tile_Corner_Cap.prefab using Guid(63be03cb7a8d30b41b961ad43fbe423c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3d2160bbd17e73fca8e73e6ae3da1cfe') in 0.1052544 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_End_Cap.prefab
+  artifactKey: Guid(a8b5e263c8ad0db4891e994b26821e1e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_End_Cap.prefab using Guid(a8b5e263c8ad0db4891e994b26821e1e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5336a11539af1540dbd685944b1ae81a') in 0.0292264 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Tile_Med_Corner.prefab
+  artifactKey: Guid(2d4139328e89c6f4a86166cf52fa12aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Tile_Med_Corner.prefab using Guid(2d4139328e89c6f4a86166cf52fa12aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '083759ee8268fc9da92fbead03f65d20') in 0.222309 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Stairs_Stone_2x1.prefab
+  artifactKey: Guid(ce6dcd9a14d941b458fe721523353973) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Stairs_Stone_2x1.prefab using Guid(ce6dcd9a14d941b458fe721523353973) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b7327ca635769043848dcb3ed2aecd33') in 0.0357313 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Stone_Wall_Tall_Slope.prefab
+  artifactKey: Guid(47d5f65be8f9d2e43b60c173abf73dad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Stone_Wall_Tall_Slope.prefab using Guid(47d5f65be8f9d2e43b60c173abf73dad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '61721d69b815140528320c6390e5b66a') in 0.0753307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Med_Top_Slope.prefab
+  artifactKey: Guid(53787425b932f9f4c91f1ada09fc11b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Med_Top_Slope.prefab using Guid(53787425b932f9f4c91f1ada09fc11b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '42169780cd4ef629de5dc7c08eacc3b7') in 0.0446171 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Tall_End_L.prefab
+  artifactKey: Guid(4f3b9ad4e0f99684492403dc8ad438c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Tall_End_L.prefab using Guid(4f3b9ad4e0f99684492403dc8ad438c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c1efc51fbb73de9d4cad6a1a5db7da0f') in 0.021498 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Stairs_Stone_Corner.prefab
+  artifactKey: Guid(3bccd9e513f76a042bc5ff656e50a004) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Stairs_Stone_Corner.prefab using Guid(3bccd9e513f76a042bc5ff656e50a004) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd1363f561a2c2691805183a4cc350c7') in 0.1935438 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Short_2x1.prefab
+  artifactKey: Guid(030987cb5919c3f4da632eb12cc4736c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Short_2x1.prefab using Guid(030987cb5919c3f4da632eb12cc4736c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '235b038b34a4973ec3707e8f31075f00') in 0.0834066 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Stairs_Wood_2x1.prefab
+  artifactKey: Guid(609a68bb21244744dae923af08dd7d41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Stairs_Wood_2x1.prefab using Guid(609a68bb21244744dae923af08dd7d41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6a0fc901e766739857038fda845bb027') in 0.0262697 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wall_2x1.prefab
+  artifactKey: Guid(ddbcd5543c3541746891b4378100794f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wall_2x1.prefab using Guid(ddbcd5543c3541746891b4378100794f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4501720c37633a055aae149a98466fed') in 0.0958188 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Tall_Inv_Corner.prefab
+  artifactKey: Guid(a1aeecf66d193634fa5475c3bf880164) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Tall_Inv_Corner.prefab using Guid(a1aeecf66d193634fa5475c3bf880164) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '94c8b8ac39db9e27670a23b4c7bb1e98') in 0.084955 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Tall_Top_Slope.prefab
+  artifactKey: Guid(3c2caad285bf4de48a04efd706b42930) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Roof_Wood_Tall_Top_Slope.prefab using Guid(3c2caad285bf4de48a04efd706b42930) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c87d9c6c7b93f7cf46dc7eac44b9e555') in 0.0443189 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wall_Window_1x2_2.prefab
+  artifactKey: Guid(8e737bb07ec9a414487456af848579b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wall_Window_1x2_2.prefab using Guid(8e737bb07ec9a414487456af848579b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b7c9809fa25b48197514079258216fad') in 0.1139255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wall_Window_Wood_2x2_3.prefab
+  artifactKey: Guid(89af23966ffa51b4db39cd0bb12ebaeb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wall_Window_Wood_2x2_3.prefab using Guid(89af23966ffa51b4db39cd0bb12ebaeb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '639fa4dc9cecd01a06e4c8aa4705ac2a') in 1.4943105 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wall_Roof_Support_Tall.prefab
+  artifactKey: Guid(01dfd3f0847bcc343a38c911607357b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wall_Roof_Support_Tall.prefab using Guid(01dfd3f0847bcc343a38c911607357b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '911b2954c691c417764f1866ea818b01') in 0.4033196 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Window_5_Shutter_L.prefab
+  artifactKey: Guid(2c3904c7c211a9b43b19f1ad74f4a4ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Window_5_Shutter_L.prefab using Guid(2c3904c7c211a9b43b19f1ad74f4a4ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dc1fe2d465a1be1f1452e2761c600cc5') in 0.443299 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wall_2x3.prefab
+  artifactKey: Guid(710155b71dd9ec74fa0a14c9ca53f5bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wall_2x3.prefab using Guid(710155b71dd9ec74fa0a14c9ca53f5bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6003c47b2c5d51df5ebbfd34bc878fc4') in 0.4059451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Joist_Half.prefab
+  artifactKey: Guid(7ec326b115d38e54ebf160b58bf3bef7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Joist_Half.prefab using Guid(7ec326b115d38e54ebf160b58bf3bef7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0783a25a49ef0dcc5290a1121be1886c') in 0.7739652 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Frame_1x2.prefab
+  artifactKey: Guid(afa3daf7f801efa438e00c93e50a113a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Frame_1x2.prefab using Guid(afa3daf7f801efa438e00c93e50a113a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '759eed10039b74122a0a25b9a00b4e4c') in 0.9012497 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Joist_Quarter.prefab
+  artifactKey: Guid(42098ac8f5c6a94489dbbef7ba2c2c1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Joist_Quarter.prefab using Guid(42098ac8f5c6a94489dbbef7ba2c2c1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '45cda26209198bb7e6472e12a8903ebb') in 0.8575173 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_WBase_Narrow.prefab
+  artifactKey: Guid(6d134d4d95ead074b8602755edb9fae0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_WBase_Narrow.prefab using Guid(6d134d4d95ead074b8602755edb9fae0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b37a7e4fa75b9732c7cae0f85955ecdd') in 1.1306285 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_WBase_WTop_Narrow_Tall.prefab
+  artifactKey: Guid(83352a43bb624be418bff7662a7d257a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_WBase_WTop_Narrow_Tall.prefab using Guid(83352a43bb624be418bff7662a7d257a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '258b8324e2a222c61567db6386c64161') in 0.6425949 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_WBase_Thick_Tall.prefab
+  artifactKey: Guid(2cb55d6b5601eb3458c676cbd306ce14) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_WBase_Thick_Tall.prefab using Guid(2cb55d6b5601eb3458c676cbd306ce14) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c7dd6e399a9fafc32d098f5af8ccffb7') in 0.1806622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wall_Window_2x2_3.prefab
+  artifactKey: Guid(547bf77d732c7a94d8cda15ac41f60c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wall_Window_2x2_3.prefab using Guid(547bf77d732c7a94d8cda15ac41f60c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a384563f64cb5df2a4c4022ba5cb8b98') in 0.1615358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Window_6_Shutter.prefab
+  artifactKey: Guid(0f704c65770aeaa419b0e1056d9cfff5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Window_6_Shutter.prefab using Guid(0f704c65770aeaa419b0e1056d9cfff5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '25504d37214df5be8fbbec48dc0507a3') in 0.1373837 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pole_Frame_2x2.prefab
+  artifactKey: Guid(2bd58779bacf3a64c9e392b0c1354173) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pole_Frame_2x2.prefab using Guid(2bd58779bacf3a64c9e392b0c1354173) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a3a36875197d149eb38c2606b9558fe5') in 0.314343 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pole_Frame_1x1.prefab
+  artifactKey: Guid(8f7da3e0b85488c4099fcecb74b718ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pole_Frame_1x1.prefab using Guid(8f7da3e0b85488c4099fcecb74b718ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e7c7e391716d1641ee6b088a5db4c3df') in 0.1277792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Support_1.prefab
+  artifactKey: Guid(01c4e0f0eaee06742b0854fb90f0a815) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Support_1.prefab using Guid(01c4e0f0eaee06742b0854fb90f0a815) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1d7f9f905860938687af102fe06e7ec8') in 0.1348725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wall_Window_Wood_2x2_6.prefab
+  artifactKey: Guid(1dc49aacca0d3dc4c988a46ed6734075) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wall_Window_Wood_2x2_6.prefab using Guid(1dc49aacca0d3dc4c988a46ed6734075) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2bf6c6281d289d90b48cdbb0c23ea955') in 0.079681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_Thick_Half.prefab
+  artifactKey: Guid(665fb0c46a7c4924e82ab8708b70af53) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_Thick_Half.prefab using Guid(665fb0c46a7c4924e82ab8708b70af53) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3f3cacc1c7e79acf3a444dca6f50b06f') in 0.0758311 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Window_3_Shutter.prefab
+  artifactKey: Guid(aa5a1c37cfacee844840fafce6c8b811) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Window_3_Shutter.prefab using Guid(aa5a1c37cfacee844840fafce6c8b811) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'abfa69d0c295c397934f51c13ddc1011') in 0.0683513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_Thick_Tall.prefab
+  artifactKey: Guid(72340258ac6478848909474ecca3df8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_Thick_Tall.prefab using Guid(72340258ac6478848909474ecca3df8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '00845a5f91a5a5b74ccde1bdbfe64230') in 0.0341556 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_WBase_Thick.prefab
+  artifactKey: Guid(88e3e6ba33db8cf47b442e1b7caf8b04) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_WBase_Thick.prefab using Guid(88e3e6ba33db8cf47b442e1b7caf8b04) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c921e4c24d353939840bb0d3339a889a') in 0.0110422 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_2x2_1.prefab
+  artifactKey: Guid(d2af73154cf6df346af7ee9626714ff8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_2x2_1.prefab using Guid(d2af73154cf6df346af7ee9626714ff8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2d2d3c58d98fd63d6c7e54fce0fda8fb') in 0.1261056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_1x3_5.prefab
+  artifactKey: Guid(cac545b3d9d8cda4aa97c5d44cc6095e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_1x3_5.prefab using Guid(cac545b3d9d8cda4aa97c5d44cc6095e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'faa964ef8c1131dbeefbbd74dd52509a') in 0.0490313 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_2x2_2.prefab
+  artifactKey: Guid(c4d7f3d574e11fc46b5c770b2ee935b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_2x2_2.prefab using Guid(c4d7f3d574e11fc46b5c770b2ee935b8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1a060bafde7cea89c850a22bcea69ab1') in 0.1076101 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_Single_Top.prefab
+  artifactKey: Guid(b100400285e9c7e4982e8424ad2cddba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_Single_Top.prefab using Guid(b100400285e9c7e4982e8424ad2cddba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5182a493e7f77d9df42c75ba40e79308') in 0.1293319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_2x3_1.prefab
+  artifactKey: Guid(dd62bb1f2bf09a2469d1be4174796d91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_2x3_1.prefab using Guid(dd62bb1f2bf09a2469d1be4174796d91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0b611448d2d67d135c655c66de2c0be3') in 0.1714151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_2x3_6.prefab
+  artifactKey: Guid(dc1d83bbeae9a264da9d2336f66162bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_2x3_6.prefab using Guid(dc1d83bbeae9a264da9d2336f66162bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '68895d23c9d81ede53e60c4afc80a310') in 0.1652309 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_1x2_4.prefab
+  artifactKey: Guid(fa19ed9e6cf958142bf0eb36212a9589) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_1x2_4.prefab using Guid(fa19ed9e6cf958142bf0eb36212a9589) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a20de154d3564e448013a353cdfa34c') in 0.0917061 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/Book_01.prefab
+  artifactKey: Guid(7f800f58f6f744e4c901f3fd51f67d67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/Book_01.prefab using Guid(7f800f58f6f744e4c901f3fd51f67d67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a47049a4ea57aa9bff01befba9cdec48') in 0.3884476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/Chair.prefab
+  artifactKey: Guid(ee9f1f023dde11343a2d1672c8929102) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/Chair.prefab using Guid(ee9f1f023dde11343a2d1672c8929102) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '87b68d0ca40d0c0d8cea742d9ec016fa') in 0.1749883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/Book_02.prefab
+  artifactKey: Guid(93a05457281f2e44ebb512db1fbd1e9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/Book_02.prefab using Guid(93a05457281f2e44ebb512db1fbd1e9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '24e82d8d1905092b11717860f1cc1e4d') in 0.0351635 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/3Seat2.prefab
+  artifactKey: Guid(bd72486aa780d7c488fce4c5de88266f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/3Seat2.prefab using Guid(bd72486aa780d7c488fce4c5de88266f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2f2113be1c6677a6e61d82a43d58d46e') in 0.163742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/BedSingle01emptyV1.prefab
+  artifactKey: Guid(e3729cab5cd8f4c459ef8d249965eeae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/BedSingle01emptyV1.prefab using Guid(e3729cab5cd8f4c459ef8d249965eeae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a0764e4859dc63e3489c6cb6bb6d03fb') in 0.0461229 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_1x2_2.prefab
+  artifactKey: Guid(74c595fbeb0ef364e8bfaf7723e7ffc2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_WallFrame_1x2_2.prefab using Guid(74c595fbeb0ef364e8bfaf7723e7ffc2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '71d64f11f1acaaa0afd1163c6b2976b3') in 0.0234163 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/Broom.prefab
+  artifactKey: Guid(497ba711b83d040de886ed12592d2a57) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/Broom.prefab using Guid(497ba711b83d040de886ed12592d2a57) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c9570919e3542b1e1627df197fd12a79') in 0.0382253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/3Seat.prefab
+  artifactKey: Guid(4da9f6017c5c2954282fe23c8f297ec2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/3Seat.prefab using Guid(4da9f6017c5c2954282fe23c8f297ec2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b458f0506744b013c8c08b152c859f33') in 0.0807407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/Shelf.prefab
+  artifactKey: Guid(d2464993f38f7ac40a02cb1033fa6cc0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/Shelf.prefab using Guid(d2464993f38f7ac40a02cb1033fa6cc0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ba42b0d2695455ff27fe620bcb5b017d') in 0.1729693 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/Goathead.prefab
+  artifactKey: Guid(3ea1f1c68b21146a9819e6943c76172b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/Goathead.prefab using Guid(3ea1f1c68b21146a9819e6943c76172b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cbe3adf35cf0d2b1cf4e78dc22479d65') in 0.098366 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/Fotel4.prefab
+  artifactKey: Guid(80967ac7bb2c8104b8dd5b649046d79b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/Fotel4.prefab using Guid(80967ac7bb2c8104b8dd5b649046d79b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '57a4b59b9804c0876ccf711310fc2e0e') in 0.1296571 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/Fence_03.prefab
+  artifactKey: Guid(001f495511ded714e8b30d0394b5de47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/Fence_03.prefab using Guid(001f495511ded714e8b30d0394b5de47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab022bf935d55f0f3847487248af9ae9') in 0.0740969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/Fence_02.prefab
+  artifactKey: Guid(39360cdd17f538f4ea04f12d50ae4614) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/Fence_02.prefab using Guid(39360cdd17f538f4ea04f12d50ae4614) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6db628eb5961c8851bb18fe5b8b3e45f') in 0.0947718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/Fence_01.prefab
+  artifactKey: Guid(f5853f9542928ed43b1b3be946bc02a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/Fence_01.prefab using Guid(f5853f9542928ed43b1b3be946bc02a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '91a722640d035023021204629982575a') in 0.0331386 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Frame_Diag_1x2.prefab
+  artifactKey: Guid(660fdd8750a30f5438e9682b72b89c9b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Frame_Diag_1x2.prefab using Guid(660fdd8750a30f5438e9682b72b89c9b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1d0fb960956532d7982c3c8e6247219e') in 0.0942862 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_Thick.prefab
+  artifactKey: Guid(0b1d56e557f8d0545988d09ccb0a6b09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Building2/Wood_Pillar_Thick.prefab using Guid(0b1d56e557f8d0545988d09ccb0a6b09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '96dc928c2a816874902b348d8aa74887') in 0.2248956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Furniture/Table01v2.prefab
+  artifactKey: Guid(57d3e693aabffc0469483a7ea0e6d1e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Furniture/Table01v2.prefab using Guid(57d3e693aabffc0469483a7ea0e6d1e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b6926e181c853791ac99cf63c2bda0d5') in 0.7795545 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Lanterns/Latern5.prefab
+  artifactKey: Guid(5cc22dee4f3a39f48bbb851c41003c8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Lanterns/Latern5.prefab using Guid(5cc22dee4f3a39f48bbb851c41003c8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '87570e24551885cfa7b18b7d87ea9462') in 1.2906973 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/Environment/Prefabs/Player/PlayerFollowCamera.prefab
+  artifactKey: Guid(9c489a8547f4d9e4387da15a4ff82c81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/Environment/Prefabs/Player/PlayerFollowCamera.prefab using Guid(9c489a8547f4d9e4387da15a4ff82c81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c8985977e569a47a11accb8b7c40445') in 1.839398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.179 seconds
+Refreshing native plugins compatible for Editor in 7.49 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.638 seconds
+Domain Reload Profiling: 3811ms
+	BeginReloadAssembly (1322ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1087ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (736ms)
+		LoadAssemblies (613ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (272ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (240ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1638ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1183ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (296ms)
+			ProcessInitializeOnLoadAttributes (522ms)
+			ProcessInitializeOnLoadMethodAttributes (345ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 6.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6092 unused Assets / (2.0 MB). Loaded Objects now: 6887.
+Memory consumption went from 158.0 MB to 156.0 MB.
+Total: 19.333000 ms (FindLiveObjects: 1.049200 ms CreateObjectMapping: 0.998000 ms MarkObjects: 14.620700 ms  DeleteObjects: 2.663800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.041 seconds
+Refreshing native plugins compatible for Editor in 5.70 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.159 seconds
+Domain Reload Profiling: 3196ms
+	BeginReloadAssembly (1313ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1083ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (614ms)
+		LoadAssemblies (496ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (251ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (224ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1160ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (960ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (182ms)
+			ProcessInitializeOnLoadAttributes (457ms)
+			ProcessInitializeOnLoadMethodAttributes (301ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 5.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6086 unused Assets / (4.0 MB). Loaded Objects now: 6890.
+Memory consumption went from 159.7 MB to 155.7 MB.
+Total: 13.789500 ms (FindLiveObjects: 0.915100 ms CreateObjectMapping: 0.406600 ms MarkObjects: 10.563100 ms  DeleteObjects: 1.903300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.050 seconds
+Refreshing native plugins compatible for Editor in 6.66 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.168 seconds
+Domain Reload Profiling: 3213ms
+	BeginReloadAssembly (1284ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1065ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (649ms)
+		LoadAssemblies (533ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (256ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (228ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1168ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (965ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (184ms)
+			ProcessInitializeOnLoadAttributes (457ms)
+			ProcessInitializeOnLoadMethodAttributes (303ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 6.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6086 unused Assets / (4.0 MB). Loaded Objects now: 6893.
+Memory consumption went from 159.7 MB to 155.7 MB.
+Total: 14.487200 ms (FindLiveObjects: 0.821600 ms CreateObjectMapping: 0.364300 ms MarkObjects: 11.098500 ms  DeleteObjects: 2.201700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.065 seconds
+Refreshing native plugins compatible for Editor in 5.94 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.164 seconds
+Domain Reload Profiling: 3225ms
+	BeginReloadAssembly (1286ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1071ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (664ms)
+		LoadAssemblies (541ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (259ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (230ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1165ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (963ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (187ms)
+			ProcessInitializeOnLoadAttributes (458ms)
+			ProcessInitializeOnLoadMethodAttributes (298ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 6.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6086 unused Assets / (3.6 MB). Loaded Objects now: 6896.
+Memory consumption went from 159.8 MB to 156.2 MB.
+Total: 17.488900 ms (FindLiveObjects: 0.833700 ms CreateObjectMapping: 0.545900 ms MarkObjects: 13.737000 ms  DeleteObjects: 2.370300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
