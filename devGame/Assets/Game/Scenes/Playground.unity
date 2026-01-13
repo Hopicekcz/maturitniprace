@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 50000626}
   - component: {fileID: 50000628}
   - component: {fileID: 50000629}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1300,7 +1300,7 @@ GameObject:
   - component: {fileID: 713445949}
   - component: {fileID: 713445948}
   - component: {fileID: 713445947}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1900,7 +1900,7 @@ GameObject:
   - component: {fileID: 1470790046}
   - component: {fileID: 1470790045}
   - component: {fileID: 1470790044}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2077,7 +2077,7 @@ GameObject:
   - component: {fileID: 1545265293}
   - component: {fileID: 1545265292}
   - component: {fileID: 1545265291}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2354,7 +2354,7 @@ GameObject:
   - component: {fileID: 1848331625}
   - component: {fileID: 1848331626}
   - component: {fileID: 1848331627}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: SoundManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2756,7 +2756,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2125724866}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: MuzzlePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3106,7 +3106,7 @@ GameObject:
   - component: {fileID: 4785054687426597398}
   - component: {fileID: 1907668728494963648}
   - component: {fileID: 6786862539803745277}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3187,7 +3187,7 @@ GameObject:
   - component: {fileID: 3582027404808111507}
   - component: {fileID: 4196685242747008414}
   - component: {fileID: 8564045039743432122}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Grips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3261,8 +3261,8 @@ GameObject:
   - component: {fileID: 137664368513822235}
   - component: {fileID: 6271607551704659041}
   - component: {fileID: 6271607551704659043}
-  - component: {fileID: 6271607551704659042}
   - component: {fileID: 6271607551704659044}
+  - component: {fileID: 6271607551704659045}
   m_Layer: 8
   m_Name: HumanM_Model
   m_TagString: Untagged
@@ -3463,7 +3463,7 @@ GameObject:
   - component: {fileID: 1953268979140265724}
   - component: {fileID: 830580877287633889}
   - component: {fileID: 1443366363177728103}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Trigger guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3869,7 +3869,7 @@ GameObject:
   - component: {fileID: 2070925443028286827}
   - component: {fileID: 2070925443028286826}
   - component: {fileID: 1947392298}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: PlayerFollowCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3899,7 +3899,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 67.616646
     OrthographicSize: 10
-    NearClipPlane: 0.001
+    NearClipPlane: 0.01
     FarClipPlane: 500
     Dutch: 0
     ModeOverride: 0
@@ -3943,7 +3943,7 @@ GameObject:
   - component: {fileID: 2070925443526839470}
   - component: {fileID: 2070925443526839466}
   - component: {fileID: 2070925443526839467}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4330,7 +4330,7 @@ GameObject:
   - component: {fileID: 7674752757986292747}
   - component: {fileID: 2365162259632943597}
   - component: {fileID: 6619306111045720605}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Receiver bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4406,7 +4406,7 @@ GameObject:
   - component: {fileID: 1771123518999822426}
   - component: {fileID: 3436291112560151861}
   - component: {fileID: 7542350176201889101}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4584,7 +4584,7 @@ GameObject:
   - component: {fileID: 420519115186778815}
   - component: {fileID: 4430379505024712591}
   - component: {fileID: 1480633539389804980}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Receiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4837,7 +4837,7 @@ GameObject:
   - component: {fileID: 135756641613574975}
   - component: {fileID: 4416926083347132239}
   - component: {fileID: 135756641613574983}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: PlayerCapsule
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5554,7 +5554,7 @@ GameObject:
   - component: {fileID: 8054265512162795354}
   - component: {fileID: 3337819166617026257}
   - component: {fileID: 7707763677758050476}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5694,7 +5694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6548879496172609283}
   - component: {fileID: 1911715803}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Revolver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5996,19 +5996,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6271607551704659042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766392242516456609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17db6838b83fccb43a6c843d0eeadf8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::aiNAV
-  playerTransform: {fileID: 3893294199639930361}
 --- !u!195 &6271607551704659043
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6019,7 +6006,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.2
-  m_Speed: 3
+  m_Speed: 2.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -6053,6 +6040,34 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8232803568384340775, guid: 2faa610713d3b3c439473daa55e8c60a, type: 3}
+--- !u!114 &6271607551704659045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766392242516456609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17db6838b83fccb43a6c843d0eeadf8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::aiNAV
+  playerTransform: {fileID: 3893294199639930361}
+  navAgent: {fileID: 6271607551704659043}
+  firePoint: {fileID: 0}
+  projectilePrefab: {fileID: 0}
+  terrainLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  patrolRadius: 5
+  attackCooldown: 1
+  forwardShotForce: 10
+  verticalShotForce: 5
+  visionRange: 15
+  engagementRange: 2
 --- !u!1 &6354727976150318898
 GameObject:
   m_ObjectHideFlags: 0
@@ -6585,7 +6600,7 @@ GameObject:
   - component: {fileID: 6610774338645062509}
   - component: {fileID: 524310793872079677}
   - component: {fileID: 1751600039032188345}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Extractor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6726,7 +6741,7 @@ GameObject:
   - component: {fileID: 5541109286961467119}
   - component: {fileID: 4424339308924675363}
   - component: {fileID: 4163469067072790390}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Grip bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7000,7 +7015,7 @@ GameObject:
   - component: {fileID: 95217445971649241}
   - component: {fileID: 1662004022572351661}
   - component: {fileID: 4511315946868690487}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7201,7 +7216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8338988565591873055}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: PlayerCameraRoot
   m_TagString: CinemachineTarget
   m_Icon: {fileID: 0}
@@ -7250,7 +7265,7 @@ GameObject:
   - component: {fileID: 4711620408174330667}
   - component: {fileID: 334111474498342462}
   - component: {fileID: 779179351471652229}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Front sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7491,7 +7506,7 @@ GameObject:
   - component: {fileID: 8944336656349189698}
   - component: {fileID: 9078993846310988380}
   - component: {fileID: 1351776287}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -7537,7 +7552,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.001
+  near clip plane: 0.01
   far clip plane: 500
   field of view: 67.616646
   orthographic: 0
