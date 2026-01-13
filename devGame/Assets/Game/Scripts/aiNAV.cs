@@ -9,6 +9,7 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private NavMeshAgent navAgent; //navigation Agent module for easier scripting
     [SerializeField] private Transform firePoint; //The empty gameobject from where to fire bullets
     [SerializeField] private GameObject projectilePrefab; //projectile prefab (will most probably be a bullet)
+    [SerializeField] private Animator animator; 
 
     [Header("Layers")]
     [SerializeField] private LayerMask terrainLayer; //layerMask for the Ground to determine walkable checks
@@ -31,8 +32,12 @@ public class aiNAV : MonoBehaviour
 
     private bool isPlayerVisible;
     private bool isPlayerInRange;
+    private bool isSearching;
+    private bool isChasing;
+    private bool isShooting;
+    
 
-    //UTILITIES
+    //INITIALIZATION
     private void Awake(){ //Fail-safe check (should not be needed)
         if (playerTransform == null){
             GameObject playerObj = GameObject.Find("Player");
@@ -44,6 +49,7 @@ public class aiNAV : MonoBehaviour
         if(navAgent == null){
             navAgent = GetComponent<NavMeshAgent>();
         }
+        animator = GetComponent<Animator>(); 
     }
 
      private void OnDrawGizmosSelected() //Helper for debugging and play-testing with gizmos
@@ -55,12 +61,20 @@ public class aiNAV : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, visionRange);
     }
-    //UTILITIES
+    //INITIALIZATION
+
 
     //MAIN FUNCTIONS
     private void Update(){ //Constant activation of functions
         DetectPlayer();
         UpdateBehaviourState();
+        SetAnimation();
+    }
+
+    private void SetAnimation(){
+        animator.SetBool("isSearching", isSearching);
+        animator.SetBool("isChasing", isChasing);
+        animator.SetBool("isShooting", isShooting);
     }
 
     private void DetectPlayer()
@@ -72,15 +86,25 @@ public class aiNAV : MonoBehaviour
     private void UpdateBehaviourState(){ //Behaviour state switcher
         if(!isPlayerVisible && !isPlayerInRange){ //Cant see player, Player isnt close
             MoveToPatrolPoint();
+            isSearching = true;
+            isChasing = false;
+            isShooting = false;
         }
         else if (isPlayerVisible && !isPlayerInRange){ //Can see player, player isnt close
             PerformChase();
+            isSearching = false;
+            isChasing = true;
+            isShooting = false;
         }
         else if (isPlayerVisible && isPlayerInRange){ //can see player, player is close
             PerformAttack();
+            isSearching = false;
+            isChasing = false;
+            isShooting = true;
         }
     }
     //MAIN FUNCTIONS
+
 
     //PATROL
     private void MoveToPatrolPoint(){ //When Patrolling state
@@ -111,6 +135,7 @@ public class aiNAV : MonoBehaviour
     //CHASE
     private void PerformChase(){
         if (playerTransform != null){ //fail-safe to avoid errors
+            navAgent.isStopped = false;
             navAgent.SetDestination(playerTransform.position); //simple follow the player
         }
     }
@@ -118,7 +143,7 @@ public class aiNAV : MonoBehaviour
     
     //ATTACK - WILL BE UPDATED!!
     private void PerformAttack(){
-        navAgent.SetDestination(transform.position); //set to own transforms position to stand still while shooting, change in the future to strafe!!
+        navAgent.isStopped = true; //set to own transforms position to stand still while shooting, change in the future to strafe!!
         if (playerTransform != null){ //quick check, doesnt have to be there
             transform.LookAt(playerTransform); //look at the player before shooting
         }
