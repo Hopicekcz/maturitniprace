@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 147029430}
   - component: {fileID: 147029429}
   - component: {fileID: 147029428}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +674,7 @@ GameObject:
   - component: {fileID: 298169491}
   - component: {fileID: 298169490}
   - component: {fileID: 298169489}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -888,7 +888,7 @@ GameObject:
   - component: {fileID: 339230746}
   - component: {fileID: 339230745}
   - component: {fileID: 339230744}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1082,7 +1082,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 463965741}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1188,7 +1188,7 @@ GameObject:
   - component: {fileID: 583636582}
   - component: {fileID: 583636581}
   - component: {fileID: 583636580}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1412,7 +1412,7 @@ GameObject:
   - component: {fileID: 874430957}
   - component: {fileID: 874430956}
   - component: {fileID: 874430955}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2178,7 +2178,7 @@ GameObject:
   - component: {fileID: 1588440709}
   - component: {fileID: 1588440708}
   - component: {fileID: 1588440707}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2647,7 +2647,7 @@ GameObject:
   - component: {fileID: 2036107628}
   - component: {fileID: 2036107627}
   - component: {fileID: 2036107626}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6063,7 +6063,11 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 4096
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
   patrolRadius: 5
+  followPlayerTimer: 1
   attackCooldown: 1
   forwardShotForce: 10
   verticalShotForce: 5

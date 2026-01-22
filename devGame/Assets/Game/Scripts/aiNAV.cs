@@ -14,13 +14,16 @@ public class aiNAV : MonoBehaviour
     [Header("Layers")]
     [SerializeField] private LayerMask terrainLayer; //layerMask for the Ground to determine walkable checks
     [SerializeField] private LayerMask playerLayerMask; //layerMask for the Player to determine where the player is
+    [SerializeField] private LayerMask obstacleLayerMask; 
 
     [Header("Patrol Settings")] //customizable setting of the patrol radius
     [SerializeField] private float patrolRadius = 5f; //the patrol radius
+    [SerializeField] private float followPlayerTimer = 1f;
     private Vector3 currentPatrolPoint; //variable storing 3D coordinates of the current Patrol point
-    private bool hasPatrolPoint; 
+    private bool hasPatrolPoint;  
+    
 
-    [Header("Combat Settings")] //custmizable settings of the bullet and attack speed using rigidbody physics
+    [Header("Combat Settings")] //customizable settings of the bullet and attack speed using rigidbody physics
     [SerializeField] private float attackCooldown = 1f;
     private bool isOnAttackCooldown;
     [SerializeField] private float forwardShotForce = 10f;
@@ -30,15 +33,19 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private float visionRange = 10f;
     [SerializeField] private float engagementRange = 5f;
 
+    //Declaration of bools for behavior states
     private bool isPlayerVisible;
     private bool isPlayerInRange;
     private bool isSearching;
     private bool isChasing;
     private bool isShooting;
+    private bool wasChasing = false;
+    //Ray for checking collisions between the NPC and the Player
+    Ray npcToPlayerRay;
     
 
     //INITIALIZATION
-    private void Awake(){ //Fail-safe check (should not be needed)
+    private void Awake(){ //Fail-safe checks (should not be needed)
         if (playerTransform == null){
             GameObject playerObj = GameObject.Find("Player");
             if (playerObj != null){
@@ -71,7 +78,7 @@ public class aiNAV : MonoBehaviour
         SetAnimation();
     }
 
-    private void SetAnimation(){
+    private void SetAnimation(){ //Animation setter using bool parameters in the animator
         animator.SetBool("isSearching", isSearching);
         animator.SetBool("isChasing", isChasing);
         animator.SetBool("isShooting", isShooting);
@@ -79,24 +86,28 @@ public class aiNAV : MonoBehaviour
 
     private void DetectPlayer()
     {
-        isPlayerVisible = Physics.CheckSphere(transform.position, visionRange, playerLayerMask);
-        isPlayerInRange = Physics.CheckSphere(transform.position, engagementRange, playerLayerMask);
+        npcToPlayerRay = new Ray(transform.position, ((playerTransform.position - transform.position).normalized)); //assigning properties to the Raycast, being the instance´s position and the direction of a normalized 3D-vector (from the object to the player)
+
+        isPlayerVisible =  !(Physics.Raycast(npcToPlayerRay, out RaycastHit hitVisible, (Vector3.Distance(transform.position, playerTransform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask);
+        isPlayerInRange = !(Physics.Raycast(npcToPlayerRay, out RaycastHit hitRange, (Vector3.Distance(transform.position, playerTransform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask);
+        //variables for determining behaviour state - Raycast for checking if there are any obstacles between the npc and the player, CheckSphere for checking if the npc is in range of the player.
+        //the RaycastHit variables are declared inside the function, to avoid unnecessary variable declaration in the initialization.
     }
 
     private void UpdateBehaviourState(){ //Behaviour state switcher
-        if(!isPlayerVisible && !isPlayerInRange){ //Cant see player, Player isnt close
+        if(!isPlayerVisible && !isPlayerInRange && !wasChasing){ //Cant see player, Player isnt close and Player was not being chased = Patrol
             MoveToPatrolPoint();
             isSearching = true;
             isChasing = false;
             isShooting = false;
         }
-        else if (isPlayerVisible && !isPlayerInRange){ //Can see player, player isnt close
+        else if ((isPlayerVisible && !isPlayerInRange) || (!isPlayerVisible && !isPlayerInRange && wasChasing)){  //Can see player but is not close OR Cant see player, is not close but was being chased = Chase
             PerformChase();
             isSearching = false;
             isChasing = true;
             isShooting = false;
         }
-        else if (isPlayerVisible && isPlayerInRange){ //can see player, player is close
+        else if (isPlayerVisible && isPlayerInRange){ //Can see player, is close = Attack
             PerformAttack();
             isSearching = false;
             isChasing = false;
@@ -137,7 +148,18 @@ public class aiNAV : MonoBehaviour
         if (playerTransform != null){ //fail-safe to avoid errors
             navAgent.isStopped = false;
             navAgent.SetDestination(playerTransform.position); //simple follow the player
+            StartCoroutine(WasChasingTimer()); //Start the Coroutine of checking for when the chase stops, functioning as a short-term memory function
         }
+    }
+
+    private IEnumerator WasChasingTimer(){
+        bool isChasingWaitCondition(){ //converting the isChasing state into a function boolean for use with the WaitUntil function
+            return !isChasing;
+        }
+        yield return new WaitUntil(isChasingWaitCondition); //Wait until isChasing stops being true. (NPC stopped chasing)
+        wasChasing = true;
+        yield return new WaitForSeconds(followPlayerTimer); //Once the additional chasing ends, "forget"
+        wasChasing = false;
     }
     //CHASE
     
@@ -168,5 +190,6 @@ public class aiNAV : MonoBehaviour
         yield return new WaitForSeconds(attackCooldown);
         isOnAttackCooldown = false;
     }
+
     //ATTACK - WILL BE UPDATED!!
 }
