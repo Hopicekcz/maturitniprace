@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.AI;
 
+
+
 public class aiNAV : MonoBehaviour
 {
     [Header("References")] //References for use by the script
@@ -28,6 +30,7 @@ public class aiNAV : MonoBehaviour
     private bool isOnAttackCooldown;
     [SerializeField] private float forwardShotForce = 10f;
     [SerializeField] private float verticalShotForce = 5f;
+    [SerializeField] private float npcHP = 100f;
 
     [Header("Detection Ranges")] //customizable settings for the vision (follow player) and engagement (attack) range
     [SerializeField] private float visionRange = 10f;
@@ -76,12 +79,26 @@ public class aiNAV : MonoBehaviour
         DetectPlayer();
         UpdateBehaviourState();
         SetAnimation();
+        HealthSystem();
     }
 
     private void SetAnimation(){ //Animation setter using bool parameters in the animator
         animator.SetBool("isSearching", isSearching);
         animator.SetBool("isChasing", isChasing);
         animator.SetBool("isShooting", isShooting);
+    }
+
+     void HitByPlayerRevolver()
+        {
+            npcHP = npcHP - Random.Range(30f, 60f);
+        }
+    
+
+    private void HealthSystem()
+    {
+        if(npcHP <= 0){
+            Destroy(gameObject);
+        }
     }
 
     private void DetectPlayer()
