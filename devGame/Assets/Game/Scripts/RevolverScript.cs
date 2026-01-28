@@ -58,8 +58,8 @@ public class RevolverScript : MonoBehaviour
     private InputAction reloadAction;
 
 
-
-    void Awake() //Activation and declaration for keybindings
+    //INITIALIZATION
+    void Awake() //Declaration and activation for keybindings
     {
         shootAction = new InputAction(type: InputActionType.Button, binding: "<Mouse>/leftButton");
         aimAction = new InputAction(type: InputActionType.Button, binding: "<Mouse>/rightButton");
@@ -71,16 +71,47 @@ public class RevolverScript : MonoBehaviour
 
     void Start() //Declaration of game components
     {
-        revolverAmmoCount = maxRevolverAmmoCount;
+        revolverAmmoCount = maxRevolverAmmoCount; 
         handAnimator = GetComponent<Animator>();
         gunAnimator = GetComponentInChildrenOnly<Animator>();
         audioSource = GetComponent<AudioSource>();
         mainCamera = Camera.main;
     }
 
+    T GetComponentInChildrenOnly<T>() where T : Component
+    {
+        foreach (Transform child in transform)
+        {
+            T comp = child.GetComponentInChildren<T>();
+            if (comp != null)
+                return comp;
+        }
+        return null;
+    }
+
+    void OnDisable() // Unity input safety
+    {
+        shootAction.Disable();
+        aimAction.Disable();
+        reloadAction.Disable();
+    }
+        
+    //INITIALIZATION
+
+    //MAIN FUNCTIONS
     void Update()
     {
         WeaponState();
+    }
+
+    private void WeaponState(){
+        if(!isReloading) {  //ignore if trying to aim while reloading
+            isAiming = aimAction.IsPressed();
+        } else {
+            isAiming = false;
+        }
+        handAnimator.SetBool("IsAiming", isAiming); //set animation to current bool state of aiming
+        ammoCounter.text = revolverAmmoCount + "/" + maxRevolverAmmoCount; //ui hud of current ammo in revolver
         
         if (shootAction.WasPressedThisFrame() && canShoot && (revolverAmmoCount > 0) && !isReloading) //Shoot action, split into two - physical part, effect part
         {
@@ -97,19 +128,9 @@ public class RevolverScript : MonoBehaviour
         }
     }
 
-    private void WeaponState(){
-        if(!isReloading) {
-            isAiming = aimAction.IsPressed();
-        } else {
-            isAiming = false;
-        }
-        handAnimator.SetBool("IsAiming", isAiming);
-        ammoCounter.text = revolverAmmoCount + "/" + maxRevolverAmmoCount;
-    }
-
     private IEnumerator ReloadWeapon()
     {
-        if(isAiming){
+        if(isAiming){ //if currently in aiming animation, wait until complete
             isReloading = true;
             yield return new WaitForSeconds(0.27f);
         } else {
@@ -117,31 +138,31 @@ public class RevolverScript : MonoBehaviour
         }
         
         audioSource.PlayOneShot(breakSound);
-        handAnimator.SetTrigger("Reload");
-        handAnimator.SetBool("isReloading", isReloading);
+        handAnimator.SetTrigger("Reload");  //Move hand to reloading position
+        handAnimator.SetBool("isReloading", isReloading); //Keep hand in reloading position
        
         yield return new WaitForSeconds(0.2f);
-        gunAnimator.SetBool("isReloading", isReloading);
-        gunAnimator.SetTrigger("Reload");
+        gunAnimator.SetBool("isReloading", isReloading); //Set revolver to reloading position
+        gunAnimator.SetTrigger("Reload"); //Keep revolver in reloading position
         yield return new WaitForSeconds(0.2f);
-        ogRevolverAmmoCount = revolverAmmoCount;
-        for(int i = 0; i < (maxRevolverAmmoCount-ogRevolverAmmoCount); i++){
+        ogRevolverAmmoCount = revolverAmmoCount; //"Temporary" variable used only for separate values to set how many times the reload sound should play, while the HUD displays the correct current value
+        for(int i = 0; i < (maxRevolverAmmoCount-ogRevolverAmmoCount); i++){ //loops for how many bullets are missing in the cylinder
             audioSource.PlayOneShot(reloadSound);
             yield return new WaitForSeconds(0.6f);
             revolverAmmoCount++;
         }
 
-        handAnimator.SetBool("isReloading", false);
-        gunAnimator.SetBool("isReloading", false);
+        handAnimator.SetBool("isReloading", false); //Move hand out of reloading position
+        gunAnimator.SetBool("isReloading", false); //Move revolver out of reloading position
         
         yield return new WaitForSeconds(0.4f);
         audioSource.PlayOneShot(breakSound);
-        isReloading = false;
+        isReloading = false; //reloading end
     }
 
     private IEnumerator ShootEffects()
     {
-        GameObject muzzleLight = Instantiate(muzzleLightEffectPrefab, muzzlePoint);
+        GameObject muzzleLight = Instantiate(muzzleLightEffectPrefab, muzzlePoint); //Create instantiation of prefabs of effects on the pre-defined transform point "muzzlePoint" placed on the tip of the barrel
         GameObject muzzleSmoke = Instantiate(muzzleFlashPrefab, muzzlePoint);
         yield return new WaitForSeconds(0.05f);
         Destroy(muzzleLight);
@@ -153,14 +174,14 @@ public class RevolverScript : MonoBehaviour
     private IEnumerator ShootRoutine() //Shoot function with animator
     {
         revolverAmmoCount--;
-        canShoot = false; 
+        canShoot = false; //added bool for detection of delay
         gunAnimator.SetTrigger("Shoot");
         audioSource.PlayOneShot(shootSound);
         Vector3 direction = GetShootDirectionWithSpread(); //Call bullet-spread function
-        Ray ray = new Ray(mainCamera.transform.position, direction);
+        Ray ray = new Ray(mainCamera.transform.position, direction); //raycast of bullet from camera center with direction with applied spread
         RaycastHit hit; //Return of raycast
 
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit))  //which effect prefab to use depending on hit object tag
         {
             switch(hit.collider.tag){
                 case "Untagged":
@@ -191,29 +212,17 @@ public class RevolverScript : MonoBehaviour
     private Vector3 GetShootDirectionWithSpread()
     {
         Vector3 forward = mainCamera.transform.forward; // direction of camera
-        float currentSpread = isAiming ? aimedSpread : hipFireSpread; // which spread to use
+        float currentSpread = isAiming ? aimedSpread : hipFireSpread; // current spread is set to a predefined value determined by whether or not the player is aiming
                             // 1/0        1             0   
-        float spreadX = Random.Range(-currentSpread, currentSpread) * 0.1f; // spread X
-        float spreadY = Random.Range(-currentSpread, currentSpread) * 0.1f; // spread Y
-        Vector3 direction = forward + mainCamera.transform.right * spreadX + mainCamera.transform.up * spreadY; // end result
-        return direction.normalized;
+        float spreadX = Random.Range(-currentSpread, currentSpread) * 0.1f; // spread on the X and Y axis, normalized by 0.1f to be able to use bigger numbers in the variable declaration
+        float spreadY = Random.Range(-currentSpread, currentSpread) * 0.1f; 
+        Vector3 direction = forward + mainCamera.transform.right * spreadX + mainCamera.transform.up * spreadY; //direction is set to the camera direction with applied rules of direction
+        return direction.normalized; //normalize vector3 with math function
     }
+    //MAIN FUNCTIONS
 
-    void OnDisable() // Unity input safety
-    {
-        shootAction.Disable();
-        aimAction.Disable();
-        reloadAction.Disable();
-    }
+    
 
-    T GetComponentInChildrenOnly<T>() where T : Component
-    {
-        foreach (Transform child in transform)
-        {
-            T comp = child.GetComponentInChildren<T>();
-            if (comp != null)
-                return comp;
-        }
-        return null;
-    }
+    
 }
+
