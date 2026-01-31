@@ -176,7 +176,7 @@ public class RevolverScript : MonoBehaviour
 
                 case "Character": 
                 hit.transform.SendMessage ("HitByPlayerRevolver");
-                //Instantiate(enemyHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(enemyHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                 break;
             }
             
