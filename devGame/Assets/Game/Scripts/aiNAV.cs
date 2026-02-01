@@ -19,7 +19,7 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private LayerMask obstacleLayerMask; 
 
     [Header("Patrol Settings")] //customizable setting of the patrol radius
-    [SerializeField] private float patrolRadius = 5f; //the patrol radius
+    [SerializeField] private float patrolRadius = 15f; //the patrol radius
     [SerializeField] private float followPlayerTimer = 1f;
     private Vector3 currentPatrolPoint; //variable storing 3D coordinates of the current Patrol point
     private bool hasPatrolPoint;  
@@ -31,6 +31,9 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private float forwardShotForce = 10f;
     [SerializeField] private float verticalShotForce = 5f;
     [SerializeField] private float npcHP = 100f;
+    [SerializeField] private float walkSpeed = 2f;
+    [SerializeField] private float hitTimer = 2f;
+    [SerializeField] private float staggeredSpeed = 1f;
 
     [Header("Detection Ranges")] //customizable settings for the vision (follow player) and engagement (attack) range
     [SerializeField] private float visionRange = 10f;
@@ -43,14 +46,15 @@ public class aiNAV : MonoBehaviour
     private bool isChasing;
     private bool isShooting;
     private bool wasChasing = false;
+    private bool wasHit;
     //Ray for checking collisions between the NPC and the Player
     Ray npcToPlayerRay;
     
 
     //INITIALIZATION
-    private void Awake(){ //Fail-safe checks (should not be needed)
+    private void Awake(){ //Because the EnemyNPC is a prefab and the playertransform cannot be assigned into the reference, a script hard-reference is needed
         if (playerTransform == null){
-            GameObject playerObj = GameObject.Find("Player");
+            GameObject playerObj = GameObject.Find("PlayerCapsule");
             if (playerObj != null){
                 playerTransform = playerObj.transform;
             }
@@ -90,8 +94,20 @@ public class aiNAV : MonoBehaviour
 
      void HitByPlayerRevolver()
         {
+            wasHit = true;
             npcHP = npcHP - Random.Range(30f, 60f);
         }
+
+    private IEnumerator SlowOnHit(){
+        if(wasHit){
+            navAgent.speed = staggeredSpeed;
+            yield return new WaitForSeconds(hitTimer);
+            wasHit = false;
+        } else {
+            navAgent.speed = walkSpeed;
+        }
+        
+    }
     
 
     private void HealthSystem()
@@ -99,6 +115,7 @@ public class aiNAV : MonoBehaviour
         if(npcHP <= 0){
             Destroy(gameObject);
         }
+        StartCoroutine(SlowOnHit());
     }
 
     private void DetectPlayer()
@@ -148,13 +165,10 @@ public class aiNAV : MonoBehaviour
 
 
     private void FindPatrolPoint(){ //Finding of the patrol point
-        float randomX = Random.Range(-patrolRadius, patrolRadius); //is possible in the future to utilize Y coordinates as well. 
-        float randomZ = Random.Range(-patrolRadius, patrolRadius); //IMPLEMENT!!
-
-        Vector3 potentialPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ); //Get a desired point to go to by calculating from the current position with the found randoms within the radius.
-
-        if (Physics.Raycast(potentialPoint, -transform.up, 2f, terrainLayer)){ //Send a raycast to the potential point to check for ground layer 
-            currentPatrolPoint = potentialPoint; //if point valid, set it.
+        Vector3 potentialPoint = new Vector3(transform.position.x + (Random.Range(-patrolRadius, patrolRadius)), transform.position.y + 10f, transform.position.z + (Random.Range(-patrolRadius, patrolRadius))); //Calculate a desired point to send a raycast from (using the patrol radius values, with a Y value above the npc)
+        RaycastHit hit; 
+        if (Physics.Raycast(potentialPoint, Vector3.down, out hit, 20f, terrainLayer)){ //Send a raycast from above down to check for walkable layer.
+            currentPatrolPoint = hit.point; //found valid point, go to it
             hasPatrolPoint = true;
         }
     }

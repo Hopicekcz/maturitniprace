@@ -1,0 +1,1972 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-02-01T16:01:40.8557042Z"
+Built from '6000.3/staging' branch; Version is '6000.3.3f1 (ef04196de0d6) revision 15664153'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16004 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2026-02-01T16:01:40Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 26444, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.17.4'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Hopic"
+[Licensing::IpcConnector] LicenseClient-Hopic channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-02-01T16:01:40.9179105Z"
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+E:/unity/maturitniprace/active/devGame
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+57572
+-licensingIpc
+LicenseClient-Hopic
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: E:/unity/maturitniprace/active/devGame
+E:/unity/maturitniprace/active/devGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [5896]  Target information:
+
+Player connection [5896]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2549066211 [EditorId] 2549066211 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [5896]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 2549066211 [EditorId] 2549066211 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [5896]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 2549066211 [EditorId] 2549066211 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [5896] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [5896] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 7.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.3f1 (ef04196de0d6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/unity/maturitniprace/active/devGame/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     5994 MB
+    Driver:   32.0.15.9174
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56072
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003687 seconds.
+- Loaded All Assemblies, in  0.799 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              af845bff4ecd4d70809142ed00bcea0f
+  Correlation Id:          94103f5a68c84f3045b5b934d77ac5b4
+  External correlation Id: 4234637505007651274
+  Machine Id:              4VB2xDT1CV9zqVbIIZWsGa/FyKA=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.02s, handshake: 2.40s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-02-01T16:01:43.3302124Z"
+[Licensing::Module] Licensing Background thread has ended after 2.47s
+- Finished resetting the current domain, in  0.905 seconds
+Domain Reload Profiling: 1698ms
+	BeginReloadAssembly (295ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (95ms)
+	LoadAllAssembliesAndSetupDomain (319ms)
+		LoadAssemblies (289ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (315ms)
+			TypeCache.Refresh (313ms)
+				TypeCache.ScanAssembly (291ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (906ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (840ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (123ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (248ms)
+			ProcessInitializeOnLoadAttributes (338ms)
+			ProcessInitializeOnLoadMethodAttributes (127ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.221 seconds
+Refreshing native plugins compatible for Editor in 6.91 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 7.11 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.389 seconds
+Domain Reload Profiling: 2603ms
+	BeginReloadAssembly (258ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (825ms)
+		LoadAssemblies (595ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (374ms)
+			TypeCache.Refresh (272ms)
+				TypeCache.ScanAssembly (250ms)
+			BuildScriptInfoCaches (81ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1390ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1123ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (246ms)
+			ProcessInitializeOnLoadAttributes (531ms)
+			ProcessInitializeOnLoadMethodAttributes (326ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 10.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6088 unused Assets / (2.9 MB). Loaded Objects now: 6884.
+Memory consumption went from 156.7 MB to 153.7 MB.
+Total: 16.615800 ms (FindLiveObjects: 0.857200 ms CreateObjectMapping: 0.482100 ms MarkObjects: 13.052400 ms  DeleteObjects: 2.222900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1449.062793 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade Gray.prefab
+  artifactKey: Guid(2ba9ef067d14f12478dc4de6baf23094) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade Gray.prefab using Guid(2ba9ef067d14f12478dc4de6baf23094) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd2b91f0cbc96c00003702e3471a761d4') in 0.2851833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Environment/Textures/Furniture/Kom_mask.tga
+  artifactKey: Guid(0077365039974c643b5e82731ad9261e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Furniture/Kom_mask.tga using Guid(0077365039974c643b5e82731ad9261e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9f199100462e672ee2adeb5104e8a4e3') in 0.0693684 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Textures/Furniture/Small_Chair_N.tga
+  artifactKey: Guid(e8d3e3a99e11a684a9db4c627b1fc36f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Furniture/Small_Chair_N.tga using Guid(e8d3e3a99e11a684a9db4c627b1fc36f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3ff28a9b73b695c2519983a1c1d1fcb4') in 0.0236289 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Environment/Textures/Lanterns/Candle2 [Albedo].png
+  artifactKey: Guid(e21011fce7663c14b86d62e5dac457ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Lanterns/Candle2 [Albedo].png using Guid(e21011fce7663c14b86d62e5dac457ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22b9fd793b715433380a2f5e3048080a') in 0.0099868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Looped.prefab
+  artifactKey: Guid(9debd342863be9747b5a48c343184a31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Looped.prefab using Guid(9debd342863be9747b5a48c343184a31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd43ab63ce01c982ea1216bc478fb31f0') in 0.0362217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Environment/Textures/Lanterns/Lattice [Normal].png
+  artifactKey: Guid(6982785fa4d5649429b368fae2cece22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Lanterns/Lattice [Normal].png using Guid(6982785fa4d5649429b368fae2cece22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '33dafb2472106c213895d5ccb3a37cb1') in 0.0115713 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Materials/Furniture/Carpets/CarpetBlack 2.mat
+  artifactKey: Guid(a7bc769528949a9478f49d069770a48c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/Furniture/Carpets/CarpetBlack 2.mat using Guid(a7bc769528949a9478f49d069770a48c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0f860ec41e5b17b3d7a81415d9b1bb4b') in 0.0296912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Environment/Materials/Furniture/TV/TV Feet.mat
+  artifactKey: Guid(ac132a41641f3424ba0c8051d57f8d44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/Furniture/TV/TV Feet.mat using Guid(ac132a41641f3424ba0c8051d57f8d44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '65f7bb831209b043711312cccdfb0e98') in 0.0234783 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/World/Environment/Materials/Furniture/Books/Book 04.mat
+  artifactKey: Guid(8c01f00fcc0f86c4a9c4386d0d319893) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/Furniture/Books/Book 04.mat using Guid(8c01f00fcc0f86c4a9c4386d0d319893) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '319fe5bbd22f98123a0fe5c27a6683ce') in 0.0078436 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Materials/Furniture/TV/TV Screen.mat
+  artifactKey: Guid(a24f82c57e48c4d4db954b324487b964) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/Furniture/TV/TV Screen.mat using Guid(a24f82c57e48c4d4db954b324487b964) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ac8f0d8e3d8f6adc729f015d8c90b3f1') in 0.0058396 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Materials/Furniture/TV Stand/TV Stand.mat
+  artifactKey: Guid(88d1461873c7f7940b2c593607900a99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/Furniture/TV Stand/TV Stand.mat using Guid(88d1461873c7f7940b2c593607900a99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '08d48129b0cdadb3c2a62c087e5170d6') in 0.0108566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.421965 seconds.
+  path: Assets/World/Environment/MeshTerrains/MeshTerrain_2/Textures/diffuse_2048x2048.png
+  artifactKey: Guid(e8ab319d2d4904840bc889723c2d67f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/MeshTerrains/MeshTerrain_2/Textures/diffuse_2048x2048.png using Guid(e8ab319d2d4904840bc889723c2d67f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6415264dbb1096b7670cd7318952680e') in 0.0147027 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Environment/Models/Furniture/Materials/wood.mat
+  artifactKey: Guid(b1c788bd0300a4c4bbcd49a64b7f2205) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/Furniture/Materials/wood.mat using Guid(b1c788bd0300a4c4bbcd49a64b7f2205) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dc5997210c8baaf0730307704832a5b5') in 0.0238252 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Environment/Models/Furniture/Materials/alb.mat
+  artifactKey: Guid(29b324da8a414c3468970c159809e0e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/Furniture/Materials/alb.mat using Guid(29b324da8a414c3468970c159809e0e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eb654897708959b0fed07388189fd593') in 0.0054541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Materials/Candle1.mat
+  artifactKey: Guid(de611aa4ade604440a3f9759cd653971) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/Lanterns/Materials/Candle1.mat using Guid(de611aa4ade604440a3f9759cd653971) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9d5b01171a4742d32984b4b646404ea2') in 0.0057239 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Environment/Models/Books/Materials/BooksA_mtl.mat
+  artifactKey: Guid(158e5675bb3289b48b0e3c75d10a6ff1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/Books/Materials/BooksA_mtl.mat using Guid(158e5675bb3289b48b0e3c75d10a6ff1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b73599f15357b4f0f9d38ff0927c8a34') in 0.0432742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Materials/CarvedLampPost.mat
+  artifactKey: Guid(3fd5ef25667ac664cb4ffe6acb0b0827) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/Lanterns/Materials/CarvedLampPost.mat using Guid(3fd5ef25667ac664cb4ffe6acb0b0827) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0a8eae66d4aa24ac1f0c1d3f170f0747') in 0.0055916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Environment/MeshTerrains/UnityTerrains/Terrain_1/Terrain_1_prefab.prefab
+  artifactKey: Guid(263f64ea53518414fb93d1458a3630a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/MeshTerrains/UnityTerrains/Terrain_1/Terrain_1_prefab.prefab using Guid(263f64ea53518414fb93d1458a3630a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ef4cac2f2d7e01ea34064610c861f35b') in 0.0798579 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.261166 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Materials/Glass5.mat
+  artifactKey: Guid(b4b0bc13615b109488ea893949ee304c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/Lanterns/Materials/Glass5.mat using Guid(b4b0bc13615b109488ea893949ee304c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '30d91ca461e848cf5035f100746ac20b') in 0.0101148 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Materials/Lamp2colormap.mat
+  artifactKey: Guid(e0eae73c991c5b04cb008f651d371938) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/Lanterns/Materials/Lamp2colormap.mat using Guid(e0eae73c991c5b04cb008f651d371938) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8c700189dd39f906c9ee0880f3195a79') in 0.007799 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Materials/Latern4_colormap.mat
+  artifactKey: Guid(bb4277e6d253ea84d98e0310b6983016) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/Lanterns/Materials/Latern4_colormap.mat using Guid(bb4277e6d253ea84d98e0310b6983016) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '246e7e7389274ff5d821afc23aaa1e3c') in 0.0063021 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Materials/lustre.mat
+  artifactKey: Guid(ee39508cdf6b55c4293ea4316574cb2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/Lanterns/Materials/lustre.mat using Guid(ee39508cdf6b55c4293ea4316574cb2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '40b90801bdc64313d310ad461f98b920') in 0.0058018 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Materials/lattice.mat
+  artifactKey: Guid(00da629abee3c594d9386d21157a4c4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/Lanterns/Materials/lattice.mat using Guid(00da629abee3c594d9386d21157a4c4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ec9418a7af9c81e6bedf213249b28d49') in 0.0056028 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Materials/Latern_glass1.001.mat
+  artifactKey: Guid(8148077ee3aa74c4b8ee7f3f24e934be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/Lanterns/Materials/Latern_glass1.001.mat using Guid(8148077ee3aa74c4b8ee7f3f24e934be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f7bda85ec2ccfc63739f8766140640dd') in 0.0053143 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.421225 seconds.
+  path: Assets/World/Environment/Models/PSDs/Chair/Chair_UV_Layouts.psd
+  artifactKey: Guid(1d5907b7f6c479441aa29c4bdc49fe8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/PSDs/Chair/Chair_UV_Layouts.psd using Guid(1d5907b7f6c479441aa29c4bdc49fe8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9f83154a4409690e406cdb8f13faae6d') in 0.0141427 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/World/Environment/Models/PSDs/Table/contents.obv
+  artifactKey: Guid(812d7c49ee4b7cf4dbd1908725488e43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/PSDs/Table/contents.obv using Guid(812d7c49ee4b7cf4dbd1908725488e43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fe495fa8c8aee74a43bab1be939abc8a') in 0.0043375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Environment/Models/PSDs/TV/TV_Textures_UV_Layouts.psd
+  artifactKey: Guid(b10ca72be85fd1d4ba5a42b82028ed08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/PSDs/TV/TV_Textures_UV_Layouts.psd using Guid(b10ca72be85fd1d4ba5a42b82028ed08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2b4a38634e1a91b810fc439dd0bc5c4e') in 0.0137693 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Models/PSDs/Shelf/contents.obv
+  artifactKey: Guid(6865125cea9db20418934d63180be6d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/PSDs/Shelf/contents.obv using Guid(6865125cea9db20418934d63180be6d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6e891e3c5be9e3588c65e544fc0c02b0') in 0.0034621 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Environment/Textures/SnowyRoad/Ice/Road DamSnowy3 Marked2_4K_Albedo.tga
+  artifactKey: Guid(2dc58f1b6eebd40408d3f4ff05bf8644) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/SnowyRoad/Ice/Road DamSnowy3 Marked2_4K_Albedo.tga using Guid(2dc58f1b6eebd40408d3f4ff05bf8644) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4403f33492436277c091d3d8ec444b2d') in 0.0138636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Environment/Models/PSDs/TV Stand/contents.obv
+  artifactKey: Guid(bd2a74bcc40d1a74eb742557def6dac1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/PSDs/TV Stand/contents.obv using Guid(bd2a74bcc40d1a74eb742557def6dac1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3ac9707de3ed944a4166dc785037914e') in 0.004219 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Environment/Models/PSDs/TV/contents.obv
+  artifactKey: Guid(8d33c184ee7561d4c84e03eeba006e74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/PSDs/TV/contents.obv using Guid(8d33c184ee7561d4c84e03eeba006e74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f5d6d5472ba0f958e2547c2663b86194') in 0.0031932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.322149 seconds.
+  path: Assets/World/Environment/Textures/Building2/Cobblestones_RMHA.png
+  artifactKey: Guid(e7b6ae90afeba6845b36b1eb8cdf9bba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Building2/Cobblestones_RMHA.png using Guid(e7b6ae90afeba6845b36b1eb8cdf9bba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6314363480753739e95ee272a782f9ee') in 0.0231598 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/World/Environment/Textures/SnowyRoad/Snow/Road DamSnowy3 Marked1_4K_Normal.tga
+  artifactKey: Guid(6de7f1714aa274c459e1b6b9f315535c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/SnowyRoad/Snow/Road DamSnowy3 Marked1_4K_Normal.tga using Guid(6de7f1714aa274c459e1b6b9f315535c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4c7f21cdae71eade39a41e69fc8037c7') in 0.0236229 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Environment/Textures/SnowyRoad/Ice/Road DamSnowy3 Marked2_4K_Gloss.tga
+  artifactKey: Guid(9ff44b1c8aa7c214cb949d3132819605) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/SnowyRoad/Ice/Road DamSnowy3 Marked2_4K_Gloss.tga using Guid(9ff44b1c8aa7c214cb949d3132819605) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '03d95cf2e37748001798187f33738406') in 0.0175074 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Textures/SnowyRoad/Ice2/Road DamSnowy3 Marked4_4K_Metalness.tga
+  artifactKey: Guid(5f07674ac07fc7a45bc3ca0cb5a29285) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/SnowyRoad/Ice2/Road DamSnowy3 Marked4_4K_Metalness.tga using Guid(5f07674ac07fc7a45bc3ca0cb5a29285) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c5d1673e7dda44b3934850722242899c') in 0.0149423 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Environment/Textures/SnowyRoad/Ice2/Road DamSnowy3 Marked4_4K_AO.tga
+  artifactKey: Guid(14e779832fa5b1f48ba7e2eb30da0eae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/SnowyRoad/Ice2/Road DamSnowy3 Marked4_4K_AO.tga using Guid(14e779832fa5b1f48ba7e2eb30da0eae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3de20698a846162dcf8fff479d9e5f94') in 0.0226376 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/World/Environment/Textures/Furniture/jug_01_ALBEDO.png
+  artifactKey: Guid(57da25a682488ad489630817b15be19c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Furniture/jug_01_ALBEDO.png using Guid(57da25a682488ad489630817b15be19c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f9db06cb9ed1e0e016ef56d5cd1b7fd5') in 0.0110656 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Environment/Textures/Lanterns/Candle emission_green 1.png
+  artifactKey: Guid(aacd4e2ad027859479c951b93b2e67f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Lanterns/Candle emission_green 1.png using Guid(aacd4e2ad027859479c951b93b2e67f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '51f70525f4f32c4498025b02c6c66023') in 0.0101907 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Environment/Textures/Lanterns/Latern3 [Albedo].png
+  artifactKey: Guid(2a7dd559d5a40074fb5444a8a72efad6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Lanterns/Latern3 [Albedo].png using Guid(2a7dd559d5a40074fb5444a8a72efad6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4dd07eab3a2b769b63302484a9dbf68a') in 0.0092574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Environment/Textures/Furniture/Poop_Alb.tga
+  artifactKey: Guid(32a5978c35e49ba4ca72ce8822c6120b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Furniture/Poop_Alb.tga using Guid(32a5978c35e49ba4ca72ce8822c6120b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b390fd11d1f8364c5437a5dff1df29cf') in 0.0130456 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Environment/Textures/Furniture/2SeatD_BaseColor.tga
+  artifactKey: Guid(ec322fd5963e8974fbc52de2bb31d3d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Furniture/2SeatD_BaseColor.tga using Guid(ec322fd5963e8974fbc52de2bb31d3d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ec9141755dc81e6ee59712f9cd6ac646') in 0.0134909 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/World/Environment/Textures/SnowyRoad/SnowierRoad/Road DamSnowy3 Marked5_4K_Gloss.tga
+  artifactKey: Guid(48bda889a06a35c4a92b0a1a6326f0b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/SnowyRoad/SnowierRoad/Road DamSnowy3 Marked5_4K_Gloss.tga using Guid(48bda889a06a35c4a92b0a1a6326f0b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd174338de6357f30b3cf37fa3aff90a0') in 0.0140654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Environment/Textures/SnowyRoad/SnowyRoad1/Road DamSnowy3 Marked3_4K_Normal.tga
+  artifactKey: Guid(2895516d11ca6c341a1e89f843c9256d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/SnowyRoad/SnowyRoad1/Road DamSnowy3 Marked3_4K_Normal.tga using Guid(2895516d11ca6c341a1e89f843c9256d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cb988553f18618dc2d8c4d182e562b10') in 0.0191206 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Textures/TerrainAutoUpgrade/helpers/green.png
+  artifactKey: Guid(1d2c416d4ece3ca429e4519e3e427c44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/TerrainAutoUpgrade/helpers/green.png using Guid(1d2c416d4ece3ca429e4519e3e427c44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8e85887a690ca836e9cf7c8150e43ca6') in 0.011128 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Sounds/FX/Player/walkCSound/walkC2.wav
+  artifactKey: Guid(8a447ae9066b4a2478d9b3b7128068f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/FX/Player/walkCSound/walkC2.wav using Guid(8a447ae9066b4a2478d9b3b7128068f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7a32dd4fc44fc4f11eb4c1d70936a98a') in 0.0498001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Sounds/Music/menu/menuMusic/adhd.mp3
+  artifactKey: Guid(736fcfeebfc9e6c46a3f07120327bb69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/Music/menu/menuMusic/adhd.mp3 using Guid(736fcfeebfc9e6c46a3f07120327bb69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e388001a45bd6d0f4b178c2338d8c933') in 0.3349252 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Environment/Textures/SnowyRoad/SnowyRoad1/Road DamSnowy3 Marked3_4K_Displacement.tga
+  artifactKey: Guid(7846e7bb8b72a8b4f9b7e1150af31b8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/SnowyRoad/SnowyRoad1/Road DamSnowy3 Marked3_4K_Displacement.tga using Guid(7846e7bb8b72a8b4f9b7e1150af31b8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '487e124355aac948fb05bab13bb83a41') in 0.0134793 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game/Animations/NPC/Female/Movement/Run/HumanF@Run01_ForwardLeft.fbx
+  artifactKey: Guid(cdb2264de10c42b4799822b736b5de9c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Female/Movement/Run/HumanF@Run01_ForwardLeft.fbx using Guid(cdb2264de10c42b4799822b736b5de9c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9fd7b0d5cb28058ac31ca2128a6bf163') in 0.0432461 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Game/Animations/NPC/Female/Movement/Run/HumanF@Run01_ForwardRight.fbx
+  artifactKey: Guid(5088dccb2ba6bc8478f1dc0919d3e8cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Female/Movement/Run/HumanF@Run01_ForwardRight.fbx using Guid(5088dccb2ba6bc8478f1dc0919d3e8cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a8896323eb1cde2fcaf79900c99223d1') in 0.0150097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Game/Animations/NPC/Female/Combat/1H/HumanF@Attack1H01_R.fbx
+  artifactKey: Guid(408142c06e2d48c4db8065d1fbbcc8eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Female/Combat/1H/HumanF@Attack1H01_R.fbx using Guid(408142c06e2d48c4db8065d1fbbcc8eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4dbca383b724734f9488ddfa91932384') in 0.0152533 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World
+  artifactKey: Guid(cdabce547ab6e1d4ea51e8d2234ec89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World using Guid(cdabce547ab6e1d4ea51e8d2234ec89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2553c1bdb8a1ebd95570b78353c93be6') in 0.0008211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Game/Animations/NPC/Female/Combat/2H/HumanF@CombatIdle2H01.fbx
+  artifactKey: Guid(1ad5e2c82dc0082448aa849151560b5d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Female/Combat/2H/HumanF@CombatIdle2H01.fbx using Guid(1ad5e2c82dc0082448aa849151560b5d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '65f593687b10f40b2517670250f6a8a1') in 0.0175135 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Game/Animations/NPC/Female/Movement/Run/HumanF@Run01_Backward.fbx
+  artifactKey: Guid(b7ff898919f115a4095d79af0129756f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Female/Movement/Run/HumanF@Run01_Backward.fbx using Guid(b7ff898919f115a4095d79af0129756f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '79c0f579aa110fa402668c325f4ad239') in 0.0154885 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Environment/Textures/SnowyRoad/SnowierRoad/Road DamSnowy3 Marked5_4K_Normal.tga
+  artifactKey: Guid(cd97e064dfe859647801be795445b8b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/SnowyRoad/SnowierRoad/Road DamSnowy3 Marked5_4K_Normal.tga using Guid(cd97e064dfe859647801be795445b8b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1a36dc72af3f060324fb74e791f5b794') in 0.0199995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Sounds/FX/Player/lantern/lanternFadeOut.wav
+  artifactKey: Guid(bc59efd951873654b9d34291bc506941) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/FX/Player/lantern/lanternFadeOut.wav using Guid(bc59efd951873654b9d34291bc506941) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dc44082c5809381bd84a7b19791cd362') in 0.0547849 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/WarFX/Demo/Assets/WFX_Demo.cs
+  artifactKey: Guid(f29cbe1088b10084fb12c7ba8a19f151) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Demo/Assets/WFX_Demo.cs using Guid(f29cbe1088b10084fb12c7ba8a19f151) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0c9e5c8d695b91cccf6ef87c807a6a9c') in 0.0045946 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Metal.mat
+  artifactKey: Guid(042184d6004731842a52c613f8df564d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Metal.mat using Guid(042184d6004731842a52c613f8df564d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b336e67a847aa7691f4aceefeadb6605') in 0.0078303 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic Sand.mat
+  artifactKey: Guid(bdd14d80d6f714d4ebc207bf6ad3164c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic Sand.mat using Guid(bdd14d80d6f714d4ebc207bf6ad3164c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bdae514b4ef452dd9ce030e5f0cead1f') in 0.0074323 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic.mat
+  artifactKey: Guid(38f55d80fabc44846a1222921faa20bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic.mat using Guid(38f55d80fabc44846a1222921faa20bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3c5be4b237f07f7a167a3154307bd6b9') in 0.007025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Metal Lighted.mat
+  artifactKey: Guid(4775d7a61c94a87418fe5ebc4f938090) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Metal Lighted.mat using Guid(4775d7a61c94a87418fe5ebc4f938090) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ffdf8c4ed42d7f36dc4f23f3bd6fbf58') in 0.0057727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Game/Animations/NPC/Male/Movement/Run/HumanM@Run01_Backward.fbx
+  artifactKey: Guid(a8e6c7cf678a13541a726c2ae9ec00e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Male/Movement/Run/HumanM@Run01_Backward.fbx using Guid(a8e6c7cf678a13541a726c2ae9ec00e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '14a99c25ba47d14ee3236eb4011fef9e') in 0.0171371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/Flames/WFX_M_FlameBig Add.mat
+  artifactKey: Guid(5a595d561ddb2ac4aad808dc54e08e6a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/Flames/WFX_M_FlameBig Add.mat using Guid(5a595d561ddb2ac4aad808dc54e08e6a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '36608e87f54df6535885251f251ca3a9') in 0.0086007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/Flames/WFX_M_FlameSmall ScrollAdd.mat
+  artifactKey: Guid(654261d22ff230341bd50c7ddb17c2c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/Flames/WFX_M_FlameSmall ScrollAdd.mat using Guid(654261d22ff230341bd50c7ddb17c2c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7026a9d6af4f3f4e95b320d2d2f2daa9') in 0.0075636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Sounds/FX/Player/lantern/lightMatch.mp3
+  artifactKey: Guid(6b54bd09f13c2b64ba34ef55e9ec393c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/FX/Player/lantern/lightMatch.mp3 using Guid(6b54bd09f13c2b64ba34ef55e9ec393c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7b3d9836adbc63a06be270539bf803f4') in 0.0489054 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/smokeEffect.prefab
+  artifactKey: Guid(5a4bdec5dd36de3499ce0de282aa1f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/smokeEffect.prefab using Guid(5a4bdec5dd36de3499ce0de282aa1f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd0d9b51c943264ce88da4d6f182cab1') in 0.611039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/Fire/WFX_FlameThrower Looped.prefab
+  artifactKey: Guid(21f6aea0c9b788c4b9b6275efc33d0f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects/Fire/WFX_FlameThrower Looped.prefab using Guid(21f6aea0c9b788c4b9b6275efc33d0f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4370ec733c92865ac5b4a6a5f2b14477') in 0.0468497 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Textures/Smoke/WFX_T_SmokeLoopAlpha Average.tga
+  artifactKey: Guid(1724eb924685fa7458a70dde1fd68bf2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Textures/Smoke/WFX_T_SmokeLoopAlpha Average.tga using Guid(1724eb924685fa7458a70dde1fd68bf2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c9b55dcb0bd939f3d504e6c0ad856beb') in 0.0102493 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE3.mat
+  artifactKey: Guid(a3044dcfcae618b4c86c528053797b0d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE3.mat using Guid(a3044dcfcae618b4c86c528053797b0d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '91383b90b49382125d46fb25f6a84a1b') in 0.0058647 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Textures/Misc/WFX_T_GlowCircle A8.png
+  artifactKey: Guid(ddd99084bf4dcd54e8a575ee0959c08e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Textures/Misc/WFX_T_GlowCircle A8.png using Guid(ddd99084bf4dcd54e8a575ee0959c08e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0ae01f47c2316cfd6ae5e280812ecc3d') in 0.0089253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Textures/Misc/WFX_T_SmallDots Inversed A8.png
+  artifactKey: Guid(e251f05fa450bea41a476b69cf75cec0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Textures/Misc/WFX_T_SmallDots Inversed A8.png using Guid(e251f05fa450bea41a476b69cf75cec0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b130804adaeb434de796aee8072e057a') in 0.0095082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE3.mat
+  artifactKey: Guid(08803d215d76c924c8318bec4eeffab5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE3.mat using Guid(08803d215d76c924c8318bec4eeffab5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '39b244e3f016ae2194eec09dfe0c9ea4') in 0.005811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeSpikeStretched.mat
+  artifactKey: Guid(5c8ba5bc91b214f4b878b96136b4d1fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeSpikeStretched.mat using Guid(5c8ba5bc91b214f4b878b96136b4d1fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c04055672592bb385ab44de5cf218b30') in 0.0087628 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Textures/Smoke/WFX_T_SmokeNoise.tga
+  artifactKey: Guid(232c443afd6ed994aa4da1d352911753) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Textures/Smoke/WFX_T_SmokeNoise.tga using Guid(232c443afd6ed994aa4da1d352911753) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'beb00fdd7cdefd93364593be2fe434df') in 0.0110215 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall 4F Add.mat
+  artifactKey: Guid(86b5f27ac71d7754fa5f0159ae8f0d92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall 4F Add.mat using Guid(86b5f27ac71d7754fa5f0159ae8f0d92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e7769571cd5f8c0c3629ead2fa278c93') in 0.0072593 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Misc/WFXM_M_SmallDots Add.mat
+  artifactKey: Guid(0a743b143d5c8cb49af595203f3a47ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Misc/WFXM_M_SmallDots Add.mat using Guid(0a743b143d5c8cb49af595203f3a47ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a4e91757a3672bb606e6bce66369f037') in 0.0075393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall Add.mat
+  artifactKey: Guid(f2e62d2a3f971454da5211512393653f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall Add.mat using Guid(f2e62d2a3f971454da5211512393653f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '28b2943cb5b57981a438c71c31d8daa5') in 0.0092608 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall ScrollAdd.mat
+  artifactKey: Guid(70772a3d4102d07468e841ebff06d1f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall ScrollAdd.mat using Guid(70772a3d4102d07468e841ebff06d1f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9cdd3f2c07d11df3cd4b8eca6511d7c0') in 0.0060599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Misc/WFXM_M_GlowCircle Add.mat
+  artifactKey: Guid(3849731f87957fe4ca8e47a1c235c5a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Misc/WFXM_M_GlowCircle Add.mat using Guid(3849731f87957fe4ca8e47a1c235c5a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd26d320c62bd11cbe9ca2db6a20bf1c9') in 0.0086168 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameBig Add.mat
+  artifactKey: Guid(4ad9452cd1004624f819e31cda3cdcce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameBig Add.mat using Guid(4ad9452cd1004624f819e31cda3cdcce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd401915947e97a9a11d9ad35bb0045a9') in 0.007745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Concrete Lighted.mat
+  artifactKey: Guid(fe2101610378f0e41a0cdc27eb74f98c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Concrete Lighted.mat using Guid(fe2101610378f0e41a0cdc27eb74f98c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '89e5e41495d66e44ce8f10b1b111dfec') in 0.0061293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Impacts/WFXM_M_Sparks Metal.mat
+  artifactKey: Guid(a54ba3179ee833e4f85472f16ca41d2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Impacts/WFXM_M_Sparks Metal.mat using Guid(a54ba3179ee833e4f85472f16ca41d2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f459a762b30ae62aee8b3c7e6ba82ffc') in 0.0099248 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Sparks RIFLE1.mat
+  artifactKey: Guid(682571fd6d8f0ec498a7e7050e573b40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Sparks RIFLE1.mat using Guid(682571fd6d8f0ec498a7e7050e573b40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3028c2f3b628b3167f0f9cb3c32d8c88') in 0.0108736 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeScroll Add.mat
+  artifactKey: Guid(ac5e326588327d841b2501709f9b491e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeScroll Add.mat using Guid(ac5e326588327d841b2501709f9b491e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1bdec6d2be287e99153f6febf11c53ab') in 0.0162203 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeGrenade AB.mat
+  artifactKey: Guid(1cbcc6eff0861c54fae4adca29238f73) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeGrenade AB.mat using Guid(1cbcc6eff0861c54fae4adca29238f73) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f37d4ae8f123a0c85c04d5605362e9ca') in 0.0093931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeNoise.mat
+  artifactKey: Guid(47eb3fdd01eb327428cfafbefee8f3bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeNoise.mat using Guid(47eb3fdd01eb327428cfafbefee8f3bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22b1208cab6f888b99dac38a908be5b7') in 0.0070371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF FrontRear RIFLE3.mat
+  artifactKey: Guid(cc458c57280d0bf48a81573e7dc674aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF FrontRear RIFLE3.mat using Guid(cc458c57280d0bf48a81573e7dc674aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '424f118c5d4b3e60d6e98e51ba1f03f2') in 0.0067027 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Textures/Bullet Holes/WFXM_T_BulletHoles Wood.tga
+  artifactKey: Guid(22b2fb4b5fccb7f42a75c83a2ceecaa9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Textures/Bullet Holes/WFXM_T_BulletHoles Wood.tga using Guid(22b2fb4b5fccb7f42a75c83a2ceecaa9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cb1b74db2a161b513c8bd8d639c3d621') in 0.0102318 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Side RIFLE2.mat
+  artifactKey: Guid(6b4877ee772cac5478355df5ed9d778f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Side RIFLE2.mat using Guid(6b4877ee772cac5478355df5ed9d778f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a8dfecacc86e3f82a48c97da5995076e') in 0.0128495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Textures/Smoke/WFXM_T_SmokeLoopAlpha.tga
+  artifactKey: Guid(00102373043eef842bee9e986845e68b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Textures/Smoke/WFXM_T_SmokeLoopAlpha.tga using Guid(00102373043eef842bee9e986845e68b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ad542e3a5b1036dc94c1fdfbdd79eb67') in 0.0092173 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Textures/Misc/WFXM_T_Debris Generic.tga
+  artifactKey: Guid(e776eb0d9da93f44685734becef98a43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Textures/Misc/WFXM_T_Debris Generic.tga using Guid(e776eb0d9da93f44685734becef98a43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e4a80c7883b257c3e024ee71a028be1f') in 0.011103 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Textures/Misc/WFXM_T_SmallDots Inversed A8.png
+  artifactKey: Guid(9a1e633d22202b34eb4618124e2fbae9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Textures/Misc/WFXM_T_SmallDots Inversed A8.png using Guid(9a1e633d22202b34eb4618124e2fbae9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'db0f1d695b3c0cc7668dda3fdd340f2d') in 0.0091194 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Textures/Misc/WFXM_T_SmallDots A8.png
+  artifactKey: Guid(496676ffecd2dcf42bb99bc8a7ebd3a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Textures/Misc/WFXM_T_SmallDots A8.png using Guid(496676ffecd2dcf42bb99bc8a7ebd3a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '78d172984ebc36afeb5860fd78ee3caf') in 0.0086671 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Textures/Smoke/WFXM_T_SmokeNoise.tga
+  artifactKey: Guid(d9e7467f4890a244083c45417bc31ab4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Textures/Smoke/WFXM_T_SmokeNoise.tga using Guid(d9e7467f4890a244083c45417bc31ab4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5f904e3e6a06af5b54a7355c9416165a') in 0.0098872 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/WFX_BImpact Dirt + Hole.prefab
+  artifactKey: Guid(2f9348d6583cde14eb0d82bb9732647e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/WFX_BImpact Dirt + Hole.prefab using Guid(2f9348d6583cde14eb0d82bb9732647e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'beb561fb71b27650324cacd150446ed5') in 0.0532678 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/Fire/Black Smoke/WFX_Fire Natural Circle (Black Smoke).prefab
+  artifactKey: Guid(06a7735096a49064bac4963673c4f0b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects/Fire/Black Smoke/WFX_Fire Natural Circle (Black Smoke).prefab using Guid(06a7735096a49064bac4963673c4f0b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f4238d5d032a01299020e5313f05a9fb') in 0.0416759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/Fire/No Smoke/WFX_Fire SmallFlame (No Smoke).prefab
+  artifactKey: Guid(9fdb9361d90a0c64688ffb3004e8682c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects/Fire/No Smoke/WFX_Fire SmallFlame (No Smoke).prefab using Guid(9fdb9361d90a0c64688ffb3004e8682c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '46c49d4308fcce8455b88fffe11382b6') in 0.0462959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/Fire/Gray Smoke/WFX_Fire Natural Circle (Gray Smoke).prefab
+  artifactKey: Guid(dc0674a8a869b5043ab6f4155bdd5b02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects/Fire/Gray Smoke/WFX_Fire Natural Circle (Gray Smoke).prefab using Guid(dc0674a8a869b5043ab6f4155bdd5b02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ea854e7f5d5c9121e0250f4e4e712fa0') in 0.0377251 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE3.prefab
+  artifactKey: Guid(8eaaa4f553116f44b8459bc24201c514) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE3.prefab using Guid(8eaaa4f553116f44b8459bc24201c514) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4499da5db9bf02ff7d72aaff5ea3721e') in 0.0375062 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/Fire/Gray Smoke/WFX_Fire Natural (Gray Smoke).prefab
+  artifactKey: Guid(717898f1e82d6b94f8dfa819112cc432) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects/Fire/Gray Smoke/WFX_Fire Natural (Gray Smoke).prefab using Guid(717898f1e82d6b94f8dfa819112cc432) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd067e7de3caff7a911900abc1e1935a0') in 0.0352129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE3.prefab
+  artifactKey: Guid(0661276422528d74d8c9894abad93242) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE3.prefab using Guid(0661276422528d74d8c9894abad93242) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3e9901374599aa6386050b14a8236271') in 0.0468805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_GazFire (Black Smoke).prefab
+  artifactKey: Guid(17315d51dc90be34cad95e853f26b6ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_GazFire (Black Smoke).prefab using Guid(17315d51dc90be34cad95e853f26b6ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8588cc89f4f5557b4e21061f44333b71') in 0.0355889 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Red.prefab
+  artifactKey: Guid(5009bf425539d77498f5db824a14dab5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Red.prefab using Guid(5009bf425539d77498f5db824a14dab5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2d348d6b311504db0cee1344fc3847ea') in 0.0354257 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/WFXMR_GazFireBig (Purple).prefab
+  artifactKey: Guid(99912b6bbb720824baca3259bb8d7b33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/WFXMR_GazFireBig (Purple).prefab using Guid(99912b6bbb720824baca3259bb8d7b33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9a97bab9e37e461c00b23a3523bc7f5b') in 0.0356307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/Fire/Black Smoke/WFX_Fire Natural Broad (Black Smoke).prefab
+  artifactKey: Guid(002c8e66c11fe4048a8c3a08b7f0fe74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects/Fire/Black Smoke/WFX_Fire Natural Broad (Black Smoke).prefab using Guid(002c8e66c11fe4048a8c3a08b7f0fe74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b0109641de98841988f8087a97f37740') in 0.0463855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/MuzzleFlashes/FPS/WFXMR_MF FPS RIFLE2.prefab
+  artifactKey: Guid(cdf14baff693fbc439f8c859529a63a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/MuzzleFlashes/FPS/WFXMR_MF FPS RIFLE2.prefab using Guid(cdf14baff693fbc439f8c859529a63a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8fa4e2ada00e40cd5fcc7a5cd4d3856c') in 0.037111 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_Fire Natural (No Smoke).prefab
+  artifactKey: Guid(cb074760d265371429c786718a7ca5e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_Fire Natural (No Smoke).prefab using Guid(cb074760d265371429c786718a7ca5e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8877e8b8a6ce509000edee9e1d67a42') in 0.0386223 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/MuzzleFlashes/4Planes/WFXMR_MF 4P RIFLE3.prefab
+  artifactKey: Guid(c5946a66b3eec2d479e20b7315b06bf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/MuzzleFlashes/4Planes/WFXMR_MF 4P RIFLE3.prefab using Guid(c5946a66b3eec2d479e20b7315b06bf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ec5597ad37472a2cdc396ca9055982cc') in 0.0415133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_Fire Natural Circle (No Smoke).prefab
+  artifactKey: Guid(16fa56e3bc952f8418a8c26526b344e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_Fire Natural Circle (No Smoke).prefab using Guid(16fa56e3bc952f8418a8c26526b344e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '70c076b93da54bc72aa5551ef6ddd646') in 0.044713 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_Fire Natural (Black Smoke).prefab
+  artifactKey: Guid(f4a2c3f050b1cad4d9241bd31795a925) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_Fire Natural (Black Smoke).prefab using Guid(f4a2c3f050b1cad4d9241bd31795a925) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9d1eb8565a3e9c22c8291caf4a7910ea') in 0.0397706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade AlphaBlend Purple.prefab
+  artifactKey: Guid(2b15a96b56bb69f48b825978453e381b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade AlphaBlend Purple.prefab using Guid(2b15a96b56bb69f48b825978453e381b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1fafcbf3751fb5f9344ab063a5f82157') in 0.0365814 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 1 Snow/Snow_Metallic.mat
+  artifactKey: Guid(97c8a4e774a1d4444805410c43afe3d3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 1 Snow/Snow_Metallic.mat using Guid(97c8a4e774a1d4444805410c43afe3d3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '390317559f7e730ae5ddf39d952f3515') in 0.0404857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Materials/Furniture/TV Stand/TV Stand Drawer.mat
+  artifactKey: Guid(784c0af9aa509d04f8a78667a2570e97) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/Furniture/TV Stand/TV Stand Drawer.mat using Guid(784c0af9aa509d04f8a78667a2570e97) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2c54766b8a9c1880a671f96afdc5de2a') in 0.0096261 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Materials/Furniture/Coffee Table/Coffee Table Surface.mat
+  artifactKey: Guid(f3b2a0c83e4186a459be5d0d7d616bf1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/Furniture/Coffee Table/Coffee Table Surface.mat using Guid(f3b2a0c83e4186a459be5d0d7d616bf1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '20c56aa4ae9960b6dc8550031c4628ac') in 0.0090748 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Models/NPC/Avatar Masks/Arms/Human Arm Left Mask.mask
+  artifactKey: Guid(3c01d1ed15a1c0f49b77151cfdaa3e8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/NPC/Avatar Masks/Arms/Human Arm Left Mask.mask using Guid(3c01d1ed15a1c0f49b77151cfdaa3e8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df15e6622e37b7b433f5b537a2478e15') in 0.0047491 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Materials/Furniture/Shelf/Shelf Bracket.mat
+  artifactKey: Guid(6ec00c1714921d24f9869172be9d6f24) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/Furniture/Shelf/Shelf Bracket.mat using Guid(6ec00c1714921d24f9869172be9d6f24) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '285ce544787421a2ebfea1f59cab69d2') in 0.0079755 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_GazFire (Gray Smoke).prefab
+  artifactKey: Guid(4c5ef88d48ac4ee43b30dbc6343f6d2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_GazFire (Gray Smoke).prefab using Guid(4c5ef88d48ac4ee43b30dbc6343f6d2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cbdabb3375dbe0f268c81890511117e1') in 0.0437671 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 2 CarpetPurple/CarpetPurple_Normal.png
+  artifactKey: Guid(782c0bc66be37534facbd6547774aa5f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 2 CarpetPurple/CarpetPurple_Normal.png using Guid(782c0bc66be37534facbd6547774aa5f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9c85cd2e4919e6f64c33fd5c27f87726') in 0.0115094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 2 CarpetPurple/Carpet Purple_Specular.mat
+  artifactKey: Guid(ade442b643b309e40b9505742b5cd2e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 2 CarpetPurple/Carpet Purple_Specular.mat using Guid(ade442b643b309e40b9505742b5cd2e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f333ad401b1f23cdd79bf562b7698455') in 0.0150973 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 3 Moss/Moss_Base.png
+  artifactKey: Guid(25d29bc2fd2c886448d5c62dda696a8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 3 Moss/Moss_Base.png using Guid(25d29bc2fd2c886448d5c62dda696a8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '04029f34083455c67206ac1f1dce4f9d') in 0.009015 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/BloodDecalsAndEffects
+  artifactKey: Guid(70293d17e648c6b438f9782235a9c3b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BloodDecalsAndEffects using Guid(70293d17e648c6b438f9782235a9c3b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '779531f5b8219ac65e9e0f7b608266db') in 0.0006029 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 3 Moss/Moss_Occlusion.png
+  artifactKey: Guid(5ce849745a5ba85478ff4fad58c40fdc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 3 Moss/Moss_Occlusion.png using Guid(5ce849745a5ba85478ff4fad58c40fdc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0752ce1efc906f9816be41c14ae40e5e') in 0.0095551 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 1 Snow/Snow_Specular.png
+  artifactKey: Guid(18c1a36441882c141b81fe086d23cd00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 1 Snow/Snow_Specular.png using Guid(18c1a36441882c141b81fe086d23cd00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '169ed74aae6dba3073fbcb6706fc47dc') in 0.0098864 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Green.prefab
+  artifactKey: Guid(6a6450d1b39d99545be383e7549fd7d0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Green.prefab using Guid(6a6450d1b39d99545be383e7549fd7d0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bb86fec7c82f0ffb98299795e8c51de3') in 0.0376113 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 5 Rocky Surface/RockySurface_Metallic.png
+  artifactKey: Guid(ecdc8f25c1a6ef54eaa776b171239038) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 5 Rocky Surface/RockySurface_Metallic.png using Guid(ecdc8f25c1a6ef54eaa776b171239038) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b1dd26af930e0055edc0fb29f24b8afe') in 0.0111144 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 6 Carpet Hotel/CarpetHotel_Height.png
+  artifactKey: Guid(85d5ec888cb026447a901e81c3f75383) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 6 Carpet Hotel/CarpetHotel_Height.png using Guid(85d5ec888cb026447a901e81c3f75383) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1fe65d85eeaa8483d1bad232b60030a8') in 0.0117274 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 6 Carpet Hotel/CarpetHotel_Base.png
+  artifactKey: Guid(fc0b315aeeefc384587335bfcd3f7dc6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 6 Carpet Hotel/CarpetHotel_Base.png using Guid(fc0b315aeeefc384587335bfcd3f7dc6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3fb8775367260e954f313947041c11cc') in 0.009519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 6 Carpet Hotel/Carpet Hotel_Specular.mat
+  artifactKey: Guid(1c93c6a5ca01daa43b1861ae5f6294a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 6 Carpet Hotel/Carpet Hotel_Specular.mat using Guid(1c93c6a5ca01daa43b1861ae5f6294a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4106ff3d1a87e67c48b8d303c608f155') in 0.0119446 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 6 Carpet Hotel/Carpet Hotel_Metallic.mat
+  artifactKey: Guid(3442c86e4440c8b4e8f42f25d4d2976d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 6 Carpet Hotel/Carpet Hotel_Metallic.mat using Guid(3442c86e4440c8b4e8f42f25d4d2976d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '603b18fac383b5a0877532c2ca3f2197') in 0.0097312 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 5 Rocky Surface/RockySurface_Specular.mat
+  artifactKey: Guid(b850a7fe7b59de045bb064dfe8c964ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 5 Rocky Surface/RockySurface_Specular.mat using Guid(b850a7fe7b59de045bb064dfe8c964ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b94ebe90b7aed16916a044fe427afb1a') in 0.0097672 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Side RIFLE3.mat
+  artifactKey: Guid(b71afc5edbc2da1479a3af6d2cb56d08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Side RIFLE3.mat using Guid(b71afc5edbc2da1479a3af6d2cb56d08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '798d7bc42a1ab9fbba4fc7cf39f3d291') in 0.0065955 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 8 Water/Water_Specular.mat
+  artifactKey: Guid(c1d8a53a708d2884f9c5d1e2ce70a80c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 8 Water/Water_Specular.mat using Guid(c1d8a53a708d2884f9c5d1e2ce70a80c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0178d405bf8bc9117d41b965e2151649') in 0.0192138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 9 Carpet/Carpet_Height.png
+  artifactKey: Guid(557703846ce2b534390a157ca84b1e43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 9 Carpet/Carpet_Height.png using Guid(557703846ce2b534390a157ca84b1e43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fb89ac724ebbea0debd2f2979018a427') in 0.0097914 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 9 Carpet/Carpet_Base.png
+  artifactKey: Guid(59d560f3d708e5a47839855222f979aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 9 Carpet/Carpet_Base.png using Guid(59d560f3d708e5a47839855222f979aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '631bfc88307145fc09457418190e90e7') in 0.019048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 8 Water/Water_Normal.png
+  artifactKey: Guid(43c496b1355550848886297664d4a603) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 8 Water/Water_Normal.png using Guid(43c496b1355550848886297664d4a603) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '79e5dc311f5234681b7abb7a8fc69194') in 0.0104623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 7 Grass/Grass_Height.png
+  artifactKey: Guid(c53a872e70299224780e17cc6c0c7aa2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 7 Grass/Grass_Height.png using Guid(c53a872e70299224780e17cc6c0c7aa2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bccfb2176118bbb27372e80f833e2ae5') in 0.0102656 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 9 Carpet/Carpet_Metallic.mat
+  artifactKey: Guid(94a3f3fac42e8674fa75f0ac4c6047cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 9 Carpet/Carpet_Metallic.mat using Guid(94a3f3fac42e8674fa75f0ac4c6047cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5bf236a7681adaecdcabad20080ee7c4') in 0.0138935 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 8 Water/Water_Metallic.png
+  artifactKey: Guid(933c281d9a575b04fa3195aaba8690e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 8 Water/Water_Metallic.png using Guid(933c281d9a575b04fa3195aaba8690e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2817d0bbfcb5f14a4d89d870f194f21d') in 0.0106121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_Fire Natural Circle (Black Smoke).prefab
+  artifactKey: Guid(47fd4bfb1804201488355f589f12342a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_Fire Natural Circle (Black Smoke).prefab using Guid(47fd4bfb1804201488355f589f12342a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7994f7ff6265cf7cd3a2ac1945614faa') in 0.0408344 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Game/Animations/NPC/Female/Movement/Run/RootMotion/HumanF@Run01_Backward [RM].fbx
+  artifactKey: Guid(78375be644e8f3a45bdc574dcc4fdb45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Female/Movement/Run/RootMotion/HumanF@Run01_Backward [RM].fbx using Guid(78375be644e8f3a45bdc574dcc4fdb45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '206087a33d35c08bce829a60b4ac5dc4') in 0.0152446 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/Prefabs/Weapons/Human_Sword.prefab
+  artifactKey: Guid(4340f4c2a8d13cf4b82d9438b74c6a67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/Prefabs/Weapons/Human_Sword.prefab using Guid(4340f4c2a8d13cf4b82d9438b74c6a67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aba14370a494e7e666ac9b2aaf0563e9') in 0.0164373 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/Prefabs/Weapons/Human_Greatsword.prefab
+  artifactKey: Guid(9d82d845404be7e4396e77f2de5fd79f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/Prefabs/Weapons/Human_Greatsword.prefab using Guid(9d82d845404be7e4396e77f2de5fd79f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3cd5b889afb4692d157547520cbe9a8c') in 0.0117976 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/Prefabs/Characters/HumanM_Dummy_Red - Sword and Shield.prefab
+  artifactKey: Guid(e76e3a3af8c9c5e42968c424e2b49ef2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/Prefabs/Characters/HumanM_Dummy_Red - Sword and Shield.prefab using Guid(e76e3a3af8c9c5e42968c424e2b49ef2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8675d67fcf3a5688953bab0ebcec4157') in 0.0177537 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 257
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Environment/Textures/Custom/Textures/Vol 9 Carpet/Carpet_Specular.png
+  artifactKey: Guid(d17c6378dcfe4b04d99a0b3334012126) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 9 Carpet/Carpet_Specular.png using Guid(d17c6378dcfe4b04d99a0b3334012126) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '43a511c6ed2126e41ad5d433636788ec') in 0.0114348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Game/Animations/NPC/Female/Movement/Strafe/StrafeRun/HumanF@StrafeRun01_ForwardRight.fbx
+  artifactKey: Guid(f442f64bb1ac3994aa9ceb0ecebdc3c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Female/Movement/Strafe/StrafeRun/HumanF@StrafeRun01_ForwardRight.fbx using Guid(f442f64bb1ac3994aa9ceb0ecebdc3c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3eb5e3caa07ea104701bf69fd1ec5263') in 0.0227124 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game/Animations/NPC/Male/Movement/Strafe/StrafeRun/HumanM@StrafeRun01_Left.fbx
+  artifactKey: Guid(8345db46ec1fd9246874dfd961c7acec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Male/Movement/Strafe/StrafeRun/HumanM@StrafeRun01_Left.fbx using Guid(8345db46ec1fd9246874dfd961c7acec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1f692d78815dee5d43f371682ddcf213') in 0.0137515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.354056 seconds.
+  path: Assets/World/Environment/Textures/Building2/StrawRoof_normal.png
+  artifactKey: Guid(35f4ce366d92f524c9792664fd882067) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Building2/StrawRoof_normal.png using Guid(35f4ce366d92f524c9792664fd882067) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95d1f731063f2b3c3056f25ab3ca8781') in 0.0224383 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Concrete + Hole Unlit.prefab
+  artifactKey: Guid(382c72524bd69044fae222eefa70563a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Concrete + Hole Unlit.prefab using Guid(382c72524bd69044fae222eefa70563a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a197f1eb12ab18746f99ab0cf4c97a82') in 0.0376849 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Lit/WFXMR_BImpact Wood + Hole Lit.prefab
+  artifactKey: Guid(7499aeb6567134b4dbfadc6051f4546d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Lit/WFXMR_BImpact Wood + Hole Lit.prefab using Guid(7499aeb6567134b4dbfadc6051f4546d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '424135050595b191764682262fd81f18') in 0.0361198 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Textures/Furniture/chest_metallic_smoothnes_2.tga
+  artifactKey: Guid(a621a21758c92014c94c7497f6dc4c93) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Furniture/chest_metallic_smoothnes_2.tga using Guid(a621a21758c92014c94c7497f6dc4c93) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c2976853c14aa13f856d66dfc1c10a6a') in 0.011375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Environment/Textures/Lanterns/albedo_transparent.psd
+  artifactKey: Guid(ab754629dd160a140bd57bb516736b2a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Lanterns/albedo_transparent.psd using Guid(ab754629dd160a140bd57bb516736b2a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c9d4c7ca08c4450310529fb9f2fcc4f2') in 0.0158634 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Textures/Lanterns/Latern5 [Normal].png
+  artifactKey: Guid(47dc268b0b8621f46b71f2d393047e8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Lanterns/Latern5 [Normal].png using Guid(47dc268b0b8621f46b71f2d393047e8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cc56738875495f29243ed394eafd2ff8') in 0.0170629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/World/Environment/Textures/Furniture/MetalTable_Normal.tga
+  artifactKey: Guid(21546a25b584c5047a08184b300200c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Furniture/MetalTable_Normal.tga using Guid(21546a25b584c5047a08184b300200c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6066c82d3859ba55c1b780a21fc6a338') in 0.017724 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/2H/HumanF@RunStrafe01_BackwardRight - 2H.overrideController
+  artifactKey: Guid(8476ad7e5d1f64647b2827487b48f8fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/2H/HumanF@RunStrafe01_BackwardRight - 2H.overrideController using Guid(8476ad7e5d1f64647b2827487b48f8fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '950ce38b3ab20e416af01eec3154615c') in 0.0245535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@Combat Movement - Sword and Shield.overrideController
+  artifactKey: Guid(1034ff4c88ba2c34cb5edae526585116) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@Combat Movement - Sword and Shield.overrideController using Guid(1034ff4c88ba2c34cb5edae526585116) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '21662dc5861f4bb6f3bb15c1c8cf843a') in 0.0277414 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@RunStrafe01_ForwardRight - 1H.overrideController
+  artifactKey: Guid(77ba38988385da54387fd06f76c1009a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@RunStrafe01_ForwardRight - 1H.overrideController using Guid(77ba38988385da54387fd06f76c1009a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ed72d1bb16f31e757cac080f6a15675') in 0.0117349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@RunStrafe01_ForwardLeft - 1H.overrideController
+  artifactKey: Guid(ab16fc3570a0f68419f151a8592b7d19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@RunStrafe01_ForwardLeft - 1H.overrideController using Guid(ab16fc3570a0f68419f151a8592b7d19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '75356bf18263bd2f9e96c5fdd233caaa') in 0.0071324 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@RunStrafe01_Left - 1H.overrideController
+  artifactKey: Guid(31811ada60a1d454e9fe5657d431e1fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@RunStrafe01_Left - 1H.overrideController using Guid(31811ada60a1d454e9fe5657d431e1fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b80a8b4eb7548eff65c6a3b59a7b4dbf') in 0.0092665 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Environment/Textures/Furniture/fireplace_02_cast_ALBEDO.png
+  artifactKey: Guid(537f5b0ea0d2a2a44a0b504eb40d4afa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Furniture/fireplace_02_cast_ALBEDO.png using Guid(537f5b0ea0d2a2a44a0b504eb40d4afa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7af869a3ca667c9522fc4f20d1ff2b13') in 0.0180598 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Textures/Furniture/RoundTable_Normal.tga
+  artifactKey: Guid(c769d772c3e960b4cb4fde9b52101b27) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Furniture/RoundTable_Normal.tga using Guid(c769d772c3e960b4cb4fde9b52101b27) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '845fbe35a7a41c93026f9f0cb97b0699') in 0.0174869 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@Run_ForwardLeft - Polearm.overrideController
+  artifactKey: Guid(cf6677d24dbe87d47b3cef795fc90521) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@Run_ForwardLeft - Polearm.overrideController using Guid(cf6677d24dbe87d47b3cef795fc90521) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '60a718b1ae7f03748bbad87ff24b7b3c') in 0.0118788 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/2H/HumanF@Run_Left - 2H.overrideController
+  artifactKey: Guid(44f6aa9f2c704d54da8a88d0a04e1f92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/2H/HumanF@Run_Left - 2H.overrideController using Guid(44f6aa9f2c704d54da8a88d0a04e1f92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab19deebdb055888915cb7a94bcc05e7') in 0.0098397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/2H/HumanF@Run_ForwardRight - 2H.overrideController
+  artifactKey: Guid(c6899a5da7d2bdf40a301b9e7c0f57f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/2H/HumanF@Run_ForwardRight - 2H.overrideController using Guid(c6899a5da7d2bdf40a301b9e7c0f57f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2ca84840e05c9559f8e633b25e6ca496') in 0.0088386 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/2H/HumanF@Run_ForwardLeft - 2H.overrideController
+  artifactKey: Guid(fbaa7a0589b569f42a06605138527b92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/2H/HumanF@Run_ForwardLeft - 2H.overrideController using Guid(fbaa7a0589b569f42a06605138527b92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ba6319a261ba37583ef057b6de59cd17') in 0.00931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@Run_Forward - Polearm.overrideController
+  artifactKey: Guid(99b5d57ce69490a4289aaba337fb6784) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@Run_Forward - Polearm.overrideController using Guid(99b5d57ce69490a4289aaba337fb6784) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f6e1b05fe56d0f4573d6920acd92f3ca') in 0.0100118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@RunStrafe01_BackwardLeft - Polearm.overrideController
+  artifactKey: Guid(dc19351b45006754794d859e0d4e4866) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@RunStrafe01_BackwardLeft - Polearm.overrideController using Guid(dc19351b45006754794d859e0d4e4866) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7acc16a1bc293494519e33c67ab26f39') in 0.0115929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@RunStrafe01_BackwardRight - Polearm.overrideController
+  artifactKey: Guid(43da086ec52de7a4c8958a250f84984e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@RunStrafe01_BackwardRight - Polearm.overrideController using Guid(43da086ec52de7a4c8958a250f84984e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '32cea28495deefd67ca1ad5e08c8633b') in 0.009358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/1H/HumanM@Run_BackwardLeft - 1H.controller
+  artifactKey: Guid(726e17252bb9d90488c4e2b521fb9bb7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/1H/HumanM@Run_BackwardLeft - 1H.controller using Guid(726e17252bb9d90488c4e2b521fb9bb7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '964dbea27ee36c2b92af2d5312d8105b') in 0.0056795 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/1H/HumanM@Run_Left - 1H.controller
+  artifactKey: Guid(780ce11a71db92d44ae9eaa77a2c549d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/1H/HumanM@Run_Left - 1H.controller using Guid(780ce11a71db92d44ae9eaa77a2c549d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ec12055df3022abe8cd5b5882bca46c1') in 0.0053941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/2H/HumanM@Run_ForwardRight - 2H.controller
+  artifactKey: Guid(e7c29dd2ed6f6aa48b1b8a215d21bfd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/2H/HumanM@Run_ForwardRight - 2H.controller using Guid(e7c29dd2ed6f6aa48b1b8a215d21bfd3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5c87cecad0ca0fa45db028f6e58c784e') in 0.007218 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/1H/HumanM@RunStrafe01_ForwardLeft - 1H.controller
+  artifactKey: Guid(672ce26fc526f1042a5c2d1f64d903a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/1H/HumanM@RunStrafe01_ForwardLeft - 1H.controller using Guid(672ce26fc526f1042a5c2d1f64d903a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a0278d0b1a287712db85127e5376ec4') in 0.0066277 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/2H/HumanM@RunStrafe01_BackwardRight - 2H.controller
+  artifactKey: Guid(2de1b2812f9db534a88df0250a92ebcb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/2H/HumanM@RunStrafe01_BackwardRight - 2H.controller using Guid(2de1b2812f9db534a88df0250a92ebcb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '887e6397e966d389a519af82ffdb650e') in 0.0067194 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/2H/HumanM@Run_Forward - 2H.controller
+  artifactKey: Guid(b481413f70b808c4dbb46c48522ae272) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/2H/HumanM@Run_Forward - 2H.controller using Guid(b481413f70b808c4dbb46c48522ae272) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c4c1985cee0fd61069e69388cac6e3c1') in 0.0076133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Sounds/FX/Toilet/SFX_Toilet_Idle.wav
+  artifactKey: Guid(f17c5a9bc82a7d142b37176a4542fac3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/FX/Toilet/SFX_Toilet_Idle.wav using Guid(f17c5a9bc82a7d142b37176a4542fac3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '743512719c8575e03d8540af8d7f6a26') in 0.0771345 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/Polearm/HumanM@Run_ForwardRight - Polearm.controller
+  artifactKey: Guid(2dff512f419726743a4412282061c6cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/Polearm/HumanM@Run_ForwardRight - Polearm.controller using Guid(2dff512f419726743a4412282061c6cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'deffd50a2f91051f81863aae0f54ea37') in 0.0065153 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/Polearm/HumanM@Run_Right - Polearm.controller
+  artifactKey: Guid(fed8e8e9b07377547a0cc3c4907ea7d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/Polearm/HumanM@Run_Right - Polearm.controller using Guid(fed8e8e9b07377547a0cc3c4907ea7d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9d8a51620e96081fa4468231e0335d33') in 0.0072071 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/Polearm/HumanM@RunStrafe01_ForwardLeft - Polearm.controller
+  artifactKey: Guid(d4780be61e4af8f4191f213919d55279) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/Polearm/HumanM@RunStrafe01_ForwardLeft - Polearm.controller using Guid(d4780be61e4af8f4191f213919d55279) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fcd545f5027fe5b931a9fb902f019055') in 0.0083017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/Polearm/HumanM@Run_Forward - Polearm.controller
+  artifactKey: Guid(3006f459dfb07f946b33e09940839091) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/Polearm/HumanM@Run_Forward - Polearm.controller using Guid(3006f459dfb07f946b33e09940839091) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '05216f47a07a23ecee26f9b3092819a3') in 0.0071408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Game/Animations/NPC/Male/Movement/Strafe/StrafeRun/RootMotion/HumanM@StrafeRun01_BackwardRight [RM].fbx
+  artifactKey: Guid(32a619b04d843b1469dc3a0df13bc78d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Male/Movement/Strafe/StrafeRun/RootMotion/HumanM@StrafeRun01_BackwardRight [RM].fbx using Guid(32a619b04d843b1469dc3a0df13bc78d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '07b7e91e2b978b7abb154d0a14940c92') in 0.0148662 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Game/Animations/NPC/Female/Movement/Strafe/StrafeRun/RootMotion/HumanF@StrafeRun01_BackwardLeft [RM].fbx
+  artifactKey: Guid(b86aceeff57b12b438369295745c6a06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Female/Movement/Strafe/StrafeRun/RootMotion/HumanF@StrafeRun01_BackwardLeft [RM].fbx using Guid(b86aceeff57b12b438369295745c6a06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1adf2204daab06866cb733928561909b') in 0.0247779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Game/Animations/NPC/Male/Movement/Strafe/StrafeRun/RootMotion/HumanM@StrafeRun01_Right [RM].fbx
+  artifactKey: Guid(b4491ea68adcdf5488915320b7f9eb43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Male/Movement/Strafe/StrafeRun/RootMotion/HumanM@StrafeRun01_Right [RM].fbx using Guid(b4491ea68adcdf5488915320b7f9eb43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'abd32ec9c85856dd9a40770755bbbbf8') in 0.0145633 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game/Animations/NPC/Male/Movement/Run/HumanM@Run01_ForwardRight.fbx
+  artifactKey: Guid(152af2cd00aaae34e816ebb8deb4b68e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Male/Movement/Run/HumanM@Run01_ForwardRight.fbx using Guid(152af2cd00aaae34e816ebb8deb4b68e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c50d3ba85741c01a4b366de8d3a134f') in 0.0127672 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Sounds/FX/BlizzardFX/Blizzard_medium.wav
+  artifactKey: Guid(02bfcc2d69fc71a49ae920c9c0f5f3c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/FX/BlizzardFX/Blizzard_medium.wav using Guid(02bfcc2d69fc71a49ae920c9c0f5f3c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '363bad1d778004f46e952ad93cbf7f92') in 0.2522917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/World/Environment/Textures/Trees/TileFloor.png
+  artifactKey: Guid(3211d6763abc59248b21a909ae30a522) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Trees/TileFloor.png using Guid(3211d6763abc59248b21a909ae30a522) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '284427ee9b9bc703753d95cf34df6547') in 0.0092651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Game/Animations/NPC/Male/Movement/Run/HumanM@Run01_Right.fbx
+  artifactKey: Guid(846fff649819bcf49b933d00ef6f703f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Male/Movement/Run/HumanM@Run01_Right.fbx using Guid(846fff649819bcf49b933d00ef6f703f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd5973dd9edc4933e794ffde6927fb769') in 0.0129159 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE1.mat
+  artifactKey: Guid(f75cfa7d313f4ca4a9a0367922a04e8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE1.mat using Guid(f75cfa7d313f4ca4a9a0367922a04e8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8eb74a2235e2d15e853ad18f8571e991') in 0.0070826 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Textures/Flames/WFX_T_FlamesSmall 4frm.tga
+  artifactKey: Guid(9cb7bb0b99eccab4794a6de5e6593024) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Textures/Flames/WFX_T_FlamesSmall 4frm.tga using Guid(9cb7bb0b99eccab4794a6de5e6593024) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df639d9c5de92fc1bd9a28f2da8b0796') in 0.0091978 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/2H/HumanM@RunStrafe01_Right - 2H.controller
+  artifactKey: Guid(fc847f42a5c1a2f4dbf34ef52c28a032) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/2H/HumanM@RunStrafe01_Right - 2H.controller using Guid(fc847f42a5c1a2f4dbf34ef52c28a032) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '52b403f919cedc437b86ed724f24c7cf') in 0.0173121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/Polearm/HumanM@RunStrafe01_ForwardRight - Polearm.controller
+  artifactKey: Guid(82517993520f4db48952b2ecff30f5ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Male/Polearm/HumanM@RunStrafe01_ForwardRight - Polearm.controller using Guid(82517993520f4db48952b2ecff30f5ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a31e77cb97068f2d51dae7202828492b') in 0.0067503 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Textures/TerrainAutoUpgrade/Snow_1_normal.png
+  artifactKey: Guid(09fef9dc6c1693a4491de16a53ee2eec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/TerrainAutoUpgrade/Snow_1_normal.png using Guid(09fef9dc6c1693a4491de16a53ee2eec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1c2dad35e28e4f06c49ef9454e01406d') in 0.0182114 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE1 A8.png
+  artifactKey: Guid(1f835b8ac4f16174889bcee8981c9142) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE1 A8.png using Guid(1f835b8ac4f16174889bcee8981c9142) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '42c1f513c16400ddd67b9df6f9c10d1c') in 0.0103319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE2 A8.png
+  artifactKey: Guid(c9fc1cb53157aa04a9b2db5336bbd75f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE2 A8.png using Guid(c9fc1cb53157aa04a9b2db5336bbd75f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ac211171efb32333bec593555fefb3fb') in 0.0166323 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Sounds/FX/scary/doorOpenLoud.wav
+  artifactKey: Guid(afd3e8ed9ed74e54499f0761d34f6ecd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Sounds/FX/scary/doorOpenLoud.wav using Guid(afd3e8ed9ed74e54499f0761d34f6ecd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd2d4bcad74195d8162cdbaef99854f48') in 0.034906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/Misc/WFX_M_GroundGlow Add.mat
+  artifactKey: Guid(e0d80b657ecab7c4b9ce24628b2dc682) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/Misc/WFX_M_GroundGlow Add.mat using Guid(e0d80b657ecab7c4b9ce24628b2dc682) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b3604b2fa17d7683af7ff1d636c6e832') in 0.0062499 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/World/Environment/Textures/TerrainAutoUpgrade/Snow_2_normal.png
+  artifactKey: Guid(888c932c195654b48b748da8196bbe04) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/TerrainAutoUpgrade/Snow_2_normal.png using Guid(888c932c195654b48b748da8196bbe04) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7a5feb59f0a464fc8b4752ff3fc5887e') in 0.0103592 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game/Animations/NPC/Male/Combat/HumanM@CombatDamage01.fbx
+  artifactKey: Guid(e191b1e6013333f4f8fcf7db4018a4d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/NPC/Male/Combat/HumanM@CombatDamage01.fbx using Guid(e191b1e6013333f4f8fcf7db4018a4d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ad8b7b40db28af5821b556b08a710edb') in 0.0127676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 120
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.180 seconds
+Refreshing native plugins compatible for Editor in 7.89 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.398 seconds
+Domain Reload Profiling: 3572ms
+	BeginReloadAssembly (1338ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (27ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1086ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (720ms)
+		LoadAssemblies (610ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (262ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (233ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1399ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1141ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (262ms)
+			ProcessInitializeOnLoadAttributes (523ms)
+			ProcessInitializeOnLoadMethodAttributes (334ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6094 unused Assets / (2.0 MB). Loaded Objects now: 6933.
+Memory consumption went from 163.1 MB to 161.0 MB.
+Total: 15.898500 ms (FindLiveObjects: 0.853400 ms CreateObjectMapping: 0.527700 ms MarkObjects: 12.409700 ms  DeleteObjects: 2.106100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.172 seconds
+Refreshing native plugins compatible for Editor in 8.05 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.495 seconds
+Domain Reload Profiling: 3662ms
+	BeginReloadAssembly (1311ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1072ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (735ms)
+		LoadAssemblies (613ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (281ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (249ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1496ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1265ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (302ms)
+			ProcessInitializeOnLoadAttributes (580ms)
+			ProcessInitializeOnLoadMethodAttributes (359ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 8.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6086 unused Assets / (4.2 MB). Loaded Objects now: 6936.
+Memory consumption went from 162.7 MB to 158.5 MB.
+Total: 19.322900 ms (FindLiveObjects: 0.865100 ms CreateObjectMapping: 0.659600 ms MarkObjects: 13.934300 ms  DeleteObjects: 3.862700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.186 seconds
+Refreshing native plugins compatible for Editor in 7.51 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.467 seconds
+Domain Reload Profiling: 3649ms
+	BeginReloadAssembly (1305ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1068ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (754ms)
+		LoadAssemblies (620ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (289ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (251ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (1468ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1243ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (271ms)
+			ProcessInitializeOnLoadAttributes (562ms)
+			ProcessInitializeOnLoadMethodAttributes (383ms)
+			AfterProcessingInitializeOnLoad (19ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 9.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6086 unused Assets / (3.0 MB). Loaded Objects now: 6939.
+Memory consumption went from 162.8 MB to 159.7 MB.
+Total: 16.548200 ms (FindLiveObjects: 0.983600 ms CreateObjectMapping: 0.647500 ms MarkObjects: 12.712400 ms  DeleteObjects: 2.203500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
