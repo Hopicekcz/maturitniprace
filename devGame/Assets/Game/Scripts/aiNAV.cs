@@ -43,18 +43,23 @@ public class aiNAV : MonoBehaviour
     private bool isPlayerVisible;
     private bool isPlayerInRange;
     private bool isMoving;
-    private bool isChasing;
-    private bool wasChasing = false;
     private bool wasHit;
     private bool isOnAttackCooldown;
     private bool isOnStrafePoint;
     private bool fightMode;
     private bool patrolTimerFinished = true;
+    private bool sawPlayer;
     //Ray for checking collisions between the NPC and the Player
     Ray npcToPlayerRay;
     Ray raySide;
     RaycastHit hitWall;
     RaycastHit hitGround;
+    private Vector3 playerLastPosition;
+
+    //TO ADD NEXT!!! - isPlayerVisible and isPlayerInRange checks need to be sent from an empty gameobject of the npc head to the player head (obstacles make player invisible)
+    //readd shortterm chase memory, but keep the previous point to get to. there should just be a timer once the player cant be seen, then once the timer is up the npc should go to the last known point.
+    //atleast optimize a bit
+    //comment a lot!!!!!
 
     //INITIALIZATION
     private void Awake(){ //Because the EnemyNPC is a prefab and the playertransform cannot be assigned into the reference, a script hard-reference is needed
@@ -137,13 +142,14 @@ public class aiNAV : MonoBehaviour
     }
 
     private void UpdateBehaviourState(){ //Behaviour state switcher
-        if(!isPlayerVisible && !isPlayerInRange && !wasChasing){ //Cant see player, Player isnt close and Player was not being chased = Patrol
+     Debug.Log(navAgent.destination);
+        if(!isPlayerVisible && !isPlayerInRange && sawPlayer){ //Cant see player, Player isnt close and Player was not being chased = Patrol
             PerformPatrol();
         }
-        else if ((isPlayerVisible && !isPlayerInRange) || (!isPlayerVisible && !isPlayerInRange && wasChasing)){  //Can see player but is not close OR Cant see player, is not close but was being chased = Chase
+        else if ((isPlayerVisible && !isPlayerInRange) || (!sawPlayer)){  //Can see player but is not close OR Cant see player, is not close but was being chased = Chase
             PerformChase();
         }
-        else if (isPlayerVisible && isPlayerInRange){ //Can see player, is close = Attack
+        else if (isPlayerVisible && isPlayerInRange && sawPlayer){ //Can see player, is close = Attack
             PerformAttack();
         }
     }
@@ -152,17 +158,13 @@ public class aiNAV : MonoBehaviour
 
     //PATROL
     private void PerformPatrol(){ //When Patrolling state
-        isChasing = false;
         fightMode = false;
-        Debug.Log(hasPatrolPoint);
         if (!hasPatrolPoint){ //If no patrol point has been decided YET, run the function to find it.
-            FindPatrolPoint();
-            Debug.Log("find point");         
+            FindPatrolPoint();       
         }
 
         if (hasPatrolPoint){
             isMoving = true;
-            Debug.Log("Set");
             navAgent.SetDestination(currentPatrolPoint);
             if(patrolTimerFinished){
                 StartCoroutine(PatrolPointTimer());
@@ -182,51 +184,38 @@ public class aiNAV : MonoBehaviour
         if (Physics.Raycast(potentialPoint, Vector3.down, out hit, 20f, terrainLayer)){ //Send a raycast from above down to check for walkable layer.
             currentPatrolPoint = hit.point; //found valid point, go to it
             hasPatrolPoint = true;
-            Debug.Log("Valid");
         }
     }
 
     private IEnumerator PatrolPointTimer(){
         patrolTimerFinished = false;
-        Debug.Log("Wait");
         yield return new WaitForSeconds(patrolPointTimer);
         hasPatrolPoint = false;
         patrolTimerFinished = true;
-        Debug.Log("Waited");
     }
 
     //PATROL
 
     //CHASE
     private void PerformChase(){
-        isChasing = true;
         fightMode = false;
         isMoving = true;
-        navAgent.isStopped = false;
-        navAgent.SetDestination(playerTransform.position); //simple follow the player
-        StartCoroutine(WasChasingTimer()); //Start the Coroutine of checking for when the chase stops, functioning as a short-term memory function
+        if(isPlayerVisible && !isPlayerInRange){
+            sawPlayer = false;
+            playerLastPosition = playerTransform.position;
+        } else if(!isPlayerVisible  && (Vector3.Distance(transform.position, playerLastPosition) < 0.1f) || isPlayerInRange){
+            sawPlayer = true;
+        }
+        navAgent.SetDestination(playerLastPosition);
+         //simple follow the player
     }
 
-    private IEnumerator WasChasingTimer(){
-        bool isChasingWaitCondition(){ //converting the isChasing state into a function boolean for use with the WaitUntil function
-            return !isChasing;
-        }
-        yield return new WaitUntil(isChasingWaitCondition); //Wait until isChasing stops being true. (NPC stopped chasing)
-        wasChasing = true;
-        Vector3 oldPlayerPosition = playerTransform.position;
-        yield return new WaitForSeconds(followPlayerTimer); //Once the additional chasing ends, "forget"
-        bool isOnLastPlayerPositionCondition(){
-            return Vector3.Distance(oldPlayerPosition, transform.position) < 1f;
-        }
-        yield return new WaitUntil(isOnLastPlayerPositionCondition);
-        wasChasing = false;
-    }
+    
     //CHASE
     
     //ATTACK - WILL BE UPDATED!!
     private void PerformAttack(){
         isMoving = true;
-        isChasing = false;
         fightMode = true;
         //if(!isOnAttackCooldown){ //attack function along with attack cooldown function
             FireWeapon();
