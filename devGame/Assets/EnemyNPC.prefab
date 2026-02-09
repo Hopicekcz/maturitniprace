@@ -170,6 +170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 437388850854754637}
+  - component: {fileID: 4591080827339799207}
   m_Layer: 0
   m_Name: Revolver_LP
   m_TagString: Untagged
@@ -201,8 +202,106 @@ Transform:
   - {fileID: 3923078496257315397}
   - {fileID: 2203469685662266456}
   - {fileID: 5181609256082661554}
+  - {fileID: 8788512052311476588}
   m_Father: {fileID: 4749761773516984262}
   m_LocalEulerAnglesHint: {x: -72.617, y: 328.162, z: -1663.169}
+--- !u!82 &4591080827339799207
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962145771180368887}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.719
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1243196175928104977
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +426,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7291919159242138699}
+  - {fileID: 481077163837944034}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1094798494837543613
@@ -409,9 +509,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::aiNAV
   playerTransform: {fileID: 0}
   navAgent: {fileID: 9052224868937810264}
-  firePoint: {fileID: 0}
-  projectilePrefab: {fileID: 0}
   animator: {fileID: 1094798494837543613}
+  eyes: {fileID: 1663950375344197899}
+  playerEyes: {fileID: 0}
+  playerBody: {fileID: 0}
   terrainLayer:
     serializedVersion: 2
     m_Bits: 512
@@ -421,17 +522,22 @@ MonoBehaviour:
   obstacleLayerMask:
     serializedVersion: 2
     m_Bits: 128
+  muzzleFlashPrefab: {fileID: 6975556097296941705, guid: 5a4bdec5dd36de3499ce0de282aa1f7f,
+    type: 3}
+  muzzlePoint: {fileID: 8788512052311476588}
+  shootSound: {fileID: 8300000, guid: 0df05d586b7fae54b8f6cbd8cd716a57, type: 3}
+  audioSource: {fileID: 4591080827339799207}
   patrolRadius: 5
-  followPlayerTimer: 1
-  attackCooldown: 1
-  forwardShotForce: 10
-  verticalShotForce: 5
+  attackCooldown: 3
   npcHP: 100
   walkSpeed: 2
   hitTimer: 2
+  patrolPointTimer: 2.5
   staggeredSpeed: 1
+  followPlayerTimer: 1
   visionRange: 15
-  engagementRange: 2
+  engagementRange: 6
+  tooCloseRange: 3
 --- !u!1 &1518895671863383576
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +569,37 @@ Transform:
   m_Children:
   - {fileID: 1879271781951172055}
   m_Father: {fileID: 5808341740366367652}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1663950375344197899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481077163837944034}
+  m_Layer: 8
+  m_Name: Eyes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &481077163837944034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663950375344197899}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.021, y: 1.693, z: 0.138}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5229106645553401850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1816593968682520121
 GameObject:
@@ -1666,6 +1803,37 @@ Transform:
   m_Children:
   - {fileID: 4337372767854380652}
   m_Father: {fileID: 5122716304567437984}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5168921731106667205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8788512052311476588}
+  m_Layer: 0
+  m_Name: npcMuzzlePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8788512052311476588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5168921731106667205}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.066, z: 0.172}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 437388850854754637}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5220586110158750545
 GameObject:
