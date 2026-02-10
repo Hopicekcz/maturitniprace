@@ -1,17 +1,17 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.3f1 (ef04196de0d6) revision 15664153'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16004 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-02-09T18:37:37.7303575Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-02-09T18:37:37Z
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 2720, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+Date: 2026-02-10T17:11:29Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-02-10T17:11:29.5685465Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 16956, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.17.4'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Hopic"
 [Licensing::IpcConnector] LicenseClient-Hopic channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-02-09T18:37:37.7884989Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-02-10T17:11:29.6226954Z"
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.3f1\Editor\Unity.exe
@@ -25,7 +25,7 @@ E:/unity/maturitniprace/active/devGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51426
+59434
 -licensingIpc
 LicenseClient-Hopic
 -job-worker-count
@@ -73,16 +73,16 @@ E:/unity/maturitniprace/active/devGame
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [6088]  Target information:
+Player connection [16016]  Target information:
 
-Player connection [6088]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 270118004 [EditorId] 270118004 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [16016]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2616741852 [EditorId] 2616741852 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [6088]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 270118004 [EditorId] 270118004 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [16016]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 2616741852 [EditorId] 2616741852 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [6088]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 270118004 [EditorId] 270118004 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [16016]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 2616741852 [EditorId] 2616741852 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [6088] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [6088] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16016] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [16016] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -94,7 +94,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 7.74 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 7.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.3f1 (ef04196de0d6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -112,52 +112,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56296
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003595 seconds.
-- Loaded All Assemblies, in  0.602 seconds
+Registered in 0.003455 seconds.
+- Loaded All Assemblies, in  0.549 seconds
 Native extension for WindowsStandalone target not found
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              80c450eea8e640c59e4a816d588e28d9
-  Correlation Id:          9f481175166fc3e6fb79b0b090779f56
-  External correlation Id: 637444969233260195
+  Session Id:              f7c1878da1794b1f85b7dfd8f5e1dd47
+  Correlation Id:          04a246eae0b2f02f2351bc0e7fdcb6c2
+  External correlation Id: 1322566488687396982
   Machine Id:              4VB2xDT1CV9zqVbIIZWsGa/FyKA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 1.52s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-02-09T18:37:39.3131519Z"
-[Licensing::Module] Licensing Background thread has ended after 1.58s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 1.50s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-02-10T17:11:31.1261118Z"
+[Licensing::Module] Licensing Background thread has ended after 1.56s
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.572 seconds
-Domain Reload Profiling: 1169ms
-	BeginReloadAssembly (204ms)
+- Finished resetting the current domain, in  0.686 seconds
+Domain Reload Profiling: 1229ms
+	BeginReloadAssembly (184ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (60ms)
+	RebuildCommonClasses (48ms)
 	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (72ms)
-	LoadAllAssembliesAndSetupDomain (240ms)
-		LoadAssemblies (198ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (223ms)
+		LoadAssemblies (177ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (236ms)
-			TypeCache.Refresh (233ms)
-				TypeCache.ScanAssembly (215ms)
+		AnalyzeDomain (219ms)
+			TypeCache.Refresh (217ms)
+				TypeCache.ScanAssembly (199ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (573ms)
+	FinalizeReload (686ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (526ms)
+		SetupLoadedEditorAssemblies (642ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (74ms)
+			InitializePlatformSupportModulesInManaged (67ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (140ms)
-			ProcessInitializeOnLoadAttributes (198ms)
-			ProcessInitializeOnLoadMethodAttributes (109ms)
+			BeforeProcessingInitializeOnLoad (133ms)
+			ProcessInitializeOnLoadAttributes (245ms)
+			ProcessInitializeOnLoadMethodAttributes (193ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -178,216 +178,249 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.285 seconds
-Refreshing native plugins compatible for Editor in 7.41 ms, found 2 plugins.
+- Loaded All Assemblies, in  1.190 seconds
+Refreshing native plugins compatible for Editor in 6.99 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 7.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 7.31 ms, found 2 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.258 seconds
-Domain Reload Profiling: 2537ms
-	BeginReloadAssembly (259ms)
+- Finished resetting the current domain, in  1.202 seconds
+Domain Reload Profiling: 2385ms
+	BeginReloadAssembly (236ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (47ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (45ms)
 	RebuildNativeTypeToScriptingClass (18ms)
 	initialDomainReloadingComplete (58ms)
-	LoadAllAssembliesAndSetupDomain (896ms)
-		LoadAssemblies (632ms)
+	LoadAllAssembliesAndSetupDomain (826ms)
+		LoadAssemblies (611ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (409ms)
-			TypeCache.Refresh (308ms)
-				TypeCache.ScanAssembly (283ms)
-			BuildScriptInfoCaches (82ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1259ms)
+		AnalyzeDomain (353ms)
+			TypeCache.Refresh (262ms)
+				TypeCache.ScanAssembly (238ms)
+			BuildScriptInfoCaches (75ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1203ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1002ms)
+		SetupLoadedEditorAssemblies (951ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (178ms)
-			ProcessInitializeOnLoadAttributes (514ms)
-			ProcessInitializeOnLoadMethodAttributes (290ms)
-			AfterProcessingInitializeOnLoad (14ms)
+			BeforeProcessingInitializeOnLoad (173ms)
+			ProcessInitializeOnLoadAttributes (467ms)
+			ProcessInitializeOnLoadMethodAttributes (294ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (13ms)
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 6.75 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 6.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6088 unused Assets / (4.5 MB). Loaded Objects now: 6884.
-Memory consumption went from 154.4 MB to 149.9 MB.
-Total: 15.711000 ms (FindLiveObjects: 0.911500 ms CreateObjectMapping: 0.771100 ms MarkObjects: 12.002400 ms  DeleteObjects: 2.024500 ms)
+Unloading 6088 unused Assets / (4.4 MB). Loaded Objects now: 6884.
+Memory consumption went from 152.7 MB to 148.3 MB.
+Total: 17.106400 ms (FindLiveObjects: 0.806300 ms CreateObjectMapping: 0.389600 ms MarkObjects: 14.060500 ms  DeleteObjects: 1.848900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 537059.537069 seconds.
-  path: Assets/Game/1.renderTexture
-  artifactKey: Guid(a48f65118c842e14295c0f3d81da8210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/1.renderTexture using Guid(a48f65118c842e14295c0f3d81da8210) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7516732d9adb3c67fb98434a81de6a5') in 0.4108369 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 737.459916 seconds.
+  Time since last request: 2365.751183 seconds.
   path: Assets/Game/Scripts/aiNAV.cs
   artifactKey: Guid(17db6838b83fccb43a6c843d0eeadf8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Game/Scripts/aiNAV.cs using Guid(17db6838b83fccb43a6c843d0eeadf8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '63f1b611e5560a8ae4fbb3ed36ad18dc') in 0.1214812 seconds
+Start importing Assets/Game/Scripts/aiNAV.cs using Guid(17db6838b83fccb43a6c843d0eeadf8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2c8b175007084bf984adc77b38efd2ac') in 0.095426 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Shotgun/shotgun_shotgun_Normal.png
-  artifactKey: Guid(551100cc4d9cfbc479c2affdc7bcb4f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Shotgun/shotgun_shotgun_Normal.png using Guid(551100cc4d9cfbc479c2affdc7bcb4f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '34cbf5684446129f1b9c0a5342a5e1d0') in 0.0904131 seconds
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game/Scenes/Playground.unity
+  artifactKey: Guid(707acc8dffb72b144bb1ffbe1c965f3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground.unity using Guid(707acc8dffb72b144bb1ffbe1c965f3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '879cb3571f359550a66602f644acd843') in 0.0102656 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.130 seconds
+Refreshing native plugins compatible for Editor in 7.52 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.246 seconds
+Domain Reload Profiling: 2372ms
+	BeginReloadAssembly (320ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (61ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (700ms)
+		LoadAssemblies (563ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (270ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (237ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1246ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1019ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (211ms)
+			ProcessInitializeOnLoadAttributes (485ms)
+			ProcessInitializeOnLoadMethodAttributes (300ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 8.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6086 unused Assets / (4.3 MB). Loaded Objects now: 6901.
+Memory consumption went from 159.1 MB to 154.8 MB.
+Total: 14.079800 ms (FindLiveObjects: 0.846400 ms CreateObjectMapping: 0.399700 ms MarkObjects: 10.958700 ms  DeleteObjects: 1.873900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 34.036053 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/CameraDistanceMask.shadersubgraph
+  artifactKey: Guid(556dff229d0982b43b52bc3ce1019148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/CameraDistanceMask.shadersubgraph using Guid(556dff229d0982b43b52bc3ce1019148) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20e89b7149eff06a07828b938b34e6ba') in 0.039479 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Rifle/Bullet_Metalic_Smoothness.png
-  artifactKey: Guid(b3219606ba210cf469ec53a672440af1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Rifle/Bullet_Metalic_Smoothness.png using Guid(b3219606ba210cf469ec53a672440af1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fb71146584de09e2b9c6e0e912c6b2ce') in 0.0098642 seconds
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Particle Vertex Color.shadersubgraph
+  artifactKey: Guid(73f7a6a1a6335484ba02a0b8f80fe10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Particle Vertex Color.shadersubgraph using Guid(73f7a6a1a6335484ba02a0b8f80fe10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd95071f59b93596e38fe85e60684415a') in 0.0042253 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Rifle/Rifle_BaseColor.png
-  artifactKey: Guid(9039eabbad45cba4d9d6dc56972e8a85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Rifle/Rifle_BaseColor.png using Guid(9039eabbad45cba4d9d6dc56972e8a85) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '59b55ba4776e2a2c0168742c89706f08') in 0.0111447 seconds
+  Time since last request: 0.000086 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Particle Distortion.shadersubgraph
+  artifactKey: Guid(e1ea40df0c5f7d14a96e0bac1ae79489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Particle Distortion.shadersubgraph using Guid(e1ea40df0c5f7d14a96e0bac1ae79489) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c5ab6e6d16c6f11c12c0ab91f899a24') in 0.0018562 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Shotgun/shotgun_shotgun_Metallic_Smoothness.png
-  artifactKey: Guid(3042a652b82f5bd46a148031a395d02a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Shotgun/shotgun_shotgun_Metallic_Smoothness.png using Guid(3042a652b82f5bd46a148031a395d02a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '05bab97529640a2db6cb3cf7f861b1b5') in 0.020384 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Rifle
-  artifactKey: Guid(14d4181a57da87f4bb13557af9bce43f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Rifle using Guid(14d4181a57da87f4bb13557af9bce43f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1a705bc661a43dc507d20d0670764cd7') in 0.005553 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Shotgun/ShotgunShell.prefab
-  artifactKey: Guid(65a90c0e3f672254b8d9330de7aa6381) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Shotgun/ShotgunShell.prefab using Guid(65a90c0e3f672254b8d9330de7aa6381) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ff2015285fc8b92db9abea063f4d7b91') in 0.050093 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Shotgun/shotgun_shotgun_BaseColor.png
-  artifactKey: Guid(6973108a083583e42a14cc4227794562) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Shotgun/shotgun_shotgun_BaseColor.png using Guid(6973108a083583e42a14cc4227794562) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5cc7569c57252cd35a95b3084d79c734') in 0.0131765 seconds
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/FlowMap Sample Texture.shadersubgraph
+  artifactKey: Guid(dd4e180f1d31c4c4e9d4909d27e6761c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/FlowMap Sample Texture.shadersubgraph using Guid(dd4e180f1d31c4c4e9d4909d27e6761c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc744777f014533ad398006eaeee8742') in 0.0018144 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Knife/Knife.prefab
-  artifactKey: Guid(d316d6c2704c5394aa8e770afbcf58bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Knife/Knife.prefab using Guid(d316d6c2704c5394aa8e770afbcf58bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8665cfdd9fca595521a7beca776fd94') in 0.0087082 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
-
-========================================================================
-Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Rifle/Rifle_Metallic_Smoothness.png
-  artifactKey: Guid(ad797bb21e94a3a419b9d40c7b65dffc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Rifle/Rifle_Metallic_Smoothness.png using Guid(ad797bb21e94a3a419b9d40c7b65dffc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a3595ae9cb82d1e0bd96d274112b031c') in 0.010656 seconds
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Sample Flipbook Motion Vector.shadersubgraph
+  artifactKey: Guid(e98ef91f2346c4c57a3cfbb4347ff978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Sample Flipbook Motion Vector.shadersubgraph using Guid(e98ef91f2346c4c57a3cfbb4347ff978) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '058cede08de6ae1cf39999fd8a2fec3e') in 0.0016181 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Rifle/Rifle.fbx
-  artifactKey: Guid(76e88fb03c49565438ff4fe892c75843) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Rifle/Rifle.fbx using Guid(76e88fb03c49565438ff4fe892c75843) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2ca2670517fffb502fbfb093df197a65') in 0.0320068 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/HeightMask.shadersubgraph
+  artifactKey: Guid(bb515ce764324b444b925949646460fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/HeightMask.shadersubgraph using Guid(bb515ce764324b444b925949646460fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0f3b0d12f9ec3f613727f16b627e37b') in 0.0015501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Knife/Knife.fbx
-  artifactKey: Guid(ccfe6e7745b54f74e8cf3c6ee06ba3ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Knife/Knife.fbx using Guid(ccfe6e7745b54f74e8cf3c6ee06ba3ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '94ee986e1d2221b17c5e3ded46901881') in 0.0108893 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Shotgun/ShotgunShell.fbx
-  artifactKey: Guid(9c8f8b6aaa94d0746bb284ef7af69412) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Shotgun/ShotgunShell.fbx using Guid(9c8f8b6aaa94d0746bb284ef7af69412) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ef2b99598e607c248d31867a55857db') in 0.0102935 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons
-  artifactKey: Guid(cd90c4814cc55dc43b22f26717a63220) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons using Guid(cd90c4814cc55dc43b22f26717a63220) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f814d45773cbcdc9cab2998fcd35ced9') in 0.0037008 seconds
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/UV Halftone.shadersubgraph
+  artifactKey: Guid(a925de7ea1f0ed04a8b35c2c10fcc1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/UV Halftone.shadersubgraph using Guid(a925de7ea1f0ed04a8b35c2c10fcc1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aadfe4c4e12ee4dad57ce132f75f4b7e') in 0.0019094 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000028 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Rifle/Rifle.prefab
-  artifactKey: Guid(dee9cc417e829554ea3ebc7aa373557d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Rifle/Rifle.prefab using Guid(dee9cc417e829554ea3ebc7aa373557d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ccc6db0f7518427f78b157f88a933cad') in 0.0064315 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 62
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Rifle/Rifle_Normal.png
-  artifactKey: Guid(0896ce3b48c62a84cb868e710a3793a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Rifle/Rifle_Normal.png using Guid(0896ce3b48c62a84cb868e710a3793a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c043839e5f43d0502b1b15bbeea214b2') in 0.016826 seconds
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Switch6.shadersubgraph
+  artifactKey: Guid(b19f392a4817e1340bbaf1045b6e5051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Switch6.shadersubgraph using Guid(b19f392a4817e1340bbaf1045b6e5051) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87bcf3cc29db35bd37ab14affdb4c5ea') in 0.0016305 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Rifle/RifleBullet.prefab
-  artifactKey: Guid(32531fe2fd127cd48b38456ef28567ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Rifle/RifleBullet.prefab using Guid(32531fe2fd127cd48b38456ef28567ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd538ff0792747e475d43d604af380662') in 0.0086655 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/UV Distortion.shadersubgraph
+  artifactKey: Guid(d9fc86ddc060cc44988e8835a3192cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/UV Distortion.shadersubgraph using Guid(d9fc86ddc060cc44988e8835a3192cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd34f61d2ac85baa0b84b396b62d8018b') in 0.0017675 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Knife/Knife_Metallic_Smoothness.png
-  artifactKey: Guid(24f31b06f0b07ac468c28e2d9b908730) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Knife/Knife_Metallic_Smoothness.png using Guid(24f31b06f0b07ac468c28e2d9b908730) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '796b94a6e35f9763f0c6951187ca91af') in 0.0090544 seconds
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/FlowMap Sample Normal.shadersubgraph
+  artifactKey: Guid(7794dc8c6277cb649804d7253e567322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/FlowMap Sample Normal.shadersubgraph using Guid(7794dc8c6277cb649804d7253e567322) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63add5ddee21e7b142e50b02108dc383') in 0.0015561 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/RyanNein/MidPolyGunWeapons/Demo.unity
-  artifactKey: Guid(3d3a82a441cec6f41852427ab8e214d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RyanNein/MidPolyGunWeapons/Demo.unity using Guid(3d3a82a441cec6f41852427ab8e214d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ca7f3172b0d05c9f8bbd7dd083052420') in 0.0054517 seconds
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Normal Bending.shadersubgraph
+  artifactKey: Guid(62a4ab9c203a85c43a5d0847b25fd2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Normal Bending.shadersubgraph using Guid(62a4ab9c203a85c43a5d0847b25fd2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f00eb21769626d7d23fe0931ade9da20') in 0.0015995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/UV FlowMap.shadersubgraph
+  artifactKey: Guid(c76da6dceef150547b7030daa98eeda6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/UV FlowMap.shadersubgraph using Guid(c76da6dceef150547b7030daa98eeda6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6165c33a2400bb5c429402a17599865b') in 0.0091953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Circle.shadersubgraph
+  artifactKey: Guid(f20330646a5d9ab4ba73ed235396a7a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Circle.shadersubgraph using Guid(f20330646a5d9ab4ba73ed235396a7a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc99157c96024c13093a334be482af2b') in 0.0015359 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Sample Flipbook.shadersubgraph
+  artifactKey: Guid(658423db13944174c95e6a25bde1eb66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Subgraphs/Sample Flipbook.shadersubgraph using Guid(658423db13944174c95e6a25bde1eb66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2e867b8132b8e7c3e3bd3254149fd03') in 0.002058 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout

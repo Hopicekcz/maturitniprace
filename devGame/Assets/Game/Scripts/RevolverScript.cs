@@ -61,16 +61,17 @@ public class RevolverScript : MonoBehaviour
     //INITIALIZATION
     void Awake() //Declaration and activation for keybindings
     {
+        
+    }
+
+    void Start() //Declaration of game components
+    {
         shootAction = new InputAction(type: InputActionType.Button, binding: "<Mouse>/leftButton");
         aimAction = new InputAction(type: InputActionType.Button, binding: "<Mouse>/rightButton");
         reloadAction = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/r");
         shootAction.Enable();
         aimAction.Enable();
         reloadAction.Enable();
-    }
-
-    void Start() //Declaration of game components
-    {
         revolverAmmoCount = maxRevolverAmmoCount; 
         handAnimator = GetComponent<Animator>();
         gunAnimator = GetComponentInChildrenOnly<Animator>();
@@ -91,9 +92,7 @@ public class RevolverScript : MonoBehaviour
 
     void OnDisable() // Unity input safety
     {
-        shootAction.Disable();
-        aimAction.Disable();
-        reloadAction.Disable();
+       
     }
         
     //INITIALIZATION

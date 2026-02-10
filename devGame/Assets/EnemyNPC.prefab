@@ -522,22 +522,34 @@ MonoBehaviour:
   obstacleLayerMask:
     serializedVersion: 2
     m_Bits: 128
+  obstacleHitEffectPrefab: {fileID: 100002, guid: 053ffbc5e89111349bb060a39ffa0f37,
+    type: 3}
+  enemyHitEffectPrefab: {fileID: 1622692855343138289, guid: eba26f2a4358efb44a92d3d6de7bc230,
+    type: 3}
+  groundHitEffectPrefab: {fileID: 100002, guid: fc7f8379080d0a844ad699b91bfd56f0,
+    type: 3}
   muzzleFlashPrefab: {fileID: 6975556097296941705, guid: 5a4bdec5dd36de3499ce0de282aa1f7f,
+    type: 3}
+  muzzleLightEffectPrefab: {fileID: 5343762263582026942, guid: fae8ca27a2f00324eb9ce26f4d96e3dd,
     type: 3}
   muzzlePoint: {fileID: 8788512052311476588}
   shootSound: {fileID: 8300000, guid: 0df05d586b7fae54b8f6cbd8cd716a57, type: 3}
+  reloadSound: {fileID: 8300000, guid: 0c63ca6402022364ea65200bee834019, type: 3}
+  breakSound: {fileID: 8300000, guid: 1c9b47723cb54924cb374b568a681dbc, type: 3}
   audioSource: {fileID: 4591080827339799207}
   patrolRadius: 5
-  attackCooldown: 3
-  npcHP: 100
+  attackCooldown: 2
+  npcHP: 150
   walkSpeed: 2
   hitTimer: 2
   patrolPointTimer: 2.5
   staggeredSpeed: 1
   followPlayerTimer: 1
-  visionRange: 15
-  engagementRange: 6
-  tooCloseRange: 3
+  maxRevolverAmmoCount: 6
+  currentSpread: 0.5
+  visionRange: 20
+  engagementRange: 9
+  tooCloseRange: 4
 --- !u!1 &1518895671863383576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,7 +1841,7 @@ Transform:
   m_GameObject: {fileID: 5168921731106667205}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.066, z: 0.172}
+  m_LocalPosition: {x: -0, y: 0.0763, z: 0.172}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

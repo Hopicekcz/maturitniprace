@@ -17,12 +17,21 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private LayerMask terrainLayer; //layerMask for the Ground to determine walkable checks
     [SerializeField] private LayerMask playerLayerMask; //layerMask for the Player to determine where the player is
     [SerializeField] private LayerMask obstacleLayerMask; 
+    [Header("ShootEffects")]
+    [SerializeField] private GameObject obstacleHitEffectPrefab;
+    [SerializeField] private GameObject enemyHitEffectPrefab;
+    [SerializeField] private GameObject groundHitEffectPrefab;
     [SerializeField] private GameObject muzzleFlashPrefab;
+    [SerializeField] private GameObject muzzleLightEffectPrefab;
+    [Header("ShootMuzzleSmokeLocation")]
     [SerializeField] private Transform muzzlePoint;
 
     [Header("Sounds")]
     [SerializeField] private AudioClip shootSound;
+    [SerializeField] private AudioClip reloadSound;
+    [SerializeField] private AudioClip breakSound;
     [SerializeField]private AudioSource audioSource;
+
 
     [Header("Patrol Settings")] //customizable setting of the patrol radius
     [SerializeField] private float patrolRadius; //the patrol radius
@@ -40,6 +49,10 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private float patrolPointTimer = 2.5f;
     [SerializeField] private float staggeredSpeed = 1f;
     [SerializeField] private float followPlayerTimer = 1f;
+    [SerializeField] private int maxRevolverAmmoCount = 50;
+    private int revolverAmmoCount;
+    private int ogRevolverAmmoCount;
+    [SerializeField] private float currentSpread = 0.5f;
 
     [Header("Detection Ranges")] //customizable settings for the vision (follow player) and engagement (attack) range
     [SerializeField] private float visionRange = 15f;
@@ -57,8 +70,8 @@ public class aiNAV : MonoBehaviour
     private bool patrolTimerFinished = true;
     private bool releaseChase = true;
     private bool keepChasing;
-    private string currentState;
-    private bool attackedPlayer = false;
+    private bool attackedPlayer;
+    private bool isReloading;
     //Ray for checking collisions between the NPC and the Player
     Ray npcToPlayerEyesRay;
     Ray npcToPlayerBodyRay;
@@ -73,6 +86,7 @@ public class aiNAV : MonoBehaviour
 
     //INITIALIZATION
     private void Awake(){ //Because the EnemyNPC is a prefab and the playertransform cannot be assigned into the reference, a script hard-reference is needed
+            revolverAmmoCount = maxRevolverAmmoCount; 
             GameObject playerObj = GameObject.Find("PlayerCapsule");
             playerTransform = playerObj.transform;
             GameObject playerObjEyes = GameObject.Find("PlayerCameraRoot");
@@ -102,7 +116,6 @@ public class aiNAV : MonoBehaviour
 
     //MAIN FUNCTIONS
     private void Update(){ //Constant activation of functions
-    Debug.Log(currentState);
         DetectPlayer();
         UpdateBehaviourState();
         SetAnimation();
@@ -156,17 +169,12 @@ public class aiNAV : MonoBehaviour
         
         if (isPlayerVisible && isPlayerInRange && releaseChase){ //Can see player, is close = Attack
             PerformAttack();
-            currentState = "Attack";
         }
         else if ((isPlayerVisible && !isPlayerInRange) || (!releaseChase) || (attackedPlayer)){  //Can see player but is not close OR Cant see player, is not close but was being chased = Chase
             PerformChase();
-            currentState = "Chase";
-            Debug.Log("is it release chase" + !releaseChase);
-            Debug.Log("is it attackedPlayer" + attackedPlayer);
         }
         else if(!isPlayerVisible && !isPlayerInRange && !attackedPlayer){ //Cant see player, Player isnt close and Player was not being chased = Patrol
             PerformPatrol();
-            currentState = "Patrol";
         }
     }
     //MAIN FUNCTIONS
@@ -260,14 +268,85 @@ public class aiNAV : MonoBehaviour
     }
 
     private void FireWeapon(){
-        audioSource.PlayOneShot(shootSound);
-        StartCoroutine(ShootEffects());
+        
+        if (revolverAmmoCount > 0 && !isReloading) //Shoot action, split into two - physical part, effect part
+        {
+            ShootRoutine();
+            StartCoroutine(ShootEffects());
+        }
+
+        if ((revolverAmmoCount == 0) && !isReloading){ //Reload function
+            StartCoroutine(ReloadWeapon());
+        }
     }
 
     private IEnumerator ShootEffects(){
+        GameObject muzzleLight = Instantiate(muzzleLightEffectPrefab, muzzlePoint); //Create instantiation of prefabs of effects on the pre-defined transform point "muzzlePoint" placed on the tip of the barrel
         GameObject muzzleSmoke = Instantiate(muzzleFlashPrefab, muzzlePoint);
+        yield return new WaitForSeconds(0.05f);
+        Destroy(muzzleLight);
         yield return new WaitForSeconds(5);
         Destroy(muzzleSmoke);
+    }
+
+    private void ShootRoutine() //Shoot function with animator
+    {
+        revolverAmmoCount--;
+        audioSource.PlayOneShot(shootSound);
+        Vector3 direction = GetShootDirectionWithSpread(); //Call bullet-spread function
+        Ray ray = new Ray(muzzlePoint.transform.position, direction); //raycast of bullet from camera center with direction with applied spread
+        RaycastHit hit; //Return of raycast
+        
+        if (Physics.Raycast(ray, out hit))  //which effect prefab to use depending on hit object tag
+        {
+            Debug.DrawRay(ray.origin, hit.point, Color.green);
+            switch(hit.collider.tag){
+                case "Untagged":
+                break;
+
+                case "Obstacle": 
+                Instantiate(obstacleHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                break;
+
+                case "Ground":
+                Instantiate(groundHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                break;
+
+                case "Player": 
+                GameObject playerObj = GameObject.Find("PlayerCapsule");
+                playerObj.SendMessage ("HitByEnemyRevolver"); //this needs to be changed to hit.transform.SendMessage because it wont be just the player everytime
+                Instantiate(enemyHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                break;
+            }
+            
+        }
+    }
+
+    private Vector3 GetShootDirectionWithSpread()
+    {
+        Vector3 forward = (playerTransform.position - muzzlePoint.transform.position) / Vector3.Distance(muzzlePoint.transform.position, playerTransform.position);
+        float spreadX = Random.Range(-currentSpread, currentSpread) * 0.1f; // spread on the X and Y axis, normalized by 0.1f to be able to use bigger numbers in the variable declaration
+        float spreadY = Random.Range(-currentSpread, currentSpread) * 0.1f; 
+        Vector3 direction = forward + muzzlePoint.transform.right * spreadX + muzzlePoint.transform.up * spreadY; //direction is set to the camera direction with applied rules of direction
+        return direction;
+    }
+
+    private IEnumerator ReloadWeapon()
+    {
+        isReloading = true;
+        audioSource.PlayOneShot(breakSound);
+        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.2f);
+        ogRevolverAmmoCount = revolverAmmoCount; //"Temporary" variable used only for separate values to set how many times the reload sound should play, while the HUD displays the correct current value
+        for(int i = 0; i < (maxRevolverAmmoCount-ogRevolverAmmoCount); i++){ //loops for how many bullets are missing in the cylinder
+            audioSource.PlayOneShot(reloadSound);
+            yield return new WaitForSeconds(0.6f);
+            revolverAmmoCount++;
+        }
+        
+        yield return new WaitForSeconds(0.4f);
+        audioSource.PlayOneShot(breakSound);
+        isReloading = false; //reloading end
     }
 
     private void AttackMovement(){
