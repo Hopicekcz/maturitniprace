@@ -173,7 +173,7 @@ public class aiNAV : MonoBehaviour
         else if ((isPlayerVisible && !isPlayerInRange) || (!releaseChase) || (attackedPlayer)){  //Can see player but is not close OR Cant see player, is not close but was being chased = Chase
             PerformChase();
         }
-        else if(!isPlayerVisible && !isPlayerInRange && !attackedPlayer){ //Cant see player, Player isnt close and Player was not being chased = Patrol
+        else if(!isPlayerVisible && !isPlayerInRange){ //Cant see player, Player isnt close and Player was not being chased = Patrol
             PerformPatrol();
         }
     }
@@ -268,7 +268,7 @@ public class aiNAV : MonoBehaviour
     }
 
     private void FireWeapon(){
-        
+        attackedPlayer = false;
         if (revolverAmmoCount > 0 && !isReloading) //Shoot action, split into two - physical part, effect part
         {
             ShootRoutine();

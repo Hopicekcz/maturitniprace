@@ -12,12 +12,14 @@ public class playerHP : MonoBehaviour
     [SerializeField] private GameObject respawnPoint;
     [SerializeField] private Camera camera;
     [SerializeField] private Text ammoCounter;
+     private RevolverScript revolverScript;
     private float maxHP;
     CharacterController cc;
     
 
-    void Awake()
+    void Start()
     {
+        revolverScript = GameObject.Find("Weapon").GetComponent<RevolverScript>();
         cc = this.GetComponent<CharacterController>();
         maxHP = hp;
     }
@@ -44,8 +46,8 @@ public class playerHP : MonoBehaviour
     private IEnumerator PlayerDeath(){
         hp = maxHP;
         fpc.enabled = false;
-        playerWeapon.GetComponent<RevolverScript>().enabled = false;
         playerWeapon.GetComponent<AudioSource>().enabled = false;
+        revolverScript.isDead = true;
         cc.enabled = false;
         ammoCounter.enabled = false;
         this.transform.position = deathPoint.transform.position;
@@ -53,9 +55,9 @@ public class playerHP : MonoBehaviour
         camera.enabled = false;
         yield return new WaitForSeconds(respawnTime);
         ammoCounter.enabled = true;
-        playerWeapon.GetComponent<RevolverScript>().enabled = true;
         playerWeapon.GetComponent<AudioSource>().enabled = true;
         camera.enabled = true;
+        revolverScript.isDead = false;
         this.transform.position = respawnPoint.transform.position;
         cc.enabled = true;
         fpc.enabled = true;
