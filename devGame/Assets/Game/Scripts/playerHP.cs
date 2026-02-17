@@ -12,6 +12,7 @@ public class playerHP : MonoBehaviour
     [SerializeField] private GameObject respawnPoint;
     [SerializeField] private Camera camera;
     [SerializeField] private Text ammoCounter;
+    [SerializeField] private Text deathText;
      private RevolverScript revolverScript;
     private float maxHP;
     CharacterController cc;
@@ -38,12 +39,12 @@ public class playerHP : MonoBehaviour
     private void HPSystem()
     {
         if(0 > hp){
-            Debug.Log("Die");
             StartCoroutine(PlayerDeath());
         }
     }
 
     private IEnumerator PlayerDeath(){
+        deathText.enabled = true;
         hp = maxHP;
         fpc.enabled = false;
         playerWeapon.GetComponent<AudioSource>().enabled = false;
@@ -55,6 +56,8 @@ public class playerHP : MonoBehaviour
         camera.enabled = false;
         yield return new WaitForSeconds(respawnTime);
         ammoCounter.enabled = true;
+        deathText.enabled = false;
+        deathText.enabled = false;
         playerWeapon.GetComponent<AudioSource>().enabled = true;
         camera.enabled = true;
         revolverScript.isDead = false;

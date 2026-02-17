@@ -10,21 +10,31 @@ using StarterAssets;
 public class RevolverScript : MonoBehaviour
 {
     //References for the revolver
-    [Header("Sounds")]
+    [Header("RevolverSounds")]
     [SerializeField] private AudioClip shootSound;
     [SerializeField] private AudioClip clickSound;
     [SerializeField] private AudioClip reloadSound;
     [SerializeField] private AudioClip breakSound;
+    [Header("ShotgunSounds")]
     [SerializeField] private AudioClip shotgunShootSound;
+    [SerializeField] private AudioClip shotgunBreakSound;
+    [SerializeField] private AudioClip shotgunReloadSound;
+    [SerializeField] private AudioClip shotgunClickSound;
 
-    [Header("ShootEffects")]
+
+    [Header("RevolverShootEffects")]
     [SerializeField] private GameObject obstacleHitEffectPrefab;
+    
     [SerializeField] private GameObject enemyHitEffectPrefab;
     [SerializeField] private GameObject groundHitEffectPrefab;
     [SerializeField] private GameObject muzzleFlashPrefab;
     [SerializeField] private GameObject muzzleLightEffectPrefab;
+    [Header("ShotgunShootEffects")]
+    [SerializeField] private GameObject muzzleFlashPrefabShotgun;
+    [SerializeField] private GameObject obstacleHitEffectPrefabShotgun;
     [Header("ShootMuzzleSmokeLocation")]
     [SerializeField] private Transform muzzlePoint;
+    [SerializeField] private Transform shotgunMuzzlePoint;
    
     [Header("AmmoCounter")]
     [SerializeField] private Text ammoCounter;
@@ -37,12 +47,15 @@ public class RevolverScript : MonoBehaviour
     [SerializeField] [Range(0.2f, 5f)] private float fireRate = 1f;
     [SerializeField] private int maxRevolverAmmoCount = 6;
     [SerializeField] private int maxShotgunAmmoCount = 2;
+
+    [Header("Shotgun properties")]
+    [SerializeField] private int shotgunPelletCount;
     
     [Header("Weapon References")]
     [SerializeField] private GameObject revolverObject;
     [SerializeField] private GameObject shotgunObject;
-    private GameObject weapon1Object;
-    private GameObject weapon2Object;
+    public GameObject weapon1Object;
+    public GameObject weapon2Object;
 
     //References
     [Header("Other References")]
@@ -150,20 +163,20 @@ public class RevolverScript : MonoBehaviour
         } else{
             PlayerDied();
             revolverAmmoCount = maxRevolverAmmoCount;
+            shotgunAmmoCount = maxShotgunAmmoCount;
             canShoot = true;
             isReloading = false;
             isAiming = false;
         }
-        
     }
 
     void PlayerSpeed(){
         if(isAiming){
-            firstPersonController.MoveSpeed = 2f;
-            firstPersonController.SprintSpeed = 2f;
+            firstPersonController.MoveSpeed = 1.5f;
+            firstPersonController.SprintSpeed = 1.5f;
         } else {
-            firstPersonController.MoveSpeed = 4f;
-            firstPersonController.SprintSpeed = 6f;
+            firstPersonController.MoveSpeed = 3f;
+            firstPersonController.SprintSpeed = 4f;
         }
     }
 
@@ -175,6 +188,8 @@ public class RevolverScript : MonoBehaviour
         }
         handAnimator.SetBool("IsAiming", isAiming); //set animation to current bool state of aiming
         StartCoroutine(SwitchWeapon());
+
+
         switch(currentWeapon){
             case "revolver":
             ammoCounter.text = revolverAmmoCount + "/" + maxRevolverAmmoCount; //ui hud of current ammo in revolver
@@ -202,10 +217,22 @@ public class RevolverScript : MonoBehaviour
             case "shotgun":
             ammoCounter.text = shotgunAmmoCount + "/" + maxShotgunAmmoCount;
                 if(shootAction.WasPressedThisFrame()){
-                    if(canShoot && !isReloading){
+                    if(canShoot && !isReloading  && (shotgunAmmoCount > 0)){
                         StartCoroutine(ShootRoutine());
                     }
+
+                    if(isReloading){
+                        interruptReload = true;
+                    }
+
+                    if(canShoot && (shotgunAmmoCount == 0) && !isReloading){
+                        audioSource.PlayOneShot(shotgunClickSound);
+                    }
                 }
+
+                if (reloadAction.WasPressedThisFrame() && (shotgunAmmoCount < maxShotgunAmmoCount) && !isReloading){ //Reload function
+                StartCoroutine(ReloadWeapon());
+                 }
             break;
         }
     }
@@ -224,8 +251,6 @@ public class RevolverScript : MonoBehaviour
             } 
             handAnimator.SetBool("switchingWeapon", switchingWeapon);
             yield return new WaitForSeconds(0.3f);
-            gunAnimator.ResetControllerState();
-            shotgunAnimator.ResetControllerState();
             weapon1Object.SetActive(true);
             weapon2Object.SetActive(false);
             currentWeapon = weapon1;
@@ -246,8 +271,6 @@ public class RevolverScript : MonoBehaviour
             } 
             handAnimator.SetBool("switchingWeapon", switchingWeapon);
             yield return new WaitForSeconds(0.3f);
-            gunAnimator.ResetControllerState();
-            shotgunAnimator.ResetControllerState();
             weapon1Object.SetActive(false);
             weapon2Object.SetActive(true);
             currentWeapon = weapon2;
@@ -259,37 +282,64 @@ public class RevolverScript : MonoBehaviour
 
     private IEnumerator ReloadWeapon()
     {
-        if(isAiming){ //if currently in aiming animation, wait until complete
-            isReloading = true;
-            yield return new WaitForSeconds(0.27f);
-        } else {
-            isReloading = true;
+        if(isAiming){
+                    isReloading = true;
+                    yield return new WaitForSeconds(0.27f);
+                } else {
+                    isReloading = true;
+                }
+                handAnimator.SetTrigger("Reload");
+                handAnimator.SetBool("isReloading", isReloading);
+                yield return new WaitForSeconds(0.2f);
+
+        switch(currentWeapon){
+            case "revolver":
+                gunAnimator.SetBool("isReloading", isReloading); //Set revolver to reloading position
+                gunAnimator.SetTrigger("Reload"); //Keep revolver in reloading position
+                yield return new WaitForSeconds(0.2f);
+                ogRevolverAmmoCount = revolverAmmoCount; //"Temporary" variable used only for separate values to set how many times the reload sound should play, while the HUD displays the correct current value
+                for(int i = 0; i < (maxRevolverAmmoCount-ogRevolverAmmoCount); i++){ //loops for how many bullets are missing in the cylinder
+                    if(interruptReload){
+                        break;
+                    }
+                    audioSource.PlayOneShot(reloadSound);
+                    yield return new WaitForSeconds(0.6f);
+                    revolverAmmoCount++;
+                }
+                handAnimator.SetBool("isReloading", false); //Move hand out of reloading position
+                gunAnimator.SetBool("isReloading", false); //Move revolver out of reloading position
+                
+                yield return new WaitForSeconds(0.4f);
+                audioSource.PlayOneShot(breakSound);
+                isReloading = false;
+                interruptReload = false;
+            break;
+
+            case "shotgun":
+                shotgunAnimator.SetBool("isReloading", isReloading);
+                yield return new WaitForSeconds(0.2f);
+                ogShotgunAmmoCount = shotgunAmmoCount;
+                audioSource.PlayOneShot(shotgunBreakSound);
+                yield return new WaitForSeconds(0.6f);
+                for(int i = 0; i < (maxShotgunAmmoCount-ogShotgunAmmoCount); i++){
+                    if(interruptReload){
+                        break;
+                    }
+                    audioSource.PlayOneShot(shotgunReloadSound);
+                    yield return new WaitForSeconds(0.6f);
+                    shotgunAmmoCount++;
+                }
+                handAnimator.SetBool("isReloading", false);
+                shotgunAnimator.SetBool("isReloading", false);
+                yield return new WaitForSeconds(0.2f);
+                audioSource.PlayOneShot(shotgunBreakSound);
+                yield return new WaitForSeconds(0.4f);
+                isReloading = false;
+                interruptReload = false;
+            break;
+            
         }
         
-        audioSource.PlayOneShot(breakSound);
-        handAnimator.SetTrigger("Reload");  //Move hand to reloading position
-        handAnimator.SetBool("isReloading", isReloading); //Keep hand in reloading position
-       
-        yield return new WaitForSeconds(0.2f);
-        gunAnimator.SetBool("isReloading", isReloading); //Set revolver to reloading position
-        gunAnimator.SetTrigger("Reload"); //Keep revolver in reloading position
-        yield return new WaitForSeconds(0.2f);
-        ogRevolverAmmoCount = revolverAmmoCount; //"Temporary" variable used only for separate values to set how many times the reload sound should play, while the HUD displays the correct current value
-        for(int i = 0; i < (maxRevolverAmmoCount-ogRevolverAmmoCount); i++){ //loops for how many bullets are missing in the cylinder
-            if(interruptReload){
-                break;
-            }
-            audioSource.PlayOneShot(reloadSound);
-            yield return new WaitForSeconds(0.6f);
-            revolverAmmoCount++;
-        }
-        handAnimator.SetBool("isReloading", false); //Move hand out of reloading position
-        gunAnimator.SetBool("isReloading", false); //Move revolver out of reloading position
-        
-        yield return new WaitForSeconds(0.4f);
-        audioSource.PlayOneShot(breakSound);
-        isReloading = false; //reloading end
-        interruptReload = false;
     }
 
     private IEnumerator ShootEffects()
@@ -302,12 +352,18 @@ public class RevolverScript : MonoBehaviour
                 muzzleSmoke.gameObject.tag = "RevolverEffect";
                 yield return new WaitForSeconds(0.05f);
                 Destroy(muzzleLight);
-                yield return new WaitForSeconds(5);
+                yield return new WaitForSeconds(5f);
                 Destroy(muzzleSmoke);
             
             break;
 
             case "shotgun":
+                GameObject muzzleLightShotgun = Instantiate(muzzleLightEffectPrefab, shotgunMuzzlePoint);
+                GameObject muzzleSmokeShotgun = Instantiate(muzzleFlashPrefabShotgun, shotgunMuzzlePoint);
+                yield return new WaitForSeconds(0.05f);
+                Destroy(muzzleLightShotgun);
+                yield return new WaitForSeconds(5f);
+                Destroy(muzzleSmokeShotgun);
             break;
         }
         }
@@ -332,12 +388,12 @@ public class RevolverScript : MonoBehaviour
             break;
 
             case "shotgun":
+                StartCoroutine(ShootEffects());
                 shotgunAmmoCount--;
                 canShoot = false;
                 shotgunAnimator.SetTrigger("Shoot");
                 audioSource.PlayOneShot(shotgunShootSound);
-                
-                for(int i = 0; i < 5; i++){
+                for(int i = 0; i < shotgunPelletCount; i++){
                    ShootRaycasts();
                 }
                 yield return new WaitForSeconds(1.5f);
@@ -360,7 +416,7 @@ public class RevolverScript : MonoBehaviour
                         break;
 
                         case "Obstacle": 
-                        Instantiate(obstacleHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                        Instantiate(obstacleHitEffectPrefabShotgun, hit.point, Quaternion.LookRotation(hit.normal));
                         break;
 
                         case "Ground":
@@ -368,7 +424,7 @@ public class RevolverScript : MonoBehaviour
                         break;
 
                         case "Character": 
-                        hit.transform.SendMessage ("HitByPlayerRevolver");
+                        hit.transform.SendMessage ("HitByPlayerShotgun");
                         Instantiate(enemyHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                         break;
                     }

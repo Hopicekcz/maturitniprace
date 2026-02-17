@@ -1,17 +1,17 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.3f1 (ef04196de0d6) revision 15664153'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-02-16T14:43:41.7628432Z"
 OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16004 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-02-15T14:02:02Z
-[Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-02-15T14:02:02.9300969Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 1420, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+Date: 2026-02-16T14:43:41Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 15144, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.17.4'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Hopic"
 [Licensing::IpcConnector] LicenseClient-Hopic channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-02-15T14:02:02.98763Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-02-16T14:43:41.8235945Z"
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.3f1\Editor\Unity.exe
@@ -25,7 +25,7 @@ E:/unity/maturitniprace/active/devGame
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-62949
+55251
 -licensingIpc
 LicenseClient-Hopic
 -job-worker-count
@@ -73,16 +73,16 @@ E:/unity/maturitniprace/active/devGame
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [16120]  Target information:
+Player connection [28828]  Target information:
 
-Player connection [16120]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1183064158 [EditorId] 1183064158 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [28828]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4266448693 [EditorId] 4266448693 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [16120]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 1183064158 [EditorId] 1183064158 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [28828]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 4266448693 [EditorId] 4266448693 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [16120]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 1183064158 [EditorId] 1183064158 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [28828]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 4266448693 [EditorId] 4266448693 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [16120] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [16120] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [28828] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [28828] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -94,7 +94,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 8.74 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 10.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.3f1 (ef04196de0d6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -112,52 +112,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008669 seconds.
-- Loaded All Assemblies, in  0.550 seconds
+Registered in 0.003818 seconds.
+- Loaded All Assemblies, in  0.848 seconds
 Native extension for WindowsStandalone target not found
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              18103c16a476478d9a468b3677a98aa1
-  Correlation Id:          33b351f434fcb801426fa70e3df8c755
-  External correlation Id: 7649150839698900887
+  Session Id:              0a8ef9aec1a744ef8439c2f012d85bd2
+  Correlation Id:          6b11520ab09064da99b366a7737b8d79
+  External correlation Id: 2906187482127084758
   Machine Id:              4VB2xDT1CV9zqVbIIZWsGa/FyKA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 1.57s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-02-15T14:02:04.5591611Z"
-[Licensing::Module] Licensing Background thread has ended after 1.64s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 1.99s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-02-16T14:43:43.818225Z"
+[Licensing::Module] Licensing Background thread has ended after 2.06s
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.576 seconds
-Domain Reload Profiling: 1120ms
-	BeginReloadAssembly (183ms)
+- Finished resetting the current domain, in  0.746 seconds
+Domain Reload Profiling: 1588ms
+	BeginReloadAssembly (325ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (73ms)
-	LoadAllAssembliesAndSetupDomain (222ms)
-		LoadAssemblies (176ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (319ms)
+		LoadAssemblies (317ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (218ms)
-			TypeCache.Refresh (215ms)
-				TypeCache.ScanAssembly (198ms)
+		AnalyzeDomain (315ms)
+			TypeCache.Refresh (308ms)
+				TypeCache.ScanAssembly (281ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (576ms)
+	FinalizeReload (746ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (517ms)
+		SetupLoadedEditorAssemblies (674ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (66ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (150ms)
-			ProcessInitializeOnLoadAttributes (181ms)
-			ProcessInitializeOnLoadMethodAttributes (117ms)
+			InitializePlatformSupportModulesInManaged (101ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (163ms)
+			ProcessInitializeOnLoadAttributes (240ms)
+			ProcessInitializeOnLoadMethodAttributes (162ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -178,97 +178,313 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.108 seconds
-Refreshing native plugins compatible for Editor in 6.44 ms, found 2 plugins.
+- Loaded All Assemblies, in  1.119 seconds
+Refreshing native plugins compatible for Editor in 7.16 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 7.05 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 6.58 ms, found 2 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.210 seconds
-Domain Reload Profiling: 2312ms
-	BeginReloadAssembly (228ms)
+- Finished resetting the current domain, in  1.229 seconds
+Domain Reload Profiling: 2340ms
+	BeginReloadAssembly (264ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
+		CreateAndSetChildDomain (40ms)
 	RebuildCommonClasses (45ms)
 	RebuildNativeTypeToScriptingClass (17ms)
 	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (754ms)
-		LoadAssemblies (542ms)
+	LoadAllAssembliesAndSetupDomain (728ms)
+		LoadAssemblies (540ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (343ms)
-			TypeCache.Refresh (254ms)
-				TypeCache.ScanAssembly (231ms)
+		AnalyzeDomain (340ms)
+			TypeCache.Refresh (252ms)
+				TypeCache.ScanAssembly (229ms)
 			BuildScriptInfoCaches (72ms)
 			ResolveRequiredComponents (13ms)
-	FinalizeReload (1211ms)
+	FinalizeReload (1229ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (943ms)
+		SetupLoadedEditorAssemblies (960ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (176ms)
-			ProcessInitializeOnLoadAttributes (462ms)
-			ProcessInitializeOnLoadMethodAttributes (287ms)
-			AfterProcessingInitializeOnLoad (13ms)
+			BeforeProcessingInitializeOnLoad (178ms)
+			ProcessInitializeOnLoadAttributes (476ms)
+			ProcessInitializeOnLoadMethodAttributes (286ms)
+			AfterProcessingInitializeOnLoad (14ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+		AwakeInstancesAfterBackupRestoration (13ms)
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 7.37 ms, found 2 plugins.
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 6.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6089 unused Assets / (4.4 MB). Loaded Objects now: 6885.
-Memory consumption went from 152.5 MB to 148.1 MB.
-Total: 14.640500 ms (FindLiveObjects: 0.812500 ms CreateObjectMapping: 0.417600 ms MarkObjects: 11.290600 ms  DeleteObjects: 2.118600 ms)
+Unloading 6089 unused Assets / (4.2 MB). Loaded Objects now: 6886.
+Memory consumption went from 154.7 MB to 150.5 MB.
+Total: 14.507700 ms (FindLiveObjects: 0.770700 ms CreateObjectMapping: 0.393200 ms MarkObjects: 11.525300 ms  DeleteObjects: 1.817400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 401148.149512 seconds.
-  path: Assets/Weapons/Shotgun/Shotgun.prefab
-  artifactKey: Guid(aaac6792f6e4bdd45bb50cd3046980b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Weapons/Shotgun/Shotgun.prefab using Guid(aaac6792f6e4bdd45bb50cd3046980b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4fcb57accf7fedb9fd692d7123cd23c3') in 0.1044473 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 71
+  Time since last request: 3918.150344 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Thatch_End_Cap_Corner_L.prefab
+  artifactKey: Guid(ef4947aa08ae35f4791b401af2e24b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Thatch_End_Cap_Corner_L.prefab using Guid(ef4947aa08ae35f4791b401af2e24b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '45d2ec386c32416157bdfe1bb730735c') in 0.6648222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.344133 seconds.
-  path: Assets/Game/Animations/Weapons/Shotgun
-  artifactKey: Guid(454227083adb63549b0bd4332f5d58f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Animations/Weapons/Shotgun using Guid(454227083adb63549b0bd4332f5d58f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c64a28361f1228c67ed7eb16432f653') in 0.0012061 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Thatch_Med_2x1.prefab
+  artifactKey: Guid(831c90572c88e734790a11b2113bea3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Thatch_Med_2x1.prefab using Guid(831c90572c88e734790a11b2113bea3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c9ca18e096ec220f735ce6d6e7dc90c') in 0.0541704 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.908176 seconds.
-  path: Assets/Game/Animations/Weapons/Shotgun
-  artifactKey: Guid(454227083adb63549b0bd4332f5d58f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Game/Animations/Weapons/Shotgun using Guid(454227083adb63549b0bd4332f5d58f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dce9da383cb500f3c0dfae040fcef714') in 0.0050218 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.427159 seconds.
-  path: Assets/Game/Animations/Weapons/Revolver/Gun.controller
-  artifactKey: Guid(85e5de74563fca142a6c1d61cc2c2c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Animations/Weapons/Revolver/Gun.controller using Guid(85e5de74563fca142a6c1d61cc2c2c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b57b20a735d2905ef2cb28b6faa6aa8') in 0.0229412 seconds
+  Time since last request: 0.000043 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Stairs_Wood_2x1.prefab
+  artifactKey: Guid(609a68bb21244744dae923af08dd7d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Stairs_Wood_2x1.prefab using Guid(609a68bb21244744dae923af08dd7d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '057ba8428b0e7c7376cf8866c2ea1ee3') in 0.0356746 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.710340 seconds.
-  path: Assets/Game/Animations/Weapons/Gun.controller
-  artifactKey: Guid(85e5de74563fca142a6c1d61cc2c2c93) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Game/Animations/Weapons/Gun.controller using Guid(85e5de74563fca142a6c1d61cc2c2c93) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e32630bdd71d2d77e871edae52afa43') in 0.0083135 seconds
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_Short_End_L.prefab
+  artifactKey: Guid(dc6bf0cc6a45f6449be38d2e30df78ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_Short_End_L.prefab using Guid(dc6bf0cc6a45f6449be38d2e30df78ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99d2a59a53d08c3e7f5452a6df1c0d94') in 0.0699546 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Tile_Short_1x1.prefab
+  artifactKey: Guid(8015fa00161f661478c3ab678d133b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Tile_Short_1x1.prefab using Guid(8015fa00161f661478c3ab678d133b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c580e962c3412198ab0623be53543fce') in 0.0574017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_End_Cap_Corner_L.prefab
+  artifactKey: Guid(8a9733808d0a7e84b96f90f3dbdf2a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_End_Cap_Corner_L.prefab using Guid(8a9733808d0a7e84b96f90f3dbdf2a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '561958cda24a2fc87615b261db6baa48') in 0.0375317 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Stairs_Wood_2x1_Steep.prefab
+  artifactKey: Guid(5f23572b06080ac4f8f9c6de071c9b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Stairs_Wood_2x1_Steep.prefab using Guid(5f23572b06080ac4f8f9c6de071c9b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e1d0695152dd9b280de3f5ae1a5cc9e') in 0.0333298 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Tile_Top_Slope_Cap_Tall.prefab
+  artifactKey: Guid(647fc2ef3dce03246af1830c526fa467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Tile_Top_Slope_Cap_Tall.prefab using Guid(647fc2ef3dce03246af1830c526fa467) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6f9934568a53ef72849a946fffe2bf9') in 0.0560896 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_1x3_2.prefab
+  artifactKey: Guid(81d46ef258323014d9089361c2094ba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_1x3_2.prefab using Guid(81d46ef258323014d9089361c2094ba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fb9308693c986f30c1423177ae8ce92') in 0.0183248 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x2_4.prefab
+  artifactKey: Guid(21b4b50744f529f4d8cf289629ef2435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x2_4.prefab using Guid(21b4b50744f529f4d8cf289629ef2435) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c1f54e6bf285ac5d8087098b1f7d48f') in 0.0179084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Thatch_Med_Corner.prefab
+  artifactKey: Guid(215280cf0e332d0429131c8fe8401c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Thatch_Med_Corner.prefab using Guid(215280cf0e332d0429131c8fe8401c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b62e8c26cde7952b83b452d8ccdcfc50') in 0.0738583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Thatch_Short_Top_Slope_End.prefab
+  artifactKey: Guid(b6e82a969b1eeff44848ea454da6e612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Thatch_Short_Top_Slope_End.prefab using Guid(b6e82a969b1eeff44848ea454da6e612) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '762540702be259bcf671627ef23086c0') in 0.0978092 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_Short_End_R.prefab
+  artifactKey: Guid(e50624ea6a0dacc4fa5a4e5d4e367fc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_Short_End_R.prefab using Guid(e50624ea6a0dacc4fa5a4e5d4e367fc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dfb8811aa46b70bc35ccc15bc0ea502c') in 0.0602416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Tile_Short_Corner.prefab
+  artifactKey: Guid(8f8cb38f7482330479c925810f92768d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Tile_Short_Corner.prefab using Guid(8f8cb38f7482330479c925810f92768d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9057a51edbd465f5539214d3eba0695') in 0.0566636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Thatch_Short_End_R.prefab
+  artifactKey: Guid(732e4f824f099314badfc31183210372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Thatch_Short_End_R.prefab using Guid(732e4f824f099314badfc31183210372) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '672e797e017256fabd1a2d4f598f3d52') in 0.0926177 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Tile_Tall_End_L.prefab
+  artifactKey: Guid(2f6de5a4a54ae0349a3ea409031c33ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Tile_Tall_End_L.prefab using Guid(2f6de5a4a54ae0349a3ea409031c33ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ca69075db44383690a501328cadca0c') in 0.0639563 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_Plank_Tall.prefab
+  artifactKey: Guid(3b089ba5c0e41f84d8b91fa625d803ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_Plank_Tall.prefab using Guid(3b089ba5c0e41f84d8b91fa625d803ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee84eefc916adefe6be63bd01b97acc3') in 0.0196171 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_Tall_Top_Slope.prefab
+  artifactKey: Guid(3c2caad285bf4de48a04efd706b42930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_Tall_Top_Slope.prefab using Guid(3c2caad285bf4de48a04efd706b42930) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '477dda6f71278a6c930c53fb57d63aa7') in 0.0315956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_6.prefab
+  artifactKey: Guid(dc1d83bbeae9a264da9d2336f66162bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_6.prefab using Guid(dc1d83bbeae9a264da9d2336f66162bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38100464bd50c9d98eda8967abf23645') in 0.0250455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Tile_Short_2x1.prefab
+  artifactKey: Guid(46db27adf0a4d2f43b02c3b7a4c631ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Tile_Short_2x1.prefab using Guid(46db27adf0a4d2f43b02c3b7a4c631ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'daf6054c93b1deeff3e03b8e0dc7f0de') in 0.0562345 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_Short_2x1.prefab
+  artifactKey: Guid(030987cb5919c3f4da632eb12cc4736c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_Short_2x1.prefab using Guid(030987cb5919c3f4da632eb12cc4736c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8dd955a7f3fbe5fa2489eff73a9a2875') in 0.0415245 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_Support_Small_3.prefab
+  artifactKey: Guid(74d8f5d371814cc4db8ddd30005edb73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_Support_Small_3.prefab using Guid(74d8f5d371814cc4db8ddd30005edb73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c8c7be87c6f4a3cd51e7dd50d4522d3') in 0.0373257 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_Pole_Frame_1x05.prefab
+  artifactKey: Guid(e70fd976303c0824dbec99c6f51e8b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_Pole_Frame_1x05.prefab using Guid(e70fd976303c0824dbec99c6f51e8b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1844435fb7796a1ce498c50cce705072') in 0.0320649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_Pole_Frame_2x1.prefab
+  artifactKey: Guid(e5cbc63d8ffcbef41b922870cbc2e47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_Pole_Frame_2x1.prefab using Guid(e5cbc63d8ffcbef41b922870cbc2e47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34fa39b5650794bc13dd5a10c9cf82ba') in 0.03065 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x1_1.prefab
+  artifactKey: Guid(277b08c52b5d60c4883fbd9b3ec59534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x1_1.prefab using Guid(277b08c52b5d60c4883fbd9b3ec59534) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '65db74762be0d9566aa338df8e86c13a') in 0.0245789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_Support_3.prefab
+  artifactKey: Guid(2043cb929fbe9e6478cdf2b3ddad3f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_Support_3.prefab using Guid(2043cb929fbe9e6478cdf2b3ddad3f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d87d125ac66cd9852f08800ebe7569f') in 0.0387711 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Tile_Corner_Cap_L.prefab
+  artifactKey: Guid(98faf2d94c0b0ea4a9a4d73d6e26ff43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Tile_Corner_Cap_L.prefab using Guid(98faf2d94c0b0ea4a9a4d73d6e26ff43) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '940a6bb7e3123f2783877b98dcb71f7a') in 0.0455694 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_Tall_Corner.prefab
+  artifactKey: Guid(fad1b0adb74ddc544aee7e4030f20956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_Tall_Corner.prefab using Guid(fad1b0adb74ddc544aee7e4030f20956) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e4d3ccf5944961735a624d34c808025') in 0.0289101 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_2.prefab
+  artifactKey: Guid(a81165c28b6f6df42861e2b2ddd7e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_2.prefab using Guid(a81165c28b6f6df42861e2b2ddd7e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6dcf493751544b7fa6361e369944ab6') in 0.0202443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_1x2_5.prefab
+  artifactKey: Guid(d51b4a4ac364ba94c96e8557cb6231d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_1x2_5.prefab using Guid(d51b4a4ac364ba94c96e8557cb6231d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ba0d33e3a062636d3b8f67564153763') in 0.0193835 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_Pole_Frame_2x2_Slope.prefab
+  artifactKey: Guid(eae93d1fec6afa9418d06d1998f2b4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_Pole_Frame_2x2_Slope.prefab using Guid(eae93d1fec6afa9418d06d1998f2b4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a6b46b56602d01d28abfcdd6dd145b06') in 0.0342125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_8.prefab
+  artifactKey: Guid(303d5a8516102e242a73af6d718d27ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_8.prefab using Guid(303d5a8516102e242a73af6d718d27ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2a7d34a993332b4b8b6df91c110c540') in 0.0195549 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
 
 ========================================================================
 Received Prepare
@@ -285,197 +501,513 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.002 seconds
-Refreshing native plugins compatible for Editor in 6.97 ms, found 2 plugins.
+- Loaded All Assemblies, in  0.976 seconds
+Refreshing native plugins compatible for Editor in 7.22 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.198 seconds
-Domain Reload Profiling: 2196ms
-	BeginReloadAssembly (271ms)
+- Finished resetting the current domain, in  1.204 seconds
+Domain Reload Profiling: 2175ms
+	BeginReloadAssembly (284ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (25ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (63ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (620ms)
-		LoadAssemblies (502ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (586ms)
+		LoadAssemblies (476ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (249ms)
+		AnalyzeDomain (235ms)
 			TypeCache.Refresh (9ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (214ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1199ms)
+			BuildScriptInfoCaches (209ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1205ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (976ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (191ms)
-			ProcessInitializeOnLoadAttributes (463ms)
-			ProcessInitializeOnLoadMethodAttributes (300ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 7.13 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6087 unused Assets / (4.0 MB). Loaded Objects now: 6903.
-Memory consumption went from 157.0 MB to 153.0 MB.
-Total: 13.658100 ms (FindLiveObjects: 0.809400 ms CreateObjectMapping: 0.523900 ms MarkObjects: 10.526100 ms  DeleteObjects: 1.797100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.987 seconds
-Refreshing native plugins compatible for Editor in 6.83 ms, found 2 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.161 seconds
-Domain Reload Profiling: 2145ms
-	BeginReloadAssembly (262ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (58ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (615ms)
-		LoadAssemblies (497ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (245ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (217ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (1162ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (959ms)
+		SetupLoadedEditorAssemblies (977ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (189ms)
-			ProcessInitializeOnLoadAttributes (453ms)
-			ProcessInitializeOnLoadMethodAttributes (294ms)
+			BeforeProcessingInitializeOnLoad (188ms)
+			ProcessInitializeOnLoadAttributes (481ms)
+			ProcessInitializeOnLoadMethodAttributes (287ms)
 			AfterProcessingInitializeOnLoad (14ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (25ms)
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 7.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 7.51 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6087 unused Assets / (4.1 MB). Loaded Objects now: 6906.
-Memory consumption went from 158.7 MB to 154.6 MB.
-Total: 15.439400 ms (FindLiveObjects: 0.840300 ms CreateObjectMapping: 0.513600 ms MarkObjects: 11.984100 ms  DeleteObjects: 2.100100 ms)
+Unloading 6088 unused Assets / (4.2 MB). Loaded Objects now: 6934.
+Memory consumption went from 161.0 MB to 156.8 MB.
+Total: 15.126700 ms (FindLiveObjects: 0.819800 ms CreateObjectMapping: 0.507400 ms MarkObjects: 11.525600 ms  DeleteObjects: 2.272400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.944 seconds
+Refreshing native plugins compatible for Editor in 8.28 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.172 seconds
+Domain Reload Profiling: 2112ms
+	BeginReloadAssembly (253ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (587ms)
+		LoadAssemblies (472ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (238ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (211ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1172ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (973ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (188ms)
+			ProcessInitializeOnLoadAttributes (479ms)
+			ProcessInitializeOnLoadMethodAttributes (285ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6087 unused Assets / (4.0 MB). Loaded Objects now: 6937.
+Memory consumption went from 160.7 MB to 156.7 MB.
+Total: 14.810000 ms (FindLiveObjects: 0.828300 ms CreateObjectMapping: 0.454500 ms MarkObjects: 11.342800 ms  DeleteObjects: 2.182400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.940 seconds
+Refreshing native plugins compatible for Editor in 6.66 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.181 seconds
+Domain Reload Profiling: 2117ms
+	BeginReloadAssembly (253ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (583ms)
+		LoadAssemblies (468ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (238ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (212ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1182ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (979ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (183ms)
+			ProcessInitializeOnLoadAttributes (485ms)
+			ProcessInitializeOnLoadMethodAttributes (291ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6087 unused Assets / (4.1 MB). Loaded Objects now: 6940.
+Memory consumption went from 160.7 MB to 156.7 MB.
+Total: 14.904700 ms (FindLiveObjects: 0.860200 ms CreateObjectMapping: 0.536000 ms MarkObjects: 11.451500 ms  DeleteObjects: 2.055200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.944 seconds
+Refreshing native plugins compatible for Editor in 6.47 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.177 seconds
+Domain Reload Profiling: 2117ms
+	BeginReloadAssembly (254ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (582ms)
+		LoadAssemblies (469ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (237ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (211ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1178ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (977ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (191ms)
+			ProcessInitializeOnLoadAttributes (482ms)
+			ProcessInitializeOnLoadMethodAttributes (282ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 8.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6087 unused Assets / (3.7 MB). Loaded Objects now: 6943.
+Memory consumption went from 160.8 MB to 157.1 MB.
+Total: 15.952100 ms (FindLiveObjects: 1.091200 ms CreateObjectMapping: 0.759900 ms MarkObjects: 11.838100 ms  DeleteObjects: 2.261500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.939 seconds
+Refreshing native plugins compatible for Editor in 6.52 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.168 seconds
+Domain Reload Profiling: 2103ms
+	BeginReloadAssembly (250ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (584ms)
+		LoadAssemblies (468ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (238ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (212ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1168ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (966ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (188ms)
+			ProcessInitializeOnLoadAttributes (475ms)
+			ProcessInitializeOnLoadMethodAttributes (281ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6087 unused Assets / (4.1 MB). Loaded Objects now: 6946.
+Memory consumption went from 160.8 MB to 156.7 MB.
+Total: 15.601000 ms (FindLiveObjects: 0.870500 ms CreateObjectMapping: 0.508300 ms MarkObjects: 11.980300 ms  DeleteObjects: 2.240400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.949 seconds
+Refreshing native plugins compatible for Editor in 6.47 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.168 seconds
+Domain Reload Profiling: 2114ms
+	BeginReloadAssembly (253ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (592ms)
+		LoadAssemblies (468ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (247ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (218ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1169ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (978ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (185ms)
+			ProcessInitializeOnLoadAttributes (488ms)
+			ProcessInitializeOnLoadMethodAttributes (284ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6087 unused Assets / (3.8 MB). Loaded Objects now: 6949.
+Memory consumption went from 160.9 MB to 157.0 MB.
+Total: 15.146500 ms (FindLiveObjects: 0.851500 ms CreateObjectMapping: 0.633100 ms MarkObjects: 11.636100 ms  DeleteObjects: 2.024200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.937 seconds
+Refreshing native plugins compatible for Editor in 6.58 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.181 seconds
+Domain Reload Profiling: 2114ms
+	BeginReloadAssembly (249ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (584ms)
+		LoadAssemblies (465ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (239ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (214ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1181ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (975ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (187ms)
+			ProcessInitializeOnLoadAttributes (482ms)
+			ProcessInitializeOnLoadMethodAttributes (285ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6087 unused Assets / (4.0 MB). Loaded Objects now: 6952.
+Memory consumption went from 160.9 MB to 156.9 MB.
+Total: 14.421300 ms (FindLiveObjects: 0.904700 ms CreateObjectMapping: 0.504900 ms MarkObjects: 10.818800 ms  DeleteObjects: 2.191200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 111.999212 seconds.
-  path: Assets/Game/Animations/Weapons/Shotgun.controller
-  artifactKey: Guid(fc4d06ce7ba0dcd468c782a9f57d9f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Animations/Weapons/Shotgun.controller using Guid(fc4d06ce7ba0dcd468c782a9f57d9f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7adf0825e1a9c04172c4bec6c2bbb022') in 0.0346469 seconds
+  Time since last request: 685.419053 seconds.
+  path: Assets/Weapons/Shotgun/Shotgun.prefab
+  artifactKey: Guid(aaac6792f6e4bdd45bb50cd3046980b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Weapons/Shotgun/Shotgun.prefab using Guid(aaac6792f6e4bdd45bb50cd3046980b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4accaa795c22aa96a785d43eec998d6d') in 0.6045645 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 91
+
+========================================================================
+Received Import Request.
+  Time since last request: 134.034497 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree7.shader
+  artifactKey: Guid(0f4122b9a743b744abe2fb6a0a88868b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree7.shader using Guid(0f4122b9a743b744abe2fb6a0a88868b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5106ba9ddd576beecf30d6fe90a2289d') in 0.0013384 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009149 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree7BillboardInput.hlsl
+  artifactKey: Guid(693515911c7346d448c10a3cfc4acf45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree7BillboardInput.hlsl using Guid(693515911c7346d448c10a3cfc4acf45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '933f8c327cbebadd74ff262c74fecf96') in 0.003077 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.874039 seconds.
-  path: Assets/Game/Animations/Weapons/Shotgun.controller
-  artifactKey: Guid(fc4d06ce7ba0dcd468c782a9f57d9f8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Game/Animations/Weapons/Shotgun.controller using Guid(fc4d06ce7ba0dcd468c782a9f57d9f8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'beb1841a6c3935b1b4066f980c2da417') in 0.0750512 seconds
+  Time since last request: 0.000028 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8Input.hlsl
+  artifactKey: Guid(e9fc1df17be32ac41a7186d571c669d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8Input.hlsl using Guid(e9fc1df17be32ac41a7186d571c669d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd281373bb1b0a11e7984d1deba3d2133') in 0.0018457 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.369386 seconds.
-  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@Run_Backward - 1H.overrideController
-  artifactKey: Guid(535f1fc1a03a50c4fa449326b2ede881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@Run_Backward - 1H.overrideController using Guid(535f1fc1a03a50c4fa449326b2ede881) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbadb3249d24a888ee26de98425c7455') in 0.0108471 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+  Time since last request: 0.000030 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree7CommonInput.hlsl
+  artifactKey: Guid(55e6929e00a20d64eadff49d59e097db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree7CommonInput.hlsl using Guid(55e6929e00a20d64eadff49d59e097db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da48fc97584c299250df414475c46958') in 0.003208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@Run_Backward - Polearm.overrideController
-  artifactKey: Guid(1387d5e7264496a4cb3dcea0ac5cc116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@Run_Backward - Polearm.overrideController using Guid(1387d5e7264496a4cb3dcea0ac5cc116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '393cb00f12668ff7152982f2b8783fe4') in 0.0052696 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+  Time since last request: 0.000057 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTreeUtility.hlsl
+  artifactKey: Guid(c245162389fbe944dbc0d721bee26fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTreeUtility.hlsl using Guid(c245162389fbe944dbc0d721bee26fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7372fa8fd1747fbe5e67a1e5520a11e') in 0.0036417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@Run_BackwardLeft - 1H.overrideController
-  artifactKey: Guid(d8e197b744753ab4ea9a571f221cf452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@Run_BackwardLeft - 1H.overrideController using Guid(d8e197b744753ab4ea9a571f221cf452) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c1a8372b8b8bd7ce70d4a7246fe97960') in 0.0309537 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+  Time since last request: 0.000036 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree7CommonPasses.hlsl
+  artifactKey: Guid(85f7860cf76171b438c51eb5fcd238ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree7CommonPasses.hlsl using Guid(85f7860cf76171b438c51eb5fcd238ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a6dd964ca217a48541a9241fa6d6b75') in 0.0018957 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.211014 seconds.
-  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@RunStrafe01_BackwardRight - 1H.overrideController
-  artifactKey: Guid(2bd5f1f08d0707d438ed75a6e77ffdbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/1H/HumanF@RunStrafe01_BackwardRight - 1H.overrideController using Guid(2bd5f1f08d0707d438ed75a6e77ffdbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5104627f09c631f41ba5338cf341fe95') in 0.0159111 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+  Time since last request: 11.596606 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader
+  artifactKey: Guid(933532a4fcc9baf4fa0491de14d08ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader using Guid(933532a4fcc9baf4fa0491de14d08ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dcadc755c892779a65851e65fd1754e4') in 0.0009747 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/2H/HumanF@RunStrafe01_ForwardLeft - 2H.overrideController
-  artifactKey: Guid(b4dcd2fc1e9c70048a05bbca09c35c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/2H/HumanF@RunStrafe01_ForwardLeft - 2H.overrideController using Guid(b4dcd2fc1e9c70048a05bbca09c35c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34e5832b666164f92e1017c0d6407f0f') in 0.0088494 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/BakedLitDepthNormalsPass.hlsl
+  artifactKey: Guid(9604e389528d04ae39fe05a7b4212172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/BakedLitDepthNormalsPass.hlsl using Guid(9604e389528d04ae39fe05a7b4212172) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31f64e7cccd6943bd744654c98dab874') in 0.0014877 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@RunStrafe01_ForwardLeft - Polearm.overrideController
-  artifactKey: Guid(aceff93f35e4f6c4abab5f8f7722b459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@RunStrafe01_ForwardLeft - Polearm.overrideController using Guid(aceff93f35e4f6c4abab5f8f7722b459) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e17af01d8b64030a1e02be8c83c88e6') in 0.0078283 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+  Time since last request: 0.000027 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/SimpleLitForwardPass.hlsl
+  artifactKey: Guid(ee447e65526c7db45a978c16b28827a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/SimpleLitForwardPass.hlsl using Guid(ee447e65526c7db45a978c16b28827a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a3e6435287fe51cb5e9a8af8d0ddc59') in 0.0014425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@RunStrafe01_ForwardRight - Polearm.overrideController
-  artifactKey: Guid(1220f1443f943864fb600930e506ab13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@RunStrafe01_ForwardRight - Polearm.overrideController using Guid(1220f1443f943864fb600930e506ab13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ff5bd3da52dd8a3490116253d80f1f5') in 0.0050918 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+  Time since last request: 0.000035 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/DepthNormalsPass.hlsl
+  artifactKey: Guid(b76d45ea333b2a049bc45c5328ef3e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/DepthNormalsPass.hlsl using Guid(b76d45ea333b2a049bc45c5328ef3e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4c839df35ccbcd7c9456ecfdbb26b94') in 0.0016473 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@RunStrafe01_BackwardRight - Polearm.overrideController
-  artifactKey: Guid(43da086ec52de7a4c8958a250f84984e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/Polearm/HumanF@RunStrafe01_BackwardRight - Polearm.overrideController using Guid(43da086ec52de7a4c8958a250f84984e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bac64ee737eab9d906ae6a078229409') in 0.0219841 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/LitForwardPass.hlsl
+  artifactKey: Guid(116bd973269b9f741b7177c8523b9e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/LitForwardPass.hlsl using Guid(116bd973269b9f741b7177c8523b9e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52a8c5b9755ed432c3ad2ce3f9c24d84') in 0.0014108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/2H/HumanF@RunStrafe01_Left - 2H.overrideController
-  artifactKey: Guid(985f39633574ed44ca4282741a3a2a98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/AIImport/Human Animations/Unity Demo Scenes/Human Melee Animations/AnimatorControllers/Female/2H/HumanF@RunStrafe01_Left - 2H.overrideController using Guid(985f39633574ed44ca4282741a3a2a98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2ea1f458d5f072553c9d5012107c279') in 0.0050966 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/SimpleLitDepthNormalsPass.hlsl
+  artifactKey: Guid(a63ccbef6bed14464a35b8a62ee9b775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/SimpleLitDepthNormalsPass.hlsl using Guid(a63ccbef6bed14464a35b8a62ee9b775) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4513b3f6136ba6960d72a54e9c2459bd') in 0.0017086 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Unity.RenderPipelines.Universal.Shaders.asmdef
+  artifactKey: Guid(b4517ec124862cb4bb3b8b27d72843a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Unity.RenderPipelines.Universal.Shaders.asmdef using Guid(b4517ec124862cb4bb3b8b27d72843a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c3b490aea8a9af1648cfd4fe6b11ff4') in 0.0006678 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Prepare
@@ -492,56 +1024,433 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.140 seconds
-Refreshing native plugins compatible for Editor in 7.73 ms, found 2 plugins.
+- Loaded All Assemblies, in  1.077 seconds
+Refreshing native plugins compatible for Editor in 6.93 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.510 seconds
-Domain Reload Profiling: 2646ms
-	BeginReloadAssembly (292ms)
+- Finished resetting the current domain, in  1.418 seconds
+Domain Reload Profiling: 2490ms
+	BeginReloadAssembly (308ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (26ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (68ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (727ms)
-		LoadAssemblies (592ms)
+		CreateAndSetChildDomain (73ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (656ms)
+		LoadAssemblies (540ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (276ms)
-			TypeCache.Refresh (12ms)
+		AnalyzeDomain (254ms)
+			TypeCache.Refresh (9ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (238ms)
-			ResolveRequiredComponents (21ms)
-	FinalizeReload (1511ms)
+			BuildScriptInfoCaches (226ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1418ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1290ms)
+		SetupLoadedEditorAssemblies (1190ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
+			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (342ms)
-			ProcessInitializeOnLoadAttributes (544ms)
-			ProcessInitializeOnLoadMethodAttributes (379ms)
-			AfterProcessingInitializeOnLoad (16ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (304ms)
+			ProcessInitializeOnLoadAttributes (500ms)
+			ProcessInitializeOnLoadMethodAttributes (362ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (29ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 6.85 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 7.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6087 unused Assets / (3.9 MB). Loaded Objects now: 6909.
-Memory consumption went from 158.8 MB to 154.9 MB.
-Total: 14.076700 ms (FindLiveObjects: 0.950400 ms CreateObjectMapping: 0.484500 ms MarkObjects: 10.757700 ms  DeleteObjects: 1.883000 ms)
+Unloading 6088 unused Assets / (4.0 MB). Loaded Objects now: 6975.
+Memory consumption went from 161.1 MB to 157.1 MB.
+Total: 15.797600 ms (FindLiveObjects: 0.998400 ms CreateObjectMapping: 0.572600 ms MarkObjects: 12.067000 ms  DeleteObjects: 2.157900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.964 seconds
+Refreshing native plugins compatible for Editor in 6.99 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.120 seconds
+Domain Reload Profiling: 2080ms
+	BeginReloadAssembly (257ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (600ms)
+		LoadAssemblies (479ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (246ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (220ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1121ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (927ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (185ms)
+			ProcessInitializeOnLoadAttributes (435ms)
+			ProcessInitializeOnLoadMethodAttributes (285ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6087 unused Assets / (4.1 MB). Loaded Objects now: 6978.
+Memory consumption went from 161.0 MB to 156.9 MB.
+Total: 14.905500 ms (FindLiveObjects: 0.869500 ms CreateObjectMapping: 0.587700 ms MarkObjects: 11.300300 ms  DeleteObjects: 2.146000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 6129.279252 seconds.
+  path: Assets/World/Environment/Textures/Building2/WoodPieces_normal.png
+  artifactKey: Guid(cdf0fa337807408448427cec651529c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/WoodPieces_normal.png using Guid(cdf0fa337807408448427cec651529c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '400acbca2be5279da4b0534882b37a96') in 0.2393629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.712823 seconds.
+  path: Assets/World/Environment/Textures/Building2/Plaster_Surface_normal.png
+  artifactKey: Guid(919e15dd125cef44f9a02719f84c6552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Plaster_Surface_normal.png using Guid(919e15dd125cef44f9a02719f84c6552) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f14b56ee91b37053745cb4901f26f450') in 0.0901032 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Textures/Building2/Roof_Wood_Tile_height.png
+  artifactKey: Guid(fa17c811c545c4045b20b6bdef5e470d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Roof_Wood_Tile_height.png using Guid(fa17c811c545c4045b20b6bdef5e470d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce5807cd0a1e64fa93e134c012ece9fb') in 0.0232596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Textures/Building2/Wood_Tile_basecolor.png
+  artifactKey: Guid(69e2695c52ca4d24f9bad34df660f567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Wood_Tile_basecolor.png using Guid(69e2695c52ca4d24f9bad34df660f567) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ef445ec5ece39560fe10748833c54e9') in 0.0146702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Environment/Textures/Building2/Roof_Wood_Tile_basecolor.png
+  artifactKey: Guid(f199ed0cf59a4394fb5062276d7aec76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Roof_Wood_Tile_basecolor.png using Guid(f199ed0cf59a4394fb5062276d7aec76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61904e3a0a61debc5dab92f355b6d0b0') in 0.0188294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Textures/Building2/Wood_Tile_height.png
+  artifactKey: Guid(eb3d074367f03be47b52c906dc93e771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Wood_Tile_height.png using Guid(eb3d074367f03be47b52c906dc93e771) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d941baaaa34d34bd3e24c48214cede4') in 0.0247638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Environment/Textures/Building2/StrawRoof_basecolor.png
+  artifactKey: Guid(d517bc2f65d95834db112442771bfafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/StrawRoof_basecolor.png using Guid(d517bc2f65d95834db112442771bfafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcb276415822eb97c88f383723b03ceb') in 0.0297356 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Textures/Building2/Straw_Roof_metallic.png
+  artifactKey: Guid(80c1389752bc4e94c979c938b1c49e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Straw_Roof_metallic.png using Guid(80c1389752bc4e94c979c938b1c49e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46db9d250e00867074f471e277c6a6c4') in 0.0248907 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Environment/Textures/Building2/Window_basecolor.png
+  artifactKey: Guid(d65756a7b85d5e84bafb834dce37ac7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Window_basecolor.png using Guid(d65756a7b85d5e84bafb834dce37ac7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63086ca5fceebeccfa9839a879c20243') in 0.0137579 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Environment/Textures/Building2/Straw_Roof_RMHA.png
+  artifactKey: Guid(c055e83f35a539646a16da5c3aceef39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Straw_Roof_RMHA.png using Guid(c055e83f35a539646a16da5c3aceef39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e84154801af3931b3d699c6ff965a0c') in 0.0154023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Environment/Textures/Building2/Window_normal.png
+  artifactKey: Guid(07cb51fc794278c4a9e9559090204d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Window_normal.png using Guid(07cb51fc794278c4a9e9559090204d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e8309fa4c995970ab0d54398cd1c3dd') in 0.0193306 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Textures/Building2/Straw_Roof_roughness.png
+  artifactKey: Guid(95787e33f3bd0c5409b3cc237ce8c394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Straw_Roof_roughness.png using Guid(95787e33f3bd0c5409b3cc237ce8c394) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9df545c388df528415a3eb37c861fafc') in 0.0127647 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Textures/Building2/Stone_Stairs_normal.png
+  artifactKey: Guid(e4023330212db9645bbd69d46151e8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Stone_Stairs_normal.png using Guid(e4023330212db9645bbd69d46151e8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '151e61a4f0510bc4f55dd90c41274e98') in 0.0281413 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Textures/Building2/Stone_Stairs_RMHA.png
+  artifactKey: Guid(9bd35ef01837858418a4d5462beda5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Stone_Stairs_RMHA.png using Guid(9bd35ef01837858418a4d5462beda5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac1ff86d2e431fcd82b3131a8ce6c621') in 0.0222749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Environment/Textures/Building2/StrawRoof_normal.png
+  artifactKey: Guid(35f4ce366d92f524c9792664fd882067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/StrawRoof_normal.png using Guid(35f4ce366d92f524c9792664fd882067) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '857a2f42ab5cd24b50a0ccc497591dec') in 0.0254123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Textures/Building2/WoodPieces_height.png
+  artifactKey: Guid(5c35802f057fdbe4c82f646191f05090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/WoodPieces_height.png using Guid(5c35802f057fdbe4c82f646191f05090) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c149c2685a6b031838aa360367f86c3') in 0.0139301 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Environment/Textures/Building2/Roof_Wood_Tile_RMHA.png
+  artifactKey: Guid(981dd481d74b6174ea8e39de9a0ba391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Roof_Wood_Tile_RMHA.png using Guid(981dd481d74b6174ea8e39de9a0ba391) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9330c7f0abbfaa83b204544c3f7d5dd9') in 0.0168659 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Environment/Textures/Building2/Stone_Stairs_height.png
+  artifactKey: Guid(b7501bd03c6284e4fb1da447acc39627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Stone_Stairs_height.png using Guid(b7501bd03c6284e4fb1da447acc39627) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad203f6da45497d88f8d3f52f09e3f23') in 0.0311855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Textures/Building2/WoodPieces_basecolor.png
+  artifactKey: Guid(8cb08d88c782b194c836e11277a18346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/WoodPieces_basecolor.png using Guid(8cb08d88c782b194c836e11277a18346) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3dc7b28912930dc534661554b75ddb5d') in 0.0188819 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Textures/Building2/Straw_Roof_output.png
+  artifactKey: Guid(f0700d66635a8eb45932fdf421a75953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Straw_Roof_output.png using Guid(f0700d66635a8eb45932fdf421a75953) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64107fb8f132fb08deaf12291ee5c0e7') in 0.0189381 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Environment/Textures/Building2/Stone_Wall_RMHA.png
+  artifactKey: Guid(1021edbfa7751a54a854c668e3f5efb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Stone_Wall_RMHA.png using Guid(1021edbfa7751a54a854c668e3f5efb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd656c5dd708ff15fb5bce2233517cc3d') in 0.0353967 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.310853 seconds.
+  path: Assets/World/Environment/Textures/Building2/WoodPieces_normal.png
+  artifactKey: Guid(cdf0fa337807408448427cec651529c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/WoodPieces_normal.png using Guid(cdf0fa337807408448427cec651529c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '533ccf92f9d4f1609a374773f621e69c') in 0.0106622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.485042 seconds.
+  path: Assets/World/Environment/Textures/Building2/WoodPieces_normal.png
+  artifactKey: Guid(cdf0fa337807408448427cec651529c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/WoodPieces_normal.png using Guid(cdf0fa337807408448427cec651529c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '247da326a871ab1acce40da59bfa94f9') in 0.045963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.005445 seconds.
+  path: Assets/World/Environment/Textures/Building2/WoodPieces_normal.png
+  artifactKey: Guid(cdf0fa337807408448427cec651529c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/WoodPieces_normal.png using Guid(cdf0fa337807408448427cec651529c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b57d41c1b1a9c54f2de8e15b0c53a5f5') in 0.0138083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.175114 seconds.
+  path: Assets/World/Environment/Textures/Building2/WoodPieces_normal.png
+  artifactKey: Guid(cdf0fa337807408448427cec651529c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/WoodPieces_normal.png using Guid(cdf0fa337807408448427cec651529c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a81f8823c628d4c67531bd0aa34bbde4') in 0.0107684 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 720.488644 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/SimpleLit.shader
+  artifactKey: Guid(8d2bb70cbf9db8d4da26e15b26e74248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/SimpleLit.shader using Guid(8d2bb70cbf9db8d4da26e15b26e74248) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '067707ff14601804ffa0022c2c8c8294') in 0.00145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.052811 seconds.
+  path: Assets/World/Environment/Textures/Building2/Brick_Wall_basecolor.png
+  artifactKey: Guid(c9a3544ce97e74c419dfcaf3072955d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Brick_Wall_basecolor.png using Guid(c9a3544ce97e74c419dfcaf3072955d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8afc306660ee8086a3cbafee2d02b17b') in 0.0188028 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Textures/Building2/Brick_Wall_normal.png
+  artifactKey: Guid(349fa00df637bc44684c8c57dee473ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Brick_Wall_normal.png using Guid(349fa00df637bc44684c8c57dee473ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'abb76091d4d321611fd7fdd6b6f27fe2') in 0.0310238 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Textures/Building2/Metals_normal.png
+  artifactKey: Guid(0118bfecd576c47478994e0b1fb07281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Metals_normal.png using Guid(0118bfecd576c47478994e0b1fb07281) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0872d33303903d5365f58f5a5a107707') in 0.0173286 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Environment/Textures/Building2/LooseRocks_height.png
+  artifactKey: Guid(eea3a1012970a68408dfcb247b6dcb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/LooseRocks_height.png using Guid(eea3a1012970a68408dfcb247b6dcb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51b9328de0cbbcbd7805f474d2ca153f') in 0.0317257 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Environment/Textures/Building2/Cobblestones_RMHA.png
+  artifactKey: Guid(e7b6ae90afeba6845b36b1eb8cdf9bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Cobblestones_RMHA.png using Guid(e7b6ae90afeba6845b36b1eb8cdf9bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43993f390bf8dee2255ba81457bb17fd') in 0.017565 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Textures/Building2/Mask_basecolor.png
+  artifactKey: Guid(a59a553456ea28d438c5257b9f89715d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Mask_basecolor.png using Guid(a59a553456ea28d438c5257b9f89715d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0fd01fc128a0cd18b0870f0ff957366') in 0.0126966 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/World/Environment/Textures/Building2/LooseRocks_RMHA.png
+  artifactKey: Guid(46db8276991c844489b3ac5bbcbd1c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/LooseRocks_RMHA.png using Guid(46db8276991c844489b3ac5bbcbd1c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd320df07588becb45728fd43557c8558') in 0.0126272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/World/Environment/Textures/Building2/Metals_height.png
+  artifactKey: Guid(12ce9c28c941a4047a1b66344c5d9a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Metals_height.png using Guid(12ce9c28c941a4047a1b66344c5d9a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20b8f678c0cdb65e534355215d01f579') in 0.0162457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Environment/Textures/Building2/LooseRocks_basecolor.png
+  artifactKey: Guid(8a806b7c2256e344da8d8dc37f100973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/LooseRocks_basecolor.png using Guid(8a806b7c2256e344da8d8dc37f100973) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '368e1c6e4c1bd145a65e09534e8234df') in 0.012399 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Environment/Textures/Building2/Metals_basecolor.png
+  artifactKey: Guid(84d5fa71801ab1f42b565df20ff80812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Metals_basecolor.png using Guid(84d5fa71801ab1f42b565df20ff80812) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '54911b2e87c48a0d2450aa972a28a256') in 0.0121825 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Textures/Building2/LooseRocks_normal.png
+  artifactKey: Guid(fea245988861c1f49979e8b7d5a8a933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/LooseRocks_normal.png using Guid(fea245988861c1f49979e8b7d5a8a933) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3144f424c21185156c39b1ac4ade51c5') in 0.0168419 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Environment/Textures/Building2/Plaster_Surface_height.png
+  artifactKey: Guid(973fb6ab771b21649959d7acbc254ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Plaster_Surface_height.png using Guid(973fb6ab771b21649959d7acbc254ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38d14a5a697a53b8f203a274484cf79e') in 0.0114923 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/World/Environment/Textures/Building2/Cobblestones_normal.png
+  artifactKey: Guid(5b17b15410c5bf8408d9d3360783c3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building2/Cobblestones_normal.png using Guid(5b17b15410c5bf8408d9d3360783c3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4850e1d1ca8f4fb72e4e1305898c27f') in 0.0187887 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

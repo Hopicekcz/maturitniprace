@@ -13,6 +13,7 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private GameObject eyes;
     [SerializeField] private Transform playerEyes;
     [SerializeField] private Transform playerBody;
+    [SerializeField] private MeshCollider ownMeshCollider;
     [Header("Layers")]
     [SerializeField] private LayerMask terrainLayer; //layerMask for the Ground to determine walkable checks
     [SerializeField] private LayerMask playerLayerMask; //layerMask for the Player to determine where the player is
@@ -53,6 +54,7 @@ public class aiNAV : MonoBehaviour
     private int revolverAmmoCount;
     private int ogRevolverAmmoCount;
     [SerializeField] private float currentSpread = 0.5f;
+    [SerializeField] private float ragdollTimer = 5f;
 
     [Header("Detection Ranges")] //customizable settings for the vision (follow player) and engagement (attack) range
     [SerializeField] private float visionRange = 15f;
@@ -72,6 +74,7 @@ public class aiNAV : MonoBehaviour
     private bool keepChasing;
     private bool attackedPlayer;
     private bool isReloading;
+    private bool isDead;
     //Ray for checking collisions between the NPC and the Player
     Ray npcToPlayerEyesRay;
     Ray npcToPlayerBodyRay;
@@ -93,6 +96,7 @@ public class aiNAV : MonoBehaviour
             playerEyes = playerObjEyes.transform;
             GameObject playerObjBody = GameObject.Find("PlayerBody");
             playerBody = playerObjBody.transform;
+            ownMeshCollider = this.GetComponent<MeshCollider>();
         if(navAgent == null){
             navAgent = GetComponent<NavMeshAgent>();
         }
@@ -115,11 +119,16 @@ public class aiNAV : MonoBehaviour
 
 
     //MAIN FUNCTIONS
-    private void Update(){ //Constant activation of functions
-        DetectPlayer();
-        UpdateBehaviourState();
-        SetAnimation();
-        HealthSystem();
+    private void Update(){
+        if(!isDead){
+            DetectPlayer();
+            UpdateBehaviourState();
+            SetAnimation();
+            HealthSystem();
+        } else {
+            StartCoroutine(Death());
+        }           
+        
     }
 
     private void SetAnimation(){ //Animation setter using bool parameters in the animator
@@ -131,6 +140,12 @@ public class aiNAV : MonoBehaviour
             wasHit = true;
             npcHP = npcHP - Random.Range(30f, 60f);
         }
+
+    void HitByPlayerShotgun()
+    {
+        wasHit = true;
+        npcHP = npcHP - Random.Range(15f, 25f);
+    }
 
     private IEnumerator SlowOnHit(){
         if(wasHit){
@@ -149,9 +164,17 @@ public class aiNAV : MonoBehaviour
     private void HealthSystem()
     {
         if(npcHP <= 0){
-            Destroy(gameObject);
+            isDead = true;
         }
         StartCoroutine(SlowOnHit());
+    }
+
+    private IEnumerator Death(){
+        audioSource.enabled = false;
+        animator.enabled = false;
+        ownMeshCollider.enabled = false;
+        yield return new WaitForSeconds(ragdollTimer);
+        Destroy(gameObject);
     }
 
     private void DetectPlayer()
@@ -173,7 +196,7 @@ public class aiNAV : MonoBehaviour
         else if ((isPlayerVisible && !isPlayerInRange) || (!releaseChase) || (attackedPlayer)){  //Can see player but is not close OR Cant see player, is not close but was being chased = Chase
             PerformChase();
         }
-        else if(!isPlayerVisible && !isPlayerInRange){ //Cant see player, Player isnt close and Player was not being chased = Patrol
+        else { //Cant see player, Player isnt close and Player was not being chased = Patrol
             PerformPatrol();
         }
     }
@@ -231,7 +254,7 @@ public class aiNAV : MonoBehaviour
             keepChasing = true;
             StartCoroutine(KeepChasingTimer());
         }
-        if(isPlayerVisible && !isPlayerInRange){
+        if(isPlayerVisible && !isPlayerInRange || keepChasing){
             releaseChase = false;
             playerLastPosition = playerTransform.position;
             keepChasing = true;
@@ -368,7 +391,7 @@ public class aiNAV : MonoBehaviour
         
     }
     private IEnumerator FindStrafePoint(){
-            if((Physics.Raycast(raySide, out hitGround, 3f, terrainLayer)) && !isOnStrafePoint){
+            if((Physics.Raycast(raySide, out hitGround, 15f, terrainLayer)) && !isOnStrafePoint){
                     isOnStrafePoint = true;
                     navAgent.SetDestination(hitGround.point);
                     transform.LookAt(new Vector3(playerTransform.position.x, transform.position.y, playerTransform.position.z));
