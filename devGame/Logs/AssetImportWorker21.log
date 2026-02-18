@@ -1,17 +1,17 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.3f1 (ef04196de0d6) revision 15664153'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-02-18T19:49:24.4772516Z"
 OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16004 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-02-17T20:58:00Z
-[Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-02-17T20:58:00.6463441Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 40604, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+Date: 2026-02-18T19:49:24Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 8896, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.17.4'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Hopic"
 [Licensing::IpcConnector] LicenseClient-Hopic channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-02-17T20:58:00.7117883Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-02-18T19:49:24.5474762Z"
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.3f1\Editor\Unity.exe
@@ -25,7 +25,7 @@ E:/unity/maturitniprace/active/devGame
 -logFile
 Logs/AssetImportWorker21.log
 -srvPort
-61124
+61037
 -licensingIpc
 LicenseClient-Hopic
 -job-worker-count
@@ -73,16 +73,16 @@ E:/unity/maturitniprace/active/devGame
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [18608]  Target information:
+Player connection [34972]  Target information:
 
-Player connection [18608]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2939458658 [EditorId] 2939458658 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [34972]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2560271986 [EditorId] 2560271986 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [18608]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 2939458658 [EditorId] 2939458658 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [34972]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 2560271986 [EditorId] 2560271986 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [18608]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 2939458658 [EditorId] 2939458658 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [34972]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 2560271986 [EditorId] 2560271986 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [18608] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [18608] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [34972] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [34972] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -94,7 +94,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 7.96 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 8.98 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.3f1 (ef04196de0d6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -112,52 +112,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56940
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003915 seconds.
-- Loaded All Assemblies, in  0.973 seconds
+Registered in 0.003445 seconds.
+- Loaded All Assemblies, in  0.622 seconds
 Native extension for WindowsStandalone target not found
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              9644f6b21c5848f2af17fad18f4f8941
-  Correlation Id:          6215d60b5c826b87860069d7d3e440fc
-  External correlation Id: 2182916240625160853
+  Session Id:              320a64d029b246a2a40d3faee1380146
+  Correlation Id:          08825fd9b47c9ebba13de7ed9e9cbe11
+  External correlation Id: 8550865992114266444
   Machine Id:              4VB2xDT1CV9zqVbIIZWsGa/FyKA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 2.24s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-02-17T20:58:02.9485392Z"
-[Licensing::Module] Licensing Background thread has ended after 2.30s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 1.70s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-02-18T19:49:26.2468219Z"
+[Licensing::Module] Licensing Background thread has ended after 1.77s
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.654 seconds
-Domain Reload Profiling: 1621ms
-	BeginReloadAssembly (342ms)
+- Finished resetting the current domain, in  0.585 seconds
+Domain Reload Profiling: 1200ms
+	BeginReloadAssembly (189ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (61ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (76ms)
-	LoadAllAssembliesAndSetupDomain (468ms)
-		LoadAssemblies (335ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (292ms)
+		LoadAssemblies (181ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (464ms)
-			TypeCache.Refresh (462ms)
-				TypeCache.ScanAssembly (442ms)
+		AnalyzeDomain (288ms)
+			TypeCache.Refresh (286ms)
+				TypeCache.ScanAssembly (268ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (655ms)
+	FinalizeReload (585ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (589ms)
+		SetupLoadedEditorAssemblies (517ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (73ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (120ms)
-			ProcessInitializeOnLoadAttributes (249ms)
-			ProcessInitializeOnLoadMethodAttributes (142ms)
+			InitializePlatformSupportModulesInManaged (68ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (128ms)
+			ProcessInitializeOnLoadAttributes (218ms)
+			ProcessInitializeOnLoadMethodAttributes (99ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -178,217 +178,177 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.357 seconds
-Refreshing native plugins compatible for Editor in 6.74 ms, found 2 plugins.
+- Loaded All Assemblies, in  1.135 seconds
+Refreshing native plugins compatible for Editor in 6.65 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 6.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 7.52 ms, found 2 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.250 seconds
-Domain Reload Profiling: 2600ms
-	BeginReloadAssembly (249ms)
+- Finished resetting the current domain, in  1.200 seconds
+Domain Reload Profiling: 2328ms
+	BeginReloadAssembly (234ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (60ms)
-	LoadAllAssembliesAndSetupDomain (976ms)
-		LoadAssemblies (759ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (772ms)
+		LoadAssemblies (568ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (364ms)
-			TypeCache.Refresh (261ms)
-				TypeCache.ScanAssembly (238ms)
-			BuildScriptInfoCaches (86ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1251ms)
+		AnalyzeDomain (340ms)
+			TypeCache.Refresh (251ms)
+				TypeCache.ScanAssembly (230ms)
+			BuildScriptInfoCaches (72ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1200ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (979ms)
+		SetupLoadedEditorAssemblies (956ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (185ms)
-			ProcessInitializeOnLoadAttributes (478ms)
-			ProcessInitializeOnLoadMethodAttributes (296ms)
+			BeforeProcessingInitializeOnLoad (179ms)
+			ProcessInitializeOnLoadAttributes (467ms)
+			ProcessInitializeOnLoadMethodAttributes (291ms)
 			AfterProcessingInitializeOnLoad (13ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+		AwakeInstancesAfterBackupRestoration (13ms)
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 7.36 ms, found 2 plugins.
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 7.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6090 unused Assets / (4.3 MB). Loaded Objects now: 6898.
-Memory consumption went from 159.6 MB to 155.3 MB.
-Total: 16.921900 ms (FindLiveObjects: 0.993000 ms CreateObjectMapping: 0.772900 ms MarkObjects: 12.839200 ms  DeleteObjects: 2.315700 ms)
+Unloading 6090 unused Assets / (4.8 MB). Loaded Objects now: 6921.
+Memory consumption went from 162.8 MB to 158.0 MB.
+Total: 16.652400 ms (FindLiveObjects: 0.921400 ms CreateObjectMapping: 0.685000 ms MarkObjects: 12.855500 ms  DeleteObjects: 2.189400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 112757.430801 seconds.
-  path: Assets/World/Environment/Textures/Building2/Materials/WoodPieces_basecolor.mat
-  artifactKey: Guid(66a00703365b13b45aad661ae626b35b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/World/Environment/Textures/Building2/Materials/WoodPieces_basecolor.mat using Guid(66a00703365b13b45aad661ae626b35b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '58884265c2781f5d9b18cb45bf48dbd1') in 0.1363365 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 195087.691644 seconds.
+  path: Assets/World/Environment/Textures/Furniture/Small_Chair_N.tga
+  artifactKey: Guid(e8d3e3a99e11a684a9db4c627b1fc36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Furniture/Small_Chair_N.tga using Guid(e8d3e3a99e11a684a9db4c627b1fc36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c7032c9d969efaa859a3c244dfedf4e') in 0.1165308 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.171198 seconds.
-  path: Assets/Shaders
-  artifactKey: Guid(b17f26fcb04eebf4ea4b62d7847c228a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaders using Guid(b17f26fcb04eebf4ea4b62d7847c228a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6443fb270f10551f0710f00984df83d3') in 0.00548 seconds
+  Time since last request: 1.248119 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Textures/Misc/WFX_T_GlowCircle A8.png
+  artifactKey: Guid(ddd99084bf4dcd54e8a575ee0959c08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Desktop/Textures/Misc/WFX_T_GlowCircle A8.png using Guid(ddd99084bf4dcd54e8a575ee0959c08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1058fec63e872eddd5567567c7b2745e') in 0.0134208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.653010 seconds.
+  path: Assets/World/Environment/Skybox/FreebieHdri/CloudedSunGlow4k.hdr
+  artifactKey: Guid(12c15a8e5a294be45819b1dd4b9b08d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Skybox/FreebieHdri/CloudedSunGlow4k.hdr using Guid(12c15a8e5a294be45819b1dd4b9b08d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4331e0bae077ff70b87296433d8bf719') in 0.5474218 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.872777 seconds.
-  path: Assets/Shaders/New Shader Graph.shadergraph
-  artifactKey: Guid(dd601db71da4e0344896e75e882ff4c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaders/New Shader Graph.shadergraph using Guid(dd601db71da4e0344896e75e882ff4c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6dcd433e2ba169fca8e7aecd959a5c71') in 0.0402968 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+  Time since last request: 649.709700 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIHandlerRenderingLayerField.prefab
+  artifactKey: Guid(928d1ca04af80c84e8d5dabc18095d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Widgets/DebugUIHandlerRenderingLayerField.prefab using Guid(928d1ca04af80c84e8d5dabc18095d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0dfb57dfe7ae9a8724b496905a15b490') in 0.0562548 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 612
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.867095 seconds.
-  path: Assets/Shaders/New Shader Graph.shadergraph
-  artifactKey: Guid(dd601db71da4e0344896e75e882ff4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/New Shader Graph.shadergraph using Guid(dd601db71da4e0344896e75e882ff4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc421b71a8094531d2f6f279610628be') in 1.0663255 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+  Time since last request: 0.000044 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Materials/Latern_glass1.mat
+  artifactKey: Guid(481f36c8ffec67b4fa1bb4149d041091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Models/Lanterns/Materials/Latern_glass1.mat using Guid(481f36c8ffec67b4fa1bb4149d041091) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '98d18513c9eb8d1d62337b67a4385b44') in 0.0601131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.400664 seconds.
-  path: Assets/Shaders/WorldSpaceUV.shadergraph
-  artifactKey: Guid(dd601db71da4e0344896e75e882ff4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/WorldSpaceUV.shadergraph using Guid(dd601db71da4e0344896e75e882ff4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d78d2822f4097a4f11888f9fbd85853') in 0.5456271 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+  Time since last request: 0.000058 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Materials/Glass2.mat
+  artifactKey: Guid(c9eadecbe34d97e4d8ba4f52b9e58d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Models/Lanterns/Materials/Glass2.mat using Guid(c9eadecbe34d97e4d8ba4f52b9e58d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6fde01632042a63c832c1fdb7adb8d8b') in 0.0115076 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 555.746053 seconds.
-  path: Assets/Shaders/WorldSpaceUV.shadergraph
-  artifactKey: Guid(dd601db71da4e0344896e75e882ff4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/WorldSpaceUV.shadergraph using Guid(dd601db71da4e0344896e75e882ff4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ba0f06f682e319a2c0a4ad6f8d13818') in 0.5471044 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.330846 seconds.
-  path: Assets/Shaders/_WoodMaterial.mat
-  artifactKey: Guid(7bae144e39232444dafcc721354598f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/_WoodMaterial.mat using Guid(7bae144e39232444dafcc721354598f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da723fd25d4c84342727ce73783f3025') in 0.0146008 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.918005 seconds.
-  path: Assets/Shaders/_WoodMaterial.mat
-  artifactKey: Guid(7bae144e39232444dafcc721354598f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaders/_WoodMaterial.mat using Guid(7bae144e39232444dafcc721354598f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0f72fed53f9b50fa35cf18167502a6ed') in 0.0087615 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 98.844109 seconds.
-  path: Assets/Shaders/WorldSpaceUV.shadergraph
-  artifactKey: Guid(dd601db71da4e0344896e75e882ff4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/WorldSpaceUV.shadergraph using Guid(dd601db71da4e0344896e75e882ff4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '282de540ecc04694b100ecced90e90b2') in 0.0108144 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.686821 seconds.
-  path: Assets/Shaders/WorldSpaceUV.shadergraph
-  artifactKey: Guid(dd601db71da4e0344896e75e882ff4c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Shaders/WorldSpaceUV.shadergraph using Guid(dd601db71da4e0344896e75e882ff4c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ba380225814461794c42d2947c3c7323') in 0.0088212 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.764759 seconds.
-  path: Assets/World/Environment/Textures/Furniture/3Seat2_Normal.tga
-  artifactKey: Guid(e7a62a18c972ca44abc3148673336008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Textures/Furniture/3Seat2_Normal.tga using Guid(e7a62a18c972ca44abc3148673336008) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6bdf493726bc58360a531bc94efa6d1') in 0.0371472 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.699150 seconds.
-  path: Assets/World/Environment/Textures/Trees/TileFloor.png
-  artifactKey: Guid(3211d6763abc59248b21a909ae30a522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Textures/Trees/TileFloor.png using Guid(3211d6763abc59248b21a909ae30a522) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '711c7f90cd9e6303d37e83f7b72e9b4f') in 0.0120481 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/World/Effects/BloodDecalsAndEffects/TiledRoom/Textures/Tiles/TilesGloss.png
-  artifactKey: Guid(314653601bf5c094ebdc301787a8cedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Effects/BloodDecalsAndEffects/TiledRoom/Textures/Tiles/TilesGloss.png using Guid(314653601bf5c094ebdc301787a8cedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67d55ade65ef9c7c1ad7f26151bb3996') in 0.0117495 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/World/Effects/BloodDecalsAndEffects/TiledRoom/Textures/Tiles/tilesNorm_height.png
-  artifactKey: Guid(4e9a863906105c34eb42efffe8ff8fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Effects/BloodDecalsAndEffects/TiledRoom/Textures/Tiles/tilesNorm_height.png using Guid(4e9a863906105c34eb42efffe8ff8fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86e599b42a1ab614f9f6dd8275a92616') in 0.0119463 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.999089 seconds.
-  path: Assets/World/Effects/WarFX/Demo/Assets/WFX_Demo_T_M4 Normal.jpg
-  artifactKey: Guid(b58f7bfc777b4ad45af55a8166ff1d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Effects/WarFX/Demo/Assets/WFX_Demo_T_M4 Normal.jpg using Guid(b58f7bfc777b4ad45af55a8166ff1d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2aac96449d8545267afc296eadc9384f') in 0.0111539 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.693954 seconds.
-  path: Assets/World/Environment/MeshTerrains/MeshTerrain_2/Textures/normalmap_2048x2048.png
-  artifactKey: Guid(36030b14b846ecb42a3ad12b88c724f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/MeshTerrains/MeshTerrain_2/Textures/normalmap_2048x2048.png using Guid(36030b14b846ecb42a3ad12b88c724f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac66569705fbd875ec6ac519b89630c1') in 0.0250822 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.719081 seconds.
-  path: Assets/World/Environment/Textures/TerrainAutoUpgrade/Rock_1.png
-  artifactKey: Guid(88b200775c638d7458c784a5302c6344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Textures/TerrainAutoUpgrade/Rock_1.png using Guid(88b200775c638d7458c784a5302c6344) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07921b9b3b819f5eb926f9fe320749b4') in 0.0258225 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Latern2.fbx
+  artifactKey: Guid(2822a6c192bfe4644849c5e3d4bb4f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Models/Lanterns/Latern2.fbx using Guid(2822a6c192bfe4644849c5e3d4bb4f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '454bbc197ea026f5ca988dc944addf31') in 0.159038 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000031 seconds.
-  path: Assets/World/Environment/Textures/Custom/Textures/Vol 5 Rocky Surface/RockySurface_Metallic.png
-  artifactKey: Guid(ecdc8f25c1a6ef54eaa776b171239038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 5 Rocky Surface/RockySurface_Metallic.png using Guid(ecdc8f25c1a6ef54eaa776b171239038) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '060e56f97dadfae23426acccefe5d21a') in 0.0159672 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  path: Assets/World/Environment/Prefabs/Furniture/Glass_01.prefab
+  artifactKey: Guid(639d8009f73c0c0479e83997d1fc2ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Furniture/Glass_01.prefab using Guid(639d8009f73c0c0479e83997d1fc2ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff7b2a62cbabdd6758131521be1ca687') in 0.0156923 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000036 seconds.
-  path: Assets/World/Environment/Textures/Custom/Textures/Vol 5 Rocky Surface/RockySurface_Base.png
-  artifactKey: Guid(deeda36f6ec252f4c81e6a6716d07d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 5 Rocky Surface/RockySurface_Base.png using Guid(deeda36f6ec252f4c81e6a6716d07d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43f5cf29371620303fbcc73cf37308ab') in 0.012263 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  path: Assets/World/Environment/Materials/Lanterns/Latern_glass1.mat
+  artifactKey: Guid(a9cef664c9823034db4a08c78926b38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Materials/Lanterns/Latern_glass1.mat using Guid(a9cef664c9823034db4a08c78926b38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd827c509662ea56b94fc95fbc24d64a8') in 0.0656409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/World/Environment/Textures/Custom/Textures/Vol 5 Rocky Surface/RockySurface_Height.png
-  artifactKey: Guid(11b81f51b59d4644e927898de1788e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Textures/Custom/Textures/Vol 5 Rocky Surface/RockySurface_Height.png using Guid(11b81f51b59d4644e927898de1788e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a6db64040f7e38e397f49f71c5f88bf2') in 0.016246 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Materials/Lanterns/Glass3.mat
+  artifactKey: Guid(dc9e1f70c9d234b4b8b4a257faeac211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Materials/Lanterns/Glass3.mat using Guid(dc9e1f70c9d234b4b8b4a257faeac211) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '585dd9ad1a04e183e4f44a072ea5af29') in 0.0150736 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Latern3.fbx
+  artifactKey: Guid(c124bcb1a14e7054b8c99e402a20ee07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Models/Lanterns/Latern3.fbx using Guid(c124bcb1a14e7054b8c99e402a20ee07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c470699eb91390fe81f5da250f6459e') in 0.0626773 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Packages/com.unity.render-pipelines.universal/ShaderLibrary/RenderingLayers.hlsl
+  artifactKey: Guid(bcd650cf6823f4f7fb62fe0eccae07b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/ShaderLibrary/RenderingLayers.hlsl using Guid(bcd650cf6823f4f7fb62fe0eccae07b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e52285fd83cf2f47102741b42d5b906') in 0.0016958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Materials/Lanterns/Latern_glass1.001.mat
+  artifactKey: Guid(aa186747c90cf024c9a88180864df837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Materials/Lanterns/Latern_glass1.001.mat using Guid(aa186747c90cf024c9a88180864df837) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '588fc28a25202b1e9ba4b8599f2a16c2') in 0.0075039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/RenderingLayerMask/TraceRenderingLayerMask.urtshader
+  artifactKey: Guid(94a070d33e408384bafc1dea4a565df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/RenderingLayerMask/TraceRenderingLayerMask.urtshader using Guid(94a070d33e408384bafc1dea4a565df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c1aae12a87cb73165cff18410b7deb5d') in 0.0031308 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Models/Lanterns/Materials/Glass5.mat
+  artifactKey: Guid(b4b0bc13615b109488ea893949ee304c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Models/Lanterns/Materials/Glass5.mat using Guid(b4b0bc13615b109488ea893949ee304c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a4e1164f9308daf06deee631cb4717c') in 0.0097487 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

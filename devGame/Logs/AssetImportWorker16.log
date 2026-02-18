@@ -1,17 +1,17 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-02-17T20:03:21.2281917Z"
 Built from '6000.3/staging' branch; Version is '6000.3.3f1 (ef04196de0d6) revision 15664153'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16004 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-02-18T18:58:18.6173515Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-02-17T20:03:21Z
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 40604, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+Date: 2026-02-18T18:58:18Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 8896, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.17.4'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Hopic"
 [Licensing::IpcConnector] LicenseClient-Hopic channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-02-17T20:03:21.2960761Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-02-18T18:58:18.6754537Z"
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.3f1\Editor\Unity.exe
@@ -25,7 +25,7 @@ E:/unity/maturitniprace/active/devGame
 -logFile
 Logs/AssetImportWorker16.log
 -srvPort
-61124
+61037
 -licensingIpc
 LicenseClient-Hopic
 -job-worker-count
@@ -73,16 +73,16 @@ E:/unity/maturitniprace/active/devGame
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [17628]  Target information:
+Player connection [4660]  Target information:
 
-Player connection [17628]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4224435766 [EditorId] 4224435766 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [4660]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1663845078 [EditorId] 1663845078 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [17628]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 4224435766 [EditorId] 4224435766 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [4660]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 1663845078 [EditorId] 1663845078 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [17628]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 4224435766 [EditorId] 4224435766 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [4660]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 1663845078 [EditorId] 1663845078 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [17628] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [17628] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [4660] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [4660] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -94,7 +94,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 7.80 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 7.04 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.3f1 (ef04196de0d6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -116,48 +116,48 @@ Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,susp
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003326 seconds.
-- Loaded All Assemblies, in  0.545 seconds
+Registered in 0.004733 seconds.
+- Loaded All Assemblies, in  0.586 seconds
 Native extension for WindowsStandalone target not found
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              1b0fde7a0296420298d231879f940591
-  Correlation Id:          6215d60b5c826b87860069d7d3e440fc
-  External correlation Id: 7900362609454142521
+  Session Id:              bed3fd42019a46b89019b5619d2244f3
+  Correlation Id:          08825fd9b47c9ebba13de7ed9e9cbe11
+  External correlation Id: 6905724009327582243
   Machine Id:              4VB2xDT1CV9zqVbIIZWsGa/FyKA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 1.59s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-02-17T20:03:22.8844774Z"
-[Licensing::Module] Licensing Background thread has ended after 1.66s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 1.44s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-02-18T18:58:20.1181087Z"
+[Licensing::Module] Licensing Background thread has ended after 1.50s
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.592 seconds
-Domain Reload Profiling: 1131ms
-	BeginReloadAssembly (178ms)
+- Finished resetting the current domain, in  0.503 seconds
+Domain Reload Profiling: 1084ms
+	BeginReloadAssembly (238ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (230ms)
-		LoadAssemblies (170ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (213ms)
+		LoadAssemblies (232ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (225ms)
-			TypeCache.Refresh (224ms)
-				TypeCache.ScanAssembly (207ms)
+		AnalyzeDomain (209ms)
+			TypeCache.Refresh (207ms)
+				TypeCache.ScanAssembly (191ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (592ms)
+	FinalizeReload (503ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (532ms)
+		SetupLoadedEditorAssemblies (448ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (65ms)
+			InitializePlatformSupportModulesInManaged (64ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (151ms)
-			ProcessInitializeOnLoadAttributes (210ms)
-			ProcessInitializeOnLoadMethodAttributes (102ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (162ms)
+			ProcessInitializeOnLoadMethodAttributes (120ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -178,57 +178,97 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.170 seconds
-Refreshing native plugins compatible for Editor in 7.81 ms, found 2 plugins.
+- Loaded All Assemblies, in  1.377 seconds
+Refreshing native plugins compatible for Editor in 6.03 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 7.71 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 6.36 ms, found 2 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.249 seconds
-Domain Reload Profiling: 2411ms
-	BeginReloadAssembly (246ms)
+- Finished resetting the current domain, in  1.220 seconds
+Domain Reload Profiling: 2590ms
+	BeginReloadAssembly (244ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (787ms)
-		LoadAssemblies (576ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (992ms)
+		LoadAssemblies (794ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (354ms)
-			TypeCache.Refresh (263ms)
-				TypeCache.ScanAssembly (241ms)
-			BuildScriptInfoCaches (74ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1250ms)
+		AnalyzeDomain (341ms)
+			TypeCache.Refresh (254ms)
+				TypeCache.ScanAssembly (232ms)
+			BuildScriptInfoCaches (71ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1220ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (999ms)
+		SetupLoadedEditorAssemblies (954ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (187ms)
-			ProcessInitializeOnLoadAttributes (485ms)
-			ProcessInitializeOnLoadMethodAttributes (305ms)
-			AfterProcessingInitializeOnLoad (15ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (169ms)
+			ProcessInitializeOnLoadAttributes (455ms)
+			ProcessInitializeOnLoadMethodAttributes (312ms)
+			AfterProcessingInitializeOnLoad (12ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+		AwakeInstancesAfterBackupRestoration (12ms)
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 7.32 ms, found 2 plugins.
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 6.80 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6090 unused Assets / (4.4 MB). Loaded Objects now: 6898.
-Memory consumption went from 157.9 MB to 153.5 MB.
-Total: 14.163300 ms (FindLiveObjects: 0.833500 ms CreateObjectMapping: 0.461600 ms MarkObjects: 10.620300 ms  DeleteObjects: 2.246700 ms)
+Unloading 6090 unused Assets / (4.7 MB). Loaded Objects now: 6920.
+Memory consumption went from 160.7 MB to 156.1 MB.
+Total: 13.517000 ms (FindLiveObjects: 0.809100 ms CreateObjectMapping: 0.387600 ms MarkObjects: 10.416900 ms  DeleteObjects: 1.901900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 191992.624422 seconds.
+  path: Assets/World/Environment/BuildingPrefabs/PrefabMaterials/WoodFrame.mat
+  artifactKey: Guid(5a397939fdc094d49b13815204202140) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/BuildingPrefabs/PrefabMaterials/WoodFrame.mat using Guid(5a397939fdc094d49b13815204202140) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '94cdb1b4f8810687a7d623f39176d2c1') in 0.1081566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.999344 seconds.
+  path: Assets/World/Environment/Textures/Building1/concreteG.png
+  artifactKey: Guid(eefcbcdf94224c54d8f8b193b4c85e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building1/concreteG.png using Guid(eefcbcdf94224c54d8f8b193b4c85e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78b90c40ccf93ff2c317f8d68f496c13') in 0.0658343 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/World/Environment/Textures/Building1/Grid_01_BaseMap.png
+  artifactKey: Guid(d1118dda59970a2449ee890fa247c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building1/Grid_01_BaseMap.png using Guid(d1118dda59970a2449ee890fa247c4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82135f1d5b7d3e55fd9de2d842749438') in 0.0073994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Environment/Textures/Building1/Grid_01_Normal.png
+  artifactKey: Guid(c5c221ed57a3bf6488f8eba0db28a004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Building1/Grid_01_Normal.png using Guid(c5c221ed57a3bf6488f8eba0db28a004) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e34caf13a6ad9ff80d761621a648e046') in 0.0155774 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.347062 seconds.
+  path: Assets/World/Environment/Textures/Building1/Materials/Concrete1.mat
+  artifactKey: Guid(4e5884c46d8c7104881ed5d2987646bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Building1/Materials/Concrete1.mat using Guid(4e5884c46d8c7104881ed5d2987646bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'daee859dc0984f78c354b62f19da73ba') in 0.0148531 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Prepare
@@ -245,343 +285,322 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.039 seconds
-Refreshing native plugins compatible for Editor in 7.05 ms, found 2 plugins.
+- Loaded All Assemblies, in  1.018 seconds
+Refreshing native plugins compatible for Editor in 7.07 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.192 seconds
-Domain Reload Profiling: 2227ms
-	BeginReloadAssembly (277ms)
+- Finished resetting the current domain, in  1.209 seconds
+Domain Reload Profiling: 2222ms
+	BeginReloadAssembly (283ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (63ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (649ms)
-		LoadAssemblies (530ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (252ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (219ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1192ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (979ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (190ms)
-			ProcessInitializeOnLoadAttributes (468ms)
-			ProcessInitializeOnLoadMethodAttributes (299ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 7.35 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6088 unused Assets / (4.2 MB). Loaded Objects now: 6912.
-Memory consumption went from 163.2 MB to 159.0 MB.
-Total: 16.123300 ms (FindLiveObjects: 0.867900 ms CreateObjectMapping: 0.435400 ms MarkObjects: 12.247900 ms  DeleteObjects: 2.570800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.984 seconds
-Refreshing native plugins compatible for Editor in 6.64 ms, found 2 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.188 seconds
-Domain Reload Profiling: 2169ms
-	BeginReloadAssembly (262ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (58ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (613ms)
-		LoadAssemblies (493ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (247ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (220ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (1189ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (986ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (185ms)
-			ProcessInitializeOnLoadAttributes (471ms)
-			ProcessInitializeOnLoadMethodAttributes (308ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 7.05 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6088 unused Assets / (4.1 MB). Loaded Objects now: 6915.
-Memory consumption went from 163.0 MB to 158.9 MB.
-Total: 17.313700 ms (FindLiveObjects: 0.823100 ms CreateObjectMapping: 0.372600 ms MarkObjects: 14.090900 ms  DeleteObjects: 2.026100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 7971629442671-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.994 seconds
-Refreshing native plugins compatible for Editor in 6.76 ms, found 2 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.167 seconds
-Domain Reload Profiling: 2157ms
-	BeginReloadAssembly (264ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (57ms)
 	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (622ms)
-		LoadAssemblies (501ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (621ms)
+		LoadAssemblies (516ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (251ms)
+		AnalyzeDomain (242ms)
 			TypeCache.Refresh (9ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (225ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1167ms)
+			BuildScriptInfoCaches (215ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1209ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (965ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (189ms)
-			ProcessInitializeOnLoadAttributes (458ms)
-			ProcessInitializeOnLoadMethodAttributes (295ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 6.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6088 unused Assets / (4.0 MB). Loaded Objects now: 6918.
-Memory consumption went from 163.0 MB to 159.1 MB.
-Total: 15.320000 ms (FindLiveObjects: 0.837300 ms CreateObjectMapping: 0.393500 ms MarkObjects: 12.083600 ms  DeleteObjects: 2.004400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 7971629442671-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.999 seconds
-Refreshing native plugins compatible for Editor in 6.89 ms, found 2 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.203 seconds
-Domain Reload Profiling: 2198ms
-	BeginReloadAssembly (276ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (57ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (612ms)
-		LoadAssemblies (505ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (248ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (222ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1203ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (997ms)
+		SetupLoadedEditorAssemblies (984ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (187ms)
-			ProcessInitializeOnLoadAttributes (484ms)
-			ProcessInitializeOnLoadMethodAttributes (304ms)
-			AfterProcessingInitializeOnLoad (14ms)
+			ProcessInitializeOnLoadAttributes (491ms)
+			ProcessInitializeOnLoadMethodAttributes (285ms)
+			AfterProcessingInitializeOnLoad (13ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+		AwakeInstancesAfterBackupRestoration (23ms)
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 8.62 ms, found 2 plugins.
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.23 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6088 unused Assets / (4.0 MB). Loaded Objects now: 6921.
-Memory consumption went from 163.1 MB to 159.1 MB.
-Total: 14.437100 ms (FindLiveObjects: 0.864100 ms CreateObjectMapping: 0.482600 ms MarkObjects: 11.270900 ms  DeleteObjects: 1.818300 ms)
+Unloading 6089 unused Assets / (4.4 MB). Loaded Objects now: 6942.
+Memory consumption went from 165.1 MB to 160.7 MB.
+Total: 19.690200 ms (FindLiveObjects: 1.052400 ms CreateObjectMapping: 0.776300 ms MarkObjects: 15.808600 ms  DeleteObjects: 2.050700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 109896.279225 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Door 1.prefab
-  artifactKey: Guid(419be05fc9a42394a990090da548fe52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Door 1.prefab using Guid(419be05fc9a42394a990090da548fe52) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5edccd3d827ac521f7caea2371ff2c62') in 0.9190747 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 55
+  Time since last request: 2077.793110 seconds.
+  path: Assets/EnemyNPC.prefab
+  artifactKey: Guid(bfed9c4a5a9aa6f40ae884b560d7e071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnemyNPC.prefab using Guid(bfed9c4a5a9aa6f40ae884b560d7e071) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab7c7d48e55794e9edeaaedfefb3780d') in 0.729982 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 304
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.213 seconds
+Refreshing native plugins compatible for Editor in 7.50 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.251 seconds
+Domain Reload Profiling: 3457ms
+	BeginReloadAssembly (1342ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (26ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1098ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (739ms)
+		LoadAssemblies (600ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (287ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (249ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1251ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1038ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (201ms)
+			ProcessInitializeOnLoadAttributes (495ms)
+			ProcessInitializeOnLoadMethodAttributes (318ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 8.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6088 unused Assets / (4.4 MB). Loaded Objects now: 6977.
+Memory consumption went from 172.3 MB to 168.0 MB.
+Total: 15.857300 ms (FindLiveObjects: 0.933600 ms CreateObjectMapping: 0.668500 ms MarkObjects: 12.244300 ms  DeleteObjects: 2.009500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.178 seconds
+Refreshing native plugins compatible for Editor in 7.28 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.157 seconds
+Domain Reload Profiling: 3331ms
+	BeginReloadAssembly (1299ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1071ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (758ms)
+		LoadAssemblies (636ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (268ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (239ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1158ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (955ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (175ms)
+			ProcessInitializeOnLoadAttributes (466ms)
+			ProcessInitializeOnLoadMethodAttributes (294ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6088 unused Assets / (4.2 MB). Loaded Objects now: 6980.
+Memory consumption went from 172.2 MB to 168.0 MB.
+Total: 15.996600 ms (FindLiveObjects: 0.837400 ms CreateObjectMapping: 0.410200 ms MarkObjects: 12.670400 ms  DeleteObjects: 2.077200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.119 seconds
+Refreshing native plugins compatible for Editor in 7.53 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.207 seconds
+Domain Reload Profiling: 3321ms
+	BeginReloadAssembly (1288ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1073ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (702ms)
+		LoadAssemblies (570ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (270ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (242ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1208ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (992ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (201ms)
+			ProcessInitializeOnLoadAttributes (484ms)
+			ProcessInitializeOnLoadMethodAttributes (284ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6088 unused Assets / (4.2 MB). Loaded Objects now: 6983.
+Memory consumption went from 172.2 MB to 168.0 MB.
+Total: 14.886900 ms (FindLiveObjects: 0.854300 ms CreateObjectMapping: 0.484400 ms MarkObjects: 11.576800 ms  DeleteObjects: 1.970200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 570.415540 seconds.
+  path: Assets/World/Environment/BuildingPrefabs/PrefabMaterials/WoodFrame.mat
+  artifactKey: Guid(5a397939fdc094d49b13815204202140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/BuildingPrefabs/PrefabMaterials/WoodFrame.mat using Guid(5a397939fdc094d49b13815204202140) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a7fbed96314f52fd1e575023126d4dc2') in 0.5384314 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Railing_Tall_Sloped.prefab
-  artifactKey: Guid(2e149186c4b53e34d96e8a3103e4bed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Railing_Tall_Sloped.prefab using Guid(2e149186c4b53e34d96e8a3103e4bed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3825feab42cd800cc55a067c3cef487') in 0.0220927 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+  Time since last request: 0.396809 seconds.
+  path: Assets/World/Environment/BuildingPrefabs/PrefabMaterials/WoodFrame.mat
+  artifactKey: Guid(5a397939fdc094d49b13815204202140) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/BuildingPrefabs/PrefabMaterials/WoodFrame.mat using Guid(5a397939fdc094d49b13815204202140) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8e7e2e6c7290ac7dd98bc18f04313d12') in 0.0789508 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Railing_Tall_End.prefab
-  artifactKey: Guid(f2213957109b78140ae0edc8a4d7f1da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Railing_Tall_End.prefab using Guid(f2213957109b78140ae0edc8a4d7f1da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '533ead9e50610369d223b232159976e6') in 0.0404142 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Door_5.prefab
-  artifactKey: Guid(0e5e87c5727d4d743a2444812a76fe7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Door_5.prefab using Guid(0e5e87c5727d4d743a2444812a76fe7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a366ea05f6381e68a3359b10b57841a9') in 0.0581182 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Railing_Short_Sloped_Steep.prefab
-  artifactKey: Guid(c51fd447e1d3837498e5b420db47e53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Railing_Short_Sloped_Steep.prefab using Guid(c51fd447e1d3837498e5b420db47e53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4405c926b50dbe8bf1ebb3bdfb1a89f') in 0.0351458 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Rafters_Med_Top.prefab
-  artifactKey: Guid(4b26d097be5850040a24dba561c9e60e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Rafters_Med_Top.prefab using Guid(4b26d097be5850040a24dba561c9e60e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4e5bacf69e958993b377086b083e4d4') in 0.0204691 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Railing_Short_Sloped.prefab
-  artifactKey: Guid(977c2e8be86461a4e89697de31f951ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Railing_Short_Sloped.prefab using Guid(977c2e8be86461a4e89697de31f951ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13e048bb14c6202d6745a3b14bfb996d') in 0.043366 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+  Time since last request: 21.888342 seconds.
+  path: Assets/World/Environment/Textures/Books/BooksA_m_ao_g.tga
+  artifactKey: Guid(225fabe9fa8940c42b55bf1361356449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Books/BooksA_m_ao_g.tga using Guid(225fabe9fa8940c42b55bf1361356449) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29af66cd6318dc4f7505f8376f968c8a') in 0.0274528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000029 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Rafters_Tall_Bot.prefab
-  artifactKey: Guid(5ec3e5acaf6b92447981295bec80ff6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Rafters_Tall_Bot.prefab using Guid(5ec3e5acaf6b92447981295bec80ff6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8975d7b64614446cced433be86594633') in 0.0261826 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+  path: Assets/World/Environment/Textures/Lanterns/Candle emission_green.png
+  artifactKey: Guid(e9dcea0376a985e40925fb4556b8287a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Lanterns/Candle emission_green.png using Guid(e9dcea0376a985e40925fb4556b8287a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53090a760040fb1879e9b67ddecf17b1') in 0.0082203 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Railing_Tall_Sloped_Steep.prefab
-  artifactKey: Guid(29d383abce85b674490a48a5f12d69f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Railing_Tall_Sloped_Steep.prefab using Guid(29d383abce85b674490a48a5f12d69f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aec2e950db4d9bc426a3ad05bda95b8f') in 0.0203042 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+  Time since last request: 0.359730 seconds.
+  path: Assets/World/Environment/Textures/Lanterns/Glass2 [Albedo].psd
+  artifactKey: Guid(e4be82f6cd8407948b0dc9afd5888253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Lanterns/Glass2 [Albedo].psd using Guid(e4be82f6cd8407948b0dc9afd5888253) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '72968da504a49a03846a883b570b4d7b') in 0.0095634 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Door_Frame.prefab
-  artifactKey: Guid(d5cf2ac62aa805a46b7aaedcd7f3176e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Door_Frame.prefab using Guid(d5cf2ac62aa805a46b7aaedcd7f3176e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2facf1f7ffdedc40388449e7b36c110') in 0.1308088 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Door_4.prefab
-  artifactKey: Guid(be582e3786badf24e813cbbdcb653528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Door_4.prefab using Guid(be582e3786badf24e813cbbdcb653528) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b490f7e766d14386f15af0beecff863') in 0.0669444 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Rafters_Short_Top.prefab
-  artifactKey: Guid(5352a4e0305b7a84bb382711af35742f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Rafters_Short_Top.prefab using Guid(5352a4e0305b7a84bb382711af35742f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92eecf8c3f8d53090952240470a4bb85') in 0.0499516 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Textures/Lanterns/Glass2 [Normal].png
+  artifactKey: Guid(fe2ad94daa0a12a4da4b1068441f64a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Lanterns/Glass2 [Normal].png using Guid(fe2ad94daa0a12a4da4b1068441f64a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbc600d8d9400fecb2bb7413d243dee9') in 0.0084335 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000038 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Door 2.prefab
-  artifactKey: Guid(9aaa2d7170c26ae4faa280ae7c69c736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Door 2.prefab using Guid(9aaa2d7170c26ae4faa280ae7c69c736) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f5d6855a1e22d9f91d333ef91e02204') in 0.0806015 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 55
+  path: Assets/World/Environment/Textures/Lanterns/Glass3 [Normal].png
+  artifactKey: Guid(00206b558d9a358438511cb4d5014466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Lanterns/Glass3 [Normal].png using Guid(00206b558d9a358438511cb4d5014466) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad1e0104c1ff79d4c3f5d2e74943152c') in 0.0095265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/World/Environment/Textures/Lanterns/Glass5 [Albedo].psd
+  artifactKey: Guid(7cd45e54184b5d4439ae89c44b3886ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Lanterns/Glass5 [Albedo].psd using Guid(7cd45e54184b5d4439ae89c44b3886ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71d179c2ae0ee5231c0ec24b481cf474') in 0.0088294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Textures/Furniture/T_cabinet_glass_AlbedoTransparency.tga
+  artifactKey: Guid(7f7c13b5ef03a0247bba3419adec573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Furniture/T_cabinet_glass_AlbedoTransparency.tga using Guid(7f7c13b5ef03a0247bba3419adec573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2aebf724614b3fe4aa50fa1bbd6e1df3') in 0.0196572 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

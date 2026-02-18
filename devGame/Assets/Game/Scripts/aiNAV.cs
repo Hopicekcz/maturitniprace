@@ -44,7 +44,7 @@ public class aiNAV : MonoBehaviour
     [Header("Combat Settings")] //customizable settings of the bullet and attack speed using rigidbody physics
     [SerializeField] private float attackCooldown = 2f;
     private int randomStrafe;
-    [SerializeField] private float npcHP = 100f;
+    [SerializeField] private float npcHP = 50f;
     [SerializeField] private float walkSpeed = 2f;
     [SerializeField] private float hitTimer = 2f;
     [SerializeField] private float patrolPointTimer = 2.5f;
@@ -53,8 +53,9 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private int maxRevolverAmmoCount = 50;
     private int revolverAmmoCount;
     private int ogRevolverAmmoCount;
-    [SerializeField] private float currentSpread = 0.5f;
+    [SerializeField] private float currentSpread = 1f;
     [SerializeField] private float ragdollTimer = 5f;
+    [SerializeField] private float weaponDrawSpeed = 1f;
 
     [Header("Detection Ranges")] //customizable settings for the vision (follow player) and engagement (attack) range
     [SerializeField] private float visionRange = 15f;
@@ -138,7 +139,7 @@ public class aiNAV : MonoBehaviour
      void HitByPlayerRevolver()
         {
             wasHit = true;
-            npcHP = npcHP - Random.Range(30f, 60f);
+            npcHP -= Random.Range(30f, 60f);
         }
 
     void HitByPlayerShotgun()
@@ -163,10 +164,13 @@ public class aiNAV : MonoBehaviour
 
     private void HealthSystem()
     {
-        if(npcHP <= 0){
+        if(0 > npcHP){
             isDead = true;
         }
-        StartCoroutine(SlowOnHit());
+        if(!isDead){
+            StartCoroutine(SlowOnHit());
+        }
+        
     }
 
     private IEnumerator Death(){
@@ -286,21 +290,26 @@ public class aiNAV : MonoBehaviour
         AttackMovement();
         if(!isOnAttackCooldown){ //attack function along with attack cooldown function
             StartCoroutine(AttackCooldownRoutine());
-            FireWeapon();
+            StartCoroutine(FireWeapon());
         }
     }
 
-    private void FireWeapon(){
-        attackedPlayer = false;
-        if (revolverAmmoCount > 0 && !isReloading) //Shoot action, split into two - physical part, effect part
-        {
-            ShootRoutine();
-            StartCoroutine(ShootEffects());
-        }
+    private IEnumerator FireWeapon(){
+        yield return new WaitForSeconds(weaponDrawSpeed);
+        if(!isDead){
+            
+            attackedPlayer = false;
+            if (revolverAmmoCount > 0 && !isReloading) //Shoot action, split into two - physical part, effect part
+            {
+                ShootRoutine();
+                StartCoroutine(ShootEffects());
+            }
 
-        if ((revolverAmmoCount == 0) && !isReloading){ //Reload function
-            StartCoroutine(ReloadWeapon());
+            if ((revolverAmmoCount == 0) && !isReloading){ //Reload function
+                StartCoroutine(ReloadWeapon());
+            }
         }
+        
     }
 
     private IEnumerator ShootEffects(){
@@ -314,6 +323,7 @@ public class aiNAV : MonoBehaviour
 
     private void ShootRoutine() //Shoot function with animator
     {
+        
         revolverAmmoCount--;
         audioSource.PlayOneShot(shootSound);
         Vector3 direction = GetShootDirectionWithSpread(); //Call bullet-spread function
@@ -347,7 +357,7 @@ public class aiNAV : MonoBehaviour
 
     private Vector3 GetShootDirectionWithSpread()
     {
-        Vector3 forward = (playerTransform.position - muzzlePoint.transform.position) / Vector3.Distance(muzzlePoint.transform.position, playerTransform.position);
+        Vector3 forward = (playerEyes.position - muzzlePoint.transform.position) / Vector3.Distance(muzzlePoint.transform.position, playerEyes.position);
         float spreadX = Random.Range(-currentSpread, currentSpread) * 0.1f; // spread on the X and Y axis, normalized by 0.1f to be able to use bigger numbers in the variable declaration
         float spreadY = Random.Range(-currentSpread, currentSpread) * 0.1f; 
         Vector3 direction = forward + muzzlePoint.transform.right * spreadX + muzzlePoint.transform.up * spreadY; //direction is set to the camera direction with applied rules of direction

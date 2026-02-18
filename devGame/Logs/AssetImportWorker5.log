@@ -1,17 +1,17 @@
-Built from '6000.3/staging' branch; Version is '6000.3.3f1 (ef04196de0d6) revision 15664153'; Using compiler version '194234433'; Build Type 'Release'
 [Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-02-18T13:10:22.9372906Z"
+Built from '6000.3/staging' branch; Version is '6000.3.3f1 (ef04196de0d6) revision 15664153'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16004 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-02-17T19:35:44Z
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-02-17T19:35:44.5207669Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 40604, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+Date: 2026-02-18T13:10:22Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 8896, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.17.4'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Hopic"
 [Licensing::IpcConnector] LicenseClient-Hopic channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-02-17T19:35:44.6013192Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-02-18T13:10:22.9937663Z"
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.3f1\Editor\Unity.exe
@@ -25,7 +25,7 @@ E:/unity/maturitniprace/active/devGame
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-61124
+61037
 -licensingIpc
 LicenseClient-Hopic
 -job-worker-count
@@ -73,16 +73,16 @@ E:/unity/maturitniprace/active/devGame
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [27836]  Target information:
+Player connection [15524]  Target information:
 
-Player connection [27836]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2435534536 [EditorId] 2435534536 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [15524]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4093205751 [EditorId] 4093205751 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [27836]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 2435534536 [EditorId] 2435534536 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [15524]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 4093205751 [EditorId] 4093205751 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [27836]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 2435534536 [EditorId] 2435534536 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [15524]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 4093205751 [EditorId] 4093205751 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [27836] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [27836] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [15524] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [15524] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -94,7 +94,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 7.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 8.10 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.3f1 (ef04196de0d6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -112,52 +112,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56040
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003898 seconds.
-- Loaded All Assemblies, in  0.597 seconds
+Registered in 0.003736 seconds.
+- Loaded All Assemblies, in  0.553 seconds
 Native extension for WindowsStandalone target not found
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              3ce83891cd934a8c80290f97bc966ff7
-  Correlation Id:          6215d60b5c826b87860069d7d3e440fc
-  External correlation Id: 3390510172715139656
+  Session Id:              a305ccd551db41feaa4c355f65efd599
+  Correlation Id:          08825fd9b47c9ebba13de7ed9e9cbe11
+  External correlation Id: 6053238618420003658
   Machine Id:              4VB2xDT1CV9zqVbIIZWsGa/FyKA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 1.71s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-02-17T19:35:46.3127018Z"
-[Licensing::Module] Licensing Background thread has ended after 1.79s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 1.68s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-02-18T13:10:24.6794954Z"
+[Licensing::Module] Licensing Background thread has ended after 1.74s
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.581 seconds
-Domain Reload Profiling: 1172ms
-	BeginReloadAssembly (223ms)
+- Finished resetting the current domain, in  0.617 seconds
+Domain Reload Profiling: 1163ms
+	BeginReloadAssembly (178ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (49ms)
+	RebuildCommonClasses (47ms)
 	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (231ms)
-		LoadAssemblies (216ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (224ms)
+		LoadAssemblies (171ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (226ms)
-			TypeCache.Refresh (224ms)
-				TypeCache.ScanAssembly (207ms)
+		AnalyzeDomain (220ms)
+			TypeCache.Refresh (218ms)
+				TypeCache.ScanAssembly (201ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (582ms)
+	FinalizeReload (617ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (537ms)
+		SetupLoadedEditorAssemblies (557ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (70ms)
+			InitializePlatformSupportModulesInManaged (68ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (127ms)
-			ProcessInitializeOnLoadAttributes (224ms)
-			ProcessInitializeOnLoadMethodAttributes (113ms)
+			BeforeProcessingInitializeOnLoad (143ms)
+			ProcessInitializeOnLoadAttributes (240ms)
+			ProcessInitializeOnLoadMethodAttributes (103ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -178,18 +178,18 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.190 seconds
-Refreshing native plugins compatible for Editor in 6.42 ms, found 2 plugins.
+- Loaded All Assemblies, in  1.140 seconds
+Refreshing native plugins compatible for Editor in 7.18 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 6.81 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 7.87 ms, found 2 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.194 seconds
-Domain Reload Profiling: 2377ms
-	BeginReloadAssembly (234ms)
+- Finished resetting the current domain, in  1.201 seconds
+Domain Reload Profiling: 2334ms
+	BeginReloadAssembly (233ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
@@ -197,366 +197,38 @@ Domain Reload Profiling: 2377ms
 		CreateAndSetChildDomain (34ms)
 	RebuildCommonClasses (45ms)
 	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (60ms)
-	LoadAllAssembliesAndSetupDomain (825ms)
-		LoadAssemblies (624ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (779ms)
+		LoadAssemblies (569ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (339ms)
-			TypeCache.Refresh (249ms)
-				TypeCache.ScanAssembly (228ms)
-			BuildScriptInfoCaches (72ms)
+		AnalyzeDomain (347ms)
+			TypeCache.Refresh (257ms)
+				TypeCache.ScanAssembly (235ms)
+			BuildScriptInfoCaches (73ms)
 			ResolveRequiredComponents (13ms)
-	FinalizeReload (1195ms)
+	FinalizeReload (1201ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (940ms)
+		SetupLoadedEditorAssemblies (960ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (172ms)
-			ProcessInitializeOnLoadAttributes (440ms)
-			ProcessInitializeOnLoadMethodAttributes (302ms)
-			AfterProcessingInitializeOnLoad (20ms)
+			BeforeProcessingInitializeOnLoad (177ms)
+			ProcessInitializeOnLoadAttributes (468ms)
+			ProcessInitializeOnLoadMethodAttributes (295ms)
+			AfterProcessingInitializeOnLoad (14ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+		AwakeInstancesAfterBackupRestoration (14ms)
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 8.33 ms, found 2 plugins.
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 7.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6090 unused Assets / (4.1 MB). Loaded Objects now: 6896.
-Memory consumption went from 161.2 MB to 157.2 MB.
-Total: 16.887600 ms (FindLiveObjects: 0.974500 ms CreateObjectMapping: 0.632500 ms MarkObjects: 12.133100 ms  DeleteObjects: 3.145800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 107820.077125 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_End_Cap_Corner.prefab
-  artifactKey: Guid(62962a01134bb3c41b9f46e3cb59c94f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_End_Cap_Corner.prefab using Guid(62962a01134bb3c41b9f46e3cb59c94f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b039704ecb13406a2fc69480eea98cb') in 0.6770301 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000093 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_Short_Top_Slope.prefab
-  artifactKey: Guid(4d5bec0fb62ab2a41908ffc0512bf9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_Short_Top_Slope.prefab using Guid(4d5bec0fb62ab2a41908ffc0512bf9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f428a5b5db565b08c1e7fb63f7ca208c') in 0.055325 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_Short_Corner.prefab
-  artifactKey: Guid(5d7946dd876ddf14481963a9a219eaf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_Short_Corner.prefab using Guid(5d7946dd876ddf14481963a9a219eaf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17f7834db0bf360b1ab38b9236052d5c') in 0.0525973 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_Med_End_R.prefab
-  artifactKey: Guid(6f4f9420612088948959e9731ae75c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_Med_End_R.prefab using Guid(6f4f9420612088948959e9731ae75c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a5973f45c5c74d6d3d4be5aaba47f1d') in 0.1158892 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_Tall_Corner.prefab
-  artifactKey: Guid(fad1b0adb74ddc544aee7e4030f20956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_Tall_Corner.prefab using Guid(fad1b0adb74ddc544aee7e4030f20956) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '03e864c7950ef71c67834bdb4c6a4207') in 0.0431473 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_End_Cap_Corner_R.prefab
-  artifactKey: Guid(59256a6a8645a64409cf4cbf80c8c8ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_End_Cap_Corner_R.prefab using Guid(59256a6a8645a64409cf4cbf80c8c8ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2525de5384b01a04a067320b2fa55a08') in 0.0453372 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_ShortInv_Corner.prefab
-  artifactKey: Guid(74cf840b2f7641347811c8fdea8a2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_ShortInv_Corner.prefab using Guid(74cf840b2f7641347811c8fdea8a2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad39ffce8341cfcb7c68c19106fbd6aa') in 0.0493643 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_Med_2x1.prefab
-  artifactKey: Guid(d863851f94381cc4391bae37b666e611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_Med_2x1.prefab using Guid(d863851f94381cc4391bae37b666e611) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51bb1bfa5476b17703f7c51328ad4ba1') in 0.0496595 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_Top_Cap.prefab
-  artifactKey: Guid(df9a998f5504fc94897c08ece2f25dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_Top_Cap.prefab using Guid(df9a998f5504fc94897c08ece2f25dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3186e0fbd8432d363f3f90828cfe011') in 0.0222365 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Roof_Wood_Tall_Top_Slope_End.prefab
-  artifactKey: Guid(9b6e3ae4281ca4444a6033f828abea70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Roof_Wood_Tall_Top_Slope_End.prefab using Guid(9b6e3ae4281ca4444a6033f828abea70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1dd3dcf64df9650d702f3b3722aa4528') in 0.0953809 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Stairs_Wood_1x1_Steep.prefab
-  artifactKey: Guid(d03f7214051a7dd4199c55ee50c6c372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Stairs_Wood_1x1_Steep.prefab using Guid(d03f7214051a7dd4199c55ee50c6c372) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5bcadd462b0c034739d2c2592e9f8589') in 0.0384443 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wall_Window_Wood_2x2_3.prefab
-  artifactKey: Guid(89af23966ffa51b4db39cd0bb12ebaeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wall_Window_Wood_2x2_3.prefab using Guid(89af23966ffa51b4db39cd0bb12ebaeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0470b9b1ce75c9b472e031c60120372b') in 0.0335991 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/World/Effects/WarFX/Demo/Assets/WFX_Demo_M_Wood Wall.mat
-  artifactKey: Guid(2b3f9a49a1177774e923a5b708423b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Effects/WarFX/Demo/Assets/WFX_Demo_M_Wood Wall.mat using Guid(2b3f9a49a1177774e923a5b708423b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f491637309f300f44dca540de20784bf') in 0.0474749 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/World/Effects/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Wood Lighted.mat
-  artifactKey: Guid(a1c66968b3879fd43abd0238bae09c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Effects/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Wood Lighted.mat using Guid(a1c66968b3879fd43abd0238bae09c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2feadf9661b3da777a22704c0ac2beaa') in 0.0070653 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/World/Effects/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Wood Lighted.mat
-  artifactKey: Guid(22e274cec6ea8674cb2d4015a3fe1770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Effects/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Wood Lighted.mat using Guid(22e274cec6ea8674cb2d4015a3fe1770) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6744e2c6fb271b183facc4b263d6332') in 0.0067565 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/World/Effects/WarFX/Demo/Assets/WFX_Demo_M_Wood.mat
-  artifactKey: Guid(c4b3df7d7d9b4194aad9879ce91ea700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Effects/WarFX/Demo/Assets/WFX_Demo_M_Wood.mat using Guid(c4b3df7d7d9b4194aad9879ce91ea700) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '423b104ed2b6ba63d6cd29fb1b8691ea') in 0.0080008 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wall_Window_Wood_2x2_6.prefab
-  artifactKey: Guid(1dc49aacca0d3dc4c988a46ed6734075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wall_Window_Wood_2x2_6.prefab using Guid(1dc49aacca0d3dc4c988a46ed6734075) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '604a0960b5f55a61538dd35e41d5bb5c') in 0.0337614 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.458478 seconds.
-  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Wood NoCollision.prefab
-  artifactKey: Guid(2bad6b8b976e8a44cacd2a270b2d3ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Wood NoCollision.prefab using Guid(2bad6b8b976e8a44cacd2a270b2d3ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c0c9de81b96a6fd8b978188f6aa273c') in 0.0233224 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Frame_2x1.prefab
-  artifactKey: Guid(9d1147973c8126e42985b339db62da44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Frame_2x1.prefab using Guid(9d1147973c8126e42985b339db62da44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '597fb1377681a66dae71d17fe4c483eb') in 0.0815339 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Frame_Fill_1x2.prefab
-  artifactKey: Guid(520ea8222a60c0840993fec77721883e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Frame_Fill_1x2.prefab using Guid(520ea8222a60c0840993fec77721883e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dffe1c5831a38e130f08094de30b4f30') in 0.0418475 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Frame_Diag_1x1.prefab
-  artifactKey: Guid(bba14de022bb3c3428d3e59c887eae4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Frame_Diag_1x1.prefab using Guid(bba14de022bb3c3428d3e59c887eae4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a8d9e8cf57913996475f804cbaadfc1') in 0.0407173 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Pillar_WBase_Narrow_Tall.prefab
-  artifactKey: Guid(a2d2c0a248574114b84b3376216d7122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Pillar_WBase_Narrow_Tall.prefab using Guid(a2d2c0a248574114b84b3376216d7122) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c2aa66f1772ff456e49bd9f32d755a8') in 0.0424458 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Pillar_WBase_Narrow.prefab
-  artifactKey: Guid(6d134d4d95ead074b8602755edb9fae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Pillar_WBase_Narrow.prefab using Guid(6d134d4d95ead074b8602755edb9fae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c9b3e358d05e471b90af507dbd55b83') in 0.0466465 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Pole_Frame_1x05_Slope.prefab
-  artifactKey: Guid(445c5ef67b9aa8649954e13ea8a0bf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Pole_Frame_1x05_Slope.prefab using Guid(445c5ef67b9aa8649954e13ea8a0bf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '697b11d90295801ed96c31090858be2a') in 0.04099 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Arch_4.prefab
-  artifactKey: Guid(251c05fe71d7d0c46aab475fd932a4a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Arch_4.prefab using Guid(251c05fe71d7d0c46aab475fd932a4a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '33d9fe79a6cd1549760bba512258018c') in 0.0196108 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/World/Environment/Textures/Building2/Materials/Wood_Tile_basecolor.mat
-  artifactKey: Guid(8a125c0ce1e4d8743812849a2811abee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Textures/Building2/Materials/Wood_Tile_basecolor.mat using Guid(8a125c0ce1e4d8743812849a2811abee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '370cd2fb1db792565cc0a523c0edf69c') in 0.009492 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x2_3.prefab
-  artifactKey: Guid(4a0acb97494eb5e45888ab26161dcb6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x2_3.prefab using Guid(4a0acb97494eb5e45888ab26161dcb6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'add679a9bb816e78644c4be7e31f6ad7') in 0.0211382 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_1x3_5.prefab
-  artifactKey: Guid(cac545b3d9d8cda4aa97c5d44cc6095e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_1x3_5.prefab using Guid(cac545b3d9d8cda4aa97c5d44cc6095e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c6ccdb229469f330ec1eabcd70fd380') in 0.0211837 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_1.prefab
-  artifactKey: Guid(dd62bb1f2bf09a2469d1be4174796d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_1.prefab using Guid(dd62bb1f2bf09a2469d1be4174796d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e96ee081cc7b449211659c6ce06e5b8') in 0.0223687 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Joist_Half.prefab
-  artifactKey: Guid(7ec326b115d38e54ebf160b58bf3bef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Joist_Half.prefab using Guid(7ec326b115d38e54ebf160b58bf3bef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c37801f581735b8fe6584d7208a53462') in 0.0215187 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/World/Environment/Models/Furniture/TV.fbx
-  artifactKey: Guid(ffa7d96b5d7840a4cbd2dae3c5a06107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Models/Furniture/TV.fbx using Guid(ffa7d96b5d7840a4cbd2dae3c5a06107) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c045813632074361f19f3fb1cc963c8') in 0.1339606 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 64
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Pole_Frame_1x05.prefab
-  artifactKey: Guid(e70fd976303c0824dbec99c6f51e8b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Pole_Frame_1x05.prefab using Guid(e70fd976303c0824dbec99c6f51e8b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b0208c77fff075df280464b1fad811d') in 0.0398726 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_4.prefab
-  artifactKey: Guid(96b814800c69e87449341f98abac2f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_4.prefab using Guid(96b814800c69e87449341f98abac2f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '534e9715900bc04fcf341727ccc3e4e6') in 0.018954 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Pillar_WBase_WTop_Narrow_Tall.prefab
-  artifactKey: Guid(83352a43bb624be418bff7662a7d257a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Pillar_WBase_WTop_Narrow_Tall.prefab using Guid(83352a43bb624be418bff7662a7d257a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a90d0ac80cec122169b10b423869fe24') in 0.0376931 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Pole_Tall.prefab
-  artifactKey: Guid(b9fb8f4a92acdbd4a8841762b725a4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Pole_Tall.prefab using Guid(b9fb8f4a92acdbd4a8841762b725a4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0547e5a1081982f4ed6adc699000032e') in 0.0212478 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_5.prefab
-  artifactKey: Guid(6b006e3fcb460794495dcb2e011718af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_5.prefab using Guid(6b006e3fcb460794495dcb2e011718af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38b160b50f526e87458f7b2cf70b8ef0') in 0.0263405 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Wood NoCollision + Hole Unlit.prefab
-  artifactKey: Guid(ada3e15c23ce1c1439a8ca49c46cda22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Wood NoCollision + Hole Unlit.prefab using Guid(ada3e15c23ce1c1439a8ca49c46cda22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38f6c629378054ba41cfcfa9fb7f0cba') in 0.011627 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Support_Small_1.prefab
-  artifactKey: Guid(23001e4553561e24db9d6ca59ba6a451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Support_Small_1.prefab using Guid(23001e4553561e24db9d6ca59ba6a451) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee5973a330083d94992aba94c030d674') in 0.0377199 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Pillar_WBase_Thick_Tall.prefab
-  artifactKey: Guid(2cb55d6b5601eb3458c676cbd306ce14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Pillar_WBase_Thick_Tall.prefab using Guid(2cb55d6b5601eb3458c676cbd306ce14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ff6947251cdbe6dc5ef72e007fff69c') in 0.0394912 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_Arch_2.prefab
-  artifactKey: Guid(78856d32fa291c144973438b5a960c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_Arch_2.prefab using Guid(78856d32fa291c144973438b5a960c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7077dc2ba8003d9d7eea779ddc097f89') in 0.0602626 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_8.prefab
-  artifactKey: Guid(303d5a8516102e242a73af6d718d27ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Wood_WallFrame_2x3_8.prefab using Guid(303d5a8516102e242a73af6d718d27ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c15b36062968c6c625e809dccf69967e') in 0.0186591 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+Unloading 6090 unused Assets / (5.0 MB). Loaded Objects now: 6900.
+Memory consumption went from 160.8 MB to 155.8 MB.
+Total: 16.367300 ms (FindLiveObjects: 0.869200 ms CreateObjectMapping: 0.547300 ms MarkObjects: 12.411400 ms  DeleteObjects: 2.538000 ms)
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

@@ -51,6 +51,8 @@ namespace StarterAssets
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
+		[SerializeField] Animator playerAnimator;
+
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
@@ -162,8 +164,10 @@ namespace StarterAssets
 
 			// note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
 			// if there is no input, set the target speed to 0
-			if (_input.move == Vector2.zero) targetSpeed = 0.0f;
-
+			if (_input.move == Vector2.zero) {
+				targetSpeed = 0.0f;
+				playerAnimator.SetBool("isWalking", false);
+			}
 			// a reference to the players current horizontal velocity
 			float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
 
@@ -193,6 +197,7 @@ namespace StarterAssets
 			if (_input.move != Vector2.zero)
 			{
 				// move
+				playerAnimator.SetBool("isWalking", true);
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
 			}
 

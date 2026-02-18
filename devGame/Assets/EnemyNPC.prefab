@@ -466,7 +466,7 @@ NavMeshAgent:
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 0
+  m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1.5
@@ -540,15 +540,16 @@ MonoBehaviour:
   audioSource: {fileID: 4591080827339799207}
   patrolRadius: 5
   attackCooldown: 2
-  npcHP: 150
+  npcHP: 100
   walkSpeed: 2
   hitTimer: 2
   patrolPointTimer: 2.5
   staggeredSpeed: 1
   followPlayerTimer: 1
   maxRevolverAmmoCount: 6
-  currentSpread: 0.5
+  currentSpread: 1
   ragdollTimer: 5
+  weaponDrawSpeed: 1
   visionRange: 20
   engagementRange: 9
   tooCloseRange: 4
