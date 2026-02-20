@@ -65,6 +65,8 @@ public class RevolverScript : MonoBehaviour
     [SerializeField]private AudioSource audioSource;
     [SerializeField] private Camera mainCamera;
     private FirstPersonController firstPersonController;
+    [SerializeField] private PhysicsMaterial bodyMaterial;
+    [SerializeField] private PhysicsMaterial headMaterial;
 
     //Variable initialization
     private bool canShoot;
@@ -75,9 +77,9 @@ public class RevolverScript : MonoBehaviour
     private int ogRevolverAmmoCount;
     private int shotgunAmmoCount;
     private int ogShotgunAmmoCount;
-    private string weapon1;
+    public string weapon1;
     private string weapon2;
-    private string currentWeapon;
+    public string currentWeapon;
     private int currentWeaponNumber;
     private bool interruptReload;
     private bool switchingWeapon;
@@ -424,13 +426,47 @@ public class RevolverScript : MonoBehaviour
                         break;
 
                         case "Character": 
-                        hit.transform.SendMessage ("HitByPlayerShotgun");
+                        Collider hitCollider = hit.collider;
+                        PhysicsMaterial hitMaterial = hitCollider.material;
+                        string hitLocation = hitMaterial.name;
+                            switch(hitLocation){
+                                case "headMaterial (Instance)":
+                                    switch(currentWeapon){
+                                        case "revolver":
+                                        hit.transform.SendMessage("HeadHitByEnemyRevolver");
+                                        break;
+                                    
+                                        case "shotgun":
+                                        hit.transform.SendMessage("HeadHitByEnemyShotgun");
+                                        break;
+                                    }
+                                break;
+                                
+
+                                case "bodyMaterial (Instance)":
+                                    switch(currentWeapon){
+                                        case "revolver":
+                                        hit.transform.SendMessage("BodyHitByEnemyRevolver");
+                                        break;
+
+                                        case "shotgun":
+                                        hit.transform.SendMessage("BodyHitByEnemyShotgun");
+                                        break;
+                                    }
+                                break;
+                            }
+                                
+                            
+                            
                         Instantiate(enemyHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                         break;
                     }
                     
                 }
-    }
+            
+}
+
+    
 
     private Vector3 GetShootDirectionWithSpread()
     {
@@ -448,4 +484,12 @@ public class RevolverScript : MonoBehaviour
 
     
 }
+
+
+
+
+
+
+
+
 

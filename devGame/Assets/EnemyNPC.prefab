@@ -405,6 +405,7 @@ GameObject:
   - component: {fileID: 9052224868937810264}
   - component: {fileID: 4055242667291023735}
   - component: {fileID: 7442823747221049715}
+  - component: {fileID: 2243915789086563642}
   m_Layer: 8
   m_Name: EnemyNPC
   m_TagString: Character
@@ -480,7 +481,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315952842101561676}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 7d22880aae52050439f750ae29118a24, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -519,10 +520,13 @@ MonoBehaviour:
     m_Bits: 512
   playerLayerMask:
     serializedVersion: 2
-    m_Bits: 4096
+    m_Bits: 256
   obstacleLayerMask:
     serializedVersion: 2
     m_Bits: 128
+  hittableLayerMask:
+    serializedVersion: 2
+    m_Bits: 1920
   obstacleHitEffectPrefab: {fileID: 100002, guid: 053ffbc5e89111349bb060a39ffa0f37,
     type: 3}
   enemyHitEffectPrefab: {fileID: 1622692855343138289, guid: eba26f2a4358efb44a92d3d6de7bc230,
@@ -532,6 +536,8 @@ MonoBehaviour:
   muzzleFlashPrefab: {fileID: 6975556097296941705, guid: 5a4bdec5dd36de3499ce0de282aa1f7f,
     type: 3}
   muzzleLightEffectPrefab: {fileID: 5343762263582026942, guid: fae8ca27a2f00324eb9ce26f4d96e3dd,
+    type: 3}
+  obstacleHitEffectPrefabShotgun: {fileID: 100002, guid: 9860478c074b16c448f799a8f1f2e1e9,
     type: 3}
   muzzlePoint: {fileID: 8788512052311476588}
   shootSound: {fileID: 8300000, guid: 0df05d586b7fae54b8f6cbd8cd716a57, type: 3}
@@ -547,12 +553,36 @@ MonoBehaviour:
   staggeredSpeed: 1
   followPlayerTimer: 1
   maxRevolverAmmoCount: 6
-  currentSpread: 1
+  currentSpread: 0.5
   ragdollTimer: 5
   weaponDrawSpeed: 1
   visionRange: 20
   engagementRange: 9
   tooCloseRange: 4
+  currentWeapon: revolver
+--- !u!136 &2243915789086563642
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315952842101561676}
+  m_Material: {fileID: 13400000, guid: f9ded27b916e3b842b13382a2e533458, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15
+  m_Height: 0.1
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.7, z: 0.04}
 --- !u!1 &1518895671863383576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,8 +1904,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1887,7 +1917,7 @@ CharacterJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3854905369746921604}
   serializedVersion: 3
-  m_ConnectedBody: {fileID: 5687812646649540269}
+  m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}

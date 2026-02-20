@@ -18,12 +18,14 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private LayerMask terrainLayer; //layerMask for the Ground to determine walkable checks
     [SerializeField] private LayerMask playerLayerMask; //layerMask for the Player to determine where the player is
     [SerializeField] private LayerMask obstacleLayerMask; 
+    [SerializeField] private LayerMask hittableLayerMask;
     [Header("ShootEffects")]
     [SerializeField] private GameObject obstacleHitEffectPrefab;
     [SerializeField] private GameObject enemyHitEffectPrefab;
     [SerializeField] private GameObject groundHitEffectPrefab;
     [SerializeField] private GameObject muzzleFlashPrefab;
     [SerializeField] private GameObject muzzleLightEffectPrefab;
+    [SerializeField] private GameObject obstacleHitEffectPrefabShotgun;
     [Header("ShootMuzzleSmokeLocation")]
     [SerializeField] private Transform muzzlePoint;
 
@@ -61,6 +63,7 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private float visionRange = 15f;
     [SerializeField] private float engagementRange = 6f;
     [SerializeField] private float tooCloseRange = 3f;
+    [SerializeField] private string currentWeapon = "revolver";
 
     //Declaration of bools for behavior states
     private bool isPlayerVisible;
@@ -93,7 +96,7 @@ public class aiNAV : MonoBehaviour
             revolverAmmoCount = maxRevolverAmmoCount; 
             GameObject playerObj = GameObject.Find("PlayerCapsule");
             playerTransform = playerObj.transform;
-            GameObject playerObjEyes = GameObject.Find("PlayerCameraRoot");
+            GameObject playerObjEyes = GameObject.Find("PlayerEyes");
             playerEyes = playerObjEyes.transform;
             GameObject playerObjBody = GameObject.Find("PlayerBody");
             playerBody = playerObjBody.transform;
@@ -136,13 +139,25 @@ public class aiNAV : MonoBehaviour
         animator.SetBool("isMoving", isMoving);
     }
 
-     void HitByPlayerRevolver()
-        {
-            wasHit = true;
-            npcHP -= Random.Range(30f, 60f);
-        }
+     void HeadHitByEnemyRevolver()
+    {
+        wasHit = true;
+        npcHP -= Random.Range(100f, 150f);
+    }
 
-    void HitByPlayerShotgun()
+    void HeadHitByEnemyShotgun()
+    {
+        wasHit = true;
+        npcHP = npcHP - Random.Range(25f, 35f);
+    }
+
+    void BodyHitByEnemyRevolver()
+    {
+        wasHit = true;
+        npcHP = npcHP - Random.Range(50f, 70f);
+    }
+
+    void BodyHitByEnemyShotgun()
     {
         wasHit = true;
         npcHP = npcHP - Random.Range(15f, 25f);
@@ -174,6 +189,7 @@ public class aiNAV : MonoBehaviour
     }
 
     private IEnumerator Death(){
+        navAgent.isStopped = true;
         audioSource.enabled = false;
         animator.enabled = false;
         ownMeshCollider.enabled = false;
@@ -330,30 +346,65 @@ public class aiNAV : MonoBehaviour
         Ray ray = new Ray(muzzlePoint.transform.position, direction); //raycast of bullet from camera center with direction with applied spread
         RaycastHit hit; //Return of raycast
         
-        if (Physics.Raycast(ray, out hit))  //which effect prefab to use depending on hit object tag
-        {
-            Debug.DrawRay(ray.origin, hit.point, Color.green);
-            switch(hit.collider.tag){
-                case "Untagged":
-                break;
+        if (Physics.Raycast(ray, out hit, hittableLayerMask))  //which effect prefab to use depending on hit object tag
+                {
+                    switch(hit.collider.tag){
+                        case "Untagged":
+                        break;
 
-                case "Obstacle": 
-                Instantiate(obstacleHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
-                break;
+                        case "Obstacle": 
+                            switch(currentWeapon){
+                                case "revolver":
+                                Instantiate(obstacleHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                                break;
 
-                case "Ground":
-                Instantiate(groundHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
-                break;
+                                case "shotgun":
+                                Instantiate(obstacleHitEffectPrefabShotgun, hit.point, Quaternion.LookRotation(hit.normal));
+                                break;
+                            }
+                        break;
 
-                case "Player": 
-                GameObject playerObj = GameObject.Find("PlayerCapsule");
-                playerObj.SendMessage ("HitByEnemyRevolver"); //this needs to be changed to hit.transform.SendMessage because it wont be just the player everytime
-                Instantiate(enemyHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
-                break;
-            }
-            
-        }
+                        case "Ground":
+                        Instantiate(groundHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                        break;
+
+                        case "Character" or "Player":
+                        Collider hitCollider = hit.collider;
+                        PhysicsMaterial hitMaterial = hitCollider.material;
+                        string hitLocation = hitMaterial.name;
+                            switch(hitLocation){
+                                case "headMaterial (Instance)":
+                                    switch(currentWeapon){
+                                        case "revolver":
+                                        hit.transform.SendMessage("HeadHitByEnemyRevolver");
+                                        break;
+                                    
+                                        case "shotgun":
+                                        hit.transform.SendMessage("HeadHitByEnemyShotgun");
+                                        break;
+                                    }
+                                break;
+                                
+
+                                case "bodyMaterial (Instance)":
+                                    switch(currentWeapon){
+                                        case "revolver":
+                                        hit.transform.SendMessage("BodyHitByEnemyRevolver");
+                                        break;
+
+                                        case "shotgun":
+                                        hit.transform.SendMessage("BodyHitByEnemyShotgun");
+                                        break;
+                                    }
+                                break;
+                            }
+                        Instantiate(enemyHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                        break;  
+                    }
+                    
+                }
     }
+
 
     private Vector3 GetShootDirectionWithSpread()
     {
@@ -407,7 +458,9 @@ public class aiNAV : MonoBehaviour
                     transform.LookAt(new Vector3(playerTransform.position.x, transform.position.y, playerTransform.position.z));
                     yield return new WaitForSeconds(1f);
                     isOnStrafePoint = false;
-                    }        
+            } else {
+                FindStrafePoint();
+            }        
         }
     
             

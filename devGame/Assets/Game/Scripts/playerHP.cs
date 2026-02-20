@@ -31,9 +31,24 @@ public class playerHP : MonoBehaviour
 
     }
 
-    void HitByEnemyRevolver(){ 
-        hp -= Random.Range(30f, 60f);
-        Debug.Log("Hit " + hp);
+    void HeadHitByEnemyRevolver()
+    {
+        hp -= Random.Range(100f, 150f);
+    }
+
+    void HeadHitByEnemyShotgun()
+    {
+        hp -= Random.Range(25f, 35f);
+    }
+
+    void BodyHitByEnemyRevolver()
+    {
+        hp -= Random.Range(50f, 70f);
+    }
+
+    void BodyHitByEnemyShotgun()
+    {
+        hp -= Random.Range(15f, 25f);
     }
 
     private void HPSystem()
@@ -48,6 +63,8 @@ public class playerHP : MonoBehaviour
         hp = maxHP;
         fpc.enabled = false;
         playerWeapon.GetComponent<AudioSource>().enabled = false;
+        revolverScript.weapon1Object.SetActive(false);
+        revolverScript.weapon2Object.SetActive(false);
         revolverScript.isDead = true;
         cc.enabled = false;
         ammoCounter.enabled = false;
@@ -59,6 +76,8 @@ public class playerHP : MonoBehaviour
         deathText.enabled = false;
         deathText.enabled = false;
         playerWeapon.GetComponent<AudioSource>().enabled = true;
+        revolverScript.currentWeapon = revolverScript.weapon1;
+        revolverScript.weapon1Object.SetActive(true);
         camera.enabled = true;
         revolverScript.isDead = false;
         this.transform.position = respawnPoint.transform.position;
