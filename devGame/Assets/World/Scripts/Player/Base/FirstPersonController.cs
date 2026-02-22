@@ -112,6 +112,7 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+			playerAnimator = GetComponentInChildren<Animator>();
 		}
 
 		private void Update()

@@ -21,6 +21,8 @@ public class playerHP : MonoBehaviour
     void Start()
     {
         revolverScript = GameObject.Find("Weapon").GetComponent<RevolverScript>();
+        deathPoint = GameObject.Find("DeathPoint");
+        respawnPoint = GameObject.Find("RespawnPoint");
         cc = this.GetComponent<CharacterController>();
         maxHP = hp;
     }

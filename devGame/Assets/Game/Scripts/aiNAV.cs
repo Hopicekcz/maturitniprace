@@ -58,6 +58,7 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private float currentSpread = 1f;
     [SerializeField] private float ragdollTimer = 5f;
     [SerializeField] private float weaponDrawSpeed = 1f;
+    [SerializeField] private float chaseTimer = 5f;
 
     [Header("Detection Ranges")] //customizable settings for the vision (follow player) and engagement (attack) range
     [SerializeField] private float visionRange = 15f;
@@ -212,12 +213,15 @@ public class aiNAV : MonoBehaviour
         
         if (isPlayerVisible && isPlayerInRange && releaseChase){ //Can see player, is close = Attack
             PerformAttack();
+            Debug.Log("attack");
         }
         else if ((isPlayerVisible && !isPlayerInRange) || (!releaseChase) || (attackedPlayer)){  //Can see player but is not close OR Cant see player, is not close but was being chased = Chase
             PerformChase();
+            Debug.Log("chase");
         }
         else { //Cant see player, Player isnt close and Player was not being chased = Patrol
             PerformPatrol();
+            Debug.Log("Patrol");
         }
     }
     //MAIN FUNCTIONS
@@ -267,6 +271,7 @@ public class aiNAV : MonoBehaviour
     private void PerformChase(){
         fightMode = false;
         isMoving = true;
+        Debug.Log("releaseChase" + releaseChase);
         if(attackedPlayer){
             releaseChase = false;
             playerLastPosition = playerTransform.position;
@@ -287,13 +292,21 @@ public class aiNAV : MonoBehaviour
         if(!isPlayerVisible && (Vector3.Distance(transform.position, playerLastPosition) < 0.1f) && !keepChasing || isPlayerInRange ){
             releaseChase = true;
         }
+
+        if(releaseChase){
+            StartCoroutine(ChasingTooLong());
+        }
         navAgent.SetDestination(playerLastPosition);
-         //simple follow the player
     }
 
     private IEnumerator KeepChasingTimer(){
         yield return new WaitForSeconds(followPlayerTimer);
         keepChasing = false;
+    }
+
+    private IEnumerator ChasingTooLong(){
+        yield return new WaitForSeconds(chaseTimer);
+        releaseChase = true;
     }
     
     //CHASE

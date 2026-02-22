@@ -553,12 +553,13 @@ MonoBehaviour:
   staggeredSpeed: 1
   followPlayerTimer: 1
   maxRevolverAmmoCount: 6
-  currentSpread: 0.5
+  currentSpread: 0.25
   ragdollTimer: 5
   weaponDrawSpeed: 1
-  visionRange: 20
-  engagementRange: 9
-  tooCloseRange: 4
+  chaseTimer: 5
+  visionRange: 8
+  engagementRange: 5
+  tooCloseRange: 2
   currentWeapon: revolver
 --- !u!136 &2243915789086563642
 CapsuleCollider:
