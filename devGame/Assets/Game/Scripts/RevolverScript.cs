@@ -67,6 +67,7 @@ public class RevolverScript : MonoBehaviour
     private FirstPersonController firstPersonController;
     [SerializeField] private PhysicsMaterial bodyMaterial;
     [SerializeField] private PhysicsMaterial headMaterial;
+    [SerializeField] private Camera followCamera;
 
     //Variable initialization
     private bool canShoot;
@@ -83,6 +84,7 @@ public class RevolverScript : MonoBehaviour
     private int currentWeaponNumber;
     private bool interruptReload;
     private bool switchingWeapon;
+    private bool interactPressed;
     
     
 
@@ -92,7 +94,7 @@ public class RevolverScript : MonoBehaviour
     private InputAction reloadAction;
     private InputAction switchWeaponAction1;
     private InputAction switchWeaponAction2;
-
+    private InputAction interactAction;
 
     //INITIALIZATION
     
@@ -113,10 +115,12 @@ public class RevolverScript : MonoBehaviour
         aimAction = new InputAction(type: InputActionType.Button, binding: "<Mouse>/rightButton");
         reloadAction = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/r");
         switchWeaponAction1 = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/1");
+        interactAction = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/e");
         switchWeaponAction2 = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/2");
         shootAction.Enable();
         aimAction.Enable();
         reloadAction.Enable();
+        interactAction.Enable();
         switchWeaponAction1.Enable();
         switchWeaponAction2.Enable();
         //handAnimator = GetComponent<Animator>();
@@ -162,6 +166,8 @@ public class RevolverScript : MonoBehaviour
         if(!isDead){
             WeaponState();
             PlayerSpeed();
+            InteractState();
+            CameraFOV();
         } else{
             PlayerDied();
             revolverAmmoCount = maxRevolverAmmoCount;
@@ -170,6 +176,18 @@ public class RevolverScript : MonoBehaviour
             isReloading = false;
             isAiming = false;
         }
+    }
+
+    void CameraFOV(){
+        if(isAiming){
+            mainCamera.fieldOfView = 50f;
+        } else {
+            mainCamera.fieldOfView = 100f;
+        }
+    }
+
+    void InteractState(){
+        interactPressed = interactAction.WasPressedThisFrame();
     }
 
     void PlayerSpeed(){
