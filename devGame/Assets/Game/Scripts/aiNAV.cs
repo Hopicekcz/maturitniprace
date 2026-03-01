@@ -130,6 +130,7 @@ public class aiNAV : MonoBehaviour
             UpdateBehaviourState();
             SetAnimation();
             HealthSystem();
+            Debug.Log(isPlayerInRange);
         } else {
             StartCoroutine(Death());
         }           

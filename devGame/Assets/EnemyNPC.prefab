@@ -520,7 +520,7 @@ MonoBehaviour:
     m_Bits: 512
   playerLayerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 4096
   obstacleLayerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -557,9 +557,9 @@ MonoBehaviour:
   ragdollTimer: 5
   weaponDrawSpeed: 1
   chaseTimer: 5
-  visionRange: 8
-  engagementRange: 5
-  tooCloseRange: 2
+  visionRange: 15
+  engagementRange: 10
+  tooCloseRange: 5
   currentWeapon: revolver
 --- !u!136 &2243915789086563642
 CapsuleCollider:
