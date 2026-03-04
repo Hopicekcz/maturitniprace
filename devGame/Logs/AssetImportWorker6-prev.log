@@ -1,17 +1,17 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-02-28T15:54:29.310787Z"
 Built from '6000.3/staging' branch; Version is '6000.3.3f1 (ef04196de0d6) revision 15664153'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16004 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-03-04T22:24:32.9032635Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-02-28T15:54:29Z
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 14504, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+Date: 2026-03-04T22:24:32Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 10432, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.17.4'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Hopic"
 [Licensing::IpcConnector] LicenseClient-Hopic channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-02-28T15:54:29.3692135Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-03-04T22:24:32.963921Z"
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.3f1\Editor\Unity.exe
@@ -25,7 +25,7 @@ E:/unity/maturitniprace/active/devGame
 -logFile
 Logs/AssetImportWorker6.log
 -srvPort
-51887
+55241
 -licensingIpc
 LicenseClient-Hopic
 -job-worker-count
@@ -73,16 +73,18 @@ E:/unity/maturitniprace/active/devGame
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [26200]  Target information:
+Player connection [17588]  Target information:
 
-Player connection [26200]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2802569749 [EditorId] 2802569749 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [17588]  * "[IP] 25.19.11.207 [Port] 0 [Flags] 2 [Guid] 1229191155 [EditorId] 1229191155 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26200]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 2802569749 [EditorId] 2802569749 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [17588]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1229191155 [EditorId] 1229191155 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26200]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 2802569749 [EditorId] 2802569749 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [17588]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 1229191155 [EditorId] 1229191155 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [26200] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [26200] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17588]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 1229191155 [EditorId] 1229191155 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [17588] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [17588] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -94,7 +96,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 8.85 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 9.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.3f1 (ef04196de0d6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -112,52 +114,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56092
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009591 seconds.
-- Loaded All Assemblies, in  0.789 seconds
+Registered in 0.004802 seconds.
+- Loaded All Assemblies, in  0.569 seconds
 Native extension for WindowsStandalone target not found
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              a43c1baf586d46c2becc7d54380162b2
-  Correlation Id:          637b556f33ea5743cdbc60f9f3536bc1
-  External correlation Id: 2341469228664391556
+  Session Id:              9f8843e8342046fe8aba317961e37ad2
+  Correlation Id:          3d8a11d258cb1e55945dbac590967f19
+  External correlation Id: 1723571837244355812
   Machine Id:              4VB2xDT1CV9zqVbIIZWsGa/FyKA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 2.52s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-02-28T15:54:31.8921618Z"
-[Licensing::Module] Licensing Background thread has ended after 2.58s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 1.54s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-03-04T22:24:34.5025451Z"
+[Licensing::Module] Licensing Background thread has ended after 1.60s
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.871 seconds
-Domain Reload Profiling: 1654ms
-	BeginReloadAssembly (269ms)
+- Finished resetting the current domain, in  0.523 seconds
+Domain Reload Profiling: 1085ms
+	BeginReloadAssembly (189ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (75ms)
-	RebuildNativeTypeToScriptingClass (33ms)
-	initialDomainReloadingComplete (117ms)
-	LoadAllAssembliesAndSetupDomain (289ms)
-		LoadAssemblies (260ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (234ms)
+		LoadAssemblies (183ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (285ms)
-			TypeCache.Refresh (282ms)
-				TypeCache.ScanAssembly (260ms)
+		AnalyzeDomain (230ms)
+			TypeCache.Refresh (228ms)
+				TypeCache.ScanAssembly (211ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (872ms)
+	FinalizeReload (523ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (800ms)
+		SetupLoadedEditorAssemblies (462ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (90ms)
+			InitializePlatformSupportModulesInManaged (63ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (230ms)
-			ProcessInitializeOnLoadAttributes (336ms)
-			ProcessInitializeOnLoadMethodAttributes (140ms)
+			BeforeProcessingInitializeOnLoad (105ms)
+			ProcessInitializeOnLoadAttributes (169ms)
+			ProcessInitializeOnLoadMethodAttributes (121ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -178,8 +180,8 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.421 seconds
-Refreshing native plugins compatible for Editor in 7.35 ms, found 2 plugins.
+- Loaded All Assemblies, in  1.460 seconds
+Refreshing native plugins compatible for Editor in 15.27 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -188,85 +190,212 @@ Package Manager log level set to [2]
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-devGame
-Refreshing native plugins compatible for Editor in 6.45 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 7.43 ms, found 2 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.355 seconds
-Domain Reload Profiling: 2767ms
-	BeginReloadAssembly (307ms)
+- Finished resetting the current domain, in  1.504 seconds
+Domain Reload Profiling: 2957ms
+	BeginReloadAssembly (232ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (61ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (964ms)
-		LoadAssemblies (716ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (1105ms)
+		LoadAssemblies (885ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (416ms)
-			TypeCache.Refresh (306ms)
-				TypeCache.ScanAssembly (277ms)
-			BuildScriptInfoCaches (89ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1355ms)
+		AnalyzeDomain (356ms)
+			TypeCache.Refresh (257ms)
+				TypeCache.ScanAssembly (236ms)
+			BuildScriptInfoCaches (81ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1504ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1076ms)
+		SetupLoadedEditorAssemblies (1044ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (182ms)
-			ProcessInitializeOnLoadAttributes (545ms)
-			ProcessInitializeOnLoadMethodAttributes (330ms)
-			AfterProcessingInitializeOnLoad (13ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (166ms)
+			ProcessInitializeOnLoadAttributes (558ms)
+			ProcessInitializeOnLoadMethodAttributes (298ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+		AwakeInstancesAfterBackupRestoration (22ms)
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 8.36 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 8.01 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6209 unused Assets / (4.7 MB). Loaded Objects now: 7044.
-Memory consumption went from 161.8 MB to 157.1 MB.
-Total: 20.831000 ms (FindLiveObjects: 1.157300 ms CreateObjectMapping: 0.662500 ms MarkObjects: 15.848100 ms  DeleteObjects: 3.161800 ms)
+Unloading 6209 unused Assets / (4.4 MB). Loaded Objects now: 7044.
+Memory consumption went from 159.9 MB to 155.5 MB.
+Total: 17.017300 ms (FindLiveObjects: 1.019400 ms CreateObjectMapping: 0.383100 ms MarkObjects: 13.540600 ms  DeleteObjects: 2.072900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 524949.366191 seconds.
-  path: Assets/World/Environment/Prefabs/Building2/Window_1.prefab
-  artifactKey: Guid(1c296a7eace9a674da1c218918242227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Prefabs/Building2/Window_1.prefab using Guid(1c296a7eace9a674da1c218918242227) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26879ed09f95a4452d8cd061f3f8de1e') in 0.6125745 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+  Time since last request: 894628.455426 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-3_comp_dir.png
+  artifactKey: Guid(3f4f864267813154b881283d35052f98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-3_comp_dir.png using Guid(3f4f864267813154b881283d35052f98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3baea26340adb5fe62a09b8fe55f91a5') in 0.1431227 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 153.142191 seconds.
-  path: Assets/World/Environment/Textures/Furniture/Broom_N.tga
-  artifactKey: Guid(8336469a7027cd2458a8c58842249ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Textures/Furniture/Broom_N.tga using Guid(8336469a7027cd2458a8c58842249ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75be7e9baa78aeb1949d403bbaf3959c') in 0.0700457 seconds
+  Time since last request: 410.981172 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-6_comp_light.exr
+  artifactKey: Guid(53d8b71bebfc9284a999d32635dc996d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-6_comp_light.exr using Guid(53d8b71bebfc9284a999d32635dc996d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '506a8c351d9dbe51bc6e108f0343594c') in 0.0310704 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-8_comp_light.exr
+  artifactKey: Guid(2be4c232b3a396649aef72495e8d655f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-8_comp_light.exr using Guid(2be4c232b3a396649aef72495e8d655f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e1e820ec39cfa73831cfe28da31fbb5d') in 0.0195879 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-10_comp_light.exr
+  artifactKey: Guid(5c45b7bd516b0d742832d1c7f48d3580) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-10_comp_light.exr using Guid(5c45b7bd516b0d742832d1c7f48d3580) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cf588df80765a685a9e872ce0c2f63ad') in 0.0171609 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-16_comp_dir.png
+  artifactKey: Guid(cccad4eb46ed0f74681058df635595a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-16_comp_dir.png using Guid(cccad4eb46ed0f74681058df635595a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '801ac582291eb16662ea3349df260f10') in 0.0287215 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-9_comp_dir.png
+  artifactKey: Guid(2d23c51e19239e648b765f4bc869b333) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-9_comp_dir.png using Guid(2d23c51e19239e648b765f4bc869b333) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7ac5acbdb2e05c5c7185c621c5f9acdb') in 0.0382359 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-6_comp_dir.png
+  artifactKey: Guid(7a55121dd8843754e98f82a548b23c38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-6_comp_dir.png using Guid(7a55121dd8843754e98f82a548b23c38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '12e01b4e1a365f4f32ded741afbdc4a8') in 0.010614 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-7_comp_dir.png
+  artifactKey: Guid(317b7905958e3c74fb6d47d43c7b31af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-7_comp_dir.png using Guid(317b7905958e3c74fb6d47d43c7b31af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '830401fa078a0555b5e7b56d8ac2c999') in 0.0108181 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-5_comp_dir.png
+  artifactKey: Guid(1c51058fa9313884e82f4ddd2846a141) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-5_comp_dir.png using Guid(1c51058fa9313884e82f4ddd2846a141) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '546b7581aa39909e50dbdc017fe4aafe') in 0.0107733 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-8_comp_dir.png
+  artifactKey: Guid(e92a4ae7205efb841a81c7eacacf157e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-8_comp_dir.png using Guid(e92a4ae7205efb841a81c7eacacf157e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f51f61893ca3c06f2a78fc9ee6a766fb') in 0.014572 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-16_comp_light.exr
+  artifactKey: Guid(3f3e06d6641a56242bab6a052d6ce1d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-16_comp_light.exr using Guid(3f3e06d6641a56242bab6a052d6ce1d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a112e16849dd11fd9bb43934d4646f7') in 0.0146596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-4_comp_dir.png
+  artifactKey: Guid(270c4071ff66fed49823cc3647a0b9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-4_comp_dir.png using Guid(270c4071ff66fed49823cc3647a0b9df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '548d9ade37efef16a1a3feda0d1f2f08') in 0.0178512 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-15_comp_dir.png
+  artifactKey: Guid(bb6ca15fb9b5a494bac101388da9b465) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-15_comp_dir.png using Guid(bb6ca15fb9b5a494bac101388da9b465) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b645d8489fa42ef964edf012dc98a8e5') in 0.0192415 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-9_comp_light.exr
+  artifactKey: Guid(aa5a25da5deb4124f8f584f1b10485cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground/Lightmap-9_comp_light.exr using Guid(aa5a25da5deb4124f8f584f1b10485cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6dabfd262f69422bd95e11b74e5c4dd2') in 0.0170794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.655546 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-0_comp_light.exr
+  artifactKey: Guid(10b6ff89382ca0e449f63bf39dd123bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Scenes/Playground/Lightmap-0_comp_light.exr using Guid(10b6ff89382ca0e449f63bf39dd123bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '98d28403a6046b82c58193e5abb33a27') in 0.1346552 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000116 seconds.
-  path: Assets/World/Effects/WarFX/Desktop/Textures/Misc/WFX_T_Debris Generic.tga
-  artifactKey: Guid(b23528b172bf0ab459d12b978186714c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Effects/WarFX/Desktop/Textures/Misc/WFX_T_Debris Generic.tga using Guid(b23528b172bf0ab459d12b978186714c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b20619a8db3e5acc3527a8f2bcf144e7') in 0.0079132 seconds
+  Time since last request: 0.000024 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-6_comp_dir.png
+  artifactKey: Guid(7a55121dd8843754e98f82a548b23c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Scenes/Playground/Lightmap-6_comp_dir.png using Guid(7a55121dd8843754e98f82a548b23c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a38e26f9487afa214486ccc647e1922d') in 0.0237944 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/World/Environment/Textures/Trees/pine branch.png
-  artifactKey: Guid(a361304e3b5ce3b4a9b9e1e3db8ff84f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/World/Environment/Textures/Trees/pine branch.png using Guid(a361304e3b5ce3b4a9b9e1e3db8ff84f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '342068ce67b06755d6cea1560ba3eab9') in 0.0190147 seconds
+  Time since last request: 0.000040 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-2_comp_light.exr
+  artifactKey: Guid(d67e0f67accfabc4c9a9a90a938771db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Scenes/Playground/Lightmap-2_comp_light.exr using Guid(d67e0f67accfabc4c9a9a90a938771db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '141ca1bcad413b2c5af017559266df07') in 0.0274804 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Game/Scenes/Playground/ReflectionProbe-1.exr
+  artifactKey: Guid(5515cbebf3ef1144ebf8d50ed9091e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Scenes/Playground/ReflectionProbe-1.exr using Guid(5515cbebf3ef1144ebf8d50ed9091e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00e824e53011f12eb2308cb42e6c37ee') in 0.5298087 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-1_comp_light.exr
+  artifactKey: Guid(0a574aa65eea92141b52b9c54ef0fa06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Scenes/Playground/Lightmap-1_comp_light.exr using Guid(0a574aa65eea92141b52b9c54ef0fa06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be98797e2288c4a10a56a1411570421d') in 0.0291621 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Game/Scenes/Playground/Lightmap-7_comp_dir.png
+  artifactKey: Guid(317b7905958e3c74fb6d47d43c7b31af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Scenes/Playground/Lightmap-7_comp_dir.png using Guid(317b7905958e3c74fb6d47d43c7b31af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e501215c65471f404be977dd9436b09') in 0.0304668 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0

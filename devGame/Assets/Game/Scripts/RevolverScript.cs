@@ -68,6 +68,8 @@ public class RevolverScript : MonoBehaviour
     [SerializeField] private PhysicsMaterial bodyMaterial;
     [SerializeField] private PhysicsMaterial headMaterial;
     [SerializeField] private Camera followCamera;
+    [SerializeField] Object enemyNPC;
+    public GameObject spawnPoint;
 
     //Variable initialization
     private bool canShoot;
@@ -95,6 +97,7 @@ public class RevolverScript : MonoBehaviour
     private InputAction switchWeaponAction1;
     private InputAction switchWeaponAction2;
     private InputAction interactAction;
+    private InputAction spawnAction;
 
     //INITIALIZATION
     
@@ -117,11 +120,13 @@ public class RevolverScript : MonoBehaviour
         switchWeaponAction1 = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/1");
         interactAction = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/e");
         switchWeaponAction2 = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/2");
+        spawnAction = new InputAction(type: InputActionType.Button, binding:"<Keyboard>/p");
         shootAction.Enable();
         aimAction.Enable();
         reloadAction.Enable();
         interactAction.Enable();
         switchWeaponAction1.Enable();
+        spawnAction.Enable();
         switchWeaponAction2.Enable();
         //handAnimator = GetComponent<Animator>();
         //gunAnimator = GetComponentInChildrenOnly<Animator>();
@@ -133,6 +138,7 @@ public class RevolverScript : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
         firstPersonController = GameObject.Find("PlayerCapsule").GetComponent<FirstPersonController>();
+        spawnPoint = GameObject.Find("Spawnpoint");
         mainCamera = Camera.main;
     }
 
@@ -168,6 +174,7 @@ public class RevolverScript : MonoBehaviour
             PlayerSpeed();
             InteractState();
             CameraFOV();
+            SpawnEnemy();
         } else{
             PlayerDied();
             revolverAmmoCount = maxRevolverAmmoCount;
@@ -175,6 +182,12 @@ public class RevolverScript : MonoBehaviour
             canShoot = true;
             isReloading = false;
             isAiming = false;
+        }
+    }
+
+    void SpawnEnemy(){
+        if(spawnAction.WasPressedThisFrame()){
+            GameObject clone = Instantiate(enemyNPC, spawnPoint.transform.position, Quaternion.identity) as GameObject;
         }
     }
 

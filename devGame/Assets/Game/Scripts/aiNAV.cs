@@ -41,6 +41,7 @@ public class aiNAV : MonoBehaviour
     private Vector3 currentPatrolPoint; //variable storing 3D coordinates of the current Patrol point
     private Vector3 strafePoint;
     private bool hasPatrolPoint;  
+    private Vector3 currentPosition;
     
 
     [Header("Combat Settings")] //customizable settings of the bullet and attack speed using rigidbody physics
@@ -80,6 +81,8 @@ public class aiNAV : MonoBehaviour
     private bool attackedPlayer;
     private bool isReloading;
     private bool isDead;
+    private bool chaseStart = true;
+    private bool doneCalculatingChase = true;
     //Ray for checking collisions between the NPC and the Player
     Ray npcToPlayerEyesRay;
     Ray npcToPlayerBodyRay;
@@ -87,6 +90,8 @@ public class aiNAV : MonoBehaviour
     RaycastHit hitWall;
     RaycastHit hitGround;
     private Vector3 playerLastPosition;
+    private Vector3 changeInPlayerPos;
+    private float intervalTimer;
 
     //TO ADD NEXT!!! - isPlayerVisible and isPlayerInRange checks need to be sent from an empty gameobject of the npc head to the player head (obstacles make player invisible)
     //atleast optimize a bit
@@ -95,13 +100,15 @@ public class aiNAV : MonoBehaviour
     //INITIALIZATION
     private void Awake(){ //Because the EnemyNPC is a prefab and the playertransform cannot be assigned into the reference, a script hard-reference is needed
             revolverAmmoCount = maxRevolverAmmoCount; 
-            GameObject playerObj = GameObject.Find("PlayerCapsule");
+            GameObject playerObj = GameObject.Find("PlayerLocation");
             playerTransform = playerObj.transform;
             GameObject playerObjEyes = GameObject.Find("PlayerEyes");
             playerEyes = playerObjEyes.transform;
             GameObject playerObjBody = GameObject.Find("PlayerBody");
             playerBody = playerObjBody.transform;
             ownMeshCollider = this.GetComponent<MeshCollider>();
+
+
         if(navAgent == null){
             navAgent = GetComponent<NavMeshAgent>();
         }
@@ -122,6 +129,9 @@ public class aiNAV : MonoBehaviour
     }
     //INITIALIZATION
 
+    private void OnInstantiate(){
+        Awake();
+    }
 
     //MAIN FUNCTIONS
     private void Update(){
@@ -130,7 +140,7 @@ public class aiNAV : MonoBehaviour
             UpdateBehaviourState();
             SetAnimation();
             HealthSystem();
-            Debug.Log(isPlayerInRange);
+            Debug.Log(playerTransform.position);
         } else {
             StartCoroutine(Death());
         }           
@@ -144,7 +154,7 @@ public class aiNAV : MonoBehaviour
      void HeadHitByEnemyRevolver()
     {
         wasHit = true;
-        npcHP -= Random.Range(100f, 150f);
+        npcHP -= Random.Range(70f, 110f);
     }
 
     void HeadHitByEnemyShotgun()
@@ -220,10 +230,11 @@ public class aiNAV : MonoBehaviour
             PerformChase();
             Debug.Log("chase");
         }
-        else { //Cant see player, Player isnt close and Player was not being chased = Patrol
+        else if(!isPlayerVisible && !isPlayerInRange && releaseChase && !attackedPlayer){ //Cant see player, Player isnt close and Player was not being chased = Patrol
             PerformPatrol();
             Debug.Log("Patrol");
         }
+        
     }
     //MAIN FUNCTIONS
 
@@ -272,43 +283,40 @@ public class aiNAV : MonoBehaviour
     private void PerformChase(){
         fightMode = false;
         isMoving = true;
-        Debug.Log("releaseChase" + releaseChase);
-        if(attackedPlayer){
+        if(chaseStart){
             releaseChase = false;
-            playerLastPosition = playerTransform.position;
-            attackedPlayer = false;
-            keepChasing = true;
-            StartCoroutine(KeepChasingTimer());
+            chaseStart = false;
         }
-        if(isPlayerVisible && !isPlayerInRange || keepChasing){
-            releaseChase = false;
+        
+        if(isPlayerVisible && !isPlayerInRange && !attackedPlayer){
             playerLastPosition = playerTransform.position;
-            keepChasing = true;
-            StartCoroutine(KeepChasingTimer());
-            //once this stops being true start coroutine after that finishes start the code below
-        } 
-        if(keepChasing){
-            playerLastPosition = playerTransform.position;
+            Debug.Log("sets position");
         }
-        if(!isPlayerVisible && (Vector3.Distance(transform.position, playerLastPosition) < 0.1f) && !keepChasing || isPlayerInRange ){
+    
+        if(isPlayerVisible && isPlayerInRange){
             releaseChase = true;
+            chaseStart = true;
         }
-
-        if(releaseChase){
-            StartCoroutine(ChasingTooLong());
+        
+        Debug.Log(Vector3.Distance(transform.position, playerLastPosition));
+        if(Vector3.Distance(transform.position, playerLastPosition) < 0.1f){
+            releaseChase = true;
+            chaseStart = true;
+            attackedPlayer = false;
         }
-        navAgent.SetDestination(playerLastPosition);
+        if (intervalTimer == 0f)
+            {
+                navAgent.SetDestination(playerLastPosition);
+            }
+
+        intervalTimer += Time.deltaTime;
+        if (intervalTimer >= 1)
+            {
+                intervalTimer = 0f;
+            }
+        
     }
 
-    private IEnumerator KeepChasingTimer(){
-        yield return new WaitForSeconds(followPlayerTimer);
-        keepChasing = false;
-    }
-
-    private IEnumerator ChasingTooLong(){
-        yield return new WaitForSeconds(chaseTimer);
-        releaseChase = true;
-    }
     
     //CHASE
     
@@ -317,6 +325,7 @@ public class aiNAV : MonoBehaviour
         isMoving = true;
         fightMode = true;
         attackedPlayer = true;
+        playerLastPosition = playerTransform.position;
         AttackMovement();
         if(!isOnAttackCooldown){ //attack function along with attack cooldown function
             StartCoroutine(AttackCooldownRoutine());
