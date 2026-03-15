@@ -65,7 +65,10 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private float visionRange = 15f;
     [SerializeField] private float engagementRange = 6f;
     [SerializeField] private float tooCloseRange = 3f;
-    [SerializeField] private string currentWeapon = "revolver";
+    [SerializeField] private string currentWeapon;
+    [SerializeField] private float respawnRadius = 5f;
+
+
 
     //Declaration of bools for behavior states
     private bool isPlayerVisible;
@@ -83,6 +86,10 @@ public class aiNAV : MonoBehaviour
     private bool isDead;
     private bool chaseStart = true;
     private bool doneCalculatingChase = true;
+    private bool unStuck = true;
+    private float maxHP;
+    private bool dying;
+    private int weaponRandom;
     //Ray for checking collisions between the NPC and the Player
     Ray npcToPlayerEyesRay;
     Ray npcToPlayerBodyRay;
@@ -91,6 +98,7 @@ public class aiNAV : MonoBehaviour
     RaycastHit hitGround;
     private Vector3 playerLastPosition;
     private Vector3 changeInPlayerPos;
+    private Vector3 lastPosition;
     private float intervalTimer;
 
     //TO ADD NEXT!!! - isPlayerVisible and isPlayerInRange checks need to be sent from an empty gameobject of the npc head to the player head (obstacles make player invisible)
@@ -107,12 +115,24 @@ public class aiNAV : MonoBehaviour
             GameObject playerObjBody = GameObject.Find("PlayerBody");
             playerBody = playerObjBody.transform;
             ownMeshCollider = this.GetComponent<MeshCollider>();
-
+            maxHP = npcHP;
 
         if(navAgent == null){
             navAgent = GetComponent<NavMeshAgent>();
         }
         animator = GetComponent<Animator>(); 
+
+        weaponRandom = Random.Range(0, 3);
+        switch(weaponRandom){
+            case 1: 
+            currentWeapon = "revolver";
+            break;
+
+            case 2:
+            currentWeapon = "shotgun";
+            break;
+        }
+
     }
 
      private void OnDrawGizmosSelected() //Helper for debugging and play-testing with gizmos
@@ -140,15 +160,19 @@ public class aiNAV : MonoBehaviour
             UpdateBehaviourState();
             SetAnimation();
             HealthSystem();
-            Debug.Log(playerTransform.position);
+
         } else {
-            StartCoroutine(Death());
+            while(!dying){
+                StartCoroutine(Death());
+            }
+            
         }           
         
     }
 
     private void SetAnimation(){ //Animation setter using bool parameters in the animator
         animator.SetBool("isMoving", isMoving);
+        animator.SetBool("isReloading", isReloading);
     }
 
      void HeadHitByEnemyRevolver()
@@ -187,6 +211,19 @@ public class aiNAV : MonoBehaviour
         }
         
     }
+
+    private IEnumerator StuckCheck(){
+        unStuck = false;
+        lastPosition = this.transform.position;
+        yield return new WaitForSeconds(3f);
+        if(transform.position == lastPosition){
+            releaseChase = true;
+            chaseStart = true;
+            doneCalculatingChase = true;
+            patrolTimerFinished = true;
+        }
+        unStuck = true;
+    }
     
 
     private void HealthSystem()
@@ -201,12 +238,36 @@ public class aiNAV : MonoBehaviour
     }
 
     private IEnumerator Death(){
+        dying = true;
         navAgent.isStopped = true;
         audioSource.enabled = false;
         animator.enabled = false;
         ownMeshCollider.enabled = false;
         yield return new WaitForSeconds(ragdollTimer);
-        Destroy(gameObject);
+        
+        transform.position = RandomNavmeshLocation();
+        npcHP = maxHP;
+        isDead = false;
+        navAgent.isStopped = false;
+        audioSource.enabled = true;
+        animator.enabled = true;
+        ownMeshCollider.enabled = true;
+        dying = false;
+        
+        
+    }
+
+    Vector3 RandomNavmeshLocation() {
+            Vector3 randomDirection = Random.insideUnitSphere * respawnRadius;
+            randomDirection += transform.position;
+            UnityEngine.AI.NavMeshHit hit;
+            Vector3 finalPosition = Vector3.zero;
+            if (UnityEngine.AI.NavMesh.SamplePosition(randomDirection, out hit, respawnRadius, 1)) {
+                finalPosition = hit.position;            
+            }
+            Debug.Log(finalPosition);
+            return finalPosition;
+            
     }
 
     private void DetectPlayer()
@@ -224,15 +285,15 @@ public class aiNAV : MonoBehaviour
         
         if (isPlayerVisible && isPlayerInRange && releaseChase){ //Can see player, is close = Attack
             PerformAttack();
-            Debug.Log("attack");
+
         }
         else if ((isPlayerVisible && !isPlayerInRange) || (!releaseChase) || (attackedPlayer)){  //Can see player but is not close OR Cant see player, is not close but was being chased = Chase
             PerformChase();
-            Debug.Log("chase");
+
         }
         else if(!isPlayerVisible && !isPlayerInRange && releaseChase && !attackedPlayer){ //Cant see player, Player isnt close and Player was not being chased = Patrol
             PerformPatrol();
-            Debug.Log("Patrol");
+
         }
         
     }
@@ -281,6 +342,7 @@ public class aiNAV : MonoBehaviour
 
     //CHASE
     private void PerformChase(){
+
         fightMode = false;
         isMoving = true;
         if(chaseStart){
@@ -290,7 +352,6 @@ public class aiNAV : MonoBehaviour
         
         if(isPlayerVisible && !isPlayerInRange && !attackedPlayer){
             playerLastPosition = playerTransform.position;
-            Debug.Log("sets position");
         }
     
         if(isPlayerVisible && isPlayerInRange){
@@ -298,7 +359,6 @@ public class aiNAV : MonoBehaviour
             chaseStart = true;
         }
         
-        Debug.Log(Vector3.Distance(transform.position, playerLastPosition));
         if(Vector3.Distance(transform.position, playerLastPosition) < 0.1f){
             releaseChase = true;
             chaseStart = true;
@@ -314,6 +374,9 @@ public class aiNAV : MonoBehaviour
             {
                 intervalTimer = 0f;
             }
+        while(unStuck){
+            StartCoroutine(StuckCheck());
+        }
         
     }
 

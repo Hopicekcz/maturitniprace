@@ -136,7 +136,6 @@ public class RevolverScript : MonoBehaviour
         weapon1Object.SetActive(true);
         weapon2Object.SetActive(false);
 
-        audioSource = GetComponent<AudioSource>();
         firstPersonController = GameObject.Find("PlayerCapsule").GetComponent<FirstPersonController>();
         spawnPoint = GameObject.Find("Spawnpoint");
         mainCamera = Camera.main;
