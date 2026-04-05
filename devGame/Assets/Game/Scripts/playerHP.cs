@@ -142,17 +142,10 @@ public class playerHP : MonoBehaviour
         if(IsGrounded()){
              audioSource.Play();
         }
-        
-        if(Keyboard.current.shiftKey.isPressed == true){
-            yield return new WaitForSeconds(delayBetweenClips * shiftDelayFactor);
-            isPlaying = false;
-        } else {
-            yield return new WaitForSeconds(delayBetweenClips);
-            isPlaying = false;
-        }
-        float delay = sprintAction.WasPressedThisFrame()
-            ? delayBetweenClips * shiftDelayFactor 
-            : delayBetweenClips;
+    
+        yield return new WaitForSeconds(delayBetweenClips);
+        isPlaying = false;
+        float delay = delayBetweenClips;
         yield return new WaitForSeconds(delay);
     }
 

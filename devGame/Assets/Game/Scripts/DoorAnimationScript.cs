@@ -1,4 +1,5 @@
 using System.Collections;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -73,6 +74,10 @@ public class DoorAnimationScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _trigerEntered = true;
+        }
+        if (other.CompareTag("Character") && !_opened)
+        {
+             Play(doorOpenClip, "door-open");
         }
     }
 

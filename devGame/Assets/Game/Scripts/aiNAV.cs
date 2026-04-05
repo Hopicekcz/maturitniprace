@@ -33,7 +33,9 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private AudioClip shootSound;
     [SerializeField] private AudioClip reloadSound;
     [SerializeField] private AudioClip breakSound;
+    [SerializeField] private AudioClip deathJingle;
     [SerializeField]private AudioSource audioSource;
+    [SerializeField] private AudioSource deathJingleSource;
 
 
     [Header("Patrol Settings")] //customizable setting of the patrol radius
@@ -163,7 +165,9 @@ public class aiNAV : MonoBehaviour
 
         } else {
             while(!dying){
+                audioSource.PlayOneShot(deathJingle);
                 StartCoroutine(Death());
+                
             }
             
         }           
