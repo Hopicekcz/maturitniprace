@@ -62,6 +62,9 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private float ragdollTimer = 5f;
     [SerializeField] private float weaponDrawSpeed = 1f;
     [SerializeField] private float chaseTimer = 5f;
+    [SerializeField] private float revolverDamage = 50f;
+    [SerializeField] private float shotgunDamage = 15f;
+
 
     [Header("Detection Ranges")] //customizable settings for the vision (follow player) and engagement (attack) range
     [SerializeField] private float visionRange = 15f;
@@ -182,25 +185,25 @@ public class aiNAV : MonoBehaviour
      void HeadHitByEnemyRevolver()
     {
         wasHit = true;
-        npcHP -= Random.Range(70f, 110f);
+        npcHP -= Random.Range(revolverDamage * 1.8f, revolverDamage * 2.2f);
     }
 
     void HeadHitByEnemyShotgun()
     {
         wasHit = true;
-        npcHP = npcHP - Random.Range(25f, 35f);
+        npcHP = npcHP - Random.Range(shotgunDamage * 2.3f, shotgunDamage * 3f);
     }
 
     void BodyHitByEnemyRevolver()
     {
         wasHit = true;
-        npcHP = npcHP - Random.Range(50f, 70f);
+        npcHP = npcHP - Random.Range(revolverDamage * 1.6f, revolverDamage * 2f);
     }
 
     void BodyHitByEnemyShotgun()
     {
         wasHit = true;
-        npcHP = npcHP - Random.Range(15f, 25f);
+        npcHP = npcHP - Random.Range(revolverDamage * 1.8f, revolverDamage * 2.3f);
     }
 
     private IEnumerator SlowOnHit(){
@@ -454,7 +457,7 @@ public class aiNAV : MonoBehaviour
                             }
                         break;
 
-                        case "Ground":
+                        case "Ground" or "Door":
                         Instantiate(groundHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                         break;
 
@@ -486,6 +489,11 @@ public class aiNAV : MonoBehaviour
                                         hit.transform.SendMessage("BodyHitByEnemyShotgun");
                                         break;
                                     }
+                                break;
+
+                                default:
+                                Debug.Log(hitCollider);
+                                Debug.Log(hitLocation);
                                 break;
                             }
                         Instantiate(enemyHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));

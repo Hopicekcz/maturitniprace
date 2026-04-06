@@ -15,20 +15,33 @@ public class playerHP : MonoBehaviour
     [SerializeField] private Text ammoCounter;
     [SerializeField] private Text deathText;
     [SerializeField] private float radius = 5f;
+    [SerializeField] private Image hpImage;
+    [SerializeField] private Image bloodImage;
+    [SerializeField] private Material bloodMaterial;
+    [SerializeField] private Sprite[] hpSprites;
+    [SerializeField] private Material saturationMaterial;
+    [SerializeField] private SkinnedMeshRenderer playerHands;
+    [SerializeField] private SkinnedMeshRenderer playerBody;
      private RevolverScript revolverScript;
     private float maxHP;
     CharacterController cc;
 
     public GameObject player; 
     private Vector3 lastPos;
+    private int spriteNumber;
+    private float hitEffectDuration = 2f;
     public float tolerance = 0.01f;  
     public AudioSource audioSource;
     public AudioClip[] audioClips;
     private bool isPlaying = false;
+    private float transparencyValue = -1f;
     [SerializeField] private float delayBetweenClips = 0.6f;
     [SerializeField] private float shiftDelayFactor = 0.5f;
     [SerializeField] private float volume = 0.5f; 
-
+    [SerializeField] private float revolverDamage = 50f;
+    [SerializeField] private float shotgunDamage = 15f;
+    private float saturationValue;
+    private bool gotHit = false;
     private InputAction sprintAction;
     
 
@@ -57,7 +70,6 @@ public class playerHP : MonoBehaviour
         {
             if (!isPlaying)
             {
-                Debug.Log("play");
                 StartCoroutine(PlayNextClip());
             }
         }
@@ -66,28 +78,68 @@ public class playerHP : MonoBehaviour
 
     void HeadHitByEnemyRevolver()
     {
-        hp -= Random.Range(100f, 150f);
+        StartCoroutine(HitEffect());
+        hp -= Random.Range(revolverDamage * 1.8f, revolverDamage * 2.2f);
     }
 
     void HeadHitByEnemyShotgun()
     {
-        hp -= Random.Range(25f, 35f);
+        hp -= Random.Range(shotgunDamage * 2.3f, shotgunDamage * 3f);
     }
 
     void BodyHitByEnemyRevolver()
     {
-        hp -= Random.Range(50f, 70f);
+        StartCoroutine(HitEffect());
+        hp -= Random.Range(revolverDamage * 1.6f, revolverDamage * 2f);
     }
 
     void BodyHitByEnemyShotgun()
     {
-        hp -= Random.Range(15f, 25f);
+        hp -= Random.Range(revolverDamage * 1.8f, revolverDamage * 2.3f);
     }
 
     private void HPSystem()
     {
+        saturationValue = (((hp/maxHP)-1)/2);
+        Vector4 hsvaValues = new Vector4(0f, saturationValue, 0f, 0f);
+        Vector4 transparencyValues = new Vector4(0f, 0f, 0f, transparencyValue);
+        bloodMaterial.SetVector("_HSVAAdjust", transparencyValues);
+        saturationMaterial.SetVector("_HSVAAdjust", hsvaValues);
+        if(maxHP >= hp && hp > maxHP * 0.75f){
+            spriteNumber = 0;
+        } else if(maxHP * 0.75f >= hp && hp > maxHP * 0.5f) {
+            spriteNumber = 1;
+        } else if(maxHP * 0.5f >= hp && hp > maxHP * 0.25f) {
+            spriteNumber = 2;
+        } else if(maxHP * 0.25f >= hp && hp > maxHP * 0f) {
+            spriteNumber = 3;
+        }
         if(0 > hp){
             StartCoroutine(PlayerDeath());
+        }
+        hpImage.sprite = hpSprites[spriteNumber];
+    }
+
+    private IEnumerator HitEffect(){
+        gotHit = true;
+        transparencyValue = 0;
+        yield return new WaitForSeconds(hitEffectDuration);
+        gotHit = false;
+        for(int i = 0; i < 10; i++){
+            transparencyValue -= 0.1f;
+            if(gotHit){
+                break;
+            }
+            yield return new WaitForSeconds(hitEffectDuration/(10*hitEffectDuration));
+        }
+        switch(gotHit){
+            case true:
+            transparencyValue = 0;
+            break;
+
+            case false:
+            transparencyValue = -1;
+            break;
         }
     }
 
@@ -99,7 +151,6 @@ public class playerHP : MonoBehaviour
             if (UnityEngine.AI.NavMesh.SamplePosition(randomDirection, out hit, radius, 1)) {
                 finalPosition = hit.position;            
             }
-            Debug.Log(finalPosition);
             return finalPosition;
             
     }
@@ -108,9 +159,12 @@ public class playerHP : MonoBehaviour
 
         
         respawnPoint.transform.position = RandomNavmeshLocation();
+        hpImage.enabled = false;
         deathText.enabled = true;
         hp = maxHP;
         fpc.enabled = false;
+        playerHands.enabled = false;
+        playerBody.enabled = false;
         playerWeapon.GetComponent<AudioSource>().enabled = false;
         revolverScript.weapon1Object.SetActive(false);
         revolverScript.weapon2Object.SetActive(false);
@@ -123,11 +177,13 @@ public class playerHP : MonoBehaviour
         yield return new WaitForSeconds(respawnTime);
         ammoCounter.enabled = true;
         deathText.enabled = false;
-        deathText.enabled = false;
+        playerHands.enabled = true;
+        playerBody.enabled = true;
         playerWeapon.GetComponent<AudioSource>().enabled = true;
         revolverScript.currentWeapon = revolverScript.weapon1;
         revolverScript.weapon1Object.SetActive(true);
         camera.enabled = true;
+        hpImage.enabled = true;
         revolverScript.isDead = false;
         this.transform.position = respawnPoint.transform.position;
         cc.enabled = true;

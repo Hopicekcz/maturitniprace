@@ -451,6 +451,10 @@ public class RevolverScript : MonoBehaviour
                         Instantiate(obstacleHitEffectPrefabShotgun, hit.point, Quaternion.LookRotation(hit.normal));
                         break;
 
+                        case "Door": 
+                        Instantiate(groundHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                        break;
+
                         case "Ground":
                         Instantiate(groundHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                         break;

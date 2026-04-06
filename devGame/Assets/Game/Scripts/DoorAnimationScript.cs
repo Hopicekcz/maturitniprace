@@ -71,7 +71,7 @@ public class DoorAnimationScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") || other.CompareTag("PlayerController"))
         {
             _trigerEntered = true;
         }

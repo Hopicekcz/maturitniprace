@@ -22,6 +22,7 @@ void Start(){
 
         void BodyHitByEnemyRevolver()
         {
+            Debug.Log("hit body");
             playerParent.SendMessage("BodyHitByEnemyRevolver");
         }
 
