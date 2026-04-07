@@ -64,6 +64,7 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private float chaseTimer = 5f;
     [SerializeField] private float revolverDamage = 50f;
     [SerializeField] private float shotgunDamage = 15f;
+    [SerializeField] private float rifleDamage = 90f;
 
 
     [Header("Detection Ranges")] //customizable settings for the vision (follow player) and engagement (attack) range
@@ -206,6 +207,18 @@ public class aiNAV : MonoBehaviour
         npcHP = npcHP - Random.Range(revolverDamage * 1.8f, revolverDamage * 2.3f);
     }
 
+    void HeadHitByEnemyRifle()
+    {
+        wasHit = true;
+        npcHP = npcHP - Random.Range(rifleDamage * 2.8f, rifleDamage * 3f);
+    }
+
+    void BodyHitByEnemyRifle()
+    {
+        wasHit = true;
+        npcHP = npcHP - Random.Range(rifleDamage * 1.3f, revolverDamage * 2f);
+    }
+
     private IEnumerator SlowOnHit(){
         if(wasHit){
             navAgent.speed = staggeredSpeed;
@@ -228,10 +241,10 @@ public class aiNAV : MonoBehaviour
             chaseStart = true;
             doneCalculatingChase = true;
             patrolTimerFinished = true;
+            PerformPatrol();
         }
         unStuck = true;
     }
-    
 
     private void HealthSystem()
     {
@@ -272,10 +285,14 @@ public class aiNAV : MonoBehaviour
             if (UnityEngine.AI.NavMesh.SamplePosition(randomDirection, out hit, respawnRadius, 1)) {
                 finalPosition = hit.position;            
             }
-            Debug.Log(finalPosition);
             return finalPosition;
             
     }
+
+    void TrainHit(){
+        StartCoroutine(Death());
+    }
+   
 
     private void DetectPlayer()
     {
@@ -492,8 +509,6 @@ public class aiNAV : MonoBehaviour
                                 break;
 
                                 default:
-                                Debug.Log(hitCollider);
-                                Debug.Log(hitLocation);
                                 break;
                             }
                         Instantiate(enemyHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));

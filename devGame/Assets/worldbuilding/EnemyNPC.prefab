@@ -2169,7 +2169,7 @@ MonoBehaviour:
     m_Bits: 4096
   obstacleLayerMask:
     serializedVersion: 2
-    m_Bits: 65664
+    m_Bits: 98432
   hittableLayerMask:
     serializedVersion: 2
     m_Bits: 1920
@@ -2207,6 +2207,7 @@ MonoBehaviour:
   chaseTimer: 5
   revolverDamage: 50
   shotgunDamage: 15
+  rifleDamage: 90
   visionRange: 15
   engagementRange: 10
   tooCloseRange: 5
@@ -3042,9 +3043,10 @@ GameObject:
   - component: {fileID: 3538689049839635019}
   - component: {fileID: 7322646892430705673}
   - component: {fileID: 6382080458462883543}
+  - component: {fileID: 5046453644930042864}
   m_Layer: 8
   m_Name: mixamorig:Hips
-  m_TagString: Character
+  m_TagString: CharacterListener
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3115,6 +3117,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5046453644930042864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6107860024256824212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b17813a75d8254b83a93715e917657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::trainHitListener
+  aiNAV: {fileID: 7810188075290871796}
 --- !u!1 &6122757597280958184
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,6 +20,11 @@ public class RevolverScript : MonoBehaviour
     [SerializeField] private AudioClip shotgunBreakSound;
     [SerializeField] private AudioClip shotgunReloadSound;
     [SerializeField] private AudioClip shotgunClickSound;
+    [Header("RevolverSounds")]
+    [SerializeField] private AudioClip rifleShootSound;
+    [SerializeField] private AudioClip rifleCockSound;
+    [SerializeField] private AudioClip rifleReloadStartSound;
+    [SerializeField] private AudioClip rifleLoadBulletSound;
 
 
     [Header("RevolverShootEffects")]
@@ -32,9 +37,12 @@ public class RevolverScript : MonoBehaviour
     [Header("ShotgunShootEffects")]
     [SerializeField] private GameObject muzzleFlashPrefabShotgun;
     [SerializeField] private GameObject obstacleHitEffectPrefabShotgun;
+    [Header("RifleShootEffects")]
+    [SerializeField] private GameObject obstacleHitEffectPrefabRifle;
     [Header("ShootMuzzleSmokeLocation")]
     [SerializeField] private Transform muzzlePoint;
     [SerializeField] private Transform shotgunMuzzlePoint;
+    [SerializeField] private Transform rifleMuzzlePoint;
    
     [Header("AmmoCounter")]
     [SerializeField] private Text ammoCounter;
@@ -47,6 +55,7 @@ public class RevolverScript : MonoBehaviour
     [SerializeField] [Range(0.2f, 5f)] private float fireRate = 1f;
     [SerializeField] private int maxRevolverAmmoCount = 6;
     [SerializeField] private int maxShotgunAmmoCount = 2;
+    [SerializeField] private int maxRifleAmmoCount = 4;
 
     [Header("Shotgun properties")]
     [SerializeField] private int shotgunPelletCount;
@@ -54,14 +63,19 @@ public class RevolverScript : MonoBehaviour
     [Header("Weapon References")]
     [SerializeField] private GameObject revolverObject;
     [SerializeField] private GameObject shotgunObject;
+    [SerializeField] private GameObject rifleObject;
     public GameObject weapon1Object;
     public GameObject weapon2Object;
+    public GameObject weapon3Object;
+    [SerializeField] private LayerMask hittableLayerMask;
 
     //References
+    
     [Header("Other References")]
     [SerializeField]private Animator handAnimator;
     [SerializeField]private Animator gunAnimator;
     [SerializeField] private Animator shotgunAnimator;
+    [SerializeField] private Animator rifleAnimator;
     [SerializeField]private AudioSource audioSource;
     [SerializeField] private Camera mainCamera;
     private FirstPersonController firstPersonController;
@@ -80,8 +94,11 @@ public class RevolverScript : MonoBehaviour
     private int ogRevolverAmmoCount;
     private int shotgunAmmoCount;
     private int ogShotgunAmmoCount;
+    private int rifleAmmoCount;
+    private int ogRifleAmmoCount;
     public string weapon1;
     private string weapon2;
+    private string weapon3;
     public string currentWeapon;
     private int currentWeaponNumber;
     private bool interruptReload;
@@ -96,6 +113,7 @@ public class RevolverScript : MonoBehaviour
     private InputAction reloadAction;
     private InputAction switchWeaponAction1;
     private InputAction switchWeaponAction2;
+    private InputAction switchWeaponAction3;
     private InputAction interactAction;
     private InputAction spawnAction;
 
@@ -106,11 +124,13 @@ public class RevolverScript : MonoBehaviour
 
         weapon1 = "revolver";
         weapon2 = "shotgun";
+        weapon3 = "rifle";
         currentWeapon = weapon1;
         
 
         revolverAmmoCount = maxRevolverAmmoCount;
         shotgunAmmoCount = maxShotgunAmmoCount;
+        rifleAmmoCount = maxRifleAmmoCount;
         canShoot = true;
         isReloading = false;
         isAiming = false;
@@ -120,6 +140,7 @@ public class RevolverScript : MonoBehaviour
         switchWeaponAction1 = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/1");
         interactAction = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/e");
         switchWeaponAction2 = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/2");
+        switchWeaponAction3 = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/3");
         spawnAction = new InputAction(type: InputActionType.Button, binding:"<Keyboard>/p");
         shootAction.Enable();
         aimAction.Enable();
@@ -128,13 +149,16 @@ public class RevolverScript : MonoBehaviour
         switchWeaponAction1.Enable();
         spawnAction.Enable();
         switchWeaponAction2.Enable();
+        switchWeaponAction3.Enable();
         //handAnimator = GetComponent<Animator>();
         //gunAnimator = GetComponentInChildrenOnly<Animator>();
 
         weapon1Object = revolverObject;
         weapon2Object = shotgunObject;
+        weapon3Object = rifleObject;
         weapon1Object.SetActive(true);
         weapon2Object.SetActive(false);
+        weapon3Object.SetActive(false);
 
         firstPersonController = GameObject.Find("PlayerCapsule").GetComponent<FirstPersonController>();
         spawnPoint = GameObject.Find("Spawnpoint");
@@ -154,7 +178,6 @@ public class RevolverScript : MonoBehaviour
 
     void PlayerDied() // Unity input safety
     {
-        
         GameObject[] RevolverEffects;
         RevolverEffects = GameObject.FindGameObjectsWithTag("RevolverEffect");
         foreach(var i in RevolverEffects){
@@ -175,12 +198,17 @@ public class RevolverScript : MonoBehaviour
             CameraFOV();
             SpawnEnemy();
         } else{
-            PlayerDied();
-            revolverAmmoCount = maxRevolverAmmoCount;
-            shotgunAmmoCount = maxShotgunAmmoCount;
             canShoot = true;
             isReloading = false;
             isAiming = false;
+            interruptReload = true;
+            gunAnimator.SetBool("isReloading", isReloading);
+            shotgunAnimator.SetBool("isReloading", isReloading);
+            rifleAnimator.SetBool("isReloading", isReloading);
+            PlayerDied();
+            revolverAmmoCount = maxRevolverAmmoCount;
+            shotgunAmmoCount = maxShotgunAmmoCount;
+            rifleAmmoCount = maxRifleAmmoCount;
         }
     }
 
@@ -266,6 +294,29 @@ public class RevolverScript : MonoBehaviour
                 StartCoroutine(ReloadWeapon());
                  }
             break;
+
+            case "rifle":
+            ammoCounter.text = rifleAmmoCount + "/" + maxRifleAmmoCount;
+            if(shootAction.WasPressedThisFrame()){
+                if (canShoot && (rifleAmmoCount > 0) && !isReloading) //Shoot action, split into two - physical part, effect part
+                {
+                    StartCoroutine(ShootRoutine());
+                }
+
+                if(isReloading){
+                    interruptReload = true;
+                }
+
+                if (canShoot && (rifleAmmoCount == 0) && !isReloading){ //shoot action when weapon is empty
+                    audioSource.PlayOneShot(clickSound);
+                }
+            }
+            
+            if (reloadAction.WasPressedThisFrame() && (rifleAmmoCount < maxRifleAmmoCount) && !isReloading && canShoot){ //Reload function
+                StartCoroutine(ReloadWeapon());
+            }
+
+            break;
         }
     }
 
@@ -285,6 +336,7 @@ public class RevolverScript : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
             weapon1Object.SetActive(true);
             weapon2Object.SetActive(false);
+            weapon3Object.SetActive(false);
             currentWeapon = weapon1;
             switchingWeapon = false;
             handAnimator.SetBool("switchingWeapon", switchingWeapon);
@@ -305,7 +357,28 @@ public class RevolverScript : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
             weapon1Object.SetActive(false);
             weapon2Object.SetActive(true);
+            weapon3Object.SetActive(false);
             currentWeapon = weapon2;
+            switchingWeapon = false;
+            handAnimator.SetBool("switchingWeapon", switchingWeapon);
+        }
+        if (switchWeaponAction3.WasPressedThisFrame() && canShoot && !(currentWeapon == weapon3)){
+            switchingWeapon = true;
+            if(isAiming){
+                isAiming = false;
+                yield return new WaitForSeconds(0.27f);
+            }
+            if(isReloading){
+                interruptReload = true;
+                yield return new WaitUntil(() => !interruptReload);
+                yield return new WaitForSeconds(0.2f);
+            } 
+            handAnimator.SetBool("switchingWeapon", switchingWeapon);
+            yield return new WaitForSeconds(0.3f);
+            weapon1Object.SetActive(false);
+            weapon2Object.SetActive(false);
+            weapon3Object.SetActive(true);
+            currentWeapon = weapon3;
             switchingWeapon = false;
             handAnimator.SetBool("switchingWeapon", switchingWeapon);
         }
@@ -369,6 +442,31 @@ public class RevolverScript : MonoBehaviour
                 isReloading = false;
                 interruptReload = false;
             break;
+
+            case "rifle":
+                rifleAnimator.SetBool("isReloading", isReloading); //Set revolver to reloading position
+                rifleAnimator.SetTrigger("Reload"); //Keep revolver in reloading position
+                yield return new WaitForSeconds(0.2f);
+                ogRifleAmmoCount = rifleAmmoCount; //"Temporary" variable used only for separate values to set how many times the reload sound should play, while the HUD displays the correct current value
+                audioSource.PlayOneShot(rifleReloadStartSound);
+                for(int i = 0; i < (maxRifleAmmoCount-ogRifleAmmoCount); i++){ //loops for how many bullets are missing in the cylinder
+                    if(interruptReload){
+                        break;
+                    }
+                    audioSource.PlayOneShot(rifleLoadBulletSound);
+                    yield return new WaitForSeconds(0.6f);
+                    rifleAmmoCount++;
+                }
+                handAnimator.SetBool("isReloading", false); //Move hand out of reloading position
+                rifleAnimator.SetBool("isReloading", false); //Move revolver out of reloading position
+                
+                yield return new WaitForSeconds(0.4f);
+                 rifleAnimator.SetTrigger("Cock");
+                audioSource.PlayOneShot(rifleCockSound);
+                yield return new WaitForSeconds(0.4f);
+                isReloading = false;
+                interruptReload = false;
+            break;
             
         }
         
@@ -396,6 +494,18 @@ public class RevolverScript : MonoBehaviour
                 Destroy(muzzleLightShotgun);
                 yield return new WaitForSeconds(5f);
                 Destroy(muzzleSmokeShotgun);
+            break;
+
+            case "rifle":
+                GameObject rifleMuzzleLight = Instantiate(muzzleLightEffectPrefab, rifleMuzzlePoint); //Create instantiation of prefabs of effects on the pre-defined transform point "muzzlePoint" placed on the tip of the barrel
+                GameObject rifleMuzzleSmoke = Instantiate(muzzleFlashPrefab, rifleMuzzlePoint);
+                rifleMuzzleLight.gameObject.tag = "RevolverEffect";
+                rifleMuzzleSmoke.gameObject.tag = "RevolverEffect";
+                yield return new WaitForSeconds(0.05f);
+                Destroy(rifleMuzzleLight);
+                yield return new WaitForSeconds(5f);
+                Destroy(rifleMuzzleSmoke);
+            
             break;
         }
         }
@@ -432,6 +542,19 @@ public class RevolverScript : MonoBehaviour
                 canShoot = true;
             break;
             
+            case "rifle":
+                    StartCoroutine(ShootEffects());
+                    rifleAmmoCount--;
+                    canShoot = false; //added bool for detection of delay
+                    rifleAnimator.SetTrigger("Shoot");
+                    audioSource.PlayOneShot(rifleShootSound);
+                    ShootRaycasts();
+                    yield return new WaitForSeconds(0.7f);
+                    rifleAnimator.SetTrigger("Cock");
+                    audioSource.PlayOneShot(rifleCockSound);
+                    yield return new WaitForSeconds(1f);
+                    canShoot = true;
+            break;
 
         }
         
@@ -441,21 +564,31 @@ public class RevolverScript : MonoBehaviour
         Vector3 direction = GetShootDirectionWithSpread(); //Call bullet-spread function
         Ray ray = new Ray(mainCamera.transform.position, direction); //raycast of bullet from camera center with direction with applied spread
         RaycastHit hit; //Return of raycast
-        if (Physics.Raycast(ray, out hit))  //which effect prefab to use depending on hit object tag
+        if (Physics.Raycast(ray, out hit, 200f, hittableLayerMask))  //which effect prefab to use depending on hit object tag
                 {
                     switch(hit.collider.tag){
                         case "Untagged":
                         break;
 
                         case "Obstacle": 
-                        Instantiate(obstacleHitEffectPrefabShotgun, hit.point, Quaternion.LookRotation(hit.normal));
+                            switch(currentWeapon){
+                                case "revolver":
+                                    Instantiate(obstacleHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                                break;
+
+                                case "shotgun":
+                                    Instantiate(obstacleHitEffectPrefabShotgun, hit.point, Quaternion.LookRotation(hit.normal));
+                                break;
+
+                                case "rifle":
+                                    Instantiate(obstacleHitEffectPrefabRifle, hit.point, Quaternion.LookRotation(hit.normal));
+                                break;
+                            }
+                        
                         break;
 
-                        case "Door": 
-                        Instantiate(groundHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
-                        break;
 
-                        case "Ground":
+                        case "Ground" or "Door" or "train":
                         Instantiate(groundHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                         break;
 
@@ -473,6 +606,10 @@ public class RevolverScript : MonoBehaviour
                                         case "shotgun":
                                         hit.transform.SendMessage("HeadHitByEnemyShotgun");
                                         break;
+
+                                        case "rifle":
+                                        hit.transform.SendMessage("HeadHitByEnemyRifle");
+                                        break;
                                     }
                                 break;
                                 
@@ -485,6 +622,10 @@ public class RevolverScript : MonoBehaviour
 
                                         case "shotgun":
                                         hit.transform.SendMessage("BodyHitByEnemyShotgun");
+                                        break;
+
+                                        case "rifle":
+                                        hit.transform.SendMessage("BodyHitByEnemyRifle");
                                         break;
                                     }
                                 break;
@@ -505,8 +646,8 @@ public class RevolverScript : MonoBehaviour
     private Vector3 GetShootDirectionWithSpread()
     {
         Vector3 forward = mainCamera.transform.forward; // direction of camera
-        float currentSpread = !isAiming || (currentWeapon == "shotgun") ? hipFireSpread : aimedSpread; // current spread is set to a predefined value determined by whether or not the player is aiming
-                            // 1/0        1             0   
+        float currentSpread = !isAiming || (currentWeapon == "shotgun") ? hipFireSpread : aimedSpread;
+        currentSpread = (currentWeapon == "rifle") ? currentSpread * 4f : currentSpread; // current spread is set to a predefined value determined by whether or not the player is aiming
         float spreadX = Random.Range(-currentSpread, currentSpread) * 0.1f; // spread on the X and Y axis, normalized by 0.1f to be able to use bigger numbers in the variable declaration
         float spreadY = Random.Range(-currentSpread, currentSpread) * 0.1f; 
         Vector3 direction = forward + mainCamera.transform.right * spreadX + mainCamera.transform.up * spreadY; //direction is set to the camera direction with applied rules of direction

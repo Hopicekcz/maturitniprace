@@ -98,6 +98,17 @@ public class playerHP : MonoBehaviour
         hp -= Random.Range(revolverDamage * 1.8f, revolverDamage * 2.3f);
     }
 
+     private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "movingTrain")
+        {
+            StartCoroutine(PlayerDeath());
+        } else {
+        }
+    }
+
+
+
     private void HPSystem()
     {
         saturationValue = (((hp/maxHP)-1)/2);
@@ -168,6 +179,7 @@ public class playerHP : MonoBehaviour
         playerWeapon.GetComponent<AudioSource>().enabled = false;
         revolverScript.weapon1Object.SetActive(false);
         revolverScript.weapon2Object.SetActive(false);
+        revolverScript.weapon3Object.SetActive(false);
         revolverScript.isDead = true;
         cc.enabled = false;
         ammoCounter.enabled = false;
