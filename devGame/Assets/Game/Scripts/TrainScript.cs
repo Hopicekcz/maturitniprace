@@ -23,7 +23,6 @@ public class TrainScript : MonoBehaviour
         audioSource.clip = musicClips[2];
         audioSource.Play();
         animator.SetTrigger("arrive");
-        Debug.Log(TrainNoAnimation());
         yield return new WaitUntil(TrainNoAnimation);
         movingCollider.enabled = false;
         audioSource.Stop();

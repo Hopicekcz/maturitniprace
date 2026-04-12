@@ -63,8 +63,8 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private float weaponDrawSpeed = 1f;
     [SerializeField] private float chaseTimer = 5f;
     [SerializeField] private float revolverDamage = 50f;
-    [SerializeField] private float shotgunDamage = 15f;
-    [SerializeField] private float rifleDamage = 90f;
+    [SerializeField] private float shotgunDamage = 10f;
+    [SerializeField] private float rifleDamage = 100f;
 
 
     [Header("Detection Ranges")] //customizable settings for the vision (follow player) and engagement (attack) range
@@ -175,7 +175,7 @@ public class aiNAV : MonoBehaviour
             }
             
         }           
-        
+
     }
 
     private void SetAnimation(){ //Animation setter using bool parameters in the animator
@@ -183,40 +183,35 @@ public class aiNAV : MonoBehaviour
         animator.SetBool("isReloading", isReloading);
     }
 
-     void HeadHitByEnemyRevolver()
-    {
-        wasHit = true;
-        npcHP -= Random.Range(revolverDamage * 1.8f, revolverDamage * 2.2f);
-    }
-
-    void HeadHitByEnemyShotgun()
-    {
-        wasHit = true;
-        npcHP = npcHP - Random.Range(shotgunDamage * 2.3f, shotgunDamage * 3f);
-    }
-
     void BodyHitByEnemyRevolver()
     {
         wasHit = true;
-        npcHP = npcHP - Random.Range(revolverDamage * 1.6f, revolverDamage * 2f);
+        npcHP -=  Random.Range(revolverDamage, revolverDamage * 1.5f);
     }
-
+     void HeadHitByEnemyRevolver()
+    {
+        wasHit = true;
+        npcHP -= Random.Range(revolverDamage * 2f, revolverDamage * 2.5f);
+    }
     void BodyHitByEnemyShotgun()
     {
         wasHit = true;
-        npcHP = npcHP - Random.Range(revolverDamage * 1.8f, revolverDamage * 2.3f);
+        npcHP -= Random.Range(shotgunDamage, shotgunDamage * 1.5f);
     }
-
+    void HeadHitByEnemyShotgun()
+    {
+        wasHit = true;
+        npcHP -= Random.Range(shotgunDamage * 2f, shotgunDamage * 2.5f);
+    }
     void HeadHitByEnemyRifle()
     {
         wasHit = true;
-        npcHP = npcHP - Random.Range(rifleDamage * 2.8f, rifleDamage * 3f);
+        npcHP -= Random.Range(rifleDamage, rifleDamage * 1.5f);
     }
-
     void BodyHitByEnemyRifle()
     {
         wasHit = true;
-        npcHP = npcHP - Random.Range(rifleDamage * 1.3f, revolverDamage * 2f);
+        npcHP -=  Random.Range(rifleDamage * 2f, rifleDamage * 2.5f);
     }
 
     private IEnumerator SlowOnHit(){

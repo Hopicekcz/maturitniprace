@@ -5,18 +5,15 @@ using UnityEngine.InputSystem;
 
 public class DoorAnimationScript : MonoBehaviour
 {
-    bool _trigerEntered = false;
+    public bool _triggerEntered = false;
     [SerializeField]
-    Animator _animator;
+    private Animator animator;
 
-    bool _opened = false;
-    public AudioSource audioSource;
-    public AudioClip doorOpenClip;
-    public AudioClip doorCloseClip;
-
-    private bool _isAnimating = false;
-    private float _audioCooldown = 0.5f; 
-    private float _lastAudioTime = 0f; 
+    public bool doorOpen;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip doorOpenClip;
+    [SerializeField] private AudioClip doorCloseClip;
+    [SerializeField] private Collider Collider;
 
     void Start()
     {
@@ -25,77 +22,44 @@ public class DoorAnimationScript : MonoBehaviour
 
     void Update()
     {
-        if (_trigerEntered && !_isAnimating)
+        CheckForPlayer();
+    }
+
+    private void CheckForPlayer(){
+        if (_triggerEntered && Keyboard.current[Key.E].wasPressedThisFrame)
         {
-            if (Keyboard.current[Key.E].wasPressedThisFrame)
-            {
-                if (_opened)
-                {
-                    Play(doorCloseClip, "door-close");
-                }
-                else
-                {
-                    Play(doorOpenClip, "door-open");
-                }
-            }
+            UseDoor();
         }
     }
 
-    private void Play(AudioClip clip, string animationName) //nemam na to kamo 
-    {
-        if (Time.time >= _lastAudioTime + _audioCooldown) //co to je za bullshit
-        {
-            audioSource.clip = clip; //Time.time kamo co to je
+    private void UseDoor(){
+        if(doorOpen && (animator.GetCurrentAnimatorStateInfo (0).IsName ("door-opened"))){
+            CloseDoor();
+        } else if (!doorOpen && (animator.GetCurrentAnimatorStateInfo (0).IsName ("door-closed"))){
+            OpenDoor();
+        }
+    }
+
+    public void OpenDoor(){
+        doorOpen = true;
+        audioSource.Stop();
+        animator.SetTrigger("Open");
+        audioSource.clip = doorOpenClip;
+        while(!audioSource.isPlaying){
             audioSource.Play();
-            _lastAudioTime = Time.time; 
-        }
-
-        _animator.Play(animationName);
-        _isAnimating = true;
-
-        
-        StartCoroutine(ResetAnimatingFlag(animationName));
-    }
-
-    private IEnumerator ResetAnimatingFlag(string animationName)
-    {
-       
-        while (_animator.GetCurrentAnimatorStateInfo(0).IsName(animationName) &&
-               _animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) //jo je to z chatgpt protoze tohle je fakt bs sorry
-        {
-            yield return null; 
-        }
-
-        _isAnimating = false; 
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player") || other.CompareTag("PlayerController"))
-        {
-            _trigerEntered = true;
-        }
-        if (other.CompareTag("Character") && !_opened)
-        {
-             Play(doorOpenClip, "door-open");
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            _trigerEntered = false;
+    public void CloseDoor(){
+        doorOpen = false;
+        audioSource.Stop();
+        animator.SetTrigger("Close");
+        audioSource.clip = doorCloseClip;
+        while(!audioSource.isPlaying){
+            audioSource.Play();
         }
     }
 
-    public void Open()
-    {
-        _opened = true;
-    }
 
-    public void Close()
-    {
-        _opened = false; //boli me brich
-    }
+    
 }

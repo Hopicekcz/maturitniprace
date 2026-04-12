@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using StarterAssets;
+using Cinemachine;
 
 [RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(Animator))]
@@ -85,6 +86,12 @@ public class RevolverScript : MonoBehaviour
     [SerializeField] Object enemyNPC;
     public GameObject spawnPoint;
 
+    [Header("Aiming Camera")]
+    [SerializeField] private CinemachineVirtualCamera virtualCamera;
+    [SerializeField] private float baseFOV = 100f;
+    [SerializeField] private float transitionTime = 1f;
+
+
     //Variable initialization
     private bool canShoot;
     private bool isAiming ;
@@ -104,8 +111,11 @@ public class RevolverScript : MonoBehaviour
     private bool interruptReload;
     private bool switchingWeapon;
     private bool interactPressed;
-    
-    
+    private bool startAiming;
+    private bool wasAiming;
+    private float targetFOV;
+    private float currentTransitionTime;
+    private bool transitionDone;
 
     //Input button definitions
     private InputAction shootAction;
@@ -179,10 +189,12 @@ public class RevolverScript : MonoBehaviour
     void PlayerDied() // Unity input safety
     {
         GameObject[] RevolverEffects;
+        interruptReload = true;
         RevolverEffects = GameObject.FindGameObjectsWithTag("RevolverEffect");
         foreach(var i in RevolverEffects){
             Destroy(i);
         }
+        interruptReload = false;
     }
 
         
@@ -195,16 +207,9 @@ public class RevolverScript : MonoBehaviour
             WeaponState();
             PlayerSpeed();
             InteractState();
-            CameraFOV();
             SpawnEnemy();
         } else{
-            canShoot = true;
-            isReloading = false;
-            isAiming = false;
-            interruptReload = true;
-            gunAnimator.SetBool("isReloading", isReloading);
-            shotgunAnimator.SetBool("isReloading", isReloading);
-            rifleAnimator.SetBool("isReloading", isReloading);
+           
             PlayerDied();
             revolverAmmoCount = maxRevolverAmmoCount;
             shotgunAmmoCount = maxShotgunAmmoCount;
@@ -218,12 +223,17 @@ public class RevolverScript : MonoBehaviour
         }
     }
 
-    void CameraFOV(){
-        if(isAiming){
-            mainCamera.fieldOfView = 50f;
-        } else {
-            mainCamera.fieldOfView = 100f;
-        }
+
+    private IEnumerator FOVTransition(){
+        
+         float currentFOV = virtualCamera.m_Lens.FieldOfView;
+         float time = 0f;
+            while (time < currentTransitionTime) {
+                virtualCamera.m_Lens.FieldOfView = Mathf.Lerp(currentFOV, targetFOV , time / currentTransitionTime);
+                time += Time.deltaTime;
+                yield return null;
+            }
+        virtualCamera.m_Lens.FieldOfView = targetFOV;
     }
 
     void InteractState(){
@@ -231,13 +241,38 @@ public class RevolverScript : MonoBehaviour
     }
 
     void PlayerSpeed(){
-        if(isAiming){
-            firstPersonController.MoveSpeed = 1.5f;
-            firstPersonController.SprintSpeed = 1.5f;
-        } else {
+        if(!isAiming){
             firstPersonController.MoveSpeed = 3f;
-            firstPersonController.SprintSpeed = 4f;
+            if(transitionDone){
+                transitionDone = false;
+                targetFOV = 70f;
+                StartCoroutine(FOVTransition());
+            }
+            
+        } else {
+            if(!transitionDone){
+                transitionDone = true;
+                switch(currentWeapon){
+                case "revolver":
+                targetFOV = 50f;
+                currentTransitionTime = transitionTime/8;
+                break;
+
+                case "shotgun":
+                targetFOV = 60f;
+                currentTransitionTime = transitionTime/6;
+                break;
+
+                case "rifle":
+                targetFOV = 40f;
+                currentTransitionTime = transitionTime/4;
+                break;
+            }
+            StartCoroutine(FOVTransition());
+            }
+            firstPersonController.MoveSpeed = 1.5f;
         }
+        
     }
 
     private void WeaponState(){
@@ -247,7 +282,10 @@ public class RevolverScript : MonoBehaviour
             isAiming = false;
         }
         handAnimator.SetBool("IsAiming", isAiming); //set animation to current bool state of aiming
+
         StartCoroutine(SwitchWeapon());
+
+         
 
 
         switch(currentWeapon){

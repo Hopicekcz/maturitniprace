@@ -168,7 +168,7 @@ public class playerHP : MonoBehaviour
 
     private IEnumerator PlayerDeath(){
 
-        
+        audioSource.mute = true;
         respawnPoint.transform.position = RandomNavmeshLocation();
         hpImage.enabled = false;
         deathText.enabled = true;
@@ -176,7 +176,6 @@ public class playerHP : MonoBehaviour
         fpc.enabled = false;
         playerHands.enabled = false;
         playerBody.enabled = false;
-        playerWeapon.GetComponent<AudioSource>().enabled = false;
         revolverScript.weapon1Object.SetActive(false);
         revolverScript.weapon2Object.SetActive(false);
         revolverScript.weapon3Object.SetActive(false);
@@ -191,7 +190,7 @@ public class playerHP : MonoBehaviour
         deathText.enabled = false;
         playerHands.enabled = true;
         playerBody.enabled = true;
-        playerWeapon.GetComponent<AudioSource>().enabled = true;
+        audioSource.mute = false;
         revolverScript.currentWeapon = revolverScript.weapon1;
         revolverScript.weapon1Object.SetActive(true);
         camera.enabled = true;
