@@ -14,11 +14,14 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private Transform playerEyes;
     [SerializeField] private Transform playerBody;
     [SerializeField] private MeshCollider ownMeshCollider;
-    [Header("Layers")]
+    [SerializeField] private CapsuleCollider ownCapsuleCollider;
+    [SerializeField] private GameObject ragdollObjectPrefab;
+     [Header("Layers")]
     [SerializeField] private LayerMask terrainLayer; //layerMask for the Ground to determine walkable checks
     [SerializeField] private LayerMask playerLayerMask; //layerMask for the Player to determine where the player is
     [SerializeField] private LayerMask obstacleLayerMask; 
     [SerializeField] private LayerMask hittableLayerMask;
+    [SerializeField] private LayerMask trainLayerMask;
     [Header("ShootEffects")]
     [SerializeField] private GameObject obstacleHitEffectPrefab;
     [SerializeField] private GameObject enemyHitEffectPrefab;
@@ -26,6 +29,7 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private GameObject muzzleFlashPrefab;
     [SerializeField] private GameObject muzzleLightEffectPrefab;
     [SerializeField] private GameObject obstacleHitEffectPrefabShotgun;
+    [SerializeField] private GameObject ownBody;
     [Header("ShootMuzzleSmokeLocation")]
     [SerializeField] private Transform muzzlePoint;
 
@@ -33,6 +37,7 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private AudioClip shootSound;
     [SerializeField] private AudioClip reloadSound;
     [SerializeField] private AudioClip breakSound;
+    [SerializeField] private AudioClip hitmarkerSound;
     [SerializeField] private AudioClip deathJingle;
     [SerializeField]private AudioSource audioSource;
     [SerializeField] private AudioSource deathJingleSource;
@@ -93,15 +98,19 @@ public class aiNAV : MonoBehaviour
     private bool chaseStart = true;
     private bool doneCalculatingChase = true;
     private bool unStuck = true;
+    private bool trainClose;
+    private bool standing;
     private float maxHP;
     private bool dying;
     private int weaponRandom;
+    private bool hitSound;
     //Ray for checking collisions between the NPC and the Player
     Ray npcToPlayerEyesRay;
     Ray npcToPlayerBodyRay;
     Ray raySide;
     RaycastHit hitWall;
     RaycastHit hitGround;
+    RaycastHit hitTrain;
     private Vector3 playerLastPosition;
     private Vector3 changeInPlayerPos;
     private Vector3 lastPosition;
@@ -121,6 +130,8 @@ public class aiNAV : MonoBehaviour
             GameObject playerObjBody = GameObject.Find("PlayerBody");
             playerBody = playerObjBody.transform;
             ownMeshCollider = this.GetComponent<MeshCollider>();
+            ownCapsuleCollider = this.GetComponent<CapsuleCollider>();
+            StartCoroutine(StandingCheck());
             maxHP = npcHP;
 
         if(navAgent == null){
@@ -169,7 +180,9 @@ public class aiNAV : MonoBehaviour
 
         } else {
             while(!dying){
-                audioSource.PlayOneShot(deathJingle);
+                if(wasHit){
+                    deathJingleSource.PlayOneShot(deathJingle);
+                }
                 StartCoroutine(Death());
                 
             }
@@ -179,38 +192,49 @@ public class aiNAV : MonoBehaviour
     }
 
     private void SetAnimation(){ //Animation setter using bool parameters in the animator
-        animator.SetBool("isMoving", isMoving);
+        if(!trainClose){
+            animator.SetBool("isMoving", isMoving);
+        } else {
+            animator.SetBool("isMoving", false);
+        }
+        
         animator.SetBool("isReloading", isReloading);
     }
 
     void BodyHitByEnemyRevolver()
     {
         wasHit = true;
+        hitSound = true;
         npcHP -=  Random.Range(revolverDamage, revolverDamage * 1.5f);
     }
      void HeadHitByEnemyRevolver()
     {
         wasHit = true;
+        hitSound = true;
         npcHP -= Random.Range(revolverDamage * 2f, revolverDamage * 2.5f);
     }
     void BodyHitByEnemyShotgun()
     {
         wasHit = true;
+        hitSound = true;
         npcHP -= Random.Range(shotgunDamage, shotgunDamage * 1.5f);
     }
     void HeadHitByEnemyShotgun()
     {
         wasHit = true;
+        hitSound = true;
         npcHP -= Random.Range(shotgunDamage * 2f, shotgunDamage * 2.5f);
     }
     void HeadHitByEnemyRifle()
     {
         wasHit = true;
+        hitSound = true;
         npcHP -= Random.Range(rifleDamage, rifleDamage * 1.5f);
     }
     void BodyHitByEnemyRifle()
     {
         wasHit = true;
+        hitSound = true;
         npcHP -=  Random.Range(rifleDamage * 2f, rifleDamage * 2.5f);
     }
 
@@ -250,22 +274,34 @@ public class aiNAV : MonoBehaviour
             StartCoroutine(SlowOnHit());
         }
         
+        if(hitSound){
+            hitSound = false;
+            deathJingleSource.PlayOneShot(hitmarkerSound);
+        }
     }
 
     private IEnumerator Death(){
+        navAgent.ResetPath();
+        revolverAmmoCount = maxRevolverAmmoCount;
+        GameObject ragdollObject = Instantiate(ragdollObjectPrefab, this.transform);
         dying = true;
         navAgent.isStopped = true;
-        audioSource.enabled = false;
+        //audioSource.enabled = false;
         animator.enabled = false;
         ownMeshCollider.enabled = false;
+        ownCapsuleCollider.enabled = false;
+        ownBody.SetActive(false);
         yield return new WaitForSeconds(ragdollTimer);
         
         transform.position = RandomNavmeshLocation();
         npcHP = maxHP;
         isDead = false;
         navAgent.isStopped = false;
-        audioSource.enabled = true;
+        //audioSource.enabled = true;
+        Destroy(ragdollObject);
+        ownBody.SetActive(true);
         animator.enabled = true;
+        ownCapsuleCollider.enabled = false;
         ownMeshCollider.enabled = true;
         dying = false;
         
@@ -301,6 +337,7 @@ public class aiNAV : MonoBehaviour
     }
 
     private void UpdateBehaviourState(){ //Behaviour state switcher
+        TrainCheck();
         
         if (isPlayerVisible && isPlayerInRange && releaseChase){ //Can see player, is close = Attack
             PerformAttack();
@@ -318,6 +355,34 @@ public class aiNAV : MonoBehaviour
     }
     //MAIN FUNCTIONS
 
+    private void TrainCheck(){
+        if((Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitTrain, (Vector3.Distance(transform.position, playerTransform.position)), trainLayerMask))){
+            StartCoroutine(TrainClose());
+        }
+    }
+
+    private IEnumerator StandingCheck(){
+        Vector3 lastPosition = transform.position;
+        yield return new WaitForSeconds(0.5f);
+        if(lastPosition == transform.position){
+            isMoving = false;
+        }
+        StartCoroutine(StandingCheck());
+        Debug.Log("yeah");
+        }
+    
+
+    private IEnumerator TrainClose(){
+        trainClose = true;
+        navAgent.isStopped = true;
+        yield return new WaitUntil(TrainGone);
+        trainClose = false;
+        navAgent.isStopped = false;
+    }
+
+   bool TrainGone() {
+         return !Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitTrain, 10f, trainLayerMask);
+    }
 
     //PATROL
     private void PerformPatrol(){ //When Patrolling state
@@ -469,7 +534,7 @@ public class aiNAV : MonoBehaviour
                             }
                         break;
 
-                        case "Ground" or "Door":
+                        case "Ground" or "Door" or "train" or "movingTrain":
                         Instantiate(groundHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                         break;
 

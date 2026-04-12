@@ -626,7 +626,7 @@ public class RevolverScript : MonoBehaviour
                         break;
 
 
-                        case "Ground" or "Door" or "train":
+                        case "Ground" or "Door" or "train" or "movingTrain":
                         Instantiate(groundHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                         break;
 

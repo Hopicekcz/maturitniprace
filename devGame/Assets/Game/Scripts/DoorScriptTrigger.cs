@@ -22,7 +22,7 @@ public class DoorScriptTrigger : MonoBehaviour
         {
             DoorAnimationScript._triggerEntered = true;
         }
-        if (other.CompareTag("Character") && (DoorAnimationScript.doorOpen == false))
+        if ((other.CompareTag("Character") || other.CompareTag("CharacterListener")) && (DoorAnimationScript.doorOpen == false))
         {
             DoorAnimationScript.OpenDoor();
         }

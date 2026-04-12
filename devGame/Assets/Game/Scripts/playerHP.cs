@@ -132,25 +132,24 @@ public class playerHP : MonoBehaviour
     }
 
     private IEnumerator HitEffect(){
-        gotHit = true;
-        transparencyValue = 0;
-        yield return new WaitForSeconds(hitEffectDuration);
-        gotHit = false;
-        for(int i = 0; i < 10; i++){
+        if(!gotHit){
+            gotHit = true;
+            transparencyValue = 0;
+            yield return new WaitForSeconds(hitEffectDuration);
+            gotHit = false;
+            for(int i = 0; i < 10; i++){
             transparencyValue -= 0.1f;
             if(gotHit){
                 break;
+                StartCoroutine(HitEffect());
             }
             yield return new WaitForSeconds(hitEffectDuration/(10*hitEffectDuration));
         }
-        switch(gotHit){
-            case true:
+        } else {
             transparencyValue = 0;
-            break;
-
-            case false:
-            transparencyValue = -1;
-            break;
+            yield return new WaitForSeconds(hitEffectDuration);
+            gotHit = false;
+            StartCoroutine(HitEffect());
         }
     }
 
