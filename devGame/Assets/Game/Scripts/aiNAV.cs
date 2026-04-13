@@ -104,13 +104,18 @@ public class aiNAV : MonoBehaviour
     private bool dying;
     private int weaponRandom;
     private bool hitSound;
+
+    private float lastCheckTime;
+    private Vector3 lastCheckPos;
+    private float xSeconds = 3f;
+    private float yMuch = 1.0f;
     //Ray for checking collisions between the NPC and the Player
-    Ray npcToPlayerEyesRay;
-    Ray npcToPlayerBodyRay;
-    Ray raySide;
-    RaycastHit hitWall;
-    RaycastHit hitGround;
-    RaycastHit hitTrain;
+    private Ray npcToPlayerEyesRay;
+    private Ray npcToPlayerBodyRay;
+    private Ray raySide;
+    private RaycastHit hitWall;
+    private RaycastHit hitGround;
+    private RaycastHit hitTrain;
     private Vector3 playerLastPosition;
     private Vector3 changeInPlayerPos;
     private Vector3 lastPosition;
@@ -131,7 +136,6 @@ public class aiNAV : MonoBehaviour
             playerBody = playerObjBody.transform;
             ownMeshCollider = this.GetComponent<MeshCollider>();
             ownCapsuleCollider = this.GetComponent<CapsuleCollider>();
-            StartCoroutine(StandingCheck());
             maxHP = npcHP;
 
         if(navAgent == null){
@@ -192,12 +196,13 @@ public class aiNAV : MonoBehaviour
     }
 
     private void SetAnimation(){ //Animation setter using bool parameters in the animator
-        if(!trainClose){
-            animator.SetBool("isMoving", isMoving);
+        float velocity = navAgent.velocity.magnitude;
+        if(velocity > 0.2f){
+            isMoving = true;
         } else {
-            animator.SetBool("isMoving", false);
+            isMoving = false;
         }
-        
+        animator.SetBool("isMoving", isMoving);
         animator.SetBool("isReloading", isReloading);
     }
 
@@ -251,18 +256,36 @@ public class aiNAV : MonoBehaviour
         
     }
 
-    private IEnumerator StuckCheck(){
-        unStuck = false;
-        lastPosition = this.transform.position;
-        yield return new WaitForSeconds(3f);
-        if(transform.position == lastPosition){
-            releaseChase = true;
-            chaseStart = true;
-            doneCalculatingChase = true;
-            patrolTimerFinished = true;
-            PerformPatrol();
-        }
-        unStuck = true;
+    private void StuckCheck(){
+         if ((Time.time - lastCheckTime) > xSeconds) 
+            {
+                if (((this.transform.position - lastCheckPos).magnitude < yMuch) && !fightMode){
+                     Debug.Log("stuck");
+                        isPlayerVisible = false;
+                        isPlayerInRange = false;
+                        isMoving = false;
+                        wasHit = false;
+                        isOnAttackCooldown = false;
+                        isOnStrafePoint = false;
+                        fightMode = false;
+                        patrolTimerFinished = true;
+                        releaseChase = true;
+                        keepChasing = false;
+                        attackedPlayer = false;
+                        isReloading = false;
+                        isDead = false;
+                        chaseStart = true;
+                        doneCalculatingChase = true;
+                        unStuck = true;
+                        trainClose = false;
+                        standing = false;
+                        dying = false;
+                        hitSound = false; 
+                    PerformPatrol();
+                }
+                lastCheckPos = this.transform.position;
+                lastCheckTime = Time.time;
+            }
     }
 
     private void HealthSystem()
@@ -338,6 +361,7 @@ public class aiNAV : MonoBehaviour
 
     private void UpdateBehaviourState(){ //Behaviour state switcher
         TrainCheck();
+         StuckCheck();
         
         if (isPlayerVisible && isPlayerInRange && releaseChase){ //Can see player, is close = Attack
             PerformAttack();
@@ -361,16 +385,7 @@ public class aiNAV : MonoBehaviour
         }
     }
 
-    private IEnumerator StandingCheck(){
-        Vector3 lastPosition = transform.position;
-        yield return new WaitForSeconds(0.5f);
-        if(lastPosition == transform.position){
-            isMoving = false;
-        }
-        StartCoroutine(StandingCheck());
-        Debug.Log("yeah");
-        }
-    
+  
 
     private IEnumerator TrainClose(){
         trainClose = true;
@@ -386,22 +401,18 @@ public class aiNAV : MonoBehaviour
 
     //PATROL
     private void PerformPatrol(){ //When Patrolling state
+    Debug.Log("Patrol");
         fightMode = false;
         if (!hasPatrolPoint){ //If no patrol point has been decided YET, run the function to find it.
             FindPatrolPoint();       
         }
 
         if (hasPatrolPoint){
-            isMoving = true;
             navAgent.SetDestination(currentPatrolPoint);
             if(patrolTimerFinished){
                 StartCoroutine(PatrolPointTimer());
             }
-            
-            if (Vector3.Distance(transform.position, currentPatrolPoint) < 0.1f)
-            {
-            isMoving = false;
-            }
+    
         } 
     }
 
@@ -426,9 +437,8 @@ public class aiNAV : MonoBehaviour
 
     //CHASE
     private void PerformChase(){
-
+        Debug.Log("Chase");
         fightMode = false;
-        isMoving = true;
         if(chaseStart){
             releaseChase = false;
             chaseStart = false;
@@ -450,7 +460,18 @@ public class aiNAV : MonoBehaviour
         }
         if (intervalTimer == 0f)
             {
-                navAgent.SetDestination(playerLastPosition);
+                NavMeshHit hit;
+                if (NavMesh.SamplePosition(playerLastPosition, out hit, 0.1f, 1 << NavMesh.GetAreaFromName("Walkable"))){
+                    navAgent.SetDestination(playerLastPosition);
+                    Debug.Log("yeah");
+                } else {
+                    navAgent.ResetPath();
+                    Debug.Log("no");
+                    releaseChase = true;
+                    chaseStart = true;
+                    attackedPlayer = false;
+                }
+                
             }
 
         intervalTimer += Time.deltaTime;
@@ -458,9 +479,6 @@ public class aiNAV : MonoBehaviour
             {
                 intervalTimer = 0f;
             }
-        while(unStuck){
-            StartCoroutine(StuckCheck());
-        }
         
     }
 
@@ -469,7 +487,6 @@ public class aiNAV : MonoBehaviour
     
     //ATTACK - WILL BE UPDATED!!
     private void PerformAttack(){
-        isMoving = true;
         fightMode = true;
         attackedPlayer = true;
         playerLastPosition = playerTransform.position;
