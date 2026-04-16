@@ -76,6 +76,7 @@ public class RevolverScript : MonoBehaviour
     [SerializeField]private Animator handAnimator;
     [SerializeField]private Animator gunAnimator;
     [SerializeField] private Animator shotgunAnimator;
+    [SerializeField] private Animator handObjectAnimator;
     [SerializeField] private Animator rifleAnimator;
     [SerializeField]private AudioSource audioSource;
     [SerializeField] private Camera mainCamera;
@@ -166,9 +167,6 @@ public class RevolverScript : MonoBehaviour
         weapon1Object = revolverObject;
         weapon2Object = shotgunObject;
         weapon3Object = rifleObject;
-        weapon1Object.SetActive(true);
-        weapon2Object.SetActive(false);
-        weapon3Object.SetActive(false);
 
         firstPersonController = GameObject.Find("PlayerCapsule").GetComponent<FirstPersonController>();
         spawnPoint = GameObject.Find("Spawnpoint");
@@ -275,23 +273,32 @@ public class RevolverScript : MonoBehaviour
         
     }
 
+   // GameObject findHandObject()
+    //{
+    //string childLocation = "MainCamera/Weapon/" + currentWeapon + "/playerHandsObject";
+    //Debug.Log(childLocation);
+    //GameObject currentPlayerHandsObject = GameObject.Find (childLocation);
+    //return currentPlayerHandsObject;
+    //}
+
     private void WeaponState(){
+        //findHandObject();
+        //handObjectAnimator = findHandObject().GetComponent<Animator>();
         if(!isReloading && !switchingWeapon) {  //ignore if trying to aim while reloading
             isAiming = aimAction.IsPressed();
         } else {
             isAiming = false;
         }
         handAnimator.SetBool("IsAiming", isAiming); //set animation to current bool state of aiming
-
+       
         StartCoroutine(SwitchWeapon());
-
-         
-
 
         switch(currentWeapon){
             case "revolver":
+                    weapon1Object.SetActive(true);
+                    weapon2Object.SetActive(false);
+                    weapon3Object.SetActive(false);
             ammoCounter.text = revolverAmmoCount + "/" + maxRevolverAmmoCount; //ui hud of current ammo in revolver
-        
             if(shootAction.WasPressedThisFrame()){
                 if (canShoot && (revolverAmmoCount > 0) && !isReloading) //Shoot action, split into two - physical part, effect part
                 {
@@ -313,6 +320,9 @@ public class RevolverScript : MonoBehaviour
             break;
 
             case "shotgun":
+                    weapon1Object.SetActive(false);
+                    weapon2Object.SetActive(true);
+                    weapon3Object.SetActive(false);
             ammoCounter.text = shotgunAmmoCount + "/" + maxShotgunAmmoCount;
                 if(shootAction.WasPressedThisFrame()){
                     if(canShoot && !isReloading  && (shotgunAmmoCount > 0)){
@@ -334,6 +344,9 @@ public class RevolverScript : MonoBehaviour
             break;
 
             case "rifle":
+                    weapon1Object.SetActive(false);
+                    weapon2Object.SetActive(false);
+                    weapon3Object.SetActive(true);
             ammoCounter.text = rifleAmmoCount + "/" + maxRifleAmmoCount;
             if(shootAction.WasPressedThisFrame()){
                 if (canShoot && (rifleAmmoCount > 0) && !isReloading) //Shoot action, split into two - physical part, effect part
@@ -372,9 +385,6 @@ public class RevolverScript : MonoBehaviour
             } 
             handAnimator.SetBool("switchingWeapon", switchingWeapon);
             yield return new WaitForSeconds(0.3f);
-            weapon1Object.SetActive(true);
-            weapon2Object.SetActive(false);
-            weapon3Object.SetActive(false);
             currentWeapon = weapon1;
             switchingWeapon = false;
             handAnimator.SetBool("switchingWeapon", switchingWeapon);
@@ -393,9 +403,6 @@ public class RevolverScript : MonoBehaviour
             } 
             handAnimator.SetBool("switchingWeapon", switchingWeapon);
             yield return new WaitForSeconds(0.3f);
-            weapon1Object.SetActive(false);
-            weapon2Object.SetActive(true);
-            weapon3Object.SetActive(false);
             currentWeapon = weapon2;
             switchingWeapon = false;
             handAnimator.SetBool("switchingWeapon", switchingWeapon);
@@ -413,9 +420,6 @@ public class RevolverScript : MonoBehaviour
             } 
             handAnimator.SetBool("switchingWeapon", switchingWeapon);
             yield return new WaitForSeconds(0.3f);
-            weapon1Object.SetActive(false);
-            weapon2Object.SetActive(false);
-            weapon3Object.SetActive(true);
             currentWeapon = weapon3;
             switchingWeapon = false;
             handAnimator.SetBool("switchingWeapon", switchingWeapon);
@@ -432,8 +436,11 @@ public class RevolverScript : MonoBehaviour
                     isReloading = true;
                 }
                 handAnimator.SetTrigger("Reload");
+                //handObjectAnimator.SetTrigger("Reload");
                 handAnimator.SetBool("isReloading", isReloading);
+                //handObjectAnimator.SetBool("isReloading", isReloading);
                 yield return new WaitForSeconds(0.2f);
+
 
         switch(currentWeapon){
             case "revolver":
@@ -450,6 +457,7 @@ public class RevolverScript : MonoBehaviour
                     revolverAmmoCount++;
                 }
                 handAnimator.SetBool("isReloading", false); //Move hand out of reloading position
+                //handObjectAnimator.SetBool("isReloading", false);
                 gunAnimator.SetBool("isReloading", false); //Move revolver out of reloading position
                 
                 yield return new WaitForSeconds(0.4f);
@@ -473,6 +481,7 @@ public class RevolverScript : MonoBehaviour
                     shotgunAmmoCount++;
                 }
                 handAnimator.SetBool("isReloading", false);
+                //handObjectAnimator.SetBool("isReloading", false);
                 shotgunAnimator.SetBool("isReloading", false);
                 yield return new WaitForSeconds(0.2f);
                 audioSource.PlayOneShot(shotgunBreakSound);
@@ -496,6 +505,7 @@ public class RevolverScript : MonoBehaviour
                     rifleAmmoCount++;
                 }
                 handAnimator.SetBool("isReloading", false); //Move hand out of reloading position
+                //handObjectAnimator.SetBool("isReloading", false);
                 rifleAnimator.SetBool("isReloading", false); //Move revolver out of reloading position
                 
                 yield return new WaitForSeconds(0.4f);

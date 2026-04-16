@@ -5,8 +5,6 @@ using UnityEngine;
 public class MusicPlayer : MonoBehaviour 
 {
     public AudioClip[] musicClips; 
-
-    public float volume = 1f; 
     private AudioSource audioSource;
     private int randomNumber;
     private int lastNumber;
@@ -25,6 +23,7 @@ public class MusicPlayer : MonoBehaviour
         if(audioSource.isPlaying == false){
             GetRandomNumber();
             if(!(randomNumber == lastNumber)){
+            lastNumber = randomNumber;
             audioSource.clip = musicClips[randomNumber];
             audioSource.Play();
             }

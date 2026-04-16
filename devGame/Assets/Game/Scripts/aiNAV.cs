@@ -260,7 +260,6 @@ public class aiNAV : MonoBehaviour
          if ((Time.time - lastCheckTime) > xSeconds) 
             {
                 if (((this.transform.position - lastCheckPos).magnitude < yMuch) && !fightMode){
-                     Debug.Log("stuck");
                         isPlayerVisible = false;
                         isPlayerInRange = false;
                         isMoving = false;
@@ -344,6 +343,8 @@ public class aiNAV : MonoBehaviour
     }
 
     void TrainHit(){
+        isDead = true;
+        wasHit = true;
         StartCoroutine(Death());
     }
    
@@ -401,7 +402,6 @@ public class aiNAV : MonoBehaviour
 
     //PATROL
     private void PerformPatrol(){ //When Patrolling state
-    Debug.Log("Patrol");
         fightMode = false;
         if (!hasPatrolPoint){ //If no patrol point has been decided YET, run the function to find it.
             FindPatrolPoint();       
@@ -437,7 +437,6 @@ public class aiNAV : MonoBehaviour
 
     //CHASE
     private void PerformChase(){
-        Debug.Log("Chase");
         fightMode = false;
         if(chaseStart){
             releaseChase = false;
@@ -463,10 +462,8 @@ public class aiNAV : MonoBehaviour
                 NavMeshHit hit;
                 if (NavMesh.SamplePosition(playerLastPosition, out hit, 0.1f, 1 << NavMesh.GetAreaFromName("Walkable"))){
                     navAgent.SetDestination(playerLastPosition);
-                    Debug.Log("yeah");
                 } else {
                     navAgent.ResetPath();
-                    Debug.Log("no");
                     releaseChase = true;
                     chaseStart = true;
                     attackedPlayer = false;

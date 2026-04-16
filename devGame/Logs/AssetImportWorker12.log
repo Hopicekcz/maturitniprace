@@ -1,0 +1,2247 @@
+Built from '6000.3/staging' branch; Version is '6000.3.3f1 (ef04196de0d6) revision 15664153'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16004 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2026-04-16T19:11:56Z
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-04-16T19:11:56.6603071Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 15744, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.17.4'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Hopic"
+[Licensing::IpcConnector] LicenseClient-Hopic channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-04-16T19:11:56.7274278Z"
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker12
+-projectPath
+E:/unity/maturitniprace/active/devGame
+-logFile
+Logs/AssetImportWorker12.log
+-srvPort
+60137
+-licensingIpc
+LicenseClient-Hopic
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: E:/unity/maturitniprace/active/devGame
+E:/unity/maturitniprace/active/devGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [23152]  Target information:
+
+Player connection [23152]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3239413418 [EditorId] 3239413418 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [23152]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 3239413418 [EditorId] 3239413418 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [23152]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 3239413418 [EditorId] 3239413418 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [23152] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [23152] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 7.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.3f1 (ef04196de0d6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/unity/maturitniprace/active/devGame/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     5994 MB
+    Driver:   32.0.15.9597
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003873 seconds.
+- Loaded All Assemblies, in  0.881 seconds
+Native extension for WindowsStandalone target not found
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              75527430f16c4582b0efd9606e09675c
+  Correlation Id:          efa0ef6635cf8aca8ce6fedf1e6f3586
+  External correlation Id: 2790193932112885204
+  Machine Id:              4VB2xDT1CV9zqVbIIZWsGa/FyKA=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 2.55s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-04-16T19:11:59.2823528Z"
+[Licensing::Module] Licensing Background thread has ended after 2.62s
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.856 seconds
+Domain Reload Profiling: 1712ms
+	BeginReloadAssembly (311ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (86ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (103ms)
+	LoadAllAssembliesAndSetupDomain (333ms)
+		LoadAssemblies (302ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (328ms)
+			TypeCache.Refresh (326ms)
+				TypeCache.ScanAssembly (301ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (856ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (745ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (109ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (244ms)
+			ProcessInitializeOnLoadAttributes (269ms)
+			ProcessInitializeOnLoadMethodAttributes (118ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.364 seconds
+Refreshing native plugins compatible for Editor in 7.79 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Cool It, Cowboy
+Refreshing native plugins compatible for Editor in 7.91 ms, found 2 plugins.
+Your project uses Compatibility Mode, which disables the render graph system. Compatibility Mode is deprecated. Migrate your ScriptableRenderPasses to the Render Graph API instead. After you migrate, go to Edit > Project Settings > Player and remove the URP_COMPATIBILITY_MODE define from the Scripting Define Symbols. If you don't remove the define, build time and build size are slightly increased.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs:440)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 440)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.722 seconds
+Domain Reload Profiling: 3076ms
+	BeginReloadAssembly (282ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (80ms)
+	LoadAllAssembliesAndSetupDomain (912ms)
+		LoadAssemblies (648ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (425ms)
+			TypeCache.Refresh (311ms)
+				TypeCache.ScanAssembly (282ms)
+			BuildScriptInfoCaches (93ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1723ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1390ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (262ms)
+			ProcessInitializeOnLoadAttributes (712ms)
+			ProcessInitializeOnLoadMethodAttributes (390ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 9.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6212 unused Assets / (3.5 MB). Loaded Objects now: 7064.
+Memory consumption went from 265.4 MB to 261.9 MB.
+Total: 17.082300 ms (FindLiveObjects: 1.075200 ms CreateObjectMapping: 0.610300 ms MarkObjects: 13.395400 ms  DeleteObjects: 1.999600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 263302.380823 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low003.prefab
+  artifactKey: Guid(5c2666b10dba9dc4a9977c6ee1ed2a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low003.prefab using Guid(5c2666b10dba9dc4a9977c6ee1ed2a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)CommandBuffer: temporary render texture  not found while executing  (Copy source)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/UniversalRenderPipeline.cs:921)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview (UnityEditor.GameObjectInspector/PreviewData)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/UniversalRenderPipeline.cs line 921]
+
+CommandBuffer: temporary render texture  not found while executing  (Copy destination)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/UniversalRenderPipeline.cs:921)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview (UnityEditor.GameObjectInspector/PreviewData)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/UniversalRenderPipeline.cs line 921]
+
+ -> (artifact id: '39a8209bed08c0660d07f2586b475b3d') in 0.5354131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low004.prefab
+  artifactKey: Guid(38f0bc6c9ad09b3419ca0bf59412fca5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low004.prefab using Guid(38f0bc6c9ad09b3419ca0bf59412fca5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dbe0530d8901ea1203e8001a3ea1eafc') in 0.1338315 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/PokerTable_low001.prefab
+  artifactKey: Guid(2a7d2db79fb682a44ac0fd98a6804382) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/PokerTable_low001.prefab using Guid(2a7d2db79fb682a44ac0fd98a6804382) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '41bad67f83283dee0f3e9e298c92e1c7') in 0.0073253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/SheriffHat_low001.prefab
+  artifactKey: Guid(407a3ad1e23e3464b831270af8904199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/SheriffHat_low001.prefab using Guid(407a3ad1e23e3464b831270af8904199) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51a91f761bc8d4713df96028d47b3477') in 0.0333789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low005.prefab
+  artifactKey: Guid(1a4ba84cccf7971429501407f68c1f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low005.prefab using Guid(1a4ba84cccf7971429501407f68c1f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7a5c4d44d52ecaec119702f5a47dda7') in 0.0283355 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Bar_low.prefab
+  artifactKey: Guid(62a502a7e3190f04ea55533a87b9ad7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Bar_low.prefab using Guid(62a502a7e3190f04ea55533a87b9ad7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb73078f07fc61272f7eb325da54df1d') in 0.0332216 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/SheriffBadge_low.prefab
+  artifactKey: Guid(37c1f92196daa9b4f920870f410a3464) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/SheriffBadge_low.prefab using Guid(37c1f92196daa9b4f920870f410a3464) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b8e0dbfcbf881568327faf976192f29') in 0.0081217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low006.prefab
+  artifactKey: Guid(d8556921891b9e54b815ce59941e8fa1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low006.prefab using Guid(d8556921891b9e54b815ce59941e8fa1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4544083015e4d2a566bf1f8a76e58014') in 0.0083621 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BarStool_low.prefab
+  artifactKey: Guid(76cc46f127bc0ed4688bacfc4c599b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BarStool_low.prefab using Guid(76cc46f127bc0ed4688bacfc4c599b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2dcccf9030c8628517cce0111455afb4') in 0.0293939 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Bar_low001.prefab
+  artifactKey: Guid(3d66e2e47b6d4e440bdaa7ea5d953621) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/Bar_low001.prefab using Guid(3d66e2e47b6d4e440bdaa7ea5d953621) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9540d52adc37ca53b9644b916396dfc2') in 0.0084981 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low004.prefab
+  artifactKey: Guid(0e4e305bad3a91c4ba0e1e026ee2a973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low004.prefab using Guid(0e4e305bad3a91c4ba0e1e026ee2a973) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '553899f6fd1fae7e6cc60ed1e6d56341') in 0.0332394 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low005.prefab
+  artifactKey: Guid(d9a3465e6e6e7784d8d15f0890372620) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low005.prefab using Guid(d9a3465e6e6e7784d8d15f0890372620) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3027f79f7873c787936d40ef3d9b5c24') in 0.0088974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/RoundGlass_low007.prefab
+  artifactKey: Guid(8db22c5816700834ab468340aa7edab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/RoundGlass_low007.prefab using Guid(8db22c5816700834ab468340aa7edab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb137afd41adb5e77509f739913acafe') in 0.0319358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Shelf_low.prefab
+  artifactKey: Guid(2eeeff8db8415b2478b5bd5d40f684b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Shelf_low.prefab using Guid(2eeeff8db8415b2478b5bd5d40f684b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b1c197d11eecfc57163af577e23e6de') in 0.0278242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.307168 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab
+  artifactKey: Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab using Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4a80820a631faa79b2a274d5ae7a107') in 0.0338427 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Barrel_low.prefab
+  artifactKey: Guid(d15b2ef5cdb410542b57a0ed6bbef3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Barrel_low.prefab using Guid(d15b2ef5cdb410542b57a0ed6bbef3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f80a375d8d9d12419d8a1a7960a18fe5') in 0.0415868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle010_low001.prefab
+  artifactKey: Guid(d36e2220402f20c4291242453e38c965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle010_low001.prefab using Guid(d36e2220402f20c4291242453e38c965) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e5c7f2e1e3ffe2d50eba8d10bc76659f') in 0.0282707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BarStool_low001.prefab
+  artifactKey: Guid(9f9d6414d39ad24479a7377c77252d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BarStool_low001.prefab using Guid(9f9d6414d39ad24479a7377c77252d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a68b72075d516bc3557b715b22e24abd') in 0.0421358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Crate_low003.prefab
+  artifactKey: Guid(0f14c6697d83fab43a056eec28c697e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Crate_low003.prefab using Guid(0f14c6697d83fab43a056eec28c697e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e6e4e076adbd55fa6eaf40f94a722c4') in 0.0332017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low002.prefab
+  artifactKey: Guid(a59e94be4c338d54a97ddcc8e0f76ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low002.prefab using Guid(a59e94be4c338d54a97ddcc8e0f76ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c246841f66cce299d5ac031b98440db') in 0.0299054 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low003.prefab
+  artifactKey: Guid(5bf5db6cb137a5844825b01c3589beee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low003.prefab using Guid(5bf5db6cb137a5844825b01c3589beee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '32e77b3e5e58278979e051cb2f9be0cc') in 0.0379623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low007.prefab
+  artifactKey: Guid(97a79d2c78499ea4794421466f8c3845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low007.prefab using Guid(97a79d2c78499ea4794421466f8c3845) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e5ff349609fc0a4dfc127b5a6d9b9e61') in 0.0334407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low008.prefab
+  artifactKey: Guid(8a338bdaa66cb3d4a829fbc76bcdf49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low008.prefab using Guid(8a338bdaa66cb3d4a829fbc76bcdf49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '363379db4bc7fe3ffbcf0e773cae25e6') in 0.0295938 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BarStool_low002.prefab
+  artifactKey: Guid(c60836cd170536a479fdbc3ac5815803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BarStool_low002.prefab using Guid(c60836cd170536a479fdbc3ac5815803) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0326119 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/world/environment/prefabs/building3/barstool_low002.prefab in SourceAssetDB has modification time of '2026-04-16T19:12:21.7931611Z' while content on disk has modification time of '2026-04-16T19:12:23.2315264Z'
+  ERROR: Build asset version error: assets/world/environment/prefabs/building3/barstool_low002.prefab in SourceAssetDB has modification time of '2026-04-16T19:12:21.7931611Z' while content on disk has modification time of '2026-04-16T19:12:23.2315264Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 600
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low003.prefab
+  artifactKey: Guid(5c2666b10dba9dc4a9977c6ee1ed2a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low003.prefab using Guid(5c2666b10dba9dc4a9977c6ee1ed2a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '678bbcce04ea7583ad11e635bf54d840') in 0.0313644 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.333410 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab
+  artifactKey: Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab using Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00ab766cfb4c0c43f56447ad5dd2310d') in 0.0341279 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low005.prefab
+  artifactKey: Guid(fae630c1bd52a8841a4fc907bf8af2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low005.prefab using Guid(fae630c1bd52a8841a4fc907bf8af2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8bf29facb440c62c84f91130b8083b8e') in 0.0323461 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low001.prefab
+  artifactKey: Guid(d8b623e6ccf26b04e80a3079989d5fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low001.prefab using Guid(d8b623e6ccf26b04e80a3079989d5fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c3e30b1903342dd9ede74b94a3f01ff') in 0.0324661 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Bar_low001.prefab
+  artifactKey: Guid(3d66e2e47b6d4e440bdaa7ea5d953621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Bar_low001.prefab using Guid(3d66e2e47b6d4e440bdaa7ea5d953621) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '669e7b42c81a1a9ab7d86398bce22b24') in 0.031614 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Crate_low003.prefab
+  artifactKey: Guid(0f14c6697d83fab43a056eec28c697e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Crate_low003.prefab using Guid(0f14c6697d83fab43a056eec28c697e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ab315e0d6e778bdf16c7ad1740ae360') in 0.0306782 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low005.prefab
+  artifactKey: Guid(9dfc04f2daacdb640a636d63e9e186ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low005.prefab using Guid(9dfc04f2daacdb640a636d63e9e186ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '852b513d979533aa925e11ca96eb9bc1') in 0.0307526 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low005.prefab
+  artifactKey: Guid(d370d64ca49105a409c6b1f5595bc988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low005.prefab using Guid(d370d64ca49105a409c6b1f5595bc988) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '119000adfd8fac86ff3398cdffd27e89') in 0.0314203 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low006.prefab
+  artifactKey: Guid(95efacef290d9124cb1b2a9fbb9839d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low006.prefab using Guid(95efacef290d9124cb1b2a9fbb9839d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '440777f28b32df189028cd604b7aa3f9') in 0.0316066 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low004.prefab
+  artifactKey: Guid(94721cb41bb5ba241a2bb5c8af2e94df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low004.prefab using Guid(94721cb41bb5ba241a2bb5c8af2e94df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b8a0361f3890362f406fd4a4581c0681') in 0.0332285 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low.prefab
+  artifactKey: Guid(3fee631ad668127478c124225bb6cab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low.prefab using Guid(3fee631ad668127478c124225bb6cab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd20e481a931880f8e9b52478f43742d4') in 0.0314041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab
+  artifactKey: Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab using Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0502088 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/world/environment/prefabs/building3/candleholder_low.prefab in SourceAssetDB has modification time of '2026-04-16T19:12:23.3145547Z' while content on disk has modification time of '2026-04-16T19:12:24.7319646Z'
+  ERROR: Build asset version error: assets/world/environment/prefabs/building3/candleholder_low.prefab in SourceAssetDB has modification time of '2026-04-16T19:12:23.3145547Z' while content on disk has modification time of '2026-04-16T19:12:24.7319646Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 600
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Crate_low001.prefab
+  artifactKey: Guid(fe239f9c159a7d74f8d8f861fd2afb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Crate_low001.prefab using Guid(fe239f9c159a7d74f8d8f861fd2afb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7be6973cf0529ec0fb52ac65749303d4') in 0.0006823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.530007 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab
+  artifactKey: Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab using Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c97f0908054ab5266d72c8712c2a424') in 0.0354492 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low005.prefab
+  artifactKey: Guid(fae630c1bd52a8841a4fc907bf8af2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low005.prefab using Guid(fae630c1bd52a8841a4fc907bf8af2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6854b8a0fcde9f32eec9fc83d3ff239e') in 0.0413408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low001.prefab
+  artifactKey: Guid(d8b623e6ccf26b04e80a3079989d5fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low001.prefab using Guid(d8b623e6ccf26b04e80a3079989d5fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e5cf93529b1e2c8b5defd0fcd159c5eb') in 0.0362513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Bar_low001.prefab
+  artifactKey: Guid(3d66e2e47b6d4e440bdaa7ea5d953621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Bar_low001.prefab using Guid(3d66e2e47b6d4e440bdaa7ea5d953621) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4351379537ae7e09781694c680506e1') in 0.0325157 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low008.prefab
+  artifactKey: Guid(299da99209699bc48950a2d3bf170460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low008.prefab using Guid(299da99209699bc48950a2d3bf170460) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1804945a1cf996da6d0d60c4ec498d5f') in 0.0369886 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low005.prefab
+  artifactKey: Guid(9dfc04f2daacdb640a636d63e9e186ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low005.prefab using Guid(9dfc04f2daacdb640a636d63e9e186ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e81fc2d9e4600fb0c98e9235072647cf') in 0.0316781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BullHorns_low.prefab
+  artifactKey: Guid(09be48a2e86e2134d8125cb36be75106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BullHorns_low.prefab using Guid(09be48a2e86e2134d8125cb36be75106) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a5fa721281c686f068381fee21d0ede6') in 0.0315886 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low001.prefab
+  artifactKey: Guid(65c274f9691aa5b40a34373a12f06032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low001.prefab using Guid(65c274f9691aa5b40a34373a12f06032) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6904eb3d0e7d40c8593873493eef55ea') in 0.0338624 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low002.prefab
+  artifactKey: Guid(5fb52fbf287d7b34783859a88847bad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low002.prefab using Guid(5fb52fbf287d7b34783859a88847bad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c3eaef3725f7ad9e5323876d34434ad') in 0.0373919 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BullHornsRope_low.prefab
+  artifactKey: Guid(914c29fc22381f54e90974749a6270ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/BullHornsRope_low.prefab using Guid(914c29fc22381f54e90974749a6270ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a1656eb3bd24e0e46f0dc4d77ffbfa20') in 0.0080298 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WantedBoard_low.prefab
+  artifactKey: Guid(28066b5e4ef08e24ea4098184200147f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/WantedBoard_low.prefab using Guid(28066b5e4ef08e24ea4098184200147f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c933bca47494235802beef037082aeb6') in 0.0081836 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low001.prefab
+  artifactKey: Guid(c5a4b9abe9db08b4d96926f7217e270a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low001.prefab using Guid(c5a4b9abe9db08b4d96926f7217e270a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c8e419b7a45b890dfcb807d2b09e6254') in 0.0166705 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle010_low001.prefab
+  artifactKey: Guid(d36e2220402f20c4291242453e38c965) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle010_low001.prefab using Guid(d36e2220402f20c4291242453e38c965) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '00000000000000000000000000000000') in 0.008145 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/world/environment/prefabs/building3/alcoholbottle010_low001.prefab in SourceAssetDB has modification time of '2026-04-16T19:12:24.6480529Z' while content on disk has modification time of '2026-04-16T19:12:26.3399735Z'
+  ERROR: Build asset version error: assets/world/environment/prefabs/building3/alcoholbottle010_low001.prefab in SourceAssetDB has modification time of '2026-04-16T19:12:24.6480529Z' while content on disk has modification time of '2026-04-16T19:12:26.3399735Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low001.prefab
+  artifactKey: Guid(a450c58392f1c264db117c58630f3893) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low001.prefab using Guid(a450c58392f1c264db117c58630f3893) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5befa8c12e28f4124f88ceacbf2d3670') in 0.0036791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.291446 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab
+  artifactKey: Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab using Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f216684504374e1f3aa6a3eccdd70a9d') in 0.0333283 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Barrel_low.prefab
+  artifactKey: Guid(d15b2ef5cdb410542b57a0ed6bbef3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Barrel_low.prefab using Guid(d15b2ef5cdb410542b57a0ed6bbef3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8ef76ba4f3a39ea5d2f641deb1fa4c1') in 0.0389841 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolderHandle_low.prefab
+  artifactKey: Guid(3e95ae19539bec845a722e7afb97c831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolderHandle_low.prefab using Guid(3e95ae19539bec845a722e7afb97c831) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c16abf42294492152ea18d91d313be1') in 0.0337654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Bar_low001.prefab
+  artifactKey: Guid(3d66e2e47b6d4e440bdaa7ea5d953621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Bar_low001.prefab using Guid(3d66e2e47b6d4e440bdaa7ea5d953621) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea88e013c5976d6c02d246b0168e95e9') in 0.031653 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low006.prefab
+  artifactKey: Guid(3e181addd3661194ebd26d013ca17930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low006.prefab using Guid(3e181addd3661194ebd26d013ca17930) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46637f9c278fd3523be6764226608a83') in 0.0319085 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low002.prefab
+  artifactKey: Guid(a59e94be4c338d54a97ddcc8e0f76ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low002.prefab using Guid(a59e94be4c338d54a97ddcc8e0f76ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '226ea85c59db64daab674c2da70ca1cf') in 0.0290713 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low005.prefab
+  artifactKey: Guid(d370d64ca49105a409c6b1f5595bc988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low005.prefab using Guid(d370d64ca49105a409c6b1f5595bc988) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4895882c948372a89e6b9bc3823f6159') in 0.0297615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BarStool_low004.prefab
+  artifactKey: Guid(d1340d918182e304db39a12043ea5fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BarStool_low004.prefab using Guid(d1340d918182e304db39a12043ea5fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f83418a71ba58809cec1639562ad5d4') in 0.03484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low007.prefab
+  artifactKey: Guid(97a79d2c78499ea4794421466f8c3845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low007.prefab using Guid(97a79d2c78499ea4794421466f8c3845) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd953cb8d62706cc1e3840a0245e4d13f') in 0.0281048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low002.prefab
+  artifactKey: Guid(5fb52fbf287d7b34783859a88847bad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low002.prefab using Guid(5fb52fbf287d7b34783859a88847bad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8c38ba6dab5b4db01da5eb35790b909') in 0.0299331 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low.prefab
+  artifactKey: Guid(3fee631ad668127478c124225bb6cab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low.prefab using Guid(3fee631ad668127478c124225bb6cab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42261221eb516df35a889c2f9000fc9c') in 0.0285232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015556 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Bar_low.prefab
+  artifactKey: Guid(62a502a7e3190f04ea55533a87b9ad7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Bar_low.prefab using Guid(62a502a7e3190f04ea55533a87b9ad7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5987ef742f5387552b3b3ed76dac755f') in 0.0269326 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BullHornsBack_low.prefab
+  artifactKey: Guid(f9d13952174b94e4eb630273bfcf4368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BullHornsBack_low.prefab using Guid(f9d13952174b94e4eb630273bfcf4368) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d5a8858db361baf15d0dadf32598cd7') in 0.0281553 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab
+  artifactKey: Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab using Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eafc7d5eb2617ac02948b471cb99d43f') in 0.0306754 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BarStool_low003.prefab
+  artifactKey: Guid(4a0ce796187fbd647a5de6c52a74bfe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BarStool_low003.prefab using Guid(4a0ce796187fbd647a5de6c52a74bfe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ad27e61ec5608c151668afe8c6ddb12') in 0.0283035 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low001.prefab
+  artifactKey: Guid(c5a4b9abe9db08b4d96926f7217e270a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low001.prefab using Guid(c5a4b9abe9db08b4d96926f7217e270a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9e25039711bf29d598de7ce70bc4848') in 0.0312632 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low005.prefab
+  artifactKey: Guid(1a4ba84cccf7971429501407f68c1f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low005.prefab using Guid(1a4ba84cccf7971429501407f68c1f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd22356bf3d4b62f64f7bd025dc97e31a') in 0.0293629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low008.prefab
+  artifactKey: Guid(65906b61de18ff748bef9a3aa7a35314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low008.prefab using Guid(65906b61de18ff748bef9a3aa7a35314) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '81c8e8b9a4aac7d028400d0a650e7602') in 0.0299964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolder_low001.prefab
+  artifactKey: Guid(5eae6f2f77b72a440b8ef9f87bcc7923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolder_low001.prefab using Guid(5eae6f2f77b72a440b8ef9f87bcc7923) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '090c2cc6ac51d5c4b617bf709a077d20') in 0.031404 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Crate_low004.prefab
+  artifactKey: Guid(8a79a189d27408548863fa654afbf138) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/Crate_low004.prefab using Guid(8a79a189d27408548863fa654afbf138) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f63a995c53b74f2d66bbc5eb0a8d543e') in 0.0078284 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.367435 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low004.prefab
+  artifactKey: Guid(7b3de33745a536e468fd7a0067932d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low004.prefab using Guid(7b3de33745a536e468fd7a0067932d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad4dfb545853cc4874bab9a492cde52c') in 0.0349431 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low005.prefab
+  artifactKey: Guid(fae630c1bd52a8841a4fc907bf8af2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low005.prefab using Guid(fae630c1bd52a8841a4fc907bf8af2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '16dbd30e92ded96ff1b0c21b9a001c4f') in 0.0312852 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BarStool_low001.prefab
+  artifactKey: Guid(9f9d6414d39ad24479a7377c77252d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BarStool_low001.prefab using Guid(9f9d6414d39ad24479a7377c77252d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1262ebc445d84dd4f8b165912889aa18') in 0.0410362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low.prefab
+  artifactKey: Guid(030aa3879a808a245ae47347199cc4e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low.prefab using Guid(030aa3879a808a245ae47347199cc4e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26e60d008505aa1b468ad1bdba3d4bd4') in 0.0346954 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low005.prefab
+  artifactKey: Guid(9dfc04f2daacdb640a636d63e9e186ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low005.prefab using Guid(9dfc04f2daacdb640a636d63e9e186ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae14f3b7ce9dc280bf548decf98d9b3d') in 0.0384438 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low006.prefab
+  artifactKey: Guid(95efacef290d9124cb1b2a9fbb9839d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low006.prefab using Guid(95efacef290d9124cb1b2a9fbb9839d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88fb410f9c753139e6b200310837dc59') in 0.0329165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low.prefab
+  artifactKey: Guid(7796a94b5bcfbca4faadaa1a8fa8c7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low.prefab using Guid(7796a94b5bcfbca4faadaa1a8fa8c7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '900b76abee5708b82a02a4d5a0c4e6ba') in 0.032056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low002.prefab
+  artifactKey: Guid(5fb52fbf287d7b34783859a88847bad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low002.prefab using Guid(5fb52fbf287d7b34783859a88847bad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9dd1c69a5d774d8c2fedba4005fbec43') in 0.030294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low003.prefab
+  artifactKey: Guid(f5b3fa210a571ad428b95a51e6544aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low003.prefab using Guid(f5b3fa210a571ad428b95a51e6544aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38a81ff2d3cec7edb77744b692e01d21') in 0.0305697 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low007.prefab
+  artifactKey: Guid(b6a7fee02744d3448bf34aa414010594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low007.prefab using Guid(b6a7fee02744d3448bf34aa414010594) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e56bcabfe21304f12f313580eab85e6f') in 0.0324858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low002.prefab
+  artifactKey: Guid(b65d1b1866cc837478102efd17c6f03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low002.prefab using Guid(b65d1b1866cc837478102efd17c6f03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbe03cd848ad161877873cbba2c3185e') in 0.0356126 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low008.prefab
+  artifactKey: Guid(65906b61de18ff748bef9a3aa7a35314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low008.prefab using Guid(65906b61de18ff748bef9a3aa7a35314) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '25a0409f1d0cef78bc8e2b00bff53c05') in 0.0320585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolder_low001.prefab
+  artifactKey: Guid(5eae6f2f77b72a440b8ef9f87bcc7923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolder_low001.prefab using Guid(5eae6f2f77b72a440b8ef9f87bcc7923) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f8e86a5ed48d1386adc1910ef7516d8') in 0.0305551 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.277549 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab
+  artifactKey: Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab using Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e6cf407ffdac0fae21a306a6f03b9ab') in 0.031946 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Barrel_low.prefab
+  artifactKey: Guid(d15b2ef5cdb410542b57a0ed6bbef3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Barrel_low.prefab using Guid(d15b2ef5cdb410542b57a0ed6bbef3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d462276b5dcf587315604390a5a7a2c') in 0.0415926 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BullHornsBack_low.prefab
+  artifactKey: Guid(f9d13952174b94e4eb630273bfcf4368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BullHornsBack_low.prefab using Guid(f9d13952174b94e4eb630273bfcf4368) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db07729fd7358dbb838a9c0ac263c489') in 0.0326443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolderHandle_low001.prefab
+  artifactKey: Guid(7b56c21a53da57b40871fde8627445c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolderHandle_low001.prefab using Guid(7b56c21a53da57b40871fde8627445c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aece09776b3056d4a94fa797c7abb9d5') in 0.0392 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Crate_low003.prefab
+  artifactKey: Guid(0f14c6697d83fab43a056eec28c697e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Crate_low003.prefab using Guid(0f14c6697d83fab43a056eec28c697e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ddc4ce4d40d102463e071bfea802ac56') in 0.0430107 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low002.prefab
+  artifactKey: Guid(a59e94be4c338d54a97ddcc8e0f76ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low002.prefab using Guid(a59e94be4c338d54a97ddcc8e0f76ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e281a2ebb89d57f64d47ca7251c3e63b') in 0.0348228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low003.prefab
+  artifactKey: Guid(5bf5db6cb137a5844825b01c3589beee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low003.prefab using Guid(5bf5db6cb137a5844825b01c3589beee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b23af564b57165829833137c47c5775') in 0.041951 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low007.prefab
+  artifactKey: Guid(d7db31c3854123946bbb1add31468e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low007.prefab using Guid(d7db31c3854123946bbb1add31468e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f82d90935fdb1b9b21f638564595f478') in 0.036037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low008.prefab
+  artifactKey: Guid(8a338bdaa66cb3d4a829fbc76bcdf49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low008.prefab using Guid(8a338bdaa66cb3d4a829fbc76bcdf49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3769e1c977938e0139c725f620117e3f') in 0.0339938 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low003.prefab
+  artifactKey: Guid(f5b3fa210a571ad428b95a51e6544aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low003.prefab using Guid(f5b3fa210a571ad428b95a51e6544aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1dbdac03d71d6c3af5cd9b8037100139') in 0.0348374 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab
+  artifactKey: Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab using Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a900e06b481b7b53efc773a732722e75') in 0.0333978 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low001.prefab
+  artifactKey: Guid(c5a4b9abe9db08b4d96926f7217e270a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low001.prefab using Guid(c5a4b9abe9db08b4d96926f7217e270a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9262e7de6653e734f6f738949dac6ed') in 0.0364344 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low.prefab
+  artifactKey: Guid(92a3c784df7a3454197fbc496388959b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low.prefab using Guid(92a3c784df7a3454197fbc496388959b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86e246c6d4c2f0b44f4dba5029fe80b6') in 0.0353122 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BarStool_low005.prefab
+  artifactKey: Guid(b9987290105e7e3419a9fc596bc61d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BarStool_low005.prefab using Guid(b9987290105e7e3419a9fc596bc61d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '880838e5f7ac6bca1dda9d6715f03df5') in 0.0310443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Crate_low.prefab
+  artifactKey: Guid(cecb213864af1d048b09d1267f3637dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Crate_low.prefab using Guid(cecb213864af1d048b09d1267f3637dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b01a17a57e541b8b377aeaf44301d588') in 0.0331122 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low004.prefab
+  artifactKey: Guid(0e4e305bad3a91c4ba0e1e026ee2a973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low004.prefab using Guid(0e4e305bad3a91c4ba0e1e026ee2a973) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5de9bef165c968aea400d7044da2b937') in 0.0295733 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.141739 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low007.prefab
+  artifactKey: Guid(47093a4eb6e91eb40bb0b8c5ce551157) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low007.prefab using Guid(47093a4eb6e91eb40bb0b8c5ce551157) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df3db598a36cb63a5bb5a16a4fb8529a') in 0.0114283 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BullHornsRope_low.prefab
+  artifactKey: Guid(914c29fc22381f54e90974749a6270ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/BullHornsRope_low.prefab using Guid(914c29fc22381f54e90974749a6270ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a28bfbbead0c2f10102a8b137cfbd694') in 0.0094915 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low007.prefab
+  artifactKey: Guid(975e4c5b27d1050439e4048577a61118) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low007.prefab using Guid(975e4c5b27d1050439e4048577a61118) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '63640cac9997a097412f2c2a710e3319') in 0.0092095 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low006.prefab
+  artifactKey: Guid(3e181addd3661194ebd26d013ca17930) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low006.prefab using Guid(3e181addd3661194ebd26d013ca17930) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '24e0d6ef22fc6a7b3b4ad088e3394578') in 0.0075698 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/SheriffBadgeHook_low001.prefab
+  artifactKey: Guid(1d5e7009fc4e6824594be2e924b78564) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/SheriffBadgeHook_low001.prefab using Guid(1d5e7009fc4e6824594be2e924b78564) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f34ffcee9526365efe177ef29a74fb7a') in 0.0088292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Moonshine004_low001.prefab
+  artifactKey: Guid(7c19a57bc01e7354a9b61cdcb95893c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/Moonshine004_low001.prefab using Guid(7c19a57bc01e7354a9b61cdcb95893c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3bfc7ef516a5ebbb8137bad38d58a5ae') in 0.0110625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Crate_low005.prefab
+  artifactKey: Guid(0ace00d037978424497ae4593037373b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/Crate_low005.prefab using Guid(0ace00d037978424497ae4593037373b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6370269fc11b90b208c51aa205801d8c') in 0.0112271 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolderHandle_low.prefab
+  artifactKey: Guid(3e95ae19539bec845a722e7afb97c831) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolderHandle_low.prefab using Guid(3e95ae19539bec845a722e7afb97c831) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '48bb09b7fc96d1127734973721e20833') in 0.009119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/SheriffHat_low001.prefab
+  artifactKey: Guid(407a3ad1e23e3464b831270af8904199) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/SheriffHat_low001.prefab using Guid(407a3ad1e23e3464b831270af8904199) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5928acc0282033ab190a492348ab189b') in 0.0102351 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low002.prefab
+  artifactKey: Guid(a59e94be4c338d54a97ddcc8e0f76ca1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low002.prefab using Guid(a59e94be4c338d54a97ddcc8e0f76ca1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5e9cda8fbcdcbc3ad45c88833d6ea3ed') in 0.009903 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/RoundGlass_low003.prefab
+  artifactKey: Guid(6c70d1d4dbea3d2448739ba8bab98bf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/RoundGlass_low003.prefab using Guid(6c70d1d4dbea3d2448739ba8bab98bf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '00000000000000000000000000000000') in 0.008192 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/world/environment/prefabs/building3/roundglass_low003.prefab in SourceAssetDB has modification time of '2026-04-16T19:12:32.986519Z' while content on disk has modification time of '2026-04-16T19:12:36.7986628Z'
+  ERROR: Build asset version error: assets/world/environment/prefabs/building3/roundglass_low003.prefab in SourceAssetDB has modification time of '2026-04-16T19:12:32.986519Z' while content on disk has modification time of '2026-04-16T19:12:36.7986628Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/SheriffHat_low.prefab
+  artifactKey: Guid(84211330230472140aaa8ad75cbbec1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/SheriffHat_low.prefab using Guid(84211330230472140aaa8ad75cbbec1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '354a6747ab4c1f61860a1d19154936b2') in 0.0043602 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.373164 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab
+  artifactKey: Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab using Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '051635e860541c36a3e6b5bad046cef0') in 0.0302901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Barrel_low.prefab
+  artifactKey: Guid(d15b2ef5cdb410542b57a0ed6bbef3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Barrel_low.prefab using Guid(d15b2ef5cdb410542b57a0ed6bbef3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2facceb08347376ce12f7897718fe428') in 0.032212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low001.prefab
+  artifactKey: Guid(d8b623e6ccf26b04e80a3079989d5fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low001.prefab using Guid(d8b623e6ccf26b04e80a3079989d5fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a6fd101b9369987782d59bb39b445f7') in 0.0296797 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BarStool_low001.prefab
+  artifactKey: Guid(9f9d6414d39ad24479a7377c77252d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BarStool_low001.prefab using Guid(9f9d6414d39ad24479a7377c77252d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b92fd9f19431250d7adef00e23d5c2f') in 0.0318454 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low008.prefab
+  artifactKey: Guid(299da99209699bc48950a2d3bf170460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low008.prefab using Guid(299da99209699bc48950a2d3bf170460) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf6688c469590f16ecedc873afe49d4a') in 0.03265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low002.prefab
+  artifactKey: Guid(a59e94be4c338d54a97ddcc8e0f76ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low002.prefab using Guid(a59e94be4c338d54a97ddcc8e0f76ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fb72bd533d1f133d65f1171ef9b0698e') in 0.0322253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low003.prefab
+  artifactKey: Guid(5bf5db6cb137a5844825b01c3589beee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low003.prefab using Guid(5bf5db6cb137a5844825b01c3589beee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad356f1f432454139b81590e510d8ad9') in 0.029273 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low006.prefab
+  artifactKey: Guid(95efacef290d9124cb1b2a9fbb9839d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low006.prefab using Guid(95efacef290d9124cb1b2a9fbb9839d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05985f6a1403f4504002016d6a7ef33f') in 0.0309296 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low.prefab
+  artifactKey: Guid(7796a94b5bcfbca4faadaa1a8fa8c7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low.prefab using Guid(7796a94b5bcfbca4faadaa1a8fa8c7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5cd5fc74d12590bd8c311a3756e27633') in 0.0322662 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low.prefab
+  artifactKey: Guid(3fee631ad668127478c124225bb6cab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low.prefab using Guid(3fee631ad668127478c124225bb6cab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19261e2f679f3224d4e65fb0e85a8d03') in 0.0337354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab
+  artifactKey: Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab using Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '318555499b889d697c3d3e7b5c9ae984') in 0.0288493 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low007.prefab
+  artifactKey: Guid(b6a7fee02744d3448bf34aa414010594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low007.prefab using Guid(b6a7fee02744d3448bf34aa414010594) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '652f3aafaac089426789e8bc6139263d') in 0.0310914 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low002.prefab
+  artifactKey: Guid(9cf4d586f84954a4fb188c5c1fd865a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low002.prefab using Guid(9cf4d586f84954a4fb188c5c1fd865a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6a510edf727e2511bfa5352f918f092') in 0.0301215 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low006.prefab
+  artifactKey: Guid(e192218de29ef0b4f9168cfbfd5c966f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low006.prefab using Guid(e192218de29ef0b4f9168cfbfd5c966f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ec8f63b5993d193fad45e1412d6a8ba') in 0.0360521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BullHornsRope_low.prefab
+  artifactKey: Guid(914c29fc22381f54e90974749a6270ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BullHornsRope_low.prefab using Guid(914c29fc22381f54e90974749a6270ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9fe14d3eb529e926da63ee2f5c06398') in 0.0316242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolder_low001.prefab
+  artifactKey: Guid(5eae6f2f77b72a440b8ef9f87bcc7923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolder_low001.prefab using Guid(5eae6f2f77b72a440b8ef9f87bcc7923) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '81392495903a8090a45d3a6a9cc7cf13') in 0.0300014 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.800234 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab
+  artifactKey: Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab using Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b3ea955bfe5e31efc23230e44dc50f8') in 0.0320159 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low006.prefab
+  artifactKey: Guid(6cde37a85d3aa8a4abda2c836e42a135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low006.prefab using Guid(6cde37a85d3aa8a4abda2c836e42a135) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b4b3411a29e47bc3ecc88d61ac1bcbc') in 0.0343982 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BullHornsBack_low.prefab
+  artifactKey: Guid(f9d13952174b94e4eb630273bfcf4368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BullHornsBack_low.prefab using Guid(f9d13952174b94e4eb630273bfcf4368) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a08bdeeb38bf7f337bc3a37dcf32409e') in 0.0319704 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BarStool_low001.prefab
+  artifactKey: Guid(9f9d6414d39ad24479a7377c77252d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BarStool_low001.prefab using Guid(9f9d6414d39ad24479a7377c77252d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12dfdeb0ea1cda90df688b2bb23933ab') in 0.028551 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Crate_low003.prefab
+  artifactKey: Guid(0f14c6697d83fab43a056eec28c697e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Crate_low003.prefab using Guid(0f14c6697d83fab43a056eec28c697e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e84e575088fdba0154d11f298ad6c833') in 0.0318708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low005.prefab
+  artifactKey: Guid(9dfc04f2daacdb640a636d63e9e186ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low005.prefab using Guid(9dfc04f2daacdb640a636d63e9e186ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b547fb733227615f7ee3dab87976b52f') in 0.0301562 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low005.prefab
+  artifactKey: Guid(d370d64ca49105a409c6b1f5595bc988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low005.prefab using Guid(d370d64ca49105a409c6b1f5595bc988) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab6fb551ce047b7481293334c055320c') in 0.0306528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low001.prefab
+  artifactKey: Guid(65c274f9691aa5b40a34373a12f06032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low001.prefab using Guid(65c274f9691aa5b40a34373a12f06032) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a4b89690130c5420524e0079cef63ed') in 0.0483667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low002.prefab
+  artifactKey: Guid(5fb52fbf287d7b34783859a88847bad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low002.prefab using Guid(5fb52fbf287d7b34783859a88847bad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e63d8d11102d3b26b1069007d081db69') in 0.0383432 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low.prefab
+  artifactKey: Guid(3fee631ad668127478c124225bb6cab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low.prefab using Guid(3fee631ad668127478c124225bb6cab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '261aec37f050850f3c5e361c59b4baad') in 0.0289913 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab
+  artifactKey: Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab using Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8bae77e2cf13879b5b17668019d33824') in 0.035213 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low007.prefab
+  artifactKey: Guid(b6a7fee02744d3448bf34aa414010594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low007.prefab using Guid(b6a7fee02744d3448bf34aa414010594) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b75fd03a6f197d208b2642d697852e13') in 0.0294213 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Crate_low004.prefab
+  artifactKey: Guid(8a79a189d27408548863fa654afbf138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Crate_low004.prefab using Guid(8a79a189d27408548863fa654afbf138) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7fc6490776a33d57e7923b7a6e718a22') in 0.0335722 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low006.prefab
+  artifactKey: Guid(e192218de29ef0b4f9168cfbfd5c966f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low006.prefab using Guid(e192218de29ef0b4f9168cfbfd5c966f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05e3cd8cb2842c2a9978f2b3e1566cc0') in 0.02807 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low006.prefab
+  artifactKey: Guid(d8556921891b9e54b815ce59941e8fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low006.prefab using Guid(d8556921891b9e54b815ce59941e8fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b28c499e43cd20f174776404f67445ff') in 0.0307861 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolder_low001.prefab
+  artifactKey: Guid(5eae6f2f77b72a440b8ef9f87bcc7923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolder_low001.prefab using Guid(5eae6f2f77b72a440b8ef9f87bcc7923) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf9c7454c1b77aa1214dd479e0474a6b') in 0.0314717 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.341900 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/KegTap_low.prefab
+  artifactKey: Guid(d8e9b588579e69840999d77b284620d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/KegTap_low.prefab using Guid(d8e9b588579e69840999d77b284620d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e42900e9204c66fe5594e131fa4084d') in 0.0401603 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/SheriffBadgeHook_low001.prefab
+  artifactKey: Guid(1d5e7009fc4e6824594be2e924b78564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/SheriffBadgeHook_low001.prefab using Guid(1d5e7009fc4e6824594be2e924b78564) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '924dd2d91c12c3ff2d260fc5c3829c1e') in 0.0331322 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/StandardTable_low.prefab
+  artifactKey: Guid(70428a6b0f0c9fc49adf86822dfdbc53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/StandardTable_low.prefab using Guid(70428a6b0f0c9fc49adf86822dfdbc53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '888fab1f6f6d9a4a76037625c647a7c3') in 0.0326874 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/RoundGlass_low005.prefab
+  artifactKey: Guid(dc9ec995cc7a84b4e845a49b4cdd9e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/RoundGlass_low005.prefab using Guid(dc9ec995cc7a84b4e845a49b4cdd9e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a1a2bb4547685fc8fb1e07330d6b9b7') in 0.0334702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WantedPoster013.prefab
+  artifactKey: Guid(ae2970ed69ebd5840b7bd3940ef9d223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WantedPoster013.prefab using Guid(ae2970ed69ebd5840b7bd3940ef9d223) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cead9badbe5c6c7272158b381c932130') in 0.033706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low003.prefab
+  artifactKey: Guid(21b0b2e2d1049d441b24ee8485bfdcdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low003.prefab using Guid(21b0b2e2d1049d441b24ee8485bfdcdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df045b7ddb6e33606dc48c0615783403') in 0.0366012 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/StandardTable_low001.prefab
+  artifactKey: Guid(08ec3713e3ce76440af60ffd5d5323f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/StandardTable_low001.prefab using Guid(08ec3713e3ce76440af60ffd5d5323f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c66b753c8cb23042b82a4e1d4e75fcd') in 0.034284 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WantedBoard_low001.prefab
+  artifactKey: Guid(41e868878061acb42af66947b960830d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WantedBoard_low001.prefab using Guid(41e868878061acb42af66947b960830d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68e55ee945226e88318d53f8e70f1823') in 0.0317848 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WantedPoster011.prefab
+  artifactKey: Guid(49b9ddad84fe6174da7a97cf195c6054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WantedPoster011.prefab using Guid(49b9ddad84fe6174da7a97cf195c6054) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bba2f0bcfbea1b6b5cd263b6f57a7e82') in 0.0320283 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/SheriffBadge_low001.prefab
+  artifactKey: Guid(775af826215d9214fbca7e5bbeb7e338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/SheriffBadge_low001.prefab using Guid(775af826215d9214fbca7e5bbeb7e338) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c9c34124577e28fb7e427514f7b802e') in 0.0311145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low007.prefab
+  artifactKey: Guid(975e4c5b27d1050439e4048577a61118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low007.prefab using Guid(975e4c5b27d1050439e4048577a61118) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca408fb69fcf08e9ec6fb30adc4d559e') in 0.0322783 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low001.prefab
+  artifactKey: Guid(4237d010826302a4b8646ee699ce433f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low001.prefab using Guid(4237d010826302a4b8646ee699ce433f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9fe7a0bee1e7369beaf069ea9de68cf3') in 0.0322278 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Shelf_low.prefab
+  artifactKey: Guid(2eeeff8db8415b2478b5bd5d40f684b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Shelf_low.prefab using Guid(2eeeff8db8415b2478b5bd5d40f684b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ee93eaec0d3b4d9f4a9f139d19f1b67') in 0.0312047 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 606
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.804195 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low005.prefab
+  artifactKey: Guid(fae630c1bd52a8841a4fc907bf8af2c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low005.prefab using Guid(fae630c1bd52a8841a4fc907bf8af2c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e93603cf629623c5572a136d26d4ea89') in 0.0128374 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low006.prefab
+  artifactKey: Guid(e192218de29ef0b4f9168cfbfd5c966f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low006.prefab using Guid(e192218de29ef0b4f9168cfbfd5c966f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '67019439f91318c42f842e2d5eb0613b') in 0.0183436 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/RoundGlass_low003.prefab
+  artifactKey: Guid(6c70d1d4dbea3d2448739ba8bab98bf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/RoundGlass_low003.prefab using Guid(6c70d1d4dbea3d2448739ba8bab98bf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a094ce73a1ce268749724b571630b10a') in 0.0082341 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low008.prefab
+  artifactKey: Guid(65906b61de18ff748bef9a3aa7a35314) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low008.prefab using Guid(65906b61de18ff748bef9a3aa7a35314) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '00318cca55f5d2789f0128ea6e2c81e2') in 0.0102372 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low001.prefab
+  artifactKey: Guid(65c274f9691aa5b40a34373a12f06032) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low001.prefab using Guid(65c274f9691aa5b40a34373a12f06032) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9e8a042506ac5c855c8831637c7886e9') in 0.0086331 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low.prefab
+  artifactKey: Guid(ccca5e632ccd1df41acc1998d49d754a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low.prefab using Guid(ccca5e632ccd1df41acc1998d49d754a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bbe928c56e639830f9d71e08956f2e3b') in 0.0111971 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low005.prefab
+  artifactKey: Guid(d370d64ca49105a409c6b1f5595bc988) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low005.prefab using Guid(d370d64ca49105a409c6b1f5595bc988) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2baf38a55832a0e6e2e4b9d8d2c81f4f') in 0.0091293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/StandardTable_low001.prefab
+  artifactKey: Guid(08ec3713e3ce76440af60ffd5d5323f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/StandardTable_low001.prefab using Guid(08ec3713e3ce76440af60ffd5d5323f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '79ed1ac0b664a9a73cfa9346835e07cd') in 0.0090912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Shelf_low001.prefab
+  artifactKey: Guid(7f4e38396d04b894b922d5de604279c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/Shelf_low001.prefab using Guid(7f4e38396d04b894b922d5de604279c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '888aded8bf9e13358abde7d97d858053') in 0.0081563 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low003.prefab
+  artifactKey: Guid(21b0b2e2d1049d441b24ee8485bfdcdd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low003.prefab using Guid(21b0b2e2d1049d441b24ee8485bfdcdd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2f8c85772ec6c9a41a827f1575f76908') in 0.0084664 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/OilLampBot_low.prefab
+  artifactKey: Guid(cbc293ceacc969249bf4194326c9f8f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/OilLampBot_low.prefab using Guid(cbc293ceacc969249bf4194326c9f8f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aff8be41d837f31b09c3864fa9103063') in 0.0096101 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle010_low.prefab
+  artifactKey: Guid(f8861a88f78577b40a07c80d5415d273) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle010_low.prefab using Guid(f8861a88f78577b40a07c80d5415d273) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f073eb8dd26bc39f06d544a318c9b4a') in 0.0089739 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/StandardTable_low.prefab
+  artifactKey: Guid(70428a6b0f0c9fc49adf86822dfdbc53) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/StandardTable_low.prefab using Guid(70428a6b0f0c9fc49adf86822dfdbc53) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f73a88e868b7d53ed418ebd62b60242') in 0.0085004 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WantedPoster3.prefab
+  artifactKey: Guid(a2d49b95575b12a41871d4c2ee0ee7e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/WantedPoster3.prefab using Guid(a2d49b95575b12a41871d4c2ee0ee7e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9c537bd5846c7abc9256973c7242e0e5') in 0.0086051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low008.prefab
+  artifactKey: Guid(299da99209699bc48950a2d3bf170460) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low008.prefab using Guid(299da99209699bc48950a2d3bf170460) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fec3128db949682a979f68417cc0393f') in 0.0086119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.277097 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low007.prefab
+  artifactKey: Guid(47093a4eb6e91eb40bb0b8c5ce551157) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low007.prefab using Guid(47093a4eb6e91eb40bb0b8c5ce551157) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '29ddfea6dfbbb078904d90ed45eed741') in 0.0111195 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WantedPoster1.prefab
+  artifactKey: Guid(499f0fce6215e194a862a10f24ae5087) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/WantedPoster1.prefab using Guid(499f0fce6215e194a862a10f24ae5087) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cdae38c4ea33449efc724d147a4e8d93') in 0.0107159 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WantedBoard_low.prefab
+  artifactKey: Guid(28066b5e4ef08e24ea4098184200147f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/WantedBoard_low.prefab using Guid(28066b5e4ef08e24ea4098184200147f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0a790ed87f11cee4e1a2df5b0ef3fea3') in 0.0080961 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low001.prefab
+  artifactKey: Guid(c5a4b9abe9db08b4d96926f7217e270a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low001.prefab using Guid(c5a4b9abe9db08b4d96926f7217e270a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '51ff1320204a468334a031d1ca17ec8d') in 0.0095789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low002.prefab
+  artifactKey: Guid(edfb6a2cf0615a748896b1b3aea2f82a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low002.prefab using Guid(edfb6a2cf0615a748896b1b3aea2f82a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '488f6ec88b96795cfa2be8b71a9f0335') in 0.009387 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/RoundGlass_low006.prefab
+  artifactKey: Guid(4a19c6f0ff9db1a49956769f7bc6d25f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/RoundGlass_low006.prefab using Guid(4a19c6f0ff9db1a49956769f7bc6d25f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '14b5781b8153a3eb3e53d24300dab46a') in 0.0097118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/OilLamp_low.prefab
+  artifactKey: Guid(d1be9412cb270534db3348e4f0f5f308) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/OilLamp_low.prefab using Guid(d1be9412cb270534db3348e4f0f5f308) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '250211934c309fe4f5a4f43a07eef37e') in 0.0095466 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Moonshine004_low.prefab
+  artifactKey: Guid(b62a711ab89501f40ad1eeaf755022ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/Moonshine004_low.prefab using Guid(b62a711ab89501f40ad1eeaf755022ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cd6593351d62cf09f847280d7fbb750a') in 0.0099119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low006.prefab
+  artifactKey: Guid(6cde37a85d3aa8a4abda2c836e42a135) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low006.prefab using Guid(6cde37a85d3aa8a4abda2c836e42a135) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '84593eb6681097fd914699bb0b578644') in 0.0082883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/RoundGlass_low007.prefab
+  artifactKey: Guid(8db22c5816700834ab468340aa7edab1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/RoundGlass_low007.prefab using Guid(8db22c5816700834ab468340aa7edab1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '68ebb36af2679a16afc23d99b6c1dff1') in 0.0174291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low004.prefab
+  artifactKey: Guid(49088701f08a69041883468fadbcbd5c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low004.prefab using Guid(49088701f08a69041883468fadbcbd5c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5bc459bd2e54da0ab539b32cf8dd9e99') in 0.0088872 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low002.prefab
+  artifactKey: Guid(5fb52fbf287d7b34783859a88847bad4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low002.prefab using Guid(5fb52fbf287d7b34783859a88847bad4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '939d9a21947b36e7af47ba87b02cd756') in 0.0108205 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab
+  artifactKey: Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab using Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b40a6d1d5d18905d5371183b460a187') in 0.0102373 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WantedPoster2.prefab
+  artifactKey: Guid(19a0eaacced2d7241b13475e75972089) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Building3/WantedPoster2.prefab using Guid(19a0eaacced2d7241b13475e75972089) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1b5abef9128134868698b9b01c3f8ef8') in 0.0098866 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.982420 seconds.
+  path: Assets/World/Environment/Materials/asset set/WntedBoardBarStool 1.mat
+  artifactKey: Guid(00a36dc259a59234aa981556b9490d6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/asset set/WntedBoardBarStool 1.mat using Guid(00a36dc259a59234aa981556b9490d6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ca66d94e834dcb741fa1e4cf4a0b16a') in 0.017802 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Materials/asset set/SheriffItems 1.mat
+  artifactKey: Guid(e25571ab0e45b99488fb6dda6b88a0a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/asset set/SheriffItems 1.mat using Guid(e25571ab0e45b99488fb6dda6b88a0a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'db3545b9110ed4ec44d42d4081118728') in 0.012075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.385306 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab
+  artifactKey: Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab using Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b54101b1bd64cf491b4d1c3c66f46442') in 0.0108157 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low007.prefab
+  artifactKey: Guid(47093a4eb6e91eb40bb0b8c5ce551157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low007.prefab using Guid(47093a4eb6e91eb40bb0b8c5ce551157) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'adb45eeb88166a549906d3ef2f081f38') in 0.0102493 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle010_low001.prefab
+  artifactKey: Guid(d36e2220402f20c4291242453e38c965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle010_low001.prefab using Guid(d36e2220402f20c4291242453e38c965) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7ac175f6f46cf75af283ee1e95d690b') in 0.0108561 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BarStool_low001.prefab
+  artifactKey: Guid(9f9d6414d39ad24479a7377c77252d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BarStool_low001.prefab using Guid(9f9d6414d39ad24479a7377c77252d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dedb6b65eab81f422b2b6908a03a63ff') in 0.0089691 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Crate_low003.prefab
+  artifactKey: Guid(0f14c6697d83fab43a056eec28c697e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Crate_low003.prefab using Guid(0f14c6697d83fab43a056eec28c697e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ee97eb84421f748048cd5ff29d3433a') in 0.007832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low002.prefab
+  artifactKey: Guid(a59e94be4c338d54a97ddcc8e0f76ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low002.prefab using Guid(a59e94be4c338d54a97ddcc8e0f76ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd9c344a08f4bce2431168479946e7d3f') in 0.0089838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BullHorns_low.prefab
+  artifactKey: Guid(09be48a2e86e2134d8125cb36be75106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BullHorns_low.prefab using Guid(09be48a2e86e2134d8125cb36be75106) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49a7405944705fc101d5a2becbe7ecc7') in 0.0080926 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low001.prefab
+  artifactKey: Guid(65c274f9691aa5b40a34373a12f06032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low001.prefab using Guid(65c274f9691aa5b40a34373a12f06032) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82ed9a1f6bcba4f718157fc2bdd45d90') in 0.0087465 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low002.prefab
+  artifactKey: Guid(5fb52fbf287d7b34783859a88847bad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low002.prefab using Guid(5fb52fbf287d7b34783859a88847bad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9d6fb00e7427291a7dd6047eb260bb08') in 0.0073781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low003.prefab
+  artifactKey: Guid(f5b3fa210a571ad428b95a51e6544aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low003.prefab using Guid(f5b3fa210a571ad428b95a51e6544aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51fdf06a9b201a2db4a8e58a1314d73d') in 0.0088424 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low001.prefab
+  artifactKey: Guid(a450c58392f1c264db117c58630f3893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low001.prefab using Guid(a450c58392f1c264db117c58630f3893) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73b4e35915858a3918a5b159e79db676') in 0.0088129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low005.prefab
+  artifactKey: Guid(d9a3465e6e6e7784d8d15f0890372620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low005.prefab using Guid(d9a3465e6e6e7784d8d15f0890372620) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87dfe46ee631e251b835257b297fa3e3') in 0.0070694 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low002.prefab
+  artifactKey: Guid(b65d1b1866cc837478102efd17c6f03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low002.prefab using Guid(b65d1b1866cc837478102efd17c6f03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf1160e0cecbee8f69e71c160e686d53') in 0.0071205 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Bar_low.prefab
+  artifactKey: Guid(62a502a7e3190f04ea55533a87b9ad7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Bar_low.prefab using Guid(62a502a7e3190f04ea55533a87b9ad7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cb6c2b3c0c46198750f0c761c885839') in 0.0077322 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low008.prefab
+  artifactKey: Guid(65906b61de18ff748bef9a3aa7a35314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low008.prefab using Guid(65906b61de18ff748bef9a3aa7a35314) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9143c4c854be0ef7e7af9730a2def4b5') in 0.0089126 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low004.prefab
+  artifactKey: Guid(0e4e305bad3a91c4ba0e1e026ee2a973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low004.prefab using Guid(0e4e305bad3a91c4ba0e1e026ee2a973) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '265ff6e213b0f07b50921393dbd0dd6e') in 0.0076868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.015499 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low002.prefab
+  artifactKey: Guid(edfb6a2cf0615a748896b1b3aea2f82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low002.prefab using Guid(edfb6a2cf0615a748896b1b3aea2f82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dde3065f48244708755e89f98f7e5629') in 0.007221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairBackRest_low001.prefab
+  artifactKey: Guid(d8b623e6ccf26b04e80a3079989d5fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairBackRest_low001.prefab using Guid(d8b623e6ccf26b04e80a3079989d5fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd65be3d97d1ffa30aff03c1625203005') in 0.0114131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle010_low001.prefab
+  artifactKey: Guid(d36e2220402f20c4291242453e38c965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle010_low001.prefab using Guid(d36e2220402f20c4291242453e38c965) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf1cf2a44c94ec715a2ef17182371ca9') in 0.0074549 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolderHandle_low001.prefab
+  artifactKey: Guid(7b56c21a53da57b40871fde8627445c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolderHandle_low001.prefab using Guid(7b56c21a53da57b40871fde8627445c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b438a52b631fbb91c3729f2a6725fc4') in 0.0090007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Bar_low001.prefab
+  artifactKey: Guid(3d66e2e47b6d4e440bdaa7ea5d953621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Bar_low001.prefab using Guid(3d66e2e47b6d4e440bdaa7ea5d953621) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10c3e4894316a42e89e5499f5ae856f6') in 0.0077742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Crate_low003.prefab
+  artifactKey: Guid(0f14c6697d83fab43a056eec28c697e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Crate_low003.prefab using Guid(0f14c6697d83fab43a056eec28c697e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4df1703da9e26484c4f36b52d5c7144') in 0.0075944 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low004.prefab
+  artifactKey: Guid(38f0bc6c9ad09b3419ca0bf59412fca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low004.prefab using Guid(38f0bc6c9ad09b3419ca0bf59412fca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87b0e9479b4c0851ee0a43a94d866804') in 0.0130706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low003.prefab
+  artifactKey: Guid(7f7da952c1f07464ab1e7e05278d9b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low003.prefab using Guid(7f7da952c1f07464ab1e7e05278d9b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34cfb1cd8ffec7ec47ba6876b0cb0e27') in 0.0073876 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low003.prefab
+  artifactKey: Guid(5bf5db6cb137a5844825b01c3589beee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low003.prefab using Guid(5bf5db6cb137a5844825b01c3589beee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e09ae073f710206cbfcf233886c420f1') in 0.006884 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low001.prefab
+  artifactKey: Guid(65c274f9691aa5b40a34373a12f06032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low001.prefab using Guid(65c274f9691aa5b40a34373a12f06032) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77beca961a9ad1894a7d2874d6fd2eb3') in 0.0083616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low.prefab
+  artifactKey: Guid(7796a94b5bcfbca4faadaa1a8fa8c7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low.prefab using Guid(7796a94b5bcfbca4faadaa1a8fa8c7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bec49ec856b36414bb422ee3e62ecb3') in 0.0074912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low004.prefab
+  artifactKey: Guid(94721cb41bb5ba241a2bb5c8af2e94df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low004.prefab using Guid(94721cb41bb5ba241a2bb5c8af2e94df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1aeb974bd5c2072251723416b65c323e') in 0.0084401 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BarStool_low002.prefab
+  artifactKey: Guid(c60836cd170536a479fdbc3ac5815803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BarStool_low002.prefab using Guid(c60836cd170536a479fdbc3ac5815803) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ffae5faea8b75a3529892bb40c46c34') in 0.0105031 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab
+  artifactKey: Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/CandleHolder_low.prefab using Guid(ace2716a9aeb2224b8d034b3abca8f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '742691490a0d0f9c8e2825b295729291') in 0.0078385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low007.prefab
+  artifactKey: Guid(b6a7fee02744d3448bf34aa414010594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low007.prefab using Guid(b6a7fee02744d3448bf34aa414010594) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '346fb81e7e5a11f9104cc5d138a3e8b0') in 0.0072618 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low001.prefab
+  artifactKey: Guid(c5a4b9abe9db08b4d96926f7217e270a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairFeetRests_low001.prefab using Guid(c5a4b9abe9db08b4d96926f7217e270a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e39bb968d7df563e8c7604200415db6') in 0.0104371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/RoundGlass_low.prefab
+  artifactKey: Guid(bd7c7798e1bfb4c4eabdd2c687b563db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/RoundGlass_low.prefab using Guid(bd7c7798e1bfb4c4eabdd2c687b563db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63e7a91c8e4af2d296c1c94c5635282d') in 0.0076385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/SheriffBadgeHook_low001.prefab
+  artifactKey: Guid(1d5e7009fc4e6824594be2e924b78564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/SheriffBadgeHook_low001.prefab using Guid(1d5e7009fc4e6824594be2e924b78564) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ccbb1ad774f5fee998a6b32da8ab587d') in 0.0080694 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/KegSwitch_low.prefab
+  artifactKey: Guid(e4730499c94663a4d98df7e6ced09975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/KegSwitch_low.prefab using Guid(e4730499c94663a4d98df7e6ced09975) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b12a23508f4d98e86693ea45ec3d88b') in 0.0078173 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/PokerTable_low.prefab
+  artifactKey: Guid(9cb566192e7c4ad4d9f005b638995e45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/PokerTable_low.prefab using Guid(9cb566192e7c4ad4d9f005b638995e45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74bac62e56845a7bdf69720cd22d33ad') in 0.0069775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low002.prefab
+  artifactKey: Guid(a17ab17b4852c534fa89452368a1faef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low002.prefab using Guid(a17ab17b4852c534fa89452368a1faef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d3bb8545f08dba5e8550c56c3b80860') in 0.0098441 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WantedBoard_low.prefab
+  artifactKey: Guid(28066b5e4ef08e24ea4098184200147f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WantedBoard_low.prefab using Guid(28066b5e4ef08e24ea4098184200147f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b78825fc0f73ef5d693d0298e32f01e') in 0.0189588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low008.prefab
+  artifactKey: Guid(9e39ad165df219c429f865dad660450c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low008.prefab using Guid(9e39ad165df219c429f865dad660450c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f309753bd7b0444e3340aada56aabbea') in 0.0090358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WantedPoster1.prefab
+  artifactKey: Guid(499f0fce6215e194a862a10f24ae5087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WantedPoster1.prefab using Guid(499f0fce6215e194a862a10f24ae5087) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f01a87b2b2f060b6deead15cf4556053') in 0.0081411 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/StandardTable_low001.prefab
+  artifactKey: Guid(08ec3713e3ce76440af60ffd5d5323f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/StandardTable_low001.prefab using Guid(08ec3713e3ce76440af60ffd5d5323f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc8fe9e8217c8664b986c7b776742396') in 0.0084331 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/RoundGlass_low004.prefab
+  artifactKey: Guid(9710021530fa0c34e9d9017adff1bbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/RoundGlass_low004.prefab using Guid(9710021530fa0c34e9d9017adff1bbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '794b52b803a781d36d221d6ee61acd55') in 0.0069235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WantedPoster3.prefab
+  artifactKey: Guid(a2d49b95575b12a41871d4c2ee0ee7e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WantedPoster3.prefab using Guid(a2d49b95575b12a41871d4c2ee0ee7e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3b55feb8ed2a19764af891e8c760bfd') in 0.0082434 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low004.prefab
+  artifactKey: Guid(49088701f08a69041883468fadbcbd5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WhiskyGlass_low004.prefab using Guid(49088701f08a69041883468fadbcbd5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5b496189d28c52da39aa211137b333b') in 0.0072642 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/WantedPoster2.prefab
+  artifactKey: Guid(19a0eaacced2d7241b13475e75972089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/WantedPoster2.prefab using Guid(19a0eaacced2d7241b13475e75972089) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e42df770995d121e66864c65b3947f8f') in 0.0072293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Moonshine004_low001.prefab
+  artifactKey: Guid(7c19a57bc01e7354a9b61cdcb95893c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Moonshine004_low001.prefab using Guid(7c19a57bc01e7354a9b61cdcb95893c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '273d15ce6f8c8253bea06a463a95c465') in 0.0141965 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/SheriffHat_low001.prefab
+  artifactKey: Guid(407a3ad1e23e3464b831270af8904199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/SheriffHat_low001.prefab using Guid(407a3ad1e23e3464b831270af8904199) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d1621235baf4ce7bb63d06892a224eb') in 0.0103803 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low002.prefab
+  artifactKey: Guid(b65d1b1866cc837478102efd17c6f03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low002.prefab using Guid(b65d1b1866cc837478102efd17c6f03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dbf55aa9cda2495081b3a95b14b328a3') in 0.0118404 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairSeat_low005.prefab
+  artifactKey: Guid(1a4ba84cccf7971429501407f68c1f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairSeat_low005.prefab using Guid(1a4ba84cccf7971429501407f68c1f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ab9b340225fe9e54cc450bb14fef2f7') in 0.0077664 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab
+  artifactKey: Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/AlcoholBottle008_low003.prefab using Guid(956f6652c3c8dd74eb24319d9a7079e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08a93c9a9b60bb4286f0cc76a0c99201') in 0.0079307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/BullHornsRope_low.prefab
+  artifactKey: Guid(914c29fc22381f54e90974749a6270ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/BullHornsRope_low.prefab using Guid(914c29fc22381f54e90974749a6270ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ead621f9d087930b14cad5915ea4f608') in 0.0095631 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/ChairLegs_low008.prefab
+  artifactKey: Guid(65906b61de18ff748bef9a3aa7a35314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/ChairLegs_low008.prefab using Guid(65906b61de18ff748bef9a3aa7a35314) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2834886d674b395d0c117995ff5c065d') in 0.0084137 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/RoundGlass_low001.prefab
+  artifactKey: Guid(7ad6d8572f7b21d4a9947e9b1bda871a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/RoundGlass_low001.prefab using Guid(7ad6d8572f7b21d4a9947e9b1bda871a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3b68e0fe520913906886af61b85ef9f') in 0.0083028 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Keg_low.prefab
+  artifactKey: Guid(d506c825aeaa56249a333dfc5922ec84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Keg_low.prefab using Guid(d506c825aeaa56249a333dfc5922ec84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d98350b182af03a324a05e446b30b3a') in 0.010392 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Environment/Prefabs/Building3/Shelf_low.prefab
+  artifactKey: Guid(2eeeff8db8415b2478b5bd5d40f684b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Building3/Shelf_low.prefab using Guid(2eeeff8db8415b2478b5bd5d40f684b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '038aaf29a2963a1760fdbbd8366c6e66') in 0.0074282 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
