@@ -18,8 +18,8 @@ public class TrainScript : MonoBehaviour
     }
 
     private IEnumerator TrainCycle(){
+        movingCollider.enabled = true;
         yield return new WaitForSeconds(Random.Range(trainWait*0.5f, trainWait));
-        audioSource.Stop();
         audioSource.clip = musicClips[2];
         audioSource.Play();
         animator.SetTrigger("arrive");
@@ -35,6 +35,9 @@ public class TrainScript : MonoBehaviour
         animator.SetTrigger("depart");
         yield return new WaitForSeconds(3f);
         movingCollider.enabled = true;
+        yield return new WaitForSeconds(4f);
+        audioSource.Stop();
+        movingCollider.enabled = false;
         yield return new WaitForSeconds(Random.Range(trainWait, trainWait*2f));
         StartCoroutine(TrainCycle());
     }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5196822468069608370}
   - component: {fileID: 2414862115735437366}
   m_Layer: 7
-  m_Name: CactiTree
+  m_Name: CactiTree2
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3303013392217551579}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.83128285, z: 0.00000010430813}
+  m_LocalReferencePoint: {x: -0.06445736, y: 0.83128285, z: -0.05094719}
   m_Size: 1.9191
   m_FadeMode: 0
   m_AnimateCrossFading: 0
@@ -96,11 +96,23 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 901814748341444212}
     m_Modifications:
+    - target: {fileID: 4306405791620035084, guid: 806a610ecf04b874282def3a0fea4d66,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2721618326705977445, guid: 7805da3cfd5d7de4aa5740143951d9ce,
+        type: 3}
     - target: {fileID: 6071447523675652777, guid: 806a610ecf04b874282def3a0fea4d66,
         type: 3}
       propertyPath: m_Name
       value: cactus
       objectReference: {fileID: 0}
+    - target: {fileID: 6252499667002838698, guid: 806a610ecf04b874282def3a0fea4d66,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2721618326705977445, guid: 7805da3cfd5d7de4aa5740143951d9ce,
+        type: 3}
     - target: {fileID: 9183218074384937107, guid: 806a610ecf04b874282def3a0fea4d66,
         type: 3}
       propertyPath: m_LocalPosition.x

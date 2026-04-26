@@ -22,6 +22,7 @@ public class playerHP : MonoBehaviour
     [SerializeField] private Material saturationMaterial;
     [SerializeField] private SkinnedMeshRenderer playerHands;
     [SerializeField] private SkinnedMeshRenderer playerBody;
+    [SerializeField] private LayerMask respawnLayerMask;
      private RevolverScript revolverScript;
     private float maxHP;
     CharacterController cc;
@@ -43,10 +44,13 @@ public class playerHP : MonoBehaviour
     private float saturationValue;
     private bool gotHit = false;
     private InputAction sprintAction;
-    
+    private bool hasRespawnPoint;
+    private Vector3 respawnPointVector;
 
     void Start()
     {
+        saturationValue = 0;
+        transparencyValue = -1f;
         revolverScript = GameObject.Find("Weapon").GetComponent<RevolverScript>();
         deathPoint = GameObject.Find("DeathPoint");
         respawnPoint = GameObject.Find("RespawnPoint");
@@ -138,34 +142,40 @@ public class playerHP : MonoBehaviour
             transparencyValue = 0;
             yield return new WaitForSeconds(hitEffectDuration);
             for(int i = 0; i < 10; i++){
-            if(gotHit){
-                transparencyValue = 0;
-                break;
-                StartCoroutine(HitEffect());
-            } else {
-                 transparencyValue -= 0.1f;
-                 yield return new WaitForSeconds(hitEffectDuration/(10*hitEffectDuration));
-            }
+                if(gotHit){
+                    transparencyValue = 0;
+                    StartCoroutine(HitEffect());
+                    break;
+                } else {
+                    transparencyValue -= 0.1f;
+                    yield return new WaitForSeconds(0.1f);
+                }
            
         }
     }
 
-     Vector3 RandomNavmeshLocation() {
-            Vector3 randomDirection = Random.insideUnitSphere * radius;
-            randomDirection += transform.position;
-            UnityEngine.AI.NavMeshHit hit;
-            Vector3 finalPosition = Vector3.zero;
-            if (UnityEngine.AI.NavMesh.SamplePosition(randomDirection, out hit, radius, 1)) {
-                finalPosition = hit.position;            
-            }
-            return finalPosition;
-            
+    private void FindRandomNavmeshLocation(){ //When Patrolling state
+        if (!hasRespawnPoint){ //If no patrol point has been decided YET, run the function to find it.
+                Vector3 potentialPoint = new Vector3(transform.position.x + Random.Range(-100f, 100f), transform.position.y + 10f, transform.position.z + Random.Range(-100f, 100f)); //Calculate a desired point to send a raycast from (using the patrol radius values, with a Y value above the npc)
+                RaycastHit hit; 
+                if (Physics.Raycast(potentialPoint, Vector3.down, out hit, 20f, respawnLayerMask)){ //Send a raycast from above down to check for walkable layer.
+                    respawnPointVector = hit.point;
+                    hasRespawnPoint = true;
+                } else {
+                    FindRandomNavmeshLocation();
+                }
+        }
+
+        if (hasRespawnPoint){
+           respawnPoint.transform.position = respawnPointVector;
+        } 
     }
+
 
     private IEnumerator PlayerDeath(){
 
         audioSource.mute = true;
-        respawnPoint.transform.position = RandomNavmeshLocation();
+        FindRandomNavmeshLocation();
         hpImage.enabled = false;
         deathText.enabled = true;
         hp = maxHP;
@@ -195,6 +205,7 @@ public class playerHP : MonoBehaviour
         this.transform.position = respawnPoint.transform.position;
         cc.enabled = true;
         fpc.enabled = true;
+        hasRespawnPoint = false;
     }
 
     private IEnumerator PlayNextClip()

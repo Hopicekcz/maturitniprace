@@ -20,6 +20,7 @@ public class DoorScriptTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player") || other.CompareTag("PlayerController"))
         {
+            Debug.Log("Detected!");
             DoorAnimationScript._triggerEntered = true;
         }
         if ((other.CompareTag("Character") || other.CompareTag("CharacterListener")) && (DoorAnimationScript.doorOpen == false))

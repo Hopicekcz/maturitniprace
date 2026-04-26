@@ -530,7 +530,7 @@ public class aiNAV : MonoBehaviour
         Ray ray = new Ray(muzzlePoint.transform.position, direction); //raycast of bullet from camera center with direction with applied spread
         RaycastHit hit; //Return of raycast
         
-        if (Physics.Raycast(ray, out hit, hittableLayerMask))  //which effect prefab to use depending on hit object tag
+        if (Physics.Raycast(ray, out hit, 10f, hittableLayerMask))  //which effect prefab to use depending on hit object tag
                 {
                     switch(hit.collider.tag){
                         case "Untagged":
