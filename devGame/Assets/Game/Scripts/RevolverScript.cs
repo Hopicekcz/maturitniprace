@@ -447,8 +447,8 @@ public class RevolverScript : MonoBehaviour
                 gunAnimator.SetBool("isReloading", isReloading); //Set revolver to reloading position
                 gunAnimator.SetTrigger("Reload"); //Keep revolver in reloading position
                 yield return new WaitForSeconds(0.2f);
-                ogRevolverAmmoCount = revolverAmmoCount; //"Temporary" variable used only for separate values to set how many times the reload sound should play, while the HUD displays the correct current value
-                for(int i = 0; i < (maxRevolverAmmoCount-ogRevolverAmmoCount); i++){ //loops for how many bullets are missing in the cylinder
+                ogRevolverAmmoCount = revolverAmmoCount; //"Temporary" variable
+                for(int i = 0; i < (maxRevolverAmmoCount-ogRevolverAmmoCount); i++){ 
                     if(interruptReload){
                         break;
                     }
@@ -456,9 +456,9 @@ public class RevolverScript : MonoBehaviour
                     yield return new WaitForSeconds(0.6f);
                     revolverAmmoCount++;
                 }
-                handAnimator.SetBool("isReloading", false); //Move hand out of reloading position
+                handAnimator.SetBool("isReloading", false); 
                 //handObjectAnimator.SetBool("isReloading", false);
-                gunAnimator.SetBool("isReloading", false); //Move revolver out of reloading position
+                gunAnimator.SetBool("isReloading", false); 
                 
                 yield return new WaitForSeconds(0.4f);
                 audioSource.PlayOneShot(breakSound);

@@ -308,26 +308,21 @@ public class aiNAV : MonoBehaviour
         GameObject ragdollObject = Instantiate(ragdollObjectPrefab, this.transform);
         dying = true;
         navAgent.isStopped = true;
-        //audioSource.enabled = false;
         animator.enabled = false;
         ownMeshCollider.enabled = false;
         ownCapsuleCollider.enabled = false;
         ownBody.SetActive(false);
         yield return new WaitForSeconds(ragdollTimer);
-        
         transform.position = RandomNavmeshLocation();
         npcHP = maxHP;
         isDead = false;
         navAgent.isStopped = false;
-        //audioSource.enabled = true;
         Destroy(ragdollObject);
         ownBody.SetActive(true);
         animator.enabled = true;
         ownCapsuleCollider.enabled = false;
         ownMeshCollider.enabled = true;
         dying = false;
-        
-        
     }
 
     Vector3 RandomNavmeshLocation() {

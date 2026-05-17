@@ -1,13 +1,19 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.3f1 (ef04196de0d6) revision 15664153'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16004 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-04-26T20:44:14.7941422Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2026-04-26T20:44:14Z
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 16236, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic" at "2026-05-17T14:58:25.2453175Z"
+Date: 2026-05-17T14:58:25Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 19888, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.17.4'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Hopic"
+[Licensing::IpcConnector] LicenseClient-Hopic channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-05-17T14:58:25.3109105Z"
 
 COMMAND LINE ARGUMENTS:
-[Licensing::Module] LicensingClient has failed validation; ignoring
 C:\Program Files\Unity\Hub\Editor\6000.3.3f1\Editor\Unity.exe
 -adb2
 -batchMode
@@ -19,7 +25,7 @@ E:/unity/maturitniprace/active/devGame
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-58326
+55859
 -licensingIpc
 LicenseClient-Hopic
 -job-worker-count
@@ -31,12 +37,6 @@ LicenseClient-Hopic
 -name
 AssetImport
 Successfully changed project path to: E:/unity/maturitniprace/active/devGame
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.17.4'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Hopic"
-[Licensing::IpcConnector] LicenseClient-Hopic channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3" at "2026-04-26T20:44:14.8722824Z"
 E:/unity/maturitniprace/active/devGame
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
@@ -73,16 +73,16 @@ E:/unity/maturitniprace/active/devGame
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [20244]  Target information:
+Player connection [22416]  Target information:
 
-Player connection [20244]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4288945103 [EditorId] 4288945103 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22416]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1973504204 [EditorId] 1973504204 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [20244]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 4288945103 [EditorId] 4288945103 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22416]  * "[IP] 26.18.104.236 [Port] 0 [Flags] 2 [Guid] 1973504204 [EditorId] 1973504204 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [20244]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 4288945103 [EditorId] 4288945103 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22416]  * "[IP] 10.0.1.28 [Port] 0 [Flags] 2 [Guid] 1973504204 [EditorId] 1973504204 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HOPICEKCZ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [20244] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [20244] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22416] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [22416] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -94,7 +94,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 8.02 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 7.08 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.3f1 (ef04196de0d6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -112,52 +112,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              e36d9ba3dbd84b658b3e196ff5c0d628
-  Correlation Id:          6cb97ea63dd816f1a4acd5337d16abd4
-  External correlation Id: 3976200345896652817
+  Session Id:              86c4b36e055a48898f92e4264434ba81
+  Correlation Id:          d97677f7ed5556f7474fb009b2d5862c
+  External correlation Id: 784197965746248517
   Machine Id:              4VB2xDT1CV9zqVbIIZWsGa/FyKA=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 1.49s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-04-26T20:44:16.3662443Z"
-[Licensing::Module] Licensing Background thread has ended after 1.57s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Hopic-6000.3.3" (connect: 0.00s, validation: 0.00s, handshake: 1.53s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Hopic-6000.3.3-notifications" at "2026-05-17T14:58:26.8506148Z"
+[Licensing::Module] Licensing Background thread has ended after 1.61s
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006631 seconds.
-- Loaded All Assemblies, in  0.605 seconds
+Registered in 0.003068 seconds.
+- Loaded All Assemblies, in  0.645 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.523 seconds
-Domain Reload Profiling: 1122ms
-	BeginReloadAssembly (255ms)
+- Finished resetting the current domain, in  0.590 seconds
+Domain Reload Profiling: 1230ms
+	BeginReloadAssembly (270ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (74ms)
-	LoadAllAssembliesAndSetupDomain (206ms)
-		LoadAssemblies (249ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (235ms)
+		LoadAssemblies (264ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (202ms)
-			TypeCache.Refresh (200ms)
-				TypeCache.ScanAssembly (184ms)
+		AnalyzeDomain (231ms)
+			TypeCache.Refresh (229ms)
+				TypeCache.ScanAssembly (211ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (524ms)
+	FinalizeReload (590ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (483ms)
+		SetupLoadedEditorAssemblies (524ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (70ms)
+			InitializePlatformSupportModulesInManaged (72ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (102ms)
-			ProcessInitializeOnLoadAttributes (184ms)
-			ProcessInitializeOnLoadMethodAttributes (123ms)
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (201ms)
+			ProcessInitializeOnLoadMethodAttributes (135ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -178,8 +178,8 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2.533 seconds
-Refreshing native plugins compatible for Editor in 5.75 ms, found 2 plugins.
+- Loaded All Assemblies, in  3.956 seconds
+Refreshing native plugins compatible for Editor in 15.35 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -188,7 +188,7 @@ Package Manager log level set to [2]
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-Cool It, Cowboy
-Refreshing native plugins compatible for Editor in 7.04 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 7.07 ms, found 2 plugins.
 Your project uses Compatibility Mode, which disables the render graph system. Compatibility Mode is deprecated. Migrate your ScriptableRenderPasses to the Render Graph API instead. After you migrate, go to Edit > Project Settings > Player and remove the URP_COMPATIBILITY_MODE define from the Scripting Define Symbols. If you don't remove the define, build time and build size are slightly increased.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -204,125 +204,55 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 (Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 440)
 
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.027 seconds
-Domain Reload Profiling: 4553ms
-	BeginReloadAssembly (220ms)
+- Finished resetting the current domain, in  2.013 seconds
+Domain Reload Profiling: 5962ms
+	BeginReloadAssembly (245ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (44ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (45ms)
 	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (55ms)
-	LoadAllAssembliesAndSetupDomain (2190ms)
-		LoadAssemblies (1981ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (3582ms)
+		LoadAssemblies (3377ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (336ms)
-			TypeCache.Refresh (246ms)
-				TypeCache.ScanAssembly (226ms)
-			BuildScriptInfoCaches (73ms)
+		AnalyzeDomain (343ms)
+			TypeCache.Refresh (251ms)
+				TypeCache.ScanAssembly (230ms)
+			BuildScriptInfoCaches (74ms)
 			ResolveRequiredComponents (13ms)
-	FinalizeReload (2028ms)
+	FinalizeReload (2014ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1020ms)
+		SetupLoadedEditorAssemblies (1030ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (164ms)
-			ProcessInitializeOnLoadAttributes (538ms)
-			ProcessInitializeOnLoadMethodAttributes (299ms)
-			AfterProcessingInitializeOnLoad (14ms)
+			BeforeProcessingInitializeOnLoad (179ms)
+			ProcessInitializeOnLoadAttributes (546ms)
+			ProcessInitializeOnLoadMethodAttributes (285ms)
+			AfterProcessingInitializeOnLoad (13ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 8.53 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 8.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6215 unused Assets / (4.0 MB). Loaded Objects now: 7071.
-Memory consumption went from 265.4 MB to 261.4 MB.
-Total: 17.442100 ms (FindLiveObjects: 0.860800 ms CreateObjectMapping: 0.458700 ms MarkObjects: 14.249200 ms  DeleteObjects: 1.870100 ms)
+Unloading 6215 unused Assets / (2.1 MB). Loaded Objects now: 7071.
+Memory consumption went from 263.9 MB to 261.8 MB.
+Total: 20.921000 ms (FindLiveObjects: 1.060900 ms CreateObjectMapping: 2.823600 ms MarkObjects: 13.117300 ms  DeleteObjects: 3.914800 ms)
 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.403 seconds
-Refreshing native plugins compatible for Editor in 6.03 ms, found 2 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Your project uses Compatibility Mode, which disables the render graph system. Compatibility Mode is deprecated. Migrate your ScriptableRenderPasses to the Render Graph API instead. After you migrate, go to Edit > Project Settings > Player and remove the URP_COMPATIBILITY_MODE define from the Scripting Define Symbols. If you don't remove the define, build time and build size are slightly increased.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs:440)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 440)
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.312 seconds
-Domain Reload Profiling: 2712ms
-	BeginReloadAssembly (346ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (82ms)
-	RebuildCommonClasses (54ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (928ms)
-		LoadAssemblies (794ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (302ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (267ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (1313ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1078ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (183ms)
-			ProcessInitializeOnLoadAttributes (573ms)
-			ProcessInitializeOnLoadMethodAttributes (300ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 7.93 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6214 unused Assets / (4.1 MB). Loaded Objects now: 7084.
-Memory consumption went from 267.2 MB to 263.2 MB.
-Total: 15.975000 ms (FindLiveObjects: 1.285200 ms CreateObjectMapping: 0.562200 ms MarkObjects: 12.073600 ms  DeleteObjects: 2.052500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 435997.106267 seconds.
-  path: Assets/worldbuilding/Player.prefab
-  artifactKey: Guid(b6ebb7da069fef640ac16daa129dc41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/worldbuilding/Player.prefab using Guid(b6ebb7da069fef640ac16daa129dc41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)CommandBuffer: temporary render texture  not found while executing  (Copy source)
+  Time since last request: 150761.670090 seconds.
+  path: Assets/World/Environment/Prefabs/Custom/Final.fbx
+  artifactKey: Guid(fd44ddea1d6d8fe4daec377d12d52e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Custom/Final.fbx using Guid(fd44ddea1d6d8fe4daec377d12d52e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)CommandBuffer: temporary render texture  not found while executing  (Copy source)
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.Rendering.ScriptableRenderContext:Submit ()
@@ -360,16 +290,927 @@ UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityE
 
 [./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/UniversalRenderPipeline.cs line 921]
 
- -> (artifact id: '9481cb0417fde8805d2bcd93174891f8') in 7.2917533 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1353
+ -> (artifact id: '845f9c70902b383e308fdac0d26763d6') in 0.7341682 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 70
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/World/Environment/Prefabs/Custom/Final.fbx
+  artifactKey: Guid(fd44ddea1d6d8fe4daec377d12d52e1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Custom/Final.fbx using Guid(fd44ddea1d6d8fe4daec377d12d52e1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ed80950e351ce6013a2a8426a7ebdf8') in 0.1328423 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 68
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.703342 seconds.
+  path: Assets/World/Environment/Prefabs/Custom/Take 001.anim
+  artifactKey: Guid(b2f00b0a654b0534bb69341c4f97def6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Custom/Take 001.anim using Guid(b2f00b0a654b0534bb69341c4f97def6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '663905fd22be22717d58c4a073905c11') in 0.0019792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.884909 seconds.
+  path: Assets/World/Environment/Prefabs/Custom/Take 001.anim
+  artifactKey: Guid(b2f00b0a654b0534bb69341c4f97def6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Custom/Take 001.anim using Guid(b2f00b0a654b0534bb69341c4f97def6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a31eb73912ddfb99e82fe62da7908f9f') in 0.0083723 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.208192 seconds.
+  path: Assets/Game/Animations/Take 001.anim
+  artifactKey: Guid(b2f00b0a654b0534bb69341c4f97def6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/Take 001.anim using Guid(b2f00b0a654b0534bb69341c4f97def6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '78d222e64e36cec05e39059de18f7739') in 0.0082177 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.463943 seconds.
+  path: Assets/Game/Animations/VaultOpen.anim
+  artifactKey: Guid(b2f00b0a654b0534bb69341c4f97def6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Animations/VaultOpen.anim using Guid(b2f00b0a654b0534bb69341c4f97def6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77f64e779d4e14087aa3304c18e2ee51') in 0.00174 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.900841 seconds.
+  path: Assets/Game/Animations/VaultOpen.anim
+  artifactKey: Guid(b2f00b0a654b0534bb69341c4f97def6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/VaultOpen.anim using Guid(b2f00b0a654b0534bb69341c4f97def6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0a68c1067a1e98c9bdc5ff98bc3e805f') in 0.0049025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.350987 seconds.
+  path: Assets/World/Environment/Materials/Custom/sandstone.mat
+  artifactKey: Guid(7cf54c0bb08624841bbc9c0249093568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Materials/Custom/sandstone.mat using Guid(7cf54c0bb08624841bbc9c0249093568) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a415f63f5862995ff2ef5c7002cc6da0') in 0.110856 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.671530 seconds.
+  path: Assets/World/Environment/Materials/Custom/vault
+  artifactKey: Guid(7a8cc1a4234965b4daffa6be8618183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Materials/Custom/vault using Guid(7a8cc1a4234965b4daffa6be8618183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a7bbbcf997407ee59510fa8a65826f8') in 0.0013694 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/World/Environment/Materials/Custom/vault/blinn1.mat
+  artifactKey: Guid(dc577645972101d43b06665fdd138ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Materials/Custom/vault/blinn1.mat using Guid(dc577645972101d43b06665fdd138ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05a7d8fde86e4cfd9ac21a38062980e1') in 0.0081037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.060673 seconds.
+  path: Assets/World/Environment/Prefabs/Custom/Final.fbx
+  artifactKey: Guid(fd44ddea1d6d8fe4daec377d12d52e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Custom/Final.fbx using Guid(fd44ddea1d6d8fe4daec377d12d52e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79477c17a2edf83762bcffa74b5f4b2b') in 0.0930327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 72
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.000977 seconds.
+  path: Assets/World/Environment/Prefabs/Custom/Vault.fbx
+  artifactKey: Guid(fd44ddea1d6d8fe4daec377d12d52e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Custom/Vault.fbx using Guid(fd44ddea1d6d8fe4daec377d12d52e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15217a2ef0d9db4e52d8d070373ae399') in 0.0697958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 72
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.846465 seconds.
+  path: Assets/World/Environment/Prefabs/Custom/Vault.fbx
+  artifactKey: Guid(fd44ddea1d6d8fe4daec377d12d52e1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Custom/Vault.fbx using Guid(fd44ddea1d6d8fe4daec377d12d52e1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5f10bbb1332c5e6f97c3519082da37c3') in 0.0277877 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 72
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.968495 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl
+  artifactKey: Guid(d55706914cfa84431bb4f9277ebd1054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl using Guid(d55706914cfa84431bb4f9277ebd1054) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9ad75d538bdd627a120283b9162332b') in 0.0033654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Generation/Targets/Fullscreen/Includes/FullscreenBlit.hlsl
+  artifactKey: Guid(c1931467a12255f489f3c72e4aa99ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Generation/Targets/Fullscreen/Includes/FullscreenBlit.hlsl using Guid(c1931467a12255f489f3c72e4aa99ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a62fab2acaac74856b014651fa3ec62') in 0.0013957 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 166.929030 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Generation/Targets/BuiltIn/Editor/ShaderGraph/Includes/LightingMetaPass.hlsl
+  artifactKey: Guid(395ef430db5747842b555e50b3c7b330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Generation/Targets/BuiltIn/Editor/ShaderGraph/Includes/LightingMetaPass.hlsl using Guid(395ef430db5747842b555e50b3c7b330) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f8cb0d3c569ac1652dc43dbc729112d') in 0.003536 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Generation/Targets/BuiltIn/ShaderLibrary/MetaInput.hlsl
+  artifactKey: Guid(51db4cfe7bc15d249a840d3643e41b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/Editor/Generation/Targets/BuiltIn/ShaderLibrary/MetaInput.hlsl using Guid(51db4cfe7bc15d249a840d3643e41b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f19851c7e6f2e74c3f2b7c480a86363a') in 0.0151023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 194.645151 seconds.
+  path: Assets/World/Environment/Models/Custom/Final.fbx
+  artifactKey: Guid(fd44ddea1d6d8fe4daec377d12d52e1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Models/Custom/Final.fbx using Guid(fd44ddea1d6d8fe4daec377d12d52e1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23fdcaebc4778cd32b46c197272809b1') in 0.0160751 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 72
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.716217 seconds.
+  path: Assets/World/Environment/Prefabs/Custom/Vault.prefab
+  artifactKey: Guid(fb0f2de15d26e1948a5abb0b87c13674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Custom/Vault.prefab using Guid(fb0f2de15d26e1948a5abb0b87c13674) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c0080a39dbca30f4f4c5e23b8fbe6a3') in 0.0384155 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 128
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.878536 seconds.
+  path: Assets/World/Environment/Prefabs/Custom/Vault.prefab
+  artifactKey: Guid(fb0f2de15d26e1948a5abb0b87c13674) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Custom/Vault.prefab using Guid(fb0f2de15d26e1948a5abb0b87c13674) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e0db80b33af1ee16c36b02df8a9ccc39') in 0.0081898 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 67
+
+========================================================================
+Received Import Request.
+  Time since last request: 485.943976 seconds.
+  path: Assets/World/Environment/Prefabs/Furniture/Carpets
+  artifactKey: Guid(1ce0ae77f7903fd44b6a6080f61365d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Furniture/Carpets using Guid(1ce0ae77f7903fd44b6a6080f61365d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a9430004b59476614a31d8404bb1738') in 0.0010697 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.624479 seconds.
+  path: Assets/worldbuilding/BorderBuilding.prefab
+  artifactKey: Guid(058028792399a1b4cb1a04971b3a6ecd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/worldbuilding/BorderBuilding.prefab using Guid(058028792399a1b4cb1a04971b3a6ecd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b410fe7704269a9d381a48356ad108c0') in 0.1515615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.702582 seconds.
+  path: Assets/Settings
+  artifactKey: Guid(1a151c903546fbd468a95eb511bc07fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings using Guid(1a151c903546fbd468a95eb511bc07fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '24364db335141bf7025be8c12f777e62') in 0.0008162 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.226921 seconds.
+  path: Assets/World/Environment/BuildingPrefabs/PrefabMaterials/WoodFrame.mat
+  artifactKey: Guid(5a397939fdc094d49b13815204202140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/BuildingPrefabs/PrefabMaterials/WoodFrame.mat using Guid(5a397939fdc094d49b13815204202140) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35166efad60be14fe364dfb4b6f7a18a') in 0.096004 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.025248 seconds.
+  path: Assets/World/Environment/MeshTerrains
+  artifactKey: Guid(fb65fb1aa26a787458adff682db4ad25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/MeshTerrains using Guid(fb65fb1aa26a787458adff682db4ad25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcdae9a566690f878b29e90e75b7e2b8') in 0.0008151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 814.202809 seconds.
+  path: Assets/World/Environment/Textures/Custom/woodWax.jpg
+  artifactKey: Guid(ae78e9dab90ef1e48b82b8b250ecc05b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Textures/Custom/woodWax.jpg using Guid(ae78e9dab90ef1e48b82b8b250ecc05b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cbb9af14e50681e29c19e662874b1772') in 0.0373527 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.687957 seconds.
+  path: Assets/World/Environment/Materials/Custom/woodWax.mat
+  artifactKey: Guid(e95cf4e9636779243834c3534cb50070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Materials/Custom/woodWax.mat using Guid(e95cf4e9636779243834c3534cb50070) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dfe217c260285eadbb9054b375d5828d') in 0.0092838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.887141 seconds.
+  path: Assets/World/Environment/Materials/Custom/woodWax.mat
+  artifactKey: Guid(e95cf4e9636779243834c3534cb50070) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/Custom/woodWax.mat using Guid(e95cf4e9636779243834c3534cb50070) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '592019564de15c144ad2a2f9ef6fd608') in 0.0085272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/World/Environment/Materials/Custom/vault/lambert2.mat
+  artifactKey: Guid(b8da831061a0bfb45bccfdc300e4a183) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/Custom/vault/lambert2.mat using Guid(b8da831061a0bfb45bccfdc300e4a183) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aeb5cd5ba4a2d00891a5ff16796eae17') in 0.0090143 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Game/Animations/train/trainArrival.anim
+  artifactKey: Guid(f4b2abc956c952f498f73311e742ee83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Animations/train/trainArrival.anim using Guid(f4b2abc956c952f498f73311e742ee83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '073ed0bed138781ebfe0273641fa5473') in 0.0060249 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.809043 seconds.
+  path: Assets/World/Environment/Textures/Custom/woodWax.jpg
+  artifactKey: Guid(ae78e9dab90ef1e48b82b8b250ecc05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Textures/Custom/woodWax.jpg using Guid(ae78e9dab90ef1e48b82b8b250ecc05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'efc5902b464b8f448307722fed2657e9') in 0.0172165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 113.065499 seconds.
+  path: Assets/World/Environment/Prefabs/Custom/BankTill.prefab
+  artifactKey: Guid(fb05e007ab1cd1e419a8fd212221e5fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Custom/BankTill.prefab using Guid(fb05e007ab1cd1e419a8fd212221e5fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e53e5913e91f3fe7429b365d0ed1afb4') in 0.0460554 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 50
+
+========================================================================
+Received Import Request.
+  Time since last request: 843.394505 seconds.
+  path: Assets/World/Environment/Materials/Custom/woodWax.mat
+  artifactKey: Guid(e95cf4e9636779243834c3534cb50070) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Materials/Custom/woodWax.mat using Guid(e95cf4e9636779243834c3534cb50070) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '72ebc9958c15ddfba24bbc7331849da4') in 0.0096047 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Game/Scenes/Playground.unity
+  artifactKey: Guid(707acc8dffb72b144bb1ffbe1c965f3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Game/Scenes/Playground.unity using Guid(707acc8dffb72b144bb1ffbe1c965f3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '360da2738fc0ad31fa36ae5dc50fbb7f') in 0.061444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.132 seconds
+Refreshing native plugins compatible for Editor in 8.17 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Your project uses Compatibility Mode, which disables the render graph system. Compatibility Mode is deprecated. Migrate your ScriptableRenderPasses to the Render Graph API instead. After you migrate, go to Edit > Project Settings > Player and remove the URP_COMPATIBILITY_MODE define from the Scripting Define Symbols. If you don't remove the define, build time and build size are slightly increased.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs:440)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 440)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.344 seconds
+Domain Reload Profiling: 2475ms
+	BeginReloadAssembly (358ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (27ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (97ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (659ms)
+		LoadAssemblies (562ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (254ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (226ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1345ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (975ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (177ms)
+			ProcessInitializeOnLoadAttributes (497ms)
+			ProcessInitializeOnLoadMethodAttributes (281ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 6.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6215 unused Assets / (4.2 MB). Loaded Objects now: 7153.
+Memory consumption went from 270.0 MB to 265.8 MB.
+Total: 15.502200 ms (FindLiveObjects: 0.819700 ms CreateObjectMapping: 0.521100 ms MarkObjects: 12.430400 ms  DeleteObjects: 1.729800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.993 seconds
+Refreshing native plugins compatible for Editor in 6.34 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Your project uses Compatibility Mode, which disables the render graph system. Compatibility Mode is deprecated. Migrate your ScriptableRenderPasses to the Render Graph API instead. After you migrate, go to Edit > Project Settings > Player and remove the URP_COMPATIBILITY_MODE define from the Scripting Define Symbols. If you don't remove the define, build time and build size are slightly increased.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs:440)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 440)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.235 seconds
+Domain Reload Profiling: 2225ms
+	BeginReloadAssembly (265ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (620ms)
+		LoadAssemblies (502ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (249ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (221ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1236ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1045ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (185ms)
+			ProcessInitializeOnLoadAttributes (558ms)
+			ProcessInitializeOnLoadMethodAttributes (283ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 6.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6214 unused Assets / (4.3 MB). Loaded Objects now: 7157.
+Memory consumption went from 269.7 MB to 265.4 MB.
+Total: 16.940300 ms (FindLiveObjects: 0.835400 ms CreateObjectMapping: 0.384000 ms MarkObjects: 13.683800 ms  DeleteObjects: 2.035400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 95.138223 seconds.
+  path: Assets/World/Environment/Prefabs/Custom/BankTillClosed.prefab
+  artifactKey: Guid(04cd860a93126cb4f943f183685c9e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Custom/BankTillClosed.prefab using Guid(04cd860a93126cb4f943f183685c9e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da07d51475cf421aff04467c9b584daa') in 0.4314549 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 72
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.050 seconds
+Refreshing native plugins compatible for Editor in 6.70 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Your project uses Compatibility Mode, which disables the render graph system. Compatibility Mode is deprecated. Migrate your ScriptableRenderPasses to the Render Graph API instead. After you migrate, go to Edit > Project Settings > Player and remove the URP_COMPATIBILITY_MODE define from the Scripting Define Symbols. If you don't remove the define, build time and build size are slightly increased.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs:440)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 440)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.228 seconds
+Domain Reload Profiling: 2274ms
+	BeginReloadAssembly (293ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (647ms)
+		LoadAssemblies (522ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (256ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (228ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1229ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1030ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (184ms)
+			ProcessInitializeOnLoadAttributes (499ms)
+			ProcessInitializeOnLoadMethodAttributes (326ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (30ms)
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6214 unused Assets / (4.1 MB). Loaded Objects now: 7181.
+Memory consumption went from 270.0 MB to 265.9 MB.
+Total: 15.244700 ms (FindLiveObjects: 0.868700 ms CreateObjectMapping: 0.413100 ms MarkObjects: 12.002200 ms  DeleteObjects: 1.959200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.018 seconds
+Refreshing native plugins compatible for Editor in 7.00 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Your project uses Compatibility Mode, which disables the render graph system. Compatibility Mode is deprecated. Migrate your ScriptableRenderPasses to the Render Graph API instead. After you migrate, go to Edit > Project Settings > Player and remove the URP_COMPATIBILITY_MODE define from the Scripting Define Symbols. If you don't remove the define, build time and build size are slightly increased.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs:440)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 440)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.197 seconds
+Domain Reload Profiling: 2210ms
+	BeginReloadAssembly (265ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (640ms)
+		LoadAssemblies (518ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (252ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (223ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1198ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1000ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (179ms)
+			ProcessInitializeOnLoadAttributes (489ms)
+			ProcessInitializeOnLoadMethodAttributes (311ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (30ms)
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6214 unused Assets / (4.2 MB). Loaded Objects now: 7185.
+Memory consumption went from 269.9 MB to 265.7 MB.
+Total: 14.594300 ms (FindLiveObjects: 0.844000 ms CreateObjectMapping: 0.418300 ms MarkObjects: 11.205100 ms  DeleteObjects: 2.125200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-W4H8-9NJQ-FYFT-38SD-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 7971629442671-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.109 seconds
+Refreshing native plugins compatible for Editor in 7.00 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Your project uses Compatibility Mode, which disables the render graph system. Compatibility Mode is deprecated. Migrate your ScriptableRenderPasses to the Render Graph API instead. After you migrate, go to Edit > Project Settings > Player and remove the URP_COMPATIBILITY_MODE define from the Scripting Define Symbols. If you don't remove the define, build time and build size are slightly increased.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.WarnUsingNonRenderGraph:EmitConsoleWarning () (at ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs:440)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@f70afd0d2146/Runtime/Data/UniversalRenderPipelineAsset.cs Line: 440)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.227 seconds
+Domain Reload Profiling: 2332ms
+	BeginReloadAssembly (275ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (722ms)
+		LoadAssemblies (599ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (258ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (229ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1227ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1012ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (206ms)
+			ProcessInitializeOnLoadAttributes (507ms)
+			ProcessInitializeOnLoadMethodAttributes (278ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6214 unused Assets / (4.3 MB). Loaded Objects now: 7189.
+Memory consumption went from 269.9 MB to 265.6 MB.
+Total: 19.164200 ms (FindLiveObjects: 0.912800 ms CreateObjectMapping: 0.482800 ms MarkObjects: 15.439300 ms  DeleteObjects: 2.327600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2239.716206 seconds.
+  path: Assets/World/Environment/Prefabs/Lanterns/Latern4.prefab
+  artifactKey: Guid(263b26f2316871f46a4bda232a61ec44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Lanterns/Latern4.prefab using Guid(263b26f2316871f46a4bda232a61ec44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ccd1ef3db11f7251a6071a65d66b5f52') in 0.700028 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 76
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.197675 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/Candlelight@2x.png
+  artifactKey: Guid(3387986904fe97b4cb1a1b607d1e7039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/Candlelight@2x.png using Guid(3387986904fe97b4cb1a1b607d1e7039) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8128aa2c2e41ea5f673f32a9ea8a6f8') in 0.0323167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.145670 seconds.
+  path: Assets/World/Environment/Prefabs/Lanterns/LampPost_double.prefab
+  artifactKey: Guid(6d2bb9154d502fd46a5faf6e3b55f9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Environment/Prefabs/Lanterns/LampPost_double.prefab using Guid(6d2bb9154d502fd46a5faf6e3b55f9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07bcfd203716dd64a82b5670502f365f') in 0.6702997 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 68
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.546652 seconds.
+  path: Assets/World/Environment/Prefabs/Custom/BankTillClosed.prefab
+  artifactKey: Guid(04cd860a93126cb4f943f183685c9e10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/World/Environment/Prefabs/Custom/BankTillClosed.prefab using Guid(04cd860a93126cb4f943f183685c9e10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '40cc8bdfaf01879e490d5c4e82df0c9a') in 0.1601853 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 52
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.997363 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/Fire/No Smoke/WFX_Fire SmallFlame (No Smoke).prefab
+  artifactKey: Guid(9fdb9361d90a0c64688ffb3004e8682c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/_Effects/Fire/No Smoke/WFX_Fire SmallFlame (No Smoke).prefab using Guid(9fdb9361d90a0c64688ffb3004e8682c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd87a4cc1deabb65fbc49c880a0dba188') in 0.051674 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/Flames/WFX_M_FlameSmall 4F Add.mat
+  artifactKey: Guid(b2593af31c471b7469ea80cfa0d26b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/Flames/WFX_M_FlameSmall 4F Add.mat using Guid(b2593af31c471b7469ea80cfa0d26b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8bcec24f0d679aaadada8226729d6345') in 0.0643906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Textures/Flames/WFX_T_FlameThrower Stream.tga
+  artifactKey: Guid(df7c63e268a99654a9238a1e528a793c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Desktop/Textures/Flames/WFX_T_FlameThrower Stream.tga using Guid(df7c63e268a99654a9238a1e528a793c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0568b2c0f4630b645d9cf530f8708f1') in 0.0314366 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameBig Add.mat
+  artifactKey: Guid(4ad9452cd1004624f819e31cda3cdcce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameBig Add.mat using Guid(4ad9452cd1004624f819e31cda3cdcce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '298238714fcff441fd62576a74373d96') in 0.0071558 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_Fire SmallFlame (Gray Smoke).prefab
+  artifactKey: Guid(ff7840f1c1582ea4cbe1d632c878e884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_Fire SmallFlame (Gray Smoke).prefab using Guid(ff7840f1c1582ea4cbe1d632c878e884) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '017264ee2c0fe6a1cbb2fd642a8d25ae') in 0.0340182 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Textures/Flames/WFX_T_DoubleFlames A8.tga
+  artifactKey: Guid(36e77c9c3b4c7af45acccb2a04cbbb1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Desktop/Textures/Flames/WFX_T_DoubleFlames A8.tga using Guid(36e77c9c3b4c7af45acccb2a04cbbb1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de438da48f7b33b7977d82eb81caff93') in 0.0081278 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Textures/Flames/WFX_T_FlamesBig A8.tga
+  artifactKey: Guid(506236d9deb4c264fa0e4c47cc390fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Desktop/Textures/Flames/WFX_T_FlamesBig A8.tga using Guid(506236d9deb4c264fa0e4c47cc390fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c9fd150512aae1e2b215d6304fa72a17') in 0.0247543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/Flames/WFX_M_NukeFlames ScrollAdd.mat
+  artifactKey: Guid(9d5f92a71e0e19a4a99c1f7785e13a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/Flames/WFX_M_NukeFlames ScrollAdd.mat using Guid(9d5f92a71e0e19a4a99c1f7785e13a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c79144698f64a919bdcef79e20d6b4a') in 0.0112989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000031 seconds.
-  path: Assets/worldbuilding/OLD/SECONDEnemyNPC.prefab
-  artifactKey: Guid(52f5ce53be1b0f44c8ce953cff71dc7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/worldbuilding/OLD/SECONDEnemyNPC.prefab using Guid(52f5ce53be1b0f44c8ce953cff71dc7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbba0ee35b68a9e3150d926d77f8fa5d') in 0.4335241 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 323
+  path: Assets/World/Effects/WarFX/_Effects/Fire/WFX_FlameThrower Big Looped.prefab
+  artifactKey: Guid(b2e8413438f79464aa69948979b150a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/_Effects/Fire/WFX_FlameThrower Big Looped.prefab using Guid(b2e8413438f79464aa69948979b150a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d5ddc1995c412002fa7a8658d0a6ab9') in 0.0470471 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Textures/Flames/WFXM_T_FlamesSmallLoopAlpha.tga
+  artifactKey: Guid(2a4b64d5a28398940b5d06d77c2dbe57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Mobile/Textures/Flames/WFXM_T_FlamesSmallLoopAlpha.tga using Guid(2a4b64d5a28398940b5d06d77c2dbe57) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4968aaed2fb7bb7baea09e0330a7dda8') in 0.0233964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower.prefab
+  artifactKey: Guid(9c996ecef5f837e4488f8fa3849e4552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower.prefab using Guid(9c996ecef5f837e4488f8fa3849e4552) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9df72a42130e394c878fc8dd360db35') in 0.0109456 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameThrower Stream.mat
+  artifactKey: Guid(fbd8df583ed218d4f9e2740e23f6f8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameThrower Stream.mat using Guid(fbd8df583ed218d4f9e2740e23f6f8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '076c092073325651f1f8e21c29f8adb5') in 0.1333854 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Textures/Flames/WFXM_T_FlamesBig.tga
+  artifactKey: Guid(c75eb77b7d09e4e42a99f9adf75e32cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Mobile/Textures/Flames/WFXM_T_FlamesBig.tga using Guid(c75eb77b7d09e4e42a99f9adf75e32cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b023093f5fad3bf874ba4c088b00f04b') in 0.006341 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Big Alt.prefab
+  artifactKey: Guid(e8fb3f256cf9d9e439bd069f42a5a246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Big Alt.prefab using Guid(e8fb3f256cf9d9e439bd069f42a5a246) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06b56dce50263afa9d47b73d08a26182') in 0.0201747 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/Fire/WFX_FlameThrower Big Alt Looped.prefab
+  artifactKey: Guid(06d796ccd85dc4c4b9c98270196715ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/_Effects/Fire/WFX_FlameThrower Big Alt Looped.prefab using Guid(06d796ccd85dc4c4b9c98270196715ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e60bcc0a38f91f6182c3caeca74cb9f8') in 0.0300368 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall Add.mat
+  artifactKey: Guid(f2e62d2a3f971454da5211512393653f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall Add.mat using Guid(f2e62d2a3f971454da5211512393653f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '132f3da0d84f8d2e0b3b2749c3ea5f78') in 0.014214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Textures/Flames/WFX_T_FlamesBig.tga
+  artifactKey: Guid(630c7e341b44a8943bcef0e113fa837b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Desktop/Textures/Flames/WFX_T_FlamesBig.tga using Guid(630c7e341b44a8943bcef0e113fa837b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ccb4abf1a311aba6f94413e6b66dd4d5') in 0.0301737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Big Looped.prefab
+  artifactKey: Guid(3631e3c99d52b594097c09278c60f5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Big Looped.prefab using Guid(3631e3c99d52b594097c09278c60f5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f54af58fbefc24fa23d89a37ce7405fe') in 0.0187148 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Looped.prefab
+  artifactKey: Guid(9debd342863be9747b5a48c343184a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Looped.prefab using Guid(9debd342863be9747b5a48c343184a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6684ef32a60825057dd57c031faa011') in 0.0234189 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Editor/Gizmos/Camera_UI.png
+  artifactKey: Guid(e3c6759aa8004ae458959d7fe48d6a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Editor/Gizmos/Camera_UI.png using Guid(e3c6759aa8004ae458959d7fe48d6a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7988228fb4dd1bf35b23c4abcd55c478') in 0.0184655 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Editor/Gizmos/Camera_PostProcessing.png
+  artifactKey: Guid(916f43e9d8e15c448a2c8a5d30b26dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Editor/Gizmos/Camera_PostProcessing.png using Guid(916f43e9d8e15c448a2c8a5d30b26dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b358525979a6da7314e6b45d0d7309d5') in 0.0078599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/WarFX/_Effects/Fire/WFX_FlameThrower Looped.prefab
+  artifactKey: Guid(21f6aea0c9b788c4b9b6275efc33d0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/_Effects/Fire/WFX_FlameThrower Looped.prefab using Guid(21f6aea0c9b788c4b9b6275efc33d0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f1860037557386aea84708c069dd855') in 0.012385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/World/Effects/WarFX/Desktop/Materials/Flames/WFX_M_FlameThrower Stream.mat
+  artifactKey: Guid(1371a6078902c7b4faaebd2d94e436d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Desktop/Materials/Flames/WFX_M_FlameThrower Stream.mat using Guid(1371a6078902c7b4faaebd2d94e436d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1b89b220d1c83a8b5313e02d9b45efe') in 0.01047 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall 4F Add.mat
+  artifactKey: Guid(86b5f27ac71d7754fa5f0159ae8f0d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Effects/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall 4F Add.mat using Guid(86b5f27ac71d7754fa5f0159ae8f0d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd813caf9153f7b9ad6b87dc377830c8e') in 0.0083606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.149590 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/d_Candlelight@2x.png
+  artifactKey: Guid(2ae1ad1a228a66a479d96cae55499c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/d_Candlelight@2x.png using Guid(2ae1ad1a228a66a479d96cae55499c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8513f4c97404f74eb1edc7c62bcfff0') in 0.008347 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/RendererFeatures/SurfaceCacheGI/SurfaceCacheCore/RestirCandidateTemporal.hlsl
+  artifactKey: Guid(e78ab4c515da1e442a19a4905ed03844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/RendererFeatures/SurfaceCacheGI/SurfaceCacheCore/RestirCandidateTemporal.hlsl using Guid(e78ab4c515da1e442a19a4905ed03844) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'affff6747930cc6cdcfad6d69d803145') in 0.0022726 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.657808 seconds.
+  path: Packages/com.unity.multiplayer.center/Editor/MultiplayerCenterWindow/UI/Icons/CloudCode@2x.png
+  artifactKey: Guid(a23c0dd570fd44b57a03a8880002fcca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.multiplayer.center/Editor/MultiplayerCenterWindow/UI/Icons/CloudCode@2x.png using Guid(a23c0dd570fd44b57a03a8880002fcca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f069e2559b3e066fe1055e5680096a7c') in 0.0665492 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/CloudySky@2x.png
+  artifactKey: Guid(c30d00a81d6542c40ae1837621e3969e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/CloudySky@2x.png using Guid(c30d00a81d6542c40ae1837621e3969e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00623fec784ddbd1d3657bf072933426') in 0.6938348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/CloudySky.png
+  artifactKey: Guid(bb2cc982d8ff1aa4a9ce5ee5fdb29023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/CloudySky.png using Guid(bb2cc982d8ff1aa4a9ce5ee5fdb29023) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f63229be8ae1bf363a3beebe978c9fc') in 0.0083648 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
