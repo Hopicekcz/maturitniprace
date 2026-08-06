@@ -144,15 +144,17 @@ public class playerHP : MonoBehaviour
             for(int i = 0; i < 10; i++){
                 if(gotHit){
                     transparencyValue = 0;
+                    StopCoroutine(HitEffect());
                     StartCoroutine(HitEffect());
                     break;
                 } else {
                     transparencyValue -= 0.1f;
                     yield return new WaitForSeconds(0.1f);
                 }
-           
+           StopCoroutine(HitEffect());
         }
     }
+
 
     private void FindRandomNavmeshLocation(){ //When Patrolling state
         if (!hasRespawnPoint){ //If no patrol point has been decided YET, run the function to find it.

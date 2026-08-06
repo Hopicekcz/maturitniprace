@@ -22,6 +22,7 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private LayerMask obstacleLayerMask; 
     [SerializeField] private LayerMask hittableLayerMask;
     [SerializeField] private LayerMask trainLayerMask;
+    [SerializeField] private LayerMask validPlayerMask;
     [Header("ShootEffects")]
     [SerializeField] private GameObject obstacleHitEffectPrefab;
     [SerializeField] private GameObject enemyHitEffectPrefab;
@@ -104,6 +105,8 @@ public class aiNAV : MonoBehaviour
     private bool dying;
     private int weaponRandom;
     private bool hitSound;
+    private bool isPlayerValid;
+    
 
     private float lastCheckTime;
     private Vector3 lastCheckPos;
@@ -113,9 +116,11 @@ public class aiNAV : MonoBehaviour
     private Ray npcToPlayerEyesRay;
     private Ray npcToPlayerBodyRay;
     private Ray raySide;
+    private Ray playerValidCheckRay;   
     private RaycastHit hitWall;
     private RaycastHit hitGround;
     private RaycastHit hitTrain;
+
     private Vector3 playerLastPosition;
     private Vector3 changeInPlayerPos;
     private Vector3 lastPosition;
@@ -346,14 +351,29 @@ public class aiNAV : MonoBehaviour
 
     private void DetectPlayer()
     {
+
+
+        Debug.Log(isPlayerValid);
         npcToPlayerEyesRay = new Ray(eyes.transform.position, ((playerEyes.transform.position - eyes.transform.position).normalized));
-        npcToPlayerBodyRay = new Ray(eyes.transform.position, ((playerBody.transform.position - eyes.transform.position).normalized)); //assigning properties to the Raycast, being the instance´s position and the direction of a normalized 3D-vector (from the object to the player)
+        npcToPlayerBodyRay = new Ray(eyes.transform.position, ((playerBody.transform.position - eyes.transform.position).normalized));
+        playerValidCheckRay = new Ray(playerTransform.position, Vector3.down); //assigning properties to the Raycast, being the instance´s position and the direction of a normalized 3D-vector (from the object to the player)
 
         isPlayerVisible =  (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitVisibleObstacle, (Vector3.Distance(transform.position, playerTransform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitVisibleGround, (Vector3.Distance(transform.position, playerTransform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask)) || (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitVisibleObstacleBody, (Vector3.Distance(transform.position, playerTransform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitVisibleGroundBody, (Vector3.Distance(transform.position, playerTransform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask));
         isPlayerInRange = (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitRangeObstacle, (Vector3.Distance(transform.position, playerTransform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitRangeGround, (Vector3.Distance(transform.position, playerTransform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask)) || (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitRangeObstacleBody, (Vector3.Distance(transform.position, playerTransform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitRangeGroundBody, (Vector3.Distance(transform.position, playerTransform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask));
+        Physics.Raycast(playerValidCheckRay, out RaycastHit playerPosValid, 0.7f);
+        Vector3 validPoint = playerPosValid.point;
+        NavMeshHit validHit;
+       if(NavMesh.SamplePosition(validPoint, out validHit, 0.2f, NavMesh.AllAreas)){
+            isPlayerValid = true;
+        } else {
+            isPlayerValid = false;
+        }
+        Debug.DrawLine(playerValidCheckRay.origin, playerPosValid.point, Color.red);
         //variables for determining behaviour state - Raycast for checking if there are any obstacles between the npc and the player, CheckSphere for checking if the npc is in range of the player.
         //the RaycastHit variables are declared inside the function, to avoid unnecessary variable declaration in the initialization.
     }
+
+    
 
     private void UpdateBehaviourState(){ //Behaviour state switcher
         TrainCheck();
