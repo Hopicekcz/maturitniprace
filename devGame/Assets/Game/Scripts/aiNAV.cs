@@ -22,6 +22,7 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private LayerMask obstacleLayerMask; 
     [SerializeField] private LayerMask hittableLayerMask;
     [SerializeField] private LayerMask trainLayerMask;
+    [SerializeField] private LayerMask glassLayerMask;
     [SerializeField] private LayerMask validPlayerMask;
     [Header("ShootEffects")]
     [SerializeField] private GameObject obstacleHitEffectPrefab;
@@ -105,7 +106,9 @@ public class aiNAV : MonoBehaviour
     private bool dying;
     private int weaponRandom;
     private bool hitSound;
+    private bool trainGone;
     private bool isPlayerValid;
+    private int endPointIncrementation = 2;
     
 
     private float lastCheckTime;
@@ -116,11 +119,14 @@ public class aiNAV : MonoBehaviour
     private Ray npcToPlayerEyesRay;
     private Ray npcToPlayerBodyRay;
     private Ray raySide;
-    private Ray playerValidCheckRay;   
+    private Ray playerValidCheckRay;  
+    private Ray endPointCheckRay; 
     private RaycastHit hitWall;
     private RaycastHit hitGround;
     private RaycastHit hitTrain;
-
+    
+    private Vector3 endPointValid;
+    private Vector3 validEndPoint;
     private Vector3 playerLastPosition;
     private Vector3 changeInPlayerPos;
     private Vector3 lastPosition;
@@ -368,7 +374,7 @@ public class aiNAV : MonoBehaviour
         } else {
             isPlayerValid = false;
         }
-        Debug.DrawLine(playerValidCheckRay.origin, playerPosValid.point, Color.red);
+        Debug.DrawLine(endPointCheckRay.origin, validEndPoint, Color.red);
         //variables for determining behaviour state - Raycast for checking if there are any obstacles between the npc and the player, CheckSphere for checking if the npc is in range of the player.
         //the RaycastHit variables are declared inside the function, to avoid unnecessary variable declaration in the initialization.
     }
@@ -396,8 +402,9 @@ public class aiNAV : MonoBehaviour
     //MAIN FUNCTIONS
 
     private void TrainCheck(){
-        if((Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitTrain, (Vector3.Distance(transform.position, playerTransform.position)), trainLayerMask))){
-            StartCoroutine(TrainClose());
+
+        if((Physics.CheckSphere(transform.position, 5f, trainLayerMask)) && Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitPlayerTrain, Vector3.Distance(transform.position, playerTransform.position), trainLayerMask)){
+           StartCoroutine(TrainClose());
         }
     }
 
@@ -412,7 +419,7 @@ public class aiNAV : MonoBehaviour
     }
 
    bool TrainGone() {
-         return !Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitTrain, 10f, trainLayerMask);
+        return !((Physics.CheckSphere(transform.position, 5f, trainLayerMask)) && Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitPlayerTrain, Vector3.Distance(transform.position, playerTransform.position), trainLayerMask));
     }
 
     //PATROL
@@ -474,15 +481,13 @@ public class aiNAV : MonoBehaviour
         }
         if (intervalTimer == 0f)
             {
-                NavMeshHit hit;
-                if (NavMesh.SamplePosition(playerLastPosition, out hit, 0.1f, 1 << NavMesh.GetAreaFromName("Walkable"))){
-                    navAgent.SetDestination(playerLastPosition);
-                } else {
-                    navAgent.ResetPath();
-                    releaseChase = true;
-                    chaseStart = true;
-                    attackedPlayer = false;
-                }
+        
+                    if(isPlayerValid){
+                        navAgent.SetDestination(playerLastPosition);
+                    } else {
+                        SetBetterEndPoint();   
+                    }
+                    
                 
             }
 
@@ -494,6 +499,31 @@ public class aiNAV : MonoBehaviour
         
     }
 
+    private void SetBetterEndPoint() {
+        float endPointDistance = (Vector3.Distance(transform.position, playerTransform.position))/endPointIncrementation;
+        Vector3 endPoint = (eyes.transform.position + ((playerEyes.transform.position - eyes.transform.position).normalized) * endPointDistance);
+        endPointCheckRay = new Ray(endPoint, Vector3.down);
+        Physics.Raycast(endPointCheckRay, out RaycastHit endPointValid, 5f);
+        validEndPoint = endPointValid.point;
+        NavMeshHit endValidHit;
+
+        Debug.DrawLine(endPointCheckRay.origin, validEndPoint, Color.red);
+
+        if(NavMesh.SamplePosition(validEndPoint, out endValidHit, 0.2f, NavMesh.AllAreas)){
+            navAgent.SetDestination(validEndPoint);
+            endPointIncrementation = 2;
+        } else {
+            if(endPointIncrementation > 4){
+
+            } else {
+            endPointIncrementation++;
+            releaseChase = true;
+            chaseStart = true;
+            attackedPlayer = false;
+            }
+            
+        }
+    }
     
     //CHASE
     
@@ -551,6 +581,8 @@ public class aiNAV : MonoBehaviour
                         case "Untagged":
                         break;
 
+                        
+
                         case "Obstacle": 
                             switch(currentWeapon){
                                 case "revolver":
@@ -605,6 +637,15 @@ public class aiNAV : MonoBehaviour
                     }
                     
                 }
+            if (Physics.Raycast(ray, out hit, 200f, glassLayerMask)){
+                switch(hit.collider.tag){
+                    case "Glass":
+                        Debug.Log("Hit");
+                        hit.transform.SendMessage("BreakGlass");
+                    break;
+                }
+                
+            }
     }
 
 

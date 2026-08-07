@@ -69,6 +69,7 @@ public class RevolverScript : MonoBehaviour
     public GameObject weapon2Object;
     public GameObject weapon3Object;
     [SerializeField] private LayerMask hittableLayerMask;
+    [SerializeField] private LayerMask glassLayerMask;
 
     //References
     
@@ -618,6 +619,7 @@ public class RevolverScript : MonoBehaviour
                         case "Untagged":
                         break;
 
+                    
                         case "Obstacle": 
                             switch(currentWeapon){
                                 case "revolver":
@@ -686,6 +688,15 @@ public class RevolverScript : MonoBehaviour
                     }
                     
                 }
+            if (Physics.Raycast(ray, out hit, 200f, glassLayerMask)){
+                switch(hit.collider.tag){
+                    case "Glass":
+                        Debug.Log("Hit");
+                        hit.transform.SendMessage("BreakGlass");
+                    break;
+                }
+                
+            }
             
 }
 
