@@ -40,6 +40,8 @@ public class RevolverScript : MonoBehaviour
     [SerializeField] private GameObject obstacleHitEffectPrefabShotgun;
     [Header("RifleShootEffects")]
     [SerializeField] private GameObject obstacleHitEffectPrefabRifle;
+    [Header("GlassShootEffect")]
+    [SerializeField] private GameObject glassHitEffectPrefab;
     [Header("ShootMuzzleSmokeLocation")]
     [SerializeField] private Transform muzzlePoint;
     [SerializeField] private Transform shotgunMuzzlePoint;
@@ -693,6 +695,7 @@ public class RevolverScript : MonoBehaviour
                     case "Glass":
                         Debug.Log("Hit");
                         hit.transform.SendMessage("BreakGlass");
+                        Instantiate(glassHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                     break;
                 }
                 

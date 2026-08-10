@@ -670,6 +670,8 @@ MonoBehaviour:
     type: 3}
   obstacleHitEffectPrefabRifle: {fileID: 100002, guid: 9e139f3957961014babc03aeebaf473d,
     type: 3}
+  glassHitEffectPrefab: {fileID: 8150398086505250711, guid: 9325e91605443d7419d116ffcf884eaf,
+    type: 3}
   muzzlePoint: {fileID: 3639021429174598296}
   shotgunMuzzlePoint: {fileID: 8382095795247749793}
   rifleMuzzlePoint: {fileID: 2291845615876753641}
@@ -690,6 +692,9 @@ MonoBehaviour:
   hittableLayerMask:
     serializedVersion: 2
     m_Bits: 234432
+  glassLayerMask:
+    serializedVersion: 2
+    m_Bits: 524288
   handAnimator: {fileID: 124940024761840820}
   gunAnimator: {fileID: 2658895221137872678}
   shotgunAnimator: {fileID: 3107157093873044266}
@@ -7527,7 +7532,7 @@ Transform:
   m_GameObject: {fileID: 5929936652087390754}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -1.6175504, y: 1.2729979, z: 3.8361516}
+  m_LocalPosition: {x: -0.27520043, y: 1.2729998, z: 0.044499934}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10515,7 +10520,7 @@ Transform:
   m_GameObject: {fileID: 8764116237897872469}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.34235, y: -0.099998, z: 3.7916517}
+  m_LocalPosition: {x: 0, y: -0.099999905, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

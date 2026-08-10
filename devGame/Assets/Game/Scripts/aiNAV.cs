@@ -31,6 +31,7 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private GameObject muzzleFlashPrefab;
     [SerializeField] private GameObject muzzleLightEffectPrefab;
     [SerializeField] private GameObject obstacleHitEffectPrefabShotgun;
+    [SerializeField] private GameObject glassHitEffectPrefab;
     [SerializeField] private GameObject ownBody;
     [Header("ShootMuzzleSmokeLocation")]
     [SerializeField] private Transform muzzlePoint;
@@ -642,6 +643,7 @@ public class aiNAV : MonoBehaviour
                     case "Glass":
                         Debug.Log("Hit");
                         hit.transform.SendMessage("BreakGlass");
+                        Instantiate(glassHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                     break;
                 }
                 
