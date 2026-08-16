@@ -23,6 +23,7 @@ public class playerHP : MonoBehaviour
     [SerializeField] private SkinnedMeshRenderer playerHands;
     [SerializeField] private SkinnedMeshRenderer playerBody;
     [SerializeField] private LayerMask respawnLayerMask;
+    [SerializeField] private float headshotModifier = 1f;
      private RevolverScript revolverScript;
     private float maxHP;
     CharacterController cc;
@@ -41,21 +42,25 @@ public class playerHP : MonoBehaviour
     [SerializeField] private float volume = 0.5f; 
     [SerializeField] private float revolverDamage = 50f;
     [SerializeField] private float shotgunDamage = 15f;
+    [SerializeField] private float rifleDamage = 100f;
     private float saturationValue;
-    private bool gotHit = false;
+    private bool gotHit;
     private InputAction sprintAction;
     private bool hasRespawnPoint;
     private Vector3 respawnPointVector;
 
     void Start()
     {
+        
         saturationValue = 0;
         transparencyValue = -1f;
+        HPSystem();
         revolverScript = GameObject.Find("Weapon").GetComponent<RevolverScript>();
         deathPoint = GameObject.Find("DeathPoint");
         respawnPoint = GameObject.Find("RespawnPoint");
         cc = this.GetComponent<CharacterController>();
         maxHP = hp;
+        gotHit = false;
 
         player = this.gameObject;
         sprintAction = new InputAction(type: InputActionType.Button, binding:"<Keyboard>/left shift");
@@ -83,23 +88,36 @@ public class playerHP : MonoBehaviour
     void HeadHitByEnemyRevolver()
     {
         StartCoroutine(HitEffect());
-        hp -= Random.Range(revolverDamage * 1.8f, revolverDamage * 2.2f);
+        hp -= Random.Range(revolverDamage * headshotModifier * 1.8f, revolverDamage * headshotModifier * 2.2f);
     }
 
     void HeadHitByEnemyShotgun()
     {
-        hp -= Random.Range(shotgunDamage * 2.3f, shotgunDamage * 3f);
+        StartCoroutine(HitEffect());
+        hp -= Random.Range(shotgunDamage * headshotModifier * 1.8f , shotgunDamage * headshotModifier * 2.2f);
     }
 
     void BodyHitByEnemyRevolver()
     {
         StartCoroutine(HitEffect());
-        hp -= Random.Range(revolverDamage * 1.6f, revolverDamage * 2f);
+        hp -= Random.Range(revolverDamage, revolverDamage * 1.4f);
     }
 
     void BodyHitByEnemyShotgun()
     {
-        hp -= Random.Range(revolverDamage * 1.8f, revolverDamage * 2.3f);
+        StartCoroutine(HitEffect());
+        hp -= Random.Range(shotgunDamage, shotgunDamage * 1.4f);
+    }
+
+    void HeadHitByEnemyRifle()
+    {
+        StartCoroutine(HitEffect());
+        hp -= Random.Range(rifleDamage * headshotModifier * 1.8f, rifleDamage * headshotModifier * 2.2f);
+    }
+    void BodyHitByEnemyRifle()
+    {
+        StartCoroutine(HitEffect());
+        hp -=  Random.Range(rifleDamage, rifleDamage * 1.4f);
     }
 
      private void OnTriggerEnter(Collider other)
@@ -148,11 +166,15 @@ public class playerHP : MonoBehaviour
                     StartCoroutine(HitEffect());
                     break;
                 } else {
-                    transparencyValue -= 0.1f;
+                    if(transparencyValue >= -1f){
+                        transparencyValue -= 0.1f;
+                    }
+                    
                     yield return new WaitForSeconds(0.1f);
                 }
            StopCoroutine(HitEffect());
         }
+        
     }
 
 

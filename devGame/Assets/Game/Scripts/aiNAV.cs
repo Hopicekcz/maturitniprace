@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.AI;
 
 
@@ -16,6 +17,11 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private MeshCollider ownMeshCollider;
     [SerializeField] private CapsuleCollider ownCapsuleCollider;
     [SerializeField] private GameObject ragdollObjectPrefab;
+    [SerializeField] private GameObject ownBody;
+    [SerializeField] private GameObject ownFeet;
+    [SerializeField] private GameObject ownEnemyTag;
+    [SerializeField] private GameObject deathCube;
+    [SerializeField] private GameObject respawnPoint;
      [Header("Layers")]
     [SerializeField] private LayerMask terrainLayer; //layerMask for the Ground to determine walkable checks
     [SerializeField] private LayerMask playerLayerMask; //layerMask for the Player to determine where the player is
@@ -24,6 +30,8 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private LayerMask trainLayerMask;
     [SerializeField] private LayerMask glassLayerMask;
     [SerializeField] private LayerMask validPlayerMask;
+    [SerializeField] private LayerMask enemyTagMask;
+    [SerializeField] private LayerMask respawnLayerMask;
     [Header("ShootEffects")]
     [SerializeField] private GameObject obstacleHitEffectPrefab;
     [SerializeField] private GameObject enemyHitEffectPrefab;
@@ -32,7 +40,6 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private GameObject muzzleLightEffectPrefab;
     [SerializeField] private GameObject obstacleHitEffectPrefabShotgun;
     [SerializeField] private GameObject glassHitEffectPrefab;
-    [SerializeField] private GameObject ownBody;
     [Header("ShootMuzzleSmokeLocation")]
     [SerializeField] private Transform muzzlePoint;
 
@@ -73,6 +80,7 @@ public class aiNAV : MonoBehaviour
     [SerializeField] private float revolverDamage = 50f;
     [SerializeField] private float shotgunDamage = 10f;
     [SerializeField] private float rifleDamage = 100f;
+    [SerializeField] private float headshotModifier = 1f;
 
 
     [Header("Detection Ranges")] //customizable settings for the vision (follow player) and engagement (attack) range
@@ -85,8 +93,8 @@ public class aiNAV : MonoBehaviour
 
 
     //Declaration of bools for behavior states
-    private bool isPlayerVisible;
-    private bool isPlayerInRange;
+    private bool isPlayerVisible = false;
+    private bool isPlayerInRange = false;
     private bool isMoving;
     private bool wasHit;
     private bool isOnAttackCooldown;
@@ -110,6 +118,9 @@ public class aiNAV : MonoBehaviour
     private bool trainGone;
     private bool isPlayerValid;
     private int endPointIncrementation = 2;
+    private float bestDistance = 1000f;
+    private float actualDistance;
+    private float enemyAngle;
     
 
     private float lastCheckTime;
@@ -122,6 +133,7 @@ public class aiNAV : MonoBehaviour
     private Ray raySide;
     private Ray playerValidCheckRay;  
     private Ray endPointCheckRay; 
+    private Ray enemyCloseRay;
     private RaycastHit hitWall;
     private RaycastHit hitGround;
     private RaycastHit hitTrain;
@@ -131,14 +143,28 @@ public class aiNAV : MonoBehaviour
     private Vector3 playerLastPosition;
     private Vector3 changeInPlayerPos;
     private Vector3 lastPosition;
+    private Vector3 respawnPosition;
+    private Vector3 randomPosition;
     private float intervalTimer;
 
-    //TO ADD NEXT!!! - isPlayerVisible and isPlayerInRange checks need to be sent from an empty gameobject of the npc head to the player head (obstacles make player invisible)
-    //atleast optimize a bit
-    //comment a lot!!!!!
+    private Collider enemyTag;
+    private Collider[] enemyTags;
+    private List<GameObject> enemyList;
+    private GameObject enemy;
+    private GameObject foundEnemy;
+    private GameObject targetEnemy;
+    private GameObject enemyEyes;
+    private GameObject enemyBody;
+    private GameObject targetEyes;
+    private GameObject targetBody;
+    private GameObject targetFeet;
+     private bool hasRespawnPoint;
+    private Vector3 respawnPointVector;
+
 
     //INITIALIZATION
-    private void Awake(){ //Because the EnemyNPC is a prefab and the playertransform cannot be assigned into the reference, a script hard-reference is needed
+    private void Awake(){ 
+            enemyList = new List<GameObject>();
             revolverAmmoCount = maxRevolverAmmoCount; 
             GameObject playerObj = GameObject.Find("PlayerLocation");
             playerTransform = playerObj.transform;
@@ -149,7 +175,9 @@ public class aiNAV : MonoBehaviour
             ownMeshCollider = this.GetComponent<MeshCollider>();
             ownCapsuleCollider = this.GetComponent<CapsuleCollider>();
             maxHP = npcHP;
-
+            deathCube = GameObject.Find("DeathCubeGround");
+            randomPosition = this.transform.position;
+            respawnPoint = GameObject.Find("RespawnPoint");
         if(navAgent == null){
             navAgent = GetComponent<NavMeshAgent>();
         }
@@ -168,7 +196,7 @@ public class aiNAV : MonoBehaviour
 
     }
 
-     private void OnDrawGizmosSelected() //Helper for debugging and play-testing with gizmos
+     private void OnDrawGizmosSelected() 
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, engagementRange);
@@ -179,6 +207,9 @@ public class aiNAV : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, tooCloseRange);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, visionRange);
     }
     //INITIALIZATION
 
@@ -207,7 +238,7 @@ public class aiNAV : MonoBehaviour
 
     }
 
-    private void SetAnimation(){ //Animation setter using bool parameters in the animator
+    private void SetAnimation(){ 
         float velocity = navAgent.velocity.magnitude;
         if(velocity > 0.2f){
             isMoving = true;
@@ -222,37 +253,37 @@ public class aiNAV : MonoBehaviour
     {
         wasHit = true;
         hitSound = true;
-        npcHP -=  Random.Range(revolverDamage, revolverDamage * 1.5f);
+        npcHP -=  Random.Range(revolverDamage, revolverDamage * 1.4f);
     }
      void HeadHitByEnemyRevolver()
     {
         wasHit = true;
         hitSound = true;
-        npcHP -= Random.Range(revolverDamage * 2f, revolverDamage * 2.5f);
+        npcHP -= Random.Range(revolverDamage * headshotModifier * 1.8f, revolverDamage * headshotModifier * 2.2f);
     }
     void BodyHitByEnemyShotgun()
     {
         wasHit = true;
         hitSound = true;
-        npcHP -= Random.Range(shotgunDamage, shotgunDamage * 1.5f);
+        npcHP -= Random.Range(shotgunDamage, shotgunDamage * 1.4f);
     }
     void HeadHitByEnemyShotgun()
     {
         wasHit = true;
         hitSound = true;
-        npcHP -= Random.Range(shotgunDamage * 2f, shotgunDamage * 2.5f);
+        npcHP -= Random.Range(shotgunDamage * headshotModifier * 1.8f , shotgunDamage * headshotModifier * 2.2f);
     }
     void HeadHitByEnemyRifle()
     {
         wasHit = true;
         hitSound = true;
-        npcHP -= Random.Range(rifleDamage, rifleDamage * 1.5f);
+        npcHP -= Random.Range(rifleDamage * headshotModifier * 1.8f, rifleDamage * headshotModifier * 2.2f);
     }
     void BodyHitByEnemyRifle()
     {
         wasHit = true;
         hitSound = true;
-        npcHP -=  Random.Range(rifleDamage * 2f, rifleDamage * 2.5f);
+        npcHP -=  Random.Range(rifleDamage, rifleDamage * 1.4f);
     }
 
     private IEnumerator SlowOnHit(){
@@ -317,36 +348,52 @@ public class aiNAV : MonoBehaviour
     private IEnumerator Death(){
         navAgent.ResetPath();
         revolverAmmoCount = maxRevolverAmmoCount;
-        GameObject ragdollObject = Instantiate(ragdollObjectPrefab, this.transform);
+        GameObject ragdollObject = Instantiate(ragdollObjectPrefab, this.transform.position, this.transform.rotation);
         dying = true;
         navAgent.isStopped = true;
         animator.enabled = false;
         ownMeshCollider.enabled = false;
         ownCapsuleCollider.enabled = false;
         ownBody.SetActive(false);
+        ownEnemyTag.SetActive(false);
+        transform.position = deathCube.transform.position;
         yield return new WaitForSeconds(ragdollTimer);
-        transform.position = RandomNavmeshLocation();
+        FindRandomNavmeshLocation();
+        transform.position = respawnPoint.transform.position;
         npcHP = maxHP;
         isDead = false;
         navAgent.isStopped = false;
         Destroy(ragdollObject);
         ownBody.SetActive(true);
+        ownEnemyTag.SetActive(true);
         animator.enabled = true;
         ownCapsuleCollider.enabled = false;
         ownMeshCollider.enabled = true;
         dying = false;
+        hasRespawnPoint = false;
     }
 
-    Vector3 RandomNavmeshLocation() {
-            Vector3 randomDirection = Random.insideUnitSphere * respawnRadius;
-            randomDirection += transform.position;
-            UnityEngine.AI.NavMeshHit hit;
-            Vector3 finalPosition = Vector3.zero;
-            if (UnityEngine.AI.NavMesh.SamplePosition(randomDirection, out hit, respawnRadius, 1)) {
-                finalPosition = hit.position;            
-            }
-            return finalPosition;
+    private void FindRandomNavmeshLocation(){ //When Patrolling state
+        if (!hasRespawnPoint){ //If no patrol point has been decided YET, run the function to find it.
+                Vector3 potentialPoint = new Vector3(ownFeet.transform.position.x + Random.Range(-20f, 20f), ownFeet.transform.position.y + 10f, ownFeet.transform.position.z + Random.Range(-20f, 20f)); //Calculate a desired point to send a raycast from (using the patrol radius values, with a Y value above the npc)
+                RaycastHit hit; 
+                for(int i = 0; i < 30; i++){
+                    if(Physics.Raycast(potentialPoint, Vector3.down, out hit, 20f, respawnLayerMask)){
+                        if(!Physics.CheckSphere(potentialPoint, 2f, playerLayerMask)){
+                            respawnPointVector = hit.point;
+                        hasRespawnPoint = true;
+                        }
+                        
+                    }
+                    
+                }
+              
             
+        }
+
+        if (hasRespawnPoint){
+           respawnPoint.transform.position = respawnPointVector;
+        } 
     }
 
     void TrainHit(){
@@ -358,33 +405,74 @@ public class aiNAV : MonoBehaviour
 
     private void DetectPlayer()
     {
+        
+
+        if(!fightMode){
+            bestDistance = 1000f;
+            enemyTags = Physics.OverlapSphere(transform.position, visionRange, enemyTagMask);
+            foreach(Collider enemyTag in enemyTags){
+            
+            
+            
+
+            if((Vector3.Distance(ownEnemyTag.transform.position, enemyTag.transform.position) > 0.1f)){
+                if(Vector3.Distance(ownEnemyTag.transform.position, enemyTag.transform.position) <= bestDistance){
+                    bestDistance = Vector3.Distance(ownEnemyTag.transform.position, enemyTag.transform.position);
+                        
+                            Vector3 forward = transform.forward;
+                            Vector3 toEnemy = enemyTag.transform.position - ownEnemyTag.transform.position;
+                            enemyAngle = Vector3.SignedAngle(forward, toEnemy, Vector3.forward);
+                            if(Mathf.Abs(enemyAngle) < 90){
+                                foundEnemy = enemyTag.transform.parent.gameObject;
+                                enemyEyes = foundEnemy.transform.Find("Eyes").gameObject;
+                                enemyBody = foundEnemy.transform.Find("Body").gameObject;
+
+                                npcToPlayerEyesRay = new Ray(eyes.transform.position, ((enemyEyes.transform.position - eyes.transform.position).normalized));
+                                npcToPlayerBodyRay = new Ray(eyes.transform.position, ((enemyBody.transform.position - eyes.transform.position).normalized));
 
 
-        Debug.Log(isPlayerValid);
-        npcToPlayerEyesRay = new Ray(eyes.transform.position, ((playerEyes.transform.position - eyes.transform.position).normalized));
-        npcToPlayerBodyRay = new Ray(eyes.transform.position, ((playerBody.transform.position - eyes.transform.position).normalized));
-        playerValidCheckRay = new Ray(playerTransform.position, Vector3.down); //assigning properties to the Raycast, being the instance´s position and the direction of a normalized 3D-vector (from the object to the player)
+                                isPlayerVisible = (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitVisibleObstacle, (Vector3.Distance(ownEnemyTag.transform.position, enemyTag.transform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitVisibleGround, (Vector3.Distance(ownEnemyTag.transform.position, enemyTag.transform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask)) || (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitVisibleObstacleBody, (Vector3.Distance(ownEnemyTag.transform.position, enemyTag.transform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitVisibleGroundBody, (Vector3.Distance(ownEnemyTag.transform.position, enemyTag.transform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask));
+                                isPlayerInRange = (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitRangeObstacle, (Vector3.Distance(ownEnemyTag.transform.position, enemyTag.transform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitRangeGround, (Vector3.Distance(ownEnemyTag.transform.position, enemyTag.transform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask)) || (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitRangeObstacleBody, (Vector3.Distance(ownEnemyTag.transform.position, enemyTag.transform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitRangeGroundBody, (Vector3.Distance(ownEnemyTag.transform.position, enemyTag.transform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask));
 
-        isPlayerVisible =  (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitVisibleObstacle, (Vector3.Distance(transform.position, playerTransform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitVisibleGround, (Vector3.Distance(transform.position, playerTransform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask)) || (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitVisibleObstacleBody, (Vector3.Distance(transform.position, playerTransform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitVisibleGroundBody, (Vector3.Distance(transform.position, playerTransform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask));
-        isPlayerInRange = (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitRangeObstacle, (Vector3.Distance(transform.position, playerTransform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitRangeGround, (Vector3.Distance(transform.position, playerTransform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask)) || (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitRangeObstacleBody, (Vector3.Distance(transform.position, playerTransform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitRangeGroundBody, (Vector3.Distance(transform.position, playerTransform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, engagementRange, playerLayerMask));
-        Physics.Raycast(playerValidCheckRay, out RaycastHit playerPosValid, 0.7f);
-        Vector3 validPoint = playerPosValid.point;
-        NavMeshHit validHit;
-       if(NavMesh.SamplePosition(validPoint, out validHit, 0.2f, NavMesh.AllAreas)){
-            isPlayerValid = true;
-        } else {
-            isPlayerValid = false;
+
+                                
+                                Debug.Log("searching");
+                                
+                                if(isPlayerVisible){
+                                    targetEnemy = foundEnemy;
+                                    targetEyes = targetEnemy.transform.Find("Eyes").gameObject;
+                                    targetBody = targetEnemy.transform.Find("Body").gameObject;
+                                    targetFeet = targetEnemy.transform.Find("Feet").gameObject;
+                                    isPlayerVisible = true;
+                                    Debug.Log("found");
+                                    
+                                }
+                                
+                            }
+                            
+                      
+                }
+            }
+            
         }
-        Debug.DrawLine(endPointCheckRay.origin, validEndPoint, Color.red);
-        //variables for determining behaviour state - Raycast for checking if there are any obstacles between the npc and the player, CheckSphere for checking if the npc is in range of the player.
-        //the RaycastHit variables are declared inside the function, to avoid unnecessary variable declaration in the initialization.
-    }
+        } else {
+            npcToPlayerEyesRay = new Ray(eyes.transform.position, ((enemyEyes.transform.position - eyes.transform.position).normalized));
+            npcToPlayerBodyRay = new Ray(eyes.transform.position, ((enemyBody.transform.position - eyes.transform.position).normalized));
 
-    
+            isPlayerVisible = (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitVisibleObstacle, (Vector3.Distance(eyes.transform.position, enemyEyes.transform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerEyesRay, out RaycastHit hitVisibleGround, (Vector3.Distance(eyes.transform.position, enemyEyes.transform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask)) || (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitVisibleObstacleBody, (Vector3.Distance(ownBody.transform.position, enemyEyes.transform.position)), obstacleLayerMask)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask)) && (!(Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitVisibleGroundBody, (Vector3.Distance(ownBody.transform.position, enemyEyes.transform.position)), terrainLayer)) && Physics.CheckSphere(transform.position, visionRange, playerLayerMask));
+           
+            
+            if(isPlayerVisible && (Vector3.Distance(ownFeet.transform.position, targetFeet.transform.position) < engagementRange)){
+                isPlayerInRange = true;
+            } else {
+                isPlayerInRange = false;
+            }
+        }
+    }
 
     private void UpdateBehaviourState(){ //Behaviour state switcher
         TrainCheck();
-         StuckCheck();
+        StuckCheck();
         
         if (isPlayerVisible && isPlayerInRange && releaseChase){ //Can see player, is close = Attack
             PerformAttack();
@@ -392,6 +480,7 @@ public class aiNAV : MonoBehaviour
         }
         else if ((isPlayerVisible && !isPlayerInRange) || (!releaseChase) || (attackedPlayer)){  //Can see player but is not close OR Cant see player, is not close but was being chased = Chase
             PerformChase();
+            Debug.Log("Activate Chase");
 
         }
         else if(!isPlayerVisible && !isPlayerInRange && releaseChase && !attackedPlayer){ //Cant see player, Player isnt close and Player was not being chased = Patrol
@@ -403,25 +492,14 @@ public class aiNAV : MonoBehaviour
     //MAIN FUNCTIONS
 
     private void TrainCheck(){
-
-        if((Physics.CheckSphere(transform.position, 5f, trainLayerMask)) && Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitPlayerTrain, Vector3.Distance(transform.position, playerTransform.position), trainLayerMask)){
-           StartCoroutine(TrainClose());
+        if(Physics.Raycast(eyes.transform.position, navAgent.destination, out RaycastHit trainCheckHit, Vector3.Distance(eyes.transform.position, navAgent.destination), trainLayerMask)){
+            Debug.Log("train in way");
+        } else {
+            Debug.Log("train not in way");
         }
     }
 
   
-
-    private IEnumerator TrainClose(){
-        trainClose = true;
-        navAgent.isStopped = true;
-        yield return new WaitUntil(TrainGone);
-        trainClose = false;
-        navAgent.isStopped = false;
-    }
-
-   bool TrainGone() {
-        return !((Physics.CheckSphere(transform.position, 5f, trainLayerMask)) && Physics.Raycast(npcToPlayerBodyRay, out RaycastHit hitPlayerTrain, Vector3.Distance(transform.position, playerTransform.position), trainLayerMask));
-    }
 
     //PATROL
     private void PerformPatrol(){ //When Patrolling state
@@ -467,19 +545,35 @@ public class aiNAV : MonoBehaviour
         }
         
         if(isPlayerVisible && !isPlayerInRange && !attackedPlayer){
-            playerLastPosition = playerTransform.position;
+            playerLastPosition = targetFeet.transform.position;
         }
     
         if(isPlayerVisible && isPlayerInRange){
+            Debug.Log("vidim te");
             releaseChase = true;
             chaseStart = true;
-        }
+        } 
         
-        if(Vector3.Distance(transform.position, playerLastPosition) < 0.1f){
+        if(Vector3.Distance(ownFeet.transform.position, playerLastPosition) < 0.1f){
+            Debug.Log("jsem u tebe");
             releaseChase = true;
             chaseStart = true;
             attackedPlayer = false;
+           
         }
+
+        playerValidCheckRay = new Ray(targetFeet.transform.position, Vector3.down);
+        Debug.DrawLine(endPointCheckRay.origin, validEndPoint, Color.red);
+
+        Physics.Raycast(playerValidCheckRay, out RaycastHit playerPosValid, 0.7f);
+        Vector3 validPoint = playerPosValid.point;
+        NavMeshHit validHit;
+       if(NavMesh.SamplePosition(validPoint, out validHit, 0.2f, NavMesh.AllAreas)){
+            isPlayerValid = true;
+        } else {
+            isPlayerValid = false;
+        }
+
         if (intervalTimer == 0f)
             {
         
@@ -500,9 +594,9 @@ public class aiNAV : MonoBehaviour
         
     }
 
-    private void SetBetterEndPoint() {
-        float endPointDistance = (Vector3.Distance(transform.position, playerTransform.position))/endPointIncrementation;
-        Vector3 endPoint = (eyes.transform.position + ((playerEyes.transform.position - eyes.transform.position).normalized) * endPointDistance);
+     private void SetBetterEndPoint() {
+        float endPointDistance = (Vector3.Distance(transform.position, targetFeet.transform.position))/endPointIncrementation;
+        Vector3 endPoint = (ownFeet.transform.position + ((targetFeet.transform.position - ownFeet.transform.position).normalized) * endPointDistance);
         endPointCheckRay = new Ray(endPoint, Vector3.down);
         Physics.Raycast(endPointCheckRay, out RaycastHit endPointValid, 5f);
         validEndPoint = endPointValid.point;
@@ -532,7 +626,7 @@ public class aiNAV : MonoBehaviour
     private void PerformAttack(){
         fightMode = true;
         attackedPlayer = true;
-        playerLastPosition = playerTransform.position;
+        playerLastPosition = targetFeet.transform.position;
         AttackMovement();
         if(!isOnAttackCooldown){ //attack function along with attack cooldown function
             StartCoroutine(AttackCooldownRoutine());
@@ -641,7 +735,6 @@ public class aiNAV : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 200f, glassLayerMask)){
                 switch(hit.collider.tag){
                     case "Glass":
-                        Debug.Log("Hit");
                         hit.transform.SendMessage("BreakGlass");
                         Instantiate(glassHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                     break;
@@ -653,7 +746,7 @@ public class aiNAV : MonoBehaviour
 
     private Vector3 GetShootDirectionWithSpread()
     {
-        Vector3 forward = (playerEyes.position - muzzlePoint.transform.position) / Vector3.Distance(muzzlePoint.transform.position, playerEyes.position);
+        Vector3 forward = (targetBody.transform.position - muzzlePoint.transform.position) / Vector3.Distance(muzzlePoint.transform.position, targetBody.transform.position);
         float spreadX = Random.Range(-currentSpread, currentSpread) * 0.1f; // spread on the X and Y axis, normalized by 0.1f to be able to use bigger numbers in the variable declaration
         float spreadY = Random.Range(-currentSpread, currentSpread) * 0.1f; 
         Vector3 direction = forward + muzzlePoint.transform.right * spreadX + muzzlePoint.transform.up * spreadY; //direction is set to the camera direction with applied rules of direction
@@ -679,28 +772,26 @@ public class aiNAV : MonoBehaviour
     }
 
     private void AttackMovement(){
-        if(Physics.CheckSphere(transform.position, tooCloseRange, playerLayerMask)){
-            transform.LookAt(new Vector3(playerTransform.position.x, transform.position.y, playerTransform.position.z));
-            navAgent.SetDestination(transform.position - transform.forward); 
-        } else {
+        
+        
                 randomStrafe = Random.Range(0, 2);
                 if(randomStrafe == 0){
                     raySide = new Ray(transform.position - transform.right * 3, Vector3.down);
                 } else {
                     raySide = new Ray(transform.position + transform.right * 3, Vector3.down);
                 }
-                transform.LookAt(new Vector3(playerTransform.position.x, transform.position.y, playerTransform.position.z));
+                transform.LookAt(new Vector3(targetBody.transform.position.x, transform.position.y, targetBody.transform.position.z));
                 if(!isOnStrafePoint){
                     StartCoroutine(FindStrafePoint());
                 }
-        }
+        
         
     }
     private IEnumerator FindStrafePoint(){
             if((Physics.Raycast(raySide, out hitGround, 15f, terrainLayer)) && !isOnStrafePoint){
                     isOnStrafePoint = true;
                     navAgent.SetDestination(hitGround.point);
-                    transform.LookAt(new Vector3(playerTransform.position.x, transform.position.y, playerTransform.position.z));
+                    transform.LookAt(new Vector3(targetBody.transform.position.x, transform.position.y, targetBody.transform.position.z));
                     yield return new WaitForSeconds(1f);
                     isOnStrafePoint = false;
             } else {
@@ -711,7 +802,7 @@ public class aiNAV : MonoBehaviour
             
     private IEnumerator AttackCooldownRoutine(){ //simple attack speed cooldown
         isOnAttackCooldown = true; 
-        yield return new WaitForSeconds(attackCooldown);
+        yield return new WaitForSeconds(Random.Range(attackCooldown, attackCooldown * 1.5f));
         isOnAttackCooldown = false;
     }
 

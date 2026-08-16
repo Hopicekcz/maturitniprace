@@ -30,7 +30,6 @@ public class DestroyableMaterial : MonoBehaviour
 
     void BreakGlass()
     {
-        Debug.Log(audioClips.Length);
 
         audioSrc.clip = audioClips[Random.Range(0, audioClips.Length)];
         audioSrc.Play();
