@@ -23,6 +23,9 @@ public class playerHP : MonoBehaviour
     [SerializeField] private SkinnedMeshRenderer playerHands;
     [SerializeField] private SkinnedMeshRenderer playerBody;
     [SerializeField] private LayerMask respawnLayerMask;
+    [SerializeField] private LayerMask trainLayerMask;
+    [SerializeField] private LayerMask playerLayerMask;
+    [SerializeField] private LayerMask obstacleLayerMask;
     [SerializeField] private float headshotModifier = 1f;
      private RevolverScript revolverScript;
     private float maxHP;
@@ -178,21 +181,35 @@ public class playerHP : MonoBehaviour
     }
 
 
-    private void FindRandomNavmeshLocation(){ //When Patrolling state
-        if (!hasRespawnPoint){ //If no patrol point has been decided YET, run the function to find it.
-                Vector3 potentialPoint = new Vector3(transform.position.x + Random.Range(-100f, 100f), transform.position.y + 10f, transform.position.z + Random.Range(-100f, 100f)); //Calculate a desired point to send a raycast from (using the patrol radius values, with a Y value above the npc)
+    private void FindRandomNavmeshLocation(){ 
+        if (!hasRespawnPoint){ 
+                Vector3 potentialPoint = new Vector3(0 + Random.Range(-50f, 50f), 0 + 2f, 0 + Random.Range(-50f, 50f));
                 RaycastHit hit; 
-                if (Physics.Raycast(potentialPoint, Vector3.down, out hit, 20f, respawnLayerMask)){ //Send a raycast from above down to check for walkable layer.
-                    respawnPointVector = hit.point;
-                    hasRespawnPoint = true;
-                } else {
-                    FindRandomNavmeshLocation();
+                if (Physics.Raycast(potentialPoint, Vector3.down, out hit, 2f, respawnLayerMask)){
+                    if(!(Physics.CheckSphere(hit.point, 5f, trainLayerMask))){
+                        if(!(Physics.CheckSphere(hit.point, 5f, playerLayerMask))){
+                            if(!(Physics.CheckSphere(hit.point + new Vector3(0, 1, 0), 1f, obstacleLayerMask))){
+                                if(!(respawnPoint.transform.position == hit.point)){
+                                    respawnPointVector = hit.point;
+                                    hasRespawnPoint = true;
+                                } 
+                            }
+                        }
+                        
+                    }
                 }
-        }
+                    
+                
+       
+
+        
+    }
 
         if (hasRespawnPoint){
-           respawnPoint.transform.position = respawnPointVector;
-        } 
+            respawnPoint.transform.position = respawnPointVector;
+        }   else {
+            FindRandomNavmeshLocation();
+        }
     }
 
 

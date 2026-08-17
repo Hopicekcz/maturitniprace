@@ -1952,7 +1952,7 @@ NavMeshAgent:
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 300
+  m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -2062,10 +2062,10 @@ MonoBehaviour:
   patrolRadius: 20
   attackCooldown: 1.5
   npcHP: 100
-  walkSpeed: 3
+  walkSpeed: 1.8
   hitTimer: 2
   patrolPointTimer: 2
-  staggeredSpeed: 3
+  staggeredSpeed: 1.2
   followPlayerTimer: 1
   maxRevolverAmmoCount: 6
   currentSpread: 0

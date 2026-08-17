@@ -695,7 +695,6 @@ public class RevolverScript : MonoBehaviour
                     case "Glass":
                         Debug.Log("Hit");
                         hit.transform.SendMessage("BreakGlass");
-                        Instantiate(glassHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                     break;
                 }
                 

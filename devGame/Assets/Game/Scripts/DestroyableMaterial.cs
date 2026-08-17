@@ -8,6 +8,8 @@ public class DestroyableMaterial : MonoBehaviour
     private MeshRenderer thisMeshRenderer;
     private AudioSource audioSrc;
     private AudioClip[] audioClips;
+    private bool destroying = false;
+    private GameObject glassPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -15,7 +17,7 @@ public class DestroyableMaterial : MonoBehaviour
         audioClips = Resources.LoadAll<AudioClip>("glassFX");
         audioSrc = this.gameObject.AddComponent(typeof(AudioSource)) as AudioSource;
         thisMeshRenderer = this.gameObject.GetComponent<MeshRenderer>();
-
+        glassPrefab = Resources.Load<GameObject>("GlassEffect");
         audioSrc.volume = 0.3f;
         audioSrc.spatialBlend = 1f;
         audioSrc.minDistance = 2f;
@@ -30,11 +32,14 @@ public class DestroyableMaterial : MonoBehaviour
 
     void BreakGlass()
     {
-
+        if(!destroying){
+        destroying = true;
+        Instantiate(glassPrefab, this.transform.position,this.transform.rotation);
         audioSrc.clip = audioClips[Random.Range(0, audioClips.Length)];
         audioSrc.Play();
         thisMeshRenderer.enabled = false;
         StartCoroutine(DestroyObject());
+        }
     }
 
     private IEnumerator DestroyObject(){

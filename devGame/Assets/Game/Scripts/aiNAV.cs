@@ -347,6 +347,7 @@ public class aiNAV : MonoBehaviour
 
     private IEnumerator Death(){
         navAgent.ResetPath();
+        FindRandomNavmeshLocation();
         revolverAmmoCount = maxRevolverAmmoCount;
         GameObject ragdollObject = Instantiate(ragdollObjectPrefab, this.transform.position, this.transform.rotation);
         dying = true;
@@ -358,7 +359,6 @@ public class aiNAV : MonoBehaviour
         ownEnemyTag.SetActive(false);
         transform.position = deathCube.transform.position;
         yield return new WaitForSeconds(ragdollTimer);
-        FindRandomNavmeshLocation();
         transform.position = respawnPoint.transform.position;
         npcHP = maxHP;
         isDead = false;
@@ -373,27 +373,35 @@ public class aiNAV : MonoBehaviour
         hasRespawnPoint = false;
     }
 
-    private void FindRandomNavmeshLocation(){ //When Patrolling state
-        if (!hasRespawnPoint){ //If no patrol point has been decided YET, run the function to find it.
-                Vector3 potentialPoint = new Vector3(ownFeet.transform.position.x + Random.Range(-20f, 20f), ownFeet.transform.position.y + 10f, ownFeet.transform.position.z + Random.Range(-20f, 20f)); //Calculate a desired point to send a raycast from (using the patrol radius values, with a Y value above the npc)
+    private void FindRandomNavmeshLocation(){ 
+        if (!hasRespawnPoint){ 
+                Vector3 potentialPoint = new Vector3(0 + Random.Range(-50f, 50f), 0 + 2f, 0 + Random.Range(-50f, 50f));
                 RaycastHit hit; 
-                for(int i = 0; i < 30; i++){
-                    if(Physics.Raycast(potentialPoint, Vector3.down, out hit, 20f, respawnLayerMask)){
-                        if(!Physics.CheckSphere(potentialPoint, 2f, playerLayerMask)){
-                            respawnPointVector = hit.point;
-                        hasRespawnPoint = true;
+                if (Physics.Raycast(potentialPoint, Vector3.down, out hit, 2f, respawnLayerMask)){
+                    if(!(Physics.CheckSphere(hit.point, 5f, trainLayerMask))){
+                        if(!(Physics.CheckSphere(hit.point, 5f, playerLayerMask))){
+                            if(!(Physics.CheckSphere(hit.point + new Vector3(0, 1, 0), 1f, obstacleLayerMask))){
+                                if(!(respawnPoint.transform.position == hit.point)){
+                                    respawnPointVector = hit.point;
+                                    hasRespawnPoint = true;
+                                } 
+                            }
                         }
                         
                     }
-                    
                 }
-              
-            
-        }
+                    
+                
+       
+
+        
+    }
 
         if (hasRespawnPoint){
-           respawnPoint.transform.position = respawnPointVector;
-        } 
+            respawnPoint.transform.position = respawnPointVector;
+        }   else {
+            FindRandomNavmeshLocation();
+        }
     }
 
     void TrainHit(){
@@ -702,11 +710,11 @@ public class aiNAV : MonoBehaviour
                                 case "headMaterial (Instance)":
                                     switch(currentWeapon){
                                         case "revolver":
-                                        hit.transform.SendMessage("HeadHitByEnemyRevolver");
+                                        hit.transform.SendMessage("HeadHitByEnemyRevolver", ownEnemyTag);
                                         break;
                                     
                                         case "shotgun":
-                                        hit.transform.SendMessage("HeadHitByEnemyShotgun");
+                                        hit.transform.SendMessage("HeadHitByEnemyShotgun", ownEnemyTag);
                                         break;
                                     }
                                 break;
@@ -715,11 +723,11 @@ public class aiNAV : MonoBehaviour
                                 case "bodyMaterial (Instance)":
                                     switch(currentWeapon){
                                         case "revolver":
-                                        hit.transform.SendMessage("BodyHitByEnemyRevolver");
+                                        hit.transform.SendMessage("BodyHitByEnemyRevolver", ownEnemyTag);
                                         break;
 
                                         case "shotgun":
-                                        hit.transform.SendMessage("BodyHitByEnemyShotgun");
+                                        hit.transform.SendMessage("BodyHitByEnemyShotgun", ownEnemyTag);
                                         break;
                                     }
                                 break;
@@ -736,11 +744,11 @@ public class aiNAV : MonoBehaviour
                 switch(hit.collider.tag){
                     case "Glass":
                         hit.transform.SendMessage("BreakGlass");
-                        Instantiate(glassHitEffectPrefab, hit.point, Quaternion.LookRotation(hit.normal));
                     break;
                 }
                 
             }
+        
     }
 
 
